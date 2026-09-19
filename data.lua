@@ -1,5 +1,12 @@
 require("prototypes.treeRockEraser.eraser")
 
+-- Tech
+require("prototypes.Tech.Categories-Energy")
+require("prototypes.Tech.Technology")
+
+-- Energy
+require("prototypes.Energy.Accumulators")
+require("prototypes.Energy.Solar-Panels")
 
 --Player Reach
 --data.raw["character"]["character"].build_distance = 15000

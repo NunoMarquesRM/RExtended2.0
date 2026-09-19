@@ -3,10 +3,26 @@
 A Factorio mod that extends the game with new machines and production chains, offering enhanced automation, processing, and logistics capabilities.
 
 
-### Quality of Life
+## Quality of Life
 
 - **Tree Eraser**: Efficient tree removal for expansion, clearing large areas quickly without pollution.
 - **Rock Eraser**: Efficient rock removal for expansion, clearing large areas quickly without pollution.
+
+## Energy Systems
+
+### Power Generation
+
+#### Solar Power
+
+- - **Solar Panel Equipment R2**: Advanced equipment solar panel with standard power generation (100kW), providing reliable daytime power for the gadgets in the armor.
+
+- **Solar Panel R2**: Advanced solar panel with improved efficiency (600kW), generating more power per panel.
+- **Solar Panel R3**: Advanced solar panel with maximum power output (6MW), the most efficient solar power generation.
+- **Solar Panel R4**: Elite solar panel with maximum power output (36MW), the most efficient solar power generation.
+- **Solar Panel R5**: Elite solar panel with maximum power output (150MW), the most efficient solar power generation.
+
+- **Accumulator R2**: Advanced energy storage with increased capacity (15MJ), providing more backup power.
+- **Accumulator R3**: Elite energy storage with maximum capacity (30MJ), ensuring continuous power supply.
 
 --------
 
@@ -99,14 +115,6 @@ A Factorio mod that extends the game with new machines and production chains, of
 - **Steam Boiler R1**: Standard boiler for steam production, converting fuel into heat for steam engines.
 - **Steam Boiler R2**: High-efficiency boiler with better fuel utilization, producing more steam with less fuel.
 - **Steam Boiler R3**: Maximum efficiency boiler with optimal heat transfer, the most efficient way to produce steam.
-
-#### Solar Power
-- **Solar Panel R1**: Basic solar panel with standard power generation (60kW), providing reliable daytime power.
-- **Solar Panel R2**: Advanced solar panel with improved efficiency (120kW), generating more power per panel.
-- **Solar Panel R3**: Elite solar panel with maximum power output (240kW), the most efficient solar power generation.
-- **Accumulator R1**: Standard energy storage with moderate capacity (5MJ), storing excess power for nighttime use.
-- **Accumulator R2**: Advanced energy storage with increased capacity (10MJ), providing more backup power.
-- **Accumulator R3**: Elite energy storage with maximum capacity (20MJ), ensuring continuous power supply.
 
 ### Power Distribution
 
