@@ -6,6 +6,7 @@ A Factorio mod that extends the game with new machines and production chains, of
 ### Quality of Life
 
 - **Tree Eraser**: Efficient tree removal for expansion, clearing large areas quickly without pollution.
+- **Rock Eraser**: Efficient rock removal for expansion, clearing large areas quickly without pollution.
 
 --------
 

@@ -1,0 +1,5 @@
+Mods:
+- tree-eraser
+    https://mods.factorio.com/mod/tree-eraser
+- rock-eraser
+    https://mods.factorio.com/mod/rock-eraser
