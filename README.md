@@ -9,7 +9,7 @@ A Factorio mod that extends the game with new machines and production chains, of
 
 --------
 
-#All of the following information is incorrect and will be refactored!
+# All of the following information is incorrect and will be refactored!
 
 ## Features
 
