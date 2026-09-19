@@ -2,6 +2,15 @@
 
 A Factorio mod that extends the game with new machines and production chains, offering enhanced automation, processing, and logistics capabilities.
 
+
+### Quality of Life
+
+- **Tree Eraser**: Efficient tree removal for expansion, clearing large areas quickly without pollution.
+
+--------
+
+#All of the following information is incorrect and will be refactored!
+
 ## Features
 
 - **New machines with multiple tiers (R1, R2, R3)**: Each machine has three tiers of progression, with each tier offering improved performance and efficiency.
