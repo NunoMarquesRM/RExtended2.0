@@ -14,7 +14,7 @@ A Factorio mod that extends the game with new machines and production chains, of
 
 #### Solar Power
 
-- - **Solar Panel Equipment R2**: Advanced equipment solar panel with standard power generation (100kW), providing reliable daytime power for the gadgets in the armor.
+- **Solar Panel Equipment R2**: Advanced equipment solar panel with standard power generation (100kW), providing reliable daytime power for the gadgets in the armor.
 
 - **Solar Panel R2**: Advanced solar panel with improved efficiency (600kW), generating more power per panel.
 - **Solar Panel R3**: Advanced solar panel with maximum power output (6MW), the most efficient solar power generation.
