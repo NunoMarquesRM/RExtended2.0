@@ -7,6 +7,7 @@ require("prototypes.Tech.Technology")
 -- Energy
 require("prototypes.Energy.Accumulators")
 require("prototypes.Energy.Solar-Panels")
+require("prototypes.Energy.Poles")
 
 --Player Reach
 --data.raw["character"]["character"].build_distance = 15000

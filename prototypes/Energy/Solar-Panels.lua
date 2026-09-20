@@ -15,7 +15,7 @@ item_spe_r2.icon_size = 128
 item_spe_r2.place_as_equipment_result = "solar-panel-equipment-r2"
 item_spe_r2.stack_size = 10
 item_spe_r2.subgroup = "power-solar"
-item_spe_r2.order = "d-a"
+item_spe_r2.order = "g-a"
 
 local equip_spe_r2 = table.deepcopy(data.raw['solar-panel-equipment']['solar-panel-equipment'])
 equip_spe_r2.name = "solar-panel-equipment-r2"

@@ -51,59 +51,59 @@ data:extend({
 --       },
 --       order = "c-b-b"
 ---    },
----    {--Big Pole R2--
---       type = "technology",
---       name = "electric-energy-poles-r1",
---       icon_size = 128,
---       icon = "__RExtended__/graphics/Tech/Tree/Poles/electric-energy-distribution-1.png",
---       effects = {
---           {
---               type = "unlock-recipe",
---               recipe = "light-pole-r1"
---           },
---           {
---               type = "unlock-recipe",
---               recipe = "medium-pole-r1"
---           },
---           {
---               type = "unlock-recipe",
---               recipe = "long-pole-r1"
---           }
---       },
---       prerequisites = {"electric-energy-distribution-1"},
---       unit = {
---           count = 150,
---           ingredients = {
---               {"automation-science-pack", 1},
---               {"logistic-science-pack", 1}
---           },
---           time = 30
---       },
---       order = "c-f-a"
----    },
----    {--Substation R2--
---       type = "technology",
---       name = "electric-energy-poles-r2",
---       icon_size = 128,
---       icon = "__RExtended__/graphics/Tech/Tree/Poles/electric-energy-distribution-2.png",
---       effects = {
---           {
---               type = "unlock-recipe",
---               recipe = "substation-pole-r1"
---           }
---       },
---       prerequisites = {"electric-energy-distribution-2"},
---       unit = {
---           count = 110,
---           ingredients = {
---               {"automation-science-pack", 1},
---               {"logistic-science-pack", 1},
---               {"chemical-science-pack", 1}
---           },
---           time = 30
---       },
---       order = "c-f-b"
----    },
+    {--Big Pole R2
+       type = "technology",
+       name = "electric-energy-poles-r1",
+       icon_size = 128,
+       icon = "__RExtended__/graphics/Tech/Tree/Poles/electric-energy-distribution-1.png",
+       effects = {
+           {
+               type = "unlock-recipe",
+               recipe = "light-pole-r1"
+           },
+           {
+               type = "unlock-recipe",
+               recipe = "medium-pole-r1"
+           },
+           {
+               type = "unlock-recipe",
+               recipe = "long-pole-r1"
+           }
+       },
+       prerequisites = {"electric-energy-distribution-1"},
+       unit = {
+           count = 150,
+           ingredients = {
+               {"automation-science-pack", 1},
+               {"logistic-science-pack", 1}
+           },
+           time = 30
+       },
+       order = "c-f-a"
+    },
+    {--Substation R2
+        type = "technology",
+        name = "electric-energy-poles-r2",
+        icon_size = 128,
+        icon = "__RExtended__/graphics/Tech/Tree/Poles/electric-energy-distribution-2.png",
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "substation-pole-r1"
+            }
+        },
+        prerequisites = {"electric-energy-distribution-2"},
+        unit = {
+            count = 110,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1}
+            },
+            time = 30
+        },
+        order = "c-f-b"
+    },
     {--Solar Panel Equipment R2
        type = "technology",
        name = "solar-panel-equipment-tech-r2",

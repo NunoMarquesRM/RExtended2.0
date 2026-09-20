@@ -12,6 +12,9 @@ A Factorio mod that extends the game with new machines and production chains, of
 
 ### Power Generation
 
+- **Solar Panels**: Enhanced solar power generation, with each tier providing more power per panel.
+- **Accumulators**: Advanced energy storage solutions, with increased capacity and faster charging/discharging rates.
+
 #### Solar Power
 
 - **Solar Panel Equipment R2**: Advanced equipment solar panel with standard power generation (100kW), providing reliable daytime power for the gadgets in the armor.
@@ -23,6 +26,37 @@ A Factorio mod that extends the game with new machines and production chains, of
 
 - **Accumulator R2**: Advanced energy storage with increased capacity (15MJ), providing more backup power.
 - **Accumulator R3**: Elite energy storage with maximum capacity (30MJ), ensuring continuous power supply.
+
+### Power Distribution
+
+- **Small Electric Pole R1**: Basic power distribution with limited range (7.5 tiles), suitable for small-scale power networks.
+- **Medium Electric Pole R1**: Improved power distribution with extended range (9 tiles), covering larger areas.
+- **Large Electric Pole R1**: Advanced power distribution with maximum range (12 tiles), ideal for large-scale power networks.
+- **Substation R1**: High-capacity power distribution hub (18 tiles), connecting multiple power networks.
+- **Substation R2**: Enhanced power distribution with improved coverage (24 tiles), covering even larger areas.
+- **Substation R3**: Elite power distribution with maximum coverage (30 tiles), the ultimate in power distribution.
+
+
+# Installation
+
+1. Download the latest release from the mod portal or GitHub repository.
+2. Place the folder in your Factorio mods directory (typically `%appdata%/Factorio/mods` on Windows.
+3. Enable the mod in Factorio's mod settings by checking the box next to "RExtended" in the mod list.
+4. Start a new game or load an existing save to begin using the mod's features.
+
+# Compatibility
+
+- **Factorio 2.1**: Fully compatible with the latest version of Factorio.
+- **Compatible with most other mods**: Designed to work alongside other popular mods without conflicts.
+- **Check compatibility folder**: For specific information about compatibility with other mods, refer to the compatibility folder in the mod directory.
+
+# License
+
+See LICENSE file for details about the mod's licensing terms and conditions.
+
+# Credits
+
+See Credits file for details about the information for the other mods that this one used.
 
 --------
 
@@ -72,8 +106,6 @@ A Factorio mod that extends the game with new machines and production chains, of
 
 - **Steam Engines**: Multiple tiers of steam engines with varying power output, from basic 1.8MW to advanced 7.2MW.
 - **Boilers**: Different types of boilers for various fuel sources, with efficiency improvements across tiers.
-- **Solar Panels**: Enhanced solar power generation, with each tier providing more power per panel.
-- **Accumulators**: Advanced energy storage solutions, with increased capacity and faster charging/discharging rates.
 
 ### Logistics
 
@@ -116,22 +148,6 @@ A Factorio mod that extends the game with new machines and production chains, of
 - **Steam Boiler R2**: High-efficiency boiler with better fuel utilization, producing more steam with less fuel.
 - **Steam Boiler R3**: Maximum efficiency boiler with optimal heat transfer, the most efficient way to produce steam.
 
-### Power Distribution
-
-- **Small Electric Pole R1**: Basic power distribution with limited range (7.5 tiles), suitable for small-scale power networks.
-- **Medium Electric Pole R1**: Improved power distribution with extended range (9 tiles), covering larger areas.
-- **Large Electric Pole R1**: Advanced power distribution with maximum range (12 tiles), ideal for large-scale power networks.
-- **Substation R1**: High-capacity power distribution hub (18 tiles), connecting multiple power networks.
-- **Substation R2**: Enhanced power distribution with improved coverage (24 tiles), covering even larger areas.
-- **Substation R3**: Elite power distribution with maximum coverage (30 tiles), the ultimate in power distribution.
-
-### Energy Efficiency
-
-- All R2 machines operate with 20% better energy efficiency than R1, reducing power consumption while maintaining output.
-- All R3 machines operate with 40% better energy efficiency than R1, maximizing power usage for optimal performance.
-- Advanced power generation systems provide more power with less fuel consumption, reducing resource requirements.
-- Improved power distribution reduces energy loss over distance, ensuring efficient power delivery throughout your factory.
-
 ## Products
 
 ### Solid Products
@@ -163,25 +179,8 @@ A Factorio mod that extends the game with new machines and production chains, of
 - **Diesel Fuel**: High-energy fuel for advanced engines, providing more power than standard fuel.
 - **Water**: Processed water for various applications, ensuring consistent quality for industrial processes.
 
-## Installation
-
-1. Download the latest release from the mod portal or GitHub repository.
-2. Place the folder in your Factorio mods directory (typically `%appdata%/Factorio/mods` on Windows, `~/.factorio/mods` on Linux, or `~/Library/Application Support/factorio/mods` on macOS).
-3. Enable the mod in Factorio's mod settings by checking the box next to "RExtended" in the mod list.
-4. Start a new game or load an existing save to begin using the mod's features.
-
-## Compatibility
-
-- **Factorio 2.0**: Fully compatible with the latest version of Factorio.
-- **Compatible with most other mods**: Designed to work alongside other popular mods without conflicts.
-- **Check compatibility folder**: For specific information about compatibility with other mods, refer to the compatibility folder in the mod directory.
-
 ## Development
 
 - [Trello Board](https://trello.com/b/JuLUeMgQ/redextended-mod-factorio): Track development progress and planned features.
 - **Report issues**: Use the Trello board to report bugs or suggest new features.
 - **Contributions are welcome**: Feel free to contribute to the mod's development through GitHub or the Trello board.
-
-## License
-
-See LICENSE file for details about the mod's licensing terms and conditions.
