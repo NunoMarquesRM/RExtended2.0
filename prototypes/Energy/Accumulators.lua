@@ -39,7 +39,7 @@ recipe_r2.results = {{type="item", name="accumulator-r2", amount=1}}
 
 local item_r2 = table.deepcopy(data.raw.item['accumulator'])
 item_r2.name = "accumulator-r2"
-item_r2.icon = "__RExtended__/graphics/icons/accumulator/accumulator-r2.png"
+item_r2.icon = "__RExtended__/graphics/icons/Accumulator/accumulator-r2.png"
 item_r2.icon_size = 32
 item_r2.subgroup = "power-energy"
 item_r2.order = "h-a"
@@ -47,7 +47,7 @@ item_r2.place_result = "accumulator-r2"
 
 local r2 = table.deepcopy(data.raw['accumulator']['accumulator'])
 r2.name = "accumulator-r2"
-r2.icon = "__RExtended__/graphics/icons/accumulator/accumulator-r2.png"
+r2.icon = "__RExtended__/graphics/icons/Accumulator/accumulator-r2.png"
 r2.icon_size = 32
 r2.minable.result = "accumulator-r2"
 r2.max_health = 250
@@ -57,14 +57,14 @@ r2.energy_source.buffer_capacity = "15MJ"
 r2.energy_source.input_flow_limit = "900kW"
 r2.energy_source.output_flow_limit = "900kW"
 r2.chargable_graphics.picture = {
-	filename = "__RExtended__/graphics/entity/accumulator/r2/accumulator-idle.png",
+	filename = "__RExtended__/graphics/entity/Accumulator/R2/accumulator-idle.png",
 	priority = "extra-high",
 	width = 157,
 	height = 244,
 	shift = {0.43, -1.781}
 }
 r2.chargable_graphics.charge_animation = {
-	filename = "__RExtended__/graphics/entity/accumulator/r2/accumulator-charging.png",
+	filename = "__RExtended__/graphics/entity/Accumulator/R2/accumulator-charging.png",
 	width = 157,
 	height = 244,
 	line_length = 10,
@@ -83,7 +83,7 @@ r2.charge_light = {
 	}
 }
 r2.chargable_graphics.discharge_animation = {
-	filename = "__RExtended__/graphics/entity/accumulator/r2/accumulator-discharging.png",
+	filename = "__RExtended__/graphics/entity/Accumulator/R2/accumulator-discharging.png",
 	width = 157,
 	height = 244,
 	line_length = 10,
@@ -116,7 +116,7 @@ recipe_r3.results = {{type="item", name="accumulator-r3", amount=1}}
 
 local item_r3 = table.deepcopy(data.raw.item['accumulator'])
 item_r3.name = "accumulator-r3"
-item_r3.icon = "__RExtended__/graphics/icons/accumulator/accumulator-r3.png"
+item_r3.icon = "__RExtended__/graphics/icons/Accumulator/accumulator-r3.png"
 item_r3.icon_size = 32
 item_r3.subgroup = "power-energy"
 item_r3.order = "h-b"
@@ -124,7 +124,7 @@ item_r3.place_result = "accumulator-r3"
 
 local r3 = table.deepcopy(data.raw['accumulator']['accumulator'])
 r3.name = "accumulator-r3"
-r3.icon = "__RExtended__/graphics/icons/accumulator/accumulator-r3.png"
+r3.icon = "__RExtended__/graphics/icons/Accumulator/accumulator-r3.png"
 r3.icon_size = 32
 r3.minable.result = "accumulator-r3"
 r3.max_health = 350
@@ -134,14 +134,14 @@ r3.energy_source.buffer_capacity = "30MJ"
 r3.energy_source.input_flow_limit = "1.5MW"
 r3.energy_source.output_flow_limit = "1.5MW"
 r3.chargable_graphics.picture = {
-	filename = "__RExtended__/graphics/entity/accumulator/r3/charged.png",
+	filename = "__RExtended__/graphics/entity/Accumulator/R3/charged.png",
 	priority = "extra-high",
 	width = 192,
 	height = 288,
 	shift = util.by_pixel(16, -64),
 }
 r3.chargable_graphics.charge_animation = {
-	filename = "__RExtended__/graphics/entity/accumulator/r3/charging.png",
+	filename = "__RExtended__/graphics/entity/Accumulator/R3/charging.png",
 	width = 192,
 	height = 288,
 	line_length = 10,
@@ -160,7 +160,7 @@ r3.charge_light = {
 	}
 }
 r3.chargable_graphics.discharge_animation = {
-	filename = "__RExtended__/graphics/entity/accumulator/r3/discharge.png",
+	filename = "__RExtended__/graphics/entity/Accumulator/R3/discharge.png",
 	width = 192,
 	height = 288,
 	line_length = 9,
