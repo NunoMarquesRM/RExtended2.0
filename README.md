@@ -15,7 +15,7 @@ A Factorio mod that extends the game with new machines and production chains, of
 - **Solar Panels**: Enhanced solar power generation, with each tier providing more power per panel.
 - **Accumulators**: Advanced energy storage solutions, with increased capacity and faster charging/discharging rates.
 
-#### Solar Power
+### Solar Power
 
 - **Solar Panel Equipment R2**: Advanced equipment solar panel with standard power generation (100kW), providing reliable daytime power for the gadgets in the armor.
 
@@ -35,6 +35,12 @@ A Factorio mod that extends the game with new machines and production chains, of
 - **Substation R1**: High-capacity power distribution hub (18 tiles), connecting multiple power networks.
 - **Substation R2**: Enhanced power distribution with improved coverage (24 tiles), covering even larger areas.
 - **Substation R3**: Elite power distribution with maximum coverage (30 tiles), the ultimate in power distribution.
+
+## Machines and Objects
+
+### Logistics
+
+- **Warehouses**: Large storage facilities for items and fluids, with multiple access points and sorting capabilities.
 
 
 # Installation
@@ -58,9 +64,13 @@ See LICENSE file for details about the mod's licensing terms and conditions.
 
 See Credits file for details about the information for the other mods that this one used.
 
+
+
 --------
 
 # All of the following information is incorrect and will be refactored!
+
+--------
 
 ## Features
 
@@ -110,9 +120,7 @@ See Credits file for details about the information for the other mods that this 
 ### Logistics
 
 - **Transport Belts**: Improved belt systems for material transport, with higher throughput and specialized variants.
-- **Warehouses**: Large storage facilities for items and fluids, with multiple access points and sorting capabilities.
 - **Big Storage Tanks**: Massive fluid storage with multiple connection points, capable of storing large volumes of fluids.
-- **Poles**: Enhanced power distribution with multiple tiers, providing better coverage and higher capacity.
 
 ### Mining
 
