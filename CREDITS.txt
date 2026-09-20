@@ -3,3 +3,5 @@ Mods >v2.0:
     https://mods.factorio.com/mod/tree-eraser
 - rock-eraser
     https://mods.factorio.com/mod/rock-eraser
+- aai-containers
+    https://mods.factorio.com/mod/aai-containers

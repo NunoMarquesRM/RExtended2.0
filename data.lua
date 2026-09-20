@@ -1,13 +1,18 @@
+-- Quality of Life
 require("prototypes.treeRockEraser.eraser")
 
 -- Tech
-require("prototypes.Tech.Categories-Energy")
 require("prototypes.Tech.Technology")
+require("prototypes.Tech.Categories-Energy")
+require("prototypes.Tech.Categories-Machinery")
 
 -- Energy
 require("prototypes.Energy.Accumulators")
 require("prototypes.Energy.Solar-Panels")
 require("prototypes.Energy.Poles")
+
+-- Machinery
+require("prototypes.Storage.Warehouses")
 
 --Player Reach
 --data.raw["character"]["character"].build_distance = 15000

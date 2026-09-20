@@ -1,0 +1,73 @@
+data:extend({
+	{--Group
+		type = "item-group",
+		name = "re-machinery",
+		order = "kaa-a",
+		inventory_order = "d-a-a",
+		icon = "__RExtended__/graphics/Tech/Categories/Machinery.png",
+		icon_size = 128,
+	},
+--	{--Craft Machines
+--		type = "item-subgroup",
+--		name = "machinery-assemblers",
+--		group = "re-machinery",
+--		order = "a",
+--	},
+--	{--Ore Machines
+--		type = "item-subgroup",
+--		name = "machinery-ore",
+--		group = "re-machinery",
+--		order = "b",
+--	},
+--	{--Water Machines
+--		type = "item-subgroup",
+--		name = "machinery-condenser",
+--		group = "re-machinery",
+--		order = "c",
+--	},
+--	{--Formation Furnace
+--		type = "item-subgroup",
+--		name = "machinery-formation",
+--		group = "re-machinery",
+--		order = "d",
+--	},
+--	{--Storage Tanks & Incinerator
+--		type = "item-subgroup",
+--		name = "machinery-storage",
+--		group = "re-machinery",
+--		order = "e",
+--	},
+--	{--Mining Drills
+--		type = "item-subgroup",
+--		name = "machinery-drill",
+--		group = "re-machinery",
+--		order = "f",
+--	},
+	{--Lab & Warehouse
+		type = "item-subgroup",
+		name = "machinery-lab",
+		group = "re-machinery",
+		order = "g",
+	},
+--	{--Transport Belts & Un. Belts & Splitters
+--		type = "item-subgroup",
+--		name = "re-belts",
+--		group = "re-machinery",
+--		order = "h",
+--	},
+--	{--Robots
+--		type = "item-subgroup",
+--		name = "re-robots",
+--		group = "re-machinery",
+--		order = "i",
+--	},
+--	{type = "recipe-category",name = "red-compressing"},
+--	{type = "recipe-category",name = "red-washer-chamber"},
+--	{type = "recipe-category",name = "red-water-condenser"},
+--	{type = "recipe-category",name = "red-mixing"},
+--	{type = "recipe-category",name = "red-furnace"},
+--	{type = "recipe-category",name = "red-casting-chamber"},
+--	{type = "recipe-category",name = "red-forge-chamber"},
+--	{type = "recipe-category",name = "red-enrichment-chamber"},
+--	{type = "recipe-category",name = "red-oil-process"}
+})

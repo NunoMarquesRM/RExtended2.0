@@ -2,7 +2,7 @@ data:extend({
 	{--Group
 		type = "item-group",
 		name = "power-extends",
-		order = "gaa-a",
+		order = "kba-a",
 		inventory_order = "g-a-a",
 		icon = "__RExtended__/graphics/Tech/Categories/Energy.png",
 		icon_size = 64,
@@ -42,11 +42,5 @@ data:extend({
 		name = "power-belts",
 		group = "power-extends",
 		order = "i",
-	},
-	--[[{--
-		type = "item-subgroup",
-		name = "",
-		group = "power-extends",
-		order = "",
-	},]]
+	}
 })
