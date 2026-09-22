@@ -38,6 +38,10 @@ A Factorio mod that extends the game with new machines and production chains, of
 
 ## Machines and Objects
 
+### Support Systems
+
+- **Radar**: Enhanced radar systems for better map coverage, revealing larger areas and providing more detailed information.
+
 ### Logistics
 
 - **Warehouses**: Large storage facilities for items and fluids, with multiple access points and sorting capabilities.
@@ -135,7 +139,6 @@ See Credits file for details about the information for the other mods that this 
 
 ### Support Systems
 
-- **Radar**: Enhanced radar systems for better map coverage, revealing larger areas and providing more detailed information.
 - **Robots**: Advanced logistic and construction robots, with improved speed, capacity, and battery life.
 - **Bio-Red**: Biological processing systems, using living organisms for specialized production processes.
 

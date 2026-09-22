@@ -13,6 +13,7 @@ require("prototypes.Energy.Poles")
 
 -- Machinery
 require("prototypes.Storage.Warehouses")
+require("prototypes.Machinery.Radar")
 
 --Player Reach
 --data.raw["character"]["character"].build_distance = 15000
