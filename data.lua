@@ -1,10 +1,15 @@
 -- Quality of Life
 require("prototypes.treeRockEraser.eraser")
 
--- Tech
-require("prototypes.Tech.Technology")
+-- Categories
 require("prototypes.Tech.Categories-Energy")
 require("prototypes.Tech.Categories-Machinery")
+require("prototypes.Tech.Categories-Railworld")
+
+-- Tech
+require("prototypes.Tech.Technology-Energy")
+require("prototypes.Tech.Technology-Machinery")
+require("prototypes.Tech.Technology-Railworld")
 
 -- Energy
 require("prototypes.Energy.Accumulators")

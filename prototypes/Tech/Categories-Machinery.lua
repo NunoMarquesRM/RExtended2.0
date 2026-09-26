@@ -61,13 +61,13 @@ data:extend({
 --		group = "re-machinery",
 --		order = "i",
 --	},
---	{type = "recipe-category",name = "red-compressing"},
---	{type = "recipe-category",name = "red-washer-chamber"},
---	{type = "recipe-category",name = "red-water-condenser"},
---	{type = "recipe-category",name = "red-mixing"},
---	{type = "recipe-category",name = "red-furnace"},
---	{type = "recipe-category",name = "red-casting-chamber"},
---	{type = "recipe-category",name = "red-forge-chamber"},
---	{type = "recipe-category",name = "red-enrichment-chamber"},
---	{type = "recipe-category",name = "red-oil-process"}
+	{type = "recipe-category",name = "red-compressing"},
+	{type = "recipe-category",name = "red-washer-chamber"},
+	{type = "recipe-category",name = "red-water-condenser"},
+	{type = "recipe-category",name = "red-mixing"},
+	{type = "recipe-category",name = "red-furnace"},
+	{type = "recipe-category",name = "red-casting-chamber"},
+	{type = "recipe-category",name = "red-forge-chamber"},
+	{type = "recipe-category",name = "red-enrichment-chamber"},
+	{type = "recipe-category",name = "red-oil-process"}
 })
