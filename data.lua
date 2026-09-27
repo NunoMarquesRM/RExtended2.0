@@ -17,6 +17,7 @@ require("prototypes.Energy.Solar-Panels")
 require("prototypes.Energy.Poles")
 
 -- Machinery
+require("prototypes.Storage.Big-storage-tank")
 require("prototypes.Storage.Warehouses")
 require("prototypes.Machinery.Radar")
 
