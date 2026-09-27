@@ -15,6 +15,8 @@ require("prototypes.Tech.Technology-Railworld")
 require("prototypes.Energy.Accumulators")
 require("prototypes.Energy.Solar-Panels")
 require("prototypes.Energy.Poles")
+require("prototypes.Energy.Boilers")
+require("prototypes.Energy.Steam-Engines")
 
 -- Machinery
 require("prototypes.Storage.Big-storage-tank")
