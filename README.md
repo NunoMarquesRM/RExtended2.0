@@ -45,6 +45,7 @@ A Factorio mod that extends the game with new machines and production chains, of
 ### Logistics
 
 - **Warehouses**: Large storage facilities for items and fluids, with multiple access points and sorting capabilities.
+- **Advanced Storage Tanks**: Massive fluid storage with multiple connection points, capable of storing large volumes of fluids.
 
 
 # Installation
@@ -124,7 +125,7 @@ See Credits file for details about the information for the other mods that this 
 ### Logistics
 
 - **Transport Belts**: Improved belt systems for material transport, with higher throughput and specialized variants.
-- **Big Storage Tanks**: Massive fluid storage with multiple connection points, capable of storing large volumes of fluids.
+
 
 ### Mining
 

@@ -31,12 +31,12 @@ data:extend({
 --		group = "re-machinery",
 --		order = "d",
 --	},
---	{--Storage Tanks & Incinerator
---		type = "item-subgroup",
---		name = "machinery-storage",
---		group = "re-machinery",
---		order = "e",
---	},
+	{--Storage Tanks & Incinerator
+		type = "item-subgroup",
+		name = "machinery-storage",
+		group = "re-machinery",
+		order = "e",
+	},
 --	{--Mining Drills
 --		type = "item-subgroup",
 --		name = "machinery-drill",
