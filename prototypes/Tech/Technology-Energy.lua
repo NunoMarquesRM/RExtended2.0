@@ -1,56 +1,56 @@
 data:extend({
---    {--Steam Energy 1 (Boiler && Steam Engine R2)
---       type = "technology",
---       name = "steam-energy-r1",
---       icon_size = 128,
---       icon = "__RExtended__/graphics/Tech/Tree/Energy/steam-energy-r2.png",
---       effects = {
---           {
---               type = "unlock-recipe",
---               recipe = "boiler-r2"
---           },
---           {
---               type = "unlock-recipe",
---               recipe = "steam-engine-r2"
---           }
---       },
---       prerequisites = {"steel-processing"},
---       unit = {
---           count = 100,
---           ingredients = {
---               {"automation-science-pack",1},
---           },
---           time = 25
---       },
---       order = "c-b-a"
----    },
----    {--Steam Energy 2 (Steam Engine && Boiler R3)
---       type = "technology",
---       name = "steam-energy-r2",
---       icon_size = 128,
---       icon = "__RExtended__/graphics/Tech/Tree/Energy/steam-energy-r3.png",
---       effects = {
---           {
---               type = "unlock-recipe",
---               recipe = "boiler-r3"
---           },
---           {
---               type = "unlock-recipe",
---               recipe = "steam-engine-r3"
---           }
---       },
---       prerequisites = {"steam-energy-r1"},
---       unit = {
---           count = 500,
---           ingredients = {
---               {"automation-science-pack",1},
---               {"logistic-science-pack",1},
---               {"chemical-science-pack", 1}
---           },
---           time = 30
---       },
---       order = "c-b-b"
----    },
+    {--Steam Energy 1 (Boiler && Steam Engine R2)
+       type = "technology",
+       name = "steam-energy-r1",
+       icon_size = 128,
+       icon = "__RExtended__/graphics/Tech/Tree/Energy/steam-energy-r2.png",
+       effects = {
+           {
+               type = "unlock-recipe",
+               recipe = "boiler-r2"
+           },
+           {
+               type = "unlock-recipe",
+               recipe = "steam-engine-r2"
+           }
+       },
+       prerequisites = {"steel-processing"},
+       unit = {
+           count = 100,
+           ingredients = {
+               {"automation-science-pack",1},
+           },
+           time = 25
+       },
+       order = "c-b-a"
+    },
+    {--Steam Energy 2 (Steam Engine && Boiler R3)
+       type = "technology",
+       name = "steam-energy-r2",
+       icon_size = 128,
+       icon = "__RExtended__/graphics/Tech/Tree/Energy/steam-energy-r3.png",
+       effects = {
+           {
+               type = "unlock-recipe",
+               recipe = "boiler-r3"
+           },
+           {
+               type = "unlock-recipe",
+               recipe = "steam-engine-r3"
+           }
+       },
+       prerequisites = {"steam-energy-r1"},
+       unit = {
+           count = 500,
+           ingredients = {
+               {"automation-science-pack",1},
+               {"logistic-science-pack",1},
+               {"chemical-science-pack", 1}
+           },
+           time = 30
+       },
+       order = "c-b-b"
+    },
     {--Big Pole R2
        type = "technology",
        name = "electric-energy-poles-r1",
@@ -180,7 +180,7 @@ data:extend({
     {--Solar Panel R4
        type = "technology",
        name = "solar-energy-r4",
-       icon_size = 1024,
+       icon_size = 256,
        icon = "__RExtended__/graphics/Tech/Tree/Energy/solar-energy-r4.png",
        effects = {
            {
@@ -205,7 +205,7 @@ data:extend({
     {--Solar Panel R5
        type = "technology",
        name = "solar-energy-r5",
-       icon_size = 1024,
+       icon_size = 256,
        icon = "__RExtended__/graphics/Tech/Tree/Energy/solar-energy-r5.png",
        effects = {
            {

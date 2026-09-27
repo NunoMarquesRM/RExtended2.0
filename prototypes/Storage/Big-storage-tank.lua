@@ -291,7 +291,7 @@ data:extend({
 				{ direction = defines.direction.south, position = {1, 2}  },
 				{ direction = defines.direction.west,  position = {-2, -1}},
 				{ direction = defines.direction.west,  position = {-2, 0} },
-				{ direction = defines.direction.west,  position = {-2, 1} }            
+				{ direction = defines.direction.west,  position = {-2, 1} }
 			}
 		},
 		window_bounding_box = {{-0.125, 0.6875}, {0.1875, 1.1875}},
