@@ -462,20 +462,15 @@ data:extend({
 	}
 })
 
-local recipe_cgw_r1 = table.deepcopy(data.raw.recipe['iron-plate'])
+local recipe_cgw_r1 = table.deepcopy(data.raw.recipe['iron-gear-wheel'])
 recipe_cgw_r1.name = "copper-gear-wheel-r1"
 recipe_cgw_r1.icon = "__RExtended__/graphics/icons/CR/copper-gear-wheel.png"
 recipe_cgw_r1.icon_size = 32
 recipe_cgw_r1.energy_required = 0.5
 recipe_cgw_r1.enabled = true
-recipe_cgw_r1.normal = {
-	ingredients = {{type = "item", name = "copper-plate", amount=2}},
-	results = {{type="item", name="copper-gear-wheel-r1", amount=1}}
-}
-recipe_cgw_r1.expensive = {
-	ingredients = {{type = "item", name = "copper-plate", amount=4}},
-	results = {{type="item", name="copper-gear-wheel-r1", amount=1}}
-}
+recipe_cgw_r1.ingredients = {{type = "item", name = "copper-plate", amount=4}}
+recipe_cgw_r1.results = {{type="item", name="copper-gear-wheel-r1", amount=1}}
+
 
 data:extend({recipe_cgw_r1})
 --COMPONENTS AND RECIPES--END---------------------------
