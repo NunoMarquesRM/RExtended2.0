@@ -22,6 +22,8 @@ require("prototypes.Energy.Steam-Engines")
 require("prototypes.Storage.Big-storage-tank")
 require("prototypes.Storage.Warehouses")
 require("prototypes.Machinery.Radar")
+require("prototypes.Machinery.Mining-Drill")
+require("prototypes.Machinery.Furnaces")
 
 --Player Reach
 --data.raw["character"]["character"].build_distance = 15000
