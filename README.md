@@ -12,10 +12,22 @@ A Factorio mod that extends the game with new machines and production chains, of
 
 ### Power Generation
 
+- **Boilers**: Different types of boilers for various fuel sources, with efficiency improvements across tiers.~
+- **Steam Engines**: Multiple tiers of steam engines with varying power output, from basic 1.8MW to advanced 7.2MW.
 - **Solar Panels**: Enhanced solar power generation, with each tier providing more power per panel.
 - **Accumulators**: Advanced energy storage solutions, with increased capacity and faster charging/discharging rates.
 
-### Solar Power
+
+#### Steam Power
+- **Steam Engine R1**: Basic steam engine with moderate power output (1.8MW), suitable for early to mid-game power needs.
+- **Steam Engine R2**: Advanced steam engine with improved efficiency (3.6MW), providing more power with less fuel consumption.
+- **Steam Engine R3**: Elite steam engine with maximum power output (7.2MW), the ultimate in steam power generation.
+- **Steam Boiler R1**: Standard boiler for steam production, converting fuel into heat for steam engines.
+- **Steam Boiler R2**: High-efficiency boiler with better fuel utilization, producing more steam with less fuel.
+- **Steam Boiler R3**: Maximum efficiency boiler with optimal heat transfer, the most efficient way to produce steam.
+
+
+#### Solar Power
 
 - **Solar Panel Equipment R2**: Advanced equipment solar panel with standard power generation (100kW), providing reliable daytime power for the gadgets in the armor.
 
@@ -46,6 +58,16 @@ A Factorio mod that extends the game with new machines and production chains, of
 
 - **Warehouses**: Large storage facilities for items and fluids, with multiple access points and sorting capabilities.
 - **Advanced Storage Tanks**: Massive fluid storage with multiple connection points, capable of storing large volumes of fluids.
+
+### Processing Machines
+
+#### Production
+
+- **Furnaces**: Advanced smelting and processing, with higher throughput and better fuel efficiency.
+
+#### Mining
+
+- **Mining Drills**: Advanced mining equipment with fluid support, capable of extracting resources more efficiently.
 
 
 # Installation
@@ -117,25 +139,13 @@ See Credits file for details about the information for the other mods that this 
 - Superior reliability and durability
 - Maximum module slots for ultimate customization
 
-### Power Generation
-
-- **Steam Engines**: Multiple tiers of steam engines with varying power output, from basic 1.8MW to advanced 7.2MW.
-- **Boilers**: Different types of boilers for various fuel sources, with efficiency improvements across tiers.
-
 ### Logistics
 
 - **Transport Belts**: Improved belt systems for material transport, with higher throughput and specialized variants.
 
-
-### Mining
-
-- **Mining Drills**: Advanced mining equipment with fluid support, capable of extracting resources more efficiently.
-- **Tree Eraser**: Efficient tree removal for expansion, clearing large areas quickly without pollution.
-
 ### Production
 
 - **Assemblers**: Specialized assembly machines for different production needs, with improved crafting speeds and efficiency.
-- **Furnaces**: Advanced smelting and processing, with higher throughput and better fuel efficiency.
 - **Incinerator**: Waste disposal and resource recovery, converting unwanted items into useful resources.
 
 ### Support Systems
@@ -147,18 +157,6 @@ See Credits file for details about the information for the other mods that this 
 
 - **C&R Fluids**: Complex fluid handling and processing, with specialized fluid types and processing chains.
 - **C&R**: Chemical and resource processing systems, creating advanced materials through complex chemical reactions.
-
-## Energy Systems
-
-### Power Generation
-
-#### Steam Power
-- **Steam Engine R1**: Basic steam engine with moderate power output (1.8MW), suitable for early to mid-game power needs.
-- **Steam Engine R2**: Advanced steam engine with improved efficiency (3.6MW), providing more power with less fuel consumption.
-- **Steam Engine R3**: Elite steam engine with maximum power output (7.2MW), the ultimate in steam power generation.
-- **Steam Boiler R1**: Standard boiler for steam production, converting fuel into heat for steam engines.
-- **Steam Boiler R2**: High-efficiency boiler with better fuel utilization, producing more steam with less fuel.
-- **Steam Boiler R3**: Maximum efficiency boiler with optimal heat transfer, the most efficient way to produce steam.
 
 ## Products
 
@@ -190,9 +188,3 @@ See Credits file for details about the information for the other mods that this 
 #### Chemical Products
 - **Diesel Fuel**: High-energy fuel for advanced engines, providing more power than standard fuel.
 - **Water**: Processed water for various applications, ensuring consistent quality for industrial processes.
-
-## Development
-
-- [Trello Board](https://trello.com/b/JuLUeMgQ/redextended-mod-factorio): Track development progress and planned features.
-- **Report issues**: Use the Trello board to report bugs or suggest new features.
-- **Contributions are welcome**: Feel free to contribute to the mod's development through GitHub or the Trello board.

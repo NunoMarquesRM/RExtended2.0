@@ -25,24 +25,24 @@ data:extend({
 --		group = "re-machinery",
 --		order = "c",
 --	},
---	{--Formation Furnace
---		type = "item-subgroup",
---		name = "machinery-formation",
---		group = "re-machinery",
---		order = "d",
---	},
+	{--Formation Furnace
+		type = "item-subgroup",
+		name = "machinery-formation",
+		group = "re-machinery",
+		order = "d",
+	},
 	{--Storage Tanks & Incinerator
 		type = "item-subgroup",
 		name = "machinery-storage",
 		group = "re-machinery",
 		order = "e",
 	},
---	{--Mining Drills
---		type = "item-subgroup",
---		name = "machinery-drill",
---		group = "re-machinery",
---		order = "f",
---	},
+	{--Mining Drills
+		type = "item-subgroup",
+		name = "machinery-drill",
+		group = "re-machinery",
+		order = "f",
+	},
 	{--Lab & Warehouse
 		type = "item-subgroup",
 		name = "machinery-lab",
