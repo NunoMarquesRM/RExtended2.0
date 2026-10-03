@@ -69,8 +69,8 @@ local recipe_steel_r2 = table.deepcopy(data.raw.recipe['steel-furnace'])
 recipe_steel_r2.name = "electric-steel-furnace"
 recipe_steel_r2.ingredients = {
 	{type = "item", name = "steel-furnace", amount = 2},
-	{type = "item", name = "electronic-circuit", amount = 5}
-	--{type = "item", name = "copper-gear-wheel-r1", amount = 1}
+	{type = "item", name = "electronic-circuit", amount = 5},
+	{type = "item", name = "copper-gear-wheel-r1", amount = 1}
 }
 recipe_steel_r2.enabled = false
 recipe_steel_r2.results = {{type="item", name="electric-steel-furnace", amount=1}}

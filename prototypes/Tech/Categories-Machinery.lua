@@ -7,24 +7,24 @@ data:extend({
 		icon = "__RExtended__/graphics/Tech/Categories/Machinery.png",
 		icon_size = 128,
 	},
---	{--Craft Machines
---		type = "item-subgroup",
---		name = "machinery-assemblers",
---		group = "re-machinery",
---		order = "a",
---	},
---	{--Ore Machines
---		type = "item-subgroup",
---		name = "machinery-ore",
---		group = "re-machinery",
---		order = "b",
---	},
---	{--Water Machines
---		type = "item-subgroup",
---		name = "machinery-condenser",
---		group = "re-machinery",
---		order = "c",
---	},
+	{--Craft Machines
+		type = "item-subgroup",
+		name = "machinery-assemblers",
+		group = "re-machinery",
+		order = "a",
+	},
+	{--Ore Machines
+		type = "item-subgroup",
+		name = "machinery-ore",
+		group = "re-machinery",
+		order = "b",
+	},
+	{--Water Machines
+		type = "item-subgroup",
+		name = "machinery-condenser",
+		group = "re-machinery",
+		order = "c",
+	},
 	{--Formation Furnace
 		type = "item-subgroup",
 		name = "machinery-formation",

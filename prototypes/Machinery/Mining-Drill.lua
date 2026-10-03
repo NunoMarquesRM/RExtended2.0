@@ -30,7 +30,7 @@ data:extend({
 		energy_required = 2,
 		ingredients = {
 			{type = "item", name = "electric-mining-drill", amount = 1},
-			--{type = "item", name = "copper-gear-wheel-r1", amount = 5},
+			{type = "item", name = "copper-gear-wheel-r1", amount = 5},
 			{type = "item", name = "iron-plate", amount = 10}
 		},
 		results = {{type="item", name="mining-drill-r2", amount=1}}
@@ -44,8 +44,8 @@ data:extend({
 		energy_required = 2,
 		ingredients = {
 			{type = "item", name = "mining-drill-r2", amount = 1},
-			--{type = "item", name = "cable-r1", amount = 5},
-			--{type = "item", name = "reinforced-component-r1", amount = 10},
+			{type = "item", name = "cable-r1", amount = 5},
+			{type = "item", name = "reinforced-component-r1", amount = 10},
 			{type = "item", name = "electronic-circuit", amount = 1}
 		},
 		results = {{type="item", name="mining-drill-r3", amount=1}}

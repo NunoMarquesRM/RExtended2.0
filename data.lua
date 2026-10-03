@@ -5,11 +5,7 @@ require("prototypes.treeRockEraser.eraser")
 require("prototypes.Tech.Categories-Energy")
 require("prototypes.Tech.Categories-Machinery")
 require("prototypes.Tech.Categories-Railworld")
-
--- Tech
-require("prototypes.Tech.Technology-Energy")
-require("prototypes.Tech.Technology-Machinery")
-require("prototypes.Tech.Technology-Railworld")
+require("prototypes.Tech.Categories-C&R")
 
 -- Energy
 require("prototypes.Energy.Accumulators")
@@ -24,6 +20,16 @@ require("prototypes.Storage.Warehouses")
 require("prototypes.Machinery.Radar")
 require("prototypes.Machinery.Mining-Drill")
 require("prototypes.Machinery.Furnaces")
+require("prototypes.Machinery.Machinery")
+
+-- Products
+require("prototypes.Machinery.c&r")
+require("prototypes.Machinery.c&r-fluids")
+
+-- Tech
+require("prototypes.Tech.Technology-Energy")
+require("prototypes.Tech.Technology-Machinery")
+require("prototypes.Tech.Technology-Railworld")
 
 --Player Reach
 --data.raw["character"]["character"].build_distance = 15000

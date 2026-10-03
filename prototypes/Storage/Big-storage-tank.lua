@@ -72,10 +72,10 @@ data:extend({
 		enabled = false,
 		ingredients = {
 			{type = "item", name = "big-storage-tank-r1", amount = 5},
-			{type = "item", name = "pipe", amount = 15}
-			--{type = "item", name = "reinforced-copper-plate-r1", amount = 20},
-			--{type = "item", name = "reinforced-coal-plate-r1", amount = 20},
-			--{type = "item", name = "glue-r1", amount = 15}
+			{type = "item", name = "pipe", amount = 15},
+			{type = "item", name = "reinforced-copper-plate-r1", amount = 20},
+			{type = "item", name = "reinforced-coal-plate-r1", amount = 20},
+			{type = "item", name = "glue-r1", amount = 15}
 		},
 		results = {{type="item", name="big-storage-tank-r2", amount=1}}
 	},
@@ -253,10 +253,10 @@ data:extend({
 		enabled = false,
 		ingredients = {
 			{type = "item", name = "big-storage-tank-r2", amount = 3},
-			{type = "item", name = "pipe", amount = 50}
-			--{type = "item", name = "reinforced-copper-plate-r1", amount = 20},
-			--{type = "item", name = "reinforced-coal-plate-r1", amount = 20},
-			--{type = "item", name = "glue-r1", amount = 15}
+			{type = "item", name = "pipe", amount = 50},
+			{type = "item", name = "reinforced-copper-plate-r1", amount = 20},
+			{type = "item", name = "reinforced-coal-plate-r1", amount = 20},
+			{type = "item", name = "glue-r1", amount = 15}
 		},
 		results = {{type="item", name="elite-storage-tank-r3", amount=1}}
 	},
