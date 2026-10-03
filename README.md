@@ -2,6 +2,15 @@
 
 A Factorio mod that extends the game with new machines and production chains, offering enhanced automation, processing, and logistics capabilities.
 
+## Features
+
+- **New machines with multiple tiers (R1, R2, R3)**: Each machine has three tiers of progression, with each tier offering improved performance and efficiency.
+- **Extended production chains**: New recipes and processing steps create deeper and more complex production chains.
+- **New fluid handling systems**: Advanced fluid processing with multiple input/output connections and specialized fluid types.
+- **Improved automation possibilities**: Enhanced logistics and production systems for more efficient automation.
+- **Enhanced power generation and storage**: Multiple tiers of power generation and storage solutions.
+- **Advanced logistics solutions**: Improved transport and storage systems for both items and fluids.
+
 
 ## Quality of Life
 
@@ -61,57 +70,6 @@ A Factorio mod that extends the game with new machines and production chains, of
 
 ### Processing Machines
 
-#### Production
-
-- **Furnaces**: Advanced smelting and processing, with higher throughput and better fuel efficiency.
-
-#### Mining
-
-- **Mining Drills**: Advanced mining equipment with fluid support, capable of extracting resources more efficiently.
-
-
-# Installation
-
-1. Download the latest release from the mod portal or GitHub repository.
-2. Place the folder in your Factorio mods directory (typically `%appdata%/Factorio/mods` on Windows.
-3. Enable the mod in Factorio's mod settings by checking the box next to "RExtended" in the mod list.
-4. Start a new game or load an existing save to begin using the mod's features.
-
-# Compatibility
-
-- **Factorio 2.1**: Fully compatible with the latest version of Factorio.
-- **Compatible with most other mods**: Designed to work alongside other popular mods without conflicts.
-- **Check compatibility folder**: For specific information about compatibility with other mods, refer to the compatibility folder in the mod directory.
-
-# License
-
-See LICENSE file for details about the mod's licensing terms and conditions.
-
-# Credits
-
-See Credits file for details about the information for the other mods that this one used.
-
-
-
---------
-
-# All of the following information is incorrect and will be refactored!
-
---------
-
-## Features
-
-- **New machines with multiple tiers (R1, R2, R3)**: Each machine has three tiers of progression, with each tier offering improved performance and efficiency.
-- **Extended production chains**: New recipes and processing steps create deeper and more complex production chains.
-- **New fluid handling systems**: Advanced fluid processing with multiple input/output connections and specialized fluid types.
-- **Improved automation possibilities**: Enhanced logistics and production systems for more efficient automation.
-- **Enhanced power generation and storage**: Multiple tiers of power generation and storage solutions.
-- **Advanced logistics solutions**: Improved transport and storage systems for both items and fluids.
-
-## Machines and Objects
-
-### Processing Machines
-
 #### Basic Machines (R1)
 - **Compressor**: Compresses fluids and gases for more efficient storage and transport. Processes 1 fluid per second with 100kW power consumption.
 - **Washer Chamber**: Cleans and processes raw materials, removing impurities. Processes 1 item per second with 120kW power consumption.
@@ -139,19 +97,13 @@ See Credits file for details about the information for the other mods that this 
 - Superior reliability and durability
 - Maximum module slots for ultimate customization
 
-### Logistics
+#### Production
 
-- **Transport Belts**: Improved belt systems for material transport, with higher throughput and specialized variants.
+- **Furnaces**: Advanced smelting and processing, with higher throughput and better fuel efficiency.
 
-### Production
+#### Mining
 
-- **Assemblers**: Specialized assembly machines for different production needs, with improved crafting speeds and efficiency.
-- **Incinerator**: Waste disposal and resource recovery, converting unwanted items into useful resources.
-
-### Support Systems
-
-- **Robots**: Advanced logistic and construction robots, with improved speed, capacity, and battery life.
-- **Bio-Red**: Biological processing systems, using living organisms for specialized production processes.
+- **Mining Drills**: Advanced mining equipment with fluid support, capable of extracting resources more efficiently.
 
 ### Fluid Systems
 
@@ -188,3 +140,50 @@ See Credits file for details about the information for the other mods that this 
 #### Chemical Products
 - **Diesel Fuel**: High-energy fuel for advanced engines, providing more power than standard fuel.
 - **Water**: Processed water for various applications, ensuring consistent quality for industrial processes.
+
+
+# Installation
+
+1. Download the latest release from the mod portal or GitHub repository.
+2. Place the folder in your Factorio mods directory (typically `%appdata%/Factorio/mods` on Windows.
+3. Enable the mod in Factorio's mod settings by checking the box next to "RExtended" in the mod list.
+4. Start a new game or load an existing save to begin using the mod's features.
+
+# Compatibility
+
+- **Factorio 2.1**: Fully compatible with the latest version of Factorio.
+- **Compatible with most other mods**: Designed to work alongside other popular mods without conflicts.
+- **Check compatibility folder**: For specific information about compatibility with other mods, refer to the compatibility folder in the mod directory.
+
+# License
+
+See LICENSE file for details about the mod's licensing terms and conditions.
+
+# Credits
+
+See Credits file for details about the information for the other mods that this one used.
+
+
+
+--------
+
+# All of the following information is incorrect and will be refactored!
+
+--------
+
+## Machines and Objects
+
+### Logistics
+
+- **Transport Belts**: Improved belt systems for material transport, with higher throughput and specialized variants.
+
+### Production
+
+- **Assemblers**: Specialized assembly machines for different production needs, with improved crafting speeds and efficiency.
+- **Incinerator**: Waste disposal and resource recovery, converting unwanted items into useful resources.
+
+### Support Systems
+
+- **Robots**: Advanced logistic and construction robots, with improved speed, capacity, and battery life.
+- **Bio-Red**: Biological processing systems, using living organisms for specialized production processes.
+

@@ -34,8 +34,8 @@ local recipe_r2 = table.deepcopy(data.raw.recipe['solar-panel'])
 recipe_r2.name = "solar-panel-r2"
 recipe_r2.ingredients = {
 	{type = "item", name = "solar-panel", amount = 2},
-	{type = "item", name = "electronic-circuit", amount = 5}
-	--{type = "item", name = "solar-cell", amount = 10}
+	{type = "item", name = "electronic-circuit", amount = 5},
+	{type = "item", name = "solar-cell", amount = 10}
 }
 recipe_r2.results = {{type="item", name="solar-panel-r2", amount=1}}
 
@@ -43,8 +43,8 @@ local recipe_r3 = table.deepcopy(data.raw.recipe['solar-panel'])
 recipe_r3.name = "solar-panel-r3"
 recipe_r3.ingredients = {
 	{type = "item", name = "solar-panel-r2", amount = 1},
-	{type = "item", name = "electronic-circuit", amount = 10}
-	--{type = "item", name = "solar-cell", amount = 4}
+	{type = "item", name = "electronic-circuit", amount = 10},
+	{type = "item", name = "solar-cell", amount = 4}
 }
 recipe_r3.results = {{type="item", name="solar-panel-r3", amount=1}}
 
@@ -52,8 +52,8 @@ local recipe_r4 = table.deepcopy(data.raw.recipe['solar-panel'])
 recipe_r4.name = "solar-panel-r4"
 recipe_r4.ingredients = {
 	{type = "item", name = "solar-panel-r3", amount = 2},
-	{type = "item", name = "advanced-circuit", amount = 2}
-	--{type = "item", name = "solar-cell", amount = 1}
+	{type = "item", name = "advanced-circuit", amount = 2},
+	{type = "item", name = "solar-cell", amount = 1}
 }
 recipe_r4.results = {{type="item", name="solar-panel-r4", amount=1}}
 

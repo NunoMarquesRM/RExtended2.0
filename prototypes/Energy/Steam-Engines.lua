@@ -169,7 +169,7 @@ recipe_sr2.name = "steam-engine-r2"
 recipe_sr2.enabled = false
 recipe_sr2.ingredients = {
 	{type = "item", name = "steam-engine", amount = 3},
-	--{type = "item", name = "copper-gear-wheel-r1", amount = 25},
+	{type = "item", name = "copper-gear-wheel-r1", amount = 25},
 	{type = "item", name = "copper-plate", amount = 7}
 }
 recipe_sr2.results = {{type="item", name="steam-engine-r2", amount=1}}
@@ -180,7 +180,7 @@ recipe_sr3.name = "steam-engine-r3"
 recipe_sr3.enabled = false
 recipe_sr3.ingredients = {
 	{type = "item", name = "steam-engine-r2", amount = 2},
-	--{type = "item", name = "iron-gear-wheel", amount = 5},
+	{type = "item", name = "iron-gear-wheel", amount = 5},
 	{type = "item", name = "iron-plate", amount = 5},
 	{type = "item", name = "steel-plate", amount = 2}
 }

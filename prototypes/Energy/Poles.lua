@@ -19,7 +19,7 @@ data:extend({
 	enabled = false,
 	ingredients = {
 		{type = "item", name = "iron-plate", amount = 5},
-		--{type = "item", name = "copper-gear-wheel-r1", amount = 2},
+		{type = "item", name = "copper-gear-wheel-r1", amount = 2},
 		{type = "item", name = "copper-cable", amount = 4}
 	},
 	results = {{type="item", name="light-pole-r1", amount=1}}
@@ -248,7 +248,7 @@ recipe_substation.energy_required = 1
 recipe_substation.enabled = false
 recipe_substation.ingredients =  {
 	{type = "item", name = "iron-plate", amount = 5},
-	--{type = "item", name = "copper-gear-wheel-r1", amount = 5},
+	{type = "item", name = "copper-gear-wheel-r1", amount = 5},
 	{type = "item", name = "substation", amount = 3}
 }
 recipe_substation.results = {{type="item", name="substation-pole-r1", amount=1}}

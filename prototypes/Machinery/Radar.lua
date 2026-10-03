@@ -16,8 +16,8 @@ data:extend({
 		enabled = true,
 		ingredients = {
 			{type = "item", name = "radar", amount = 2},
-			{type = "item", name = "advanced-circuit", amount = 2}
-			--{type = "item", name = "copper-gear-wheel-r1", amount = 4}
+			{type = "item", name = "advanced-circuit", amount = 2},
+			{type = "item", name = "copper-gear-wheel-r1", amount = 4}
 		},
 		results = {{type="item", name="red-radar", amount=1}}
 	},

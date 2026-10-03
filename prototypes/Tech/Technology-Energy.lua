@@ -134,10 +134,10 @@ data:extend({
        icon_size = 256,
        icon = "__RExtended__/graphics/Tech/Tree/Energy/solar-energy-r2.png",
        effects = {
-           --{
-           --    type = "unlock-recipe",
-           --    recipe = "solar-cell"
-           --},
+           {
+               type = "unlock-recipe",
+               recipe = "solar-cell"
+           },
            {
                type = "unlock-recipe",
                recipe = "solar-panel-r2"
