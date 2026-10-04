@@ -100,6 +100,7 @@ A Factorio mod that extends the game with new machines and production chains, of
 #### Production
 
 - **Furnaces**: Advanced smelting and processing, with higher throughput and better fuel efficiency.
+- **Assemblers**: Specialized assembly machines for different production needs, with improved crafting speeds and efficiency.
 
 #### Mining
 
@@ -141,6 +142,19 @@ A Factorio mod that extends the game with new machines and production chains, of
 - **Diesel Fuel**: High-energy fuel for advanced engines, providing more power than standard fuel.
 - **Water**: Processed water for various applications, ensuring consistent quality for industrial processes.
 
+### Support Systems
+
+- **Robots**: Advanced logistic and construction robots, with improved speed, capacity, and battery life.
+
+
+
+# Features Removed after Factorio 2.0
+
+- **Transport Belts**: Improved belt systems for material transport, with higher throughput and specialized variants.
+- **Incinerator**: Waste disposal and resource recovery, converting unwanted items into useful resources.
+- **Bio-Red**: Biological processing systems, using living organisms for specialized production processes.
+
+
 
 # Installation
 
@@ -162,28 +176,3 @@ See LICENSE file for details about the mod's licensing terms and conditions.
 # Credits
 
 See Credits file for details about the information for the other mods that this one used.
-
-
-
---------
-
-# All of the following information is incorrect and will be refactored!
-
---------
-
-## Machines and Objects
-
-### Logistics
-
-- **Transport Belts**: Improved belt systems for material transport, with higher throughput and specialized variants.
-
-### Production
-
-- **Assemblers**: Specialized assembly machines for different production needs, with improved crafting speeds and efficiency.
-- **Incinerator**: Waste disposal and resource recovery, converting unwanted items into useful resources.
-
-### Support Systems
-
-- **Robots**: Advanced logistic and construction robots, with improved speed, capacity, and battery life.
-- **Bio-Red**: Biological processing systems, using living organisms for specialized production processes.
-

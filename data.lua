@@ -1,5 +1,6 @@
 -- Quality of Life
 require("prototypes.treeRockEraser.eraser")
+require("prototypes.Products.Pipes-Cover")
 
 -- Categories
 require("prototypes.Tech.Categories-Energy")
@@ -21,18 +22,15 @@ require("prototypes.Machinery.Radar")
 require("prototypes.Machinery.Mining-Drill")
 require("prototypes.Machinery.Furnaces")
 require("prototypes.Machinery.Machinery")
+require("prototypes.Machinery.Assemblers")
+require("prototypes.Machinery.Robots")
 
 -- Products
-require("prototypes.Machinery.c&r")
-require("prototypes.Machinery.c&r-fluids")
+require("prototypes.Products.C&R")
+require("prototypes.Products.C&R-Fluids")
 
 -- Tech
 require("prototypes.Tech.Technology-Energy")
 require("prototypes.Tech.Technology-Machinery")
 require("prototypes.Tech.Technology-Railworld")
-
---Player Reach
---data.raw["character"]["character"].build_distance = 15000
---data.raw["character"]["character"].reach_distance = 15000
---data.raw["character"]["character"].reach_resource_distance = 15000
---data.raw["character"]["character"].drop_item_distance = 15000
+require("prototypes.Tech.Technology-Robots")

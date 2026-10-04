@@ -49,18 +49,18 @@ data:extend({
 		group = "re-machinery",
 		order = "g",
 	},
---	{--Transport Belts & Un. Belts & Splitters
+--	{-- DEPRECATED --> Transport Belts & Un. Belts & Splitters
 --		type = "item-subgroup",
 --		name = "re-belts",
 --		group = "re-machinery",
 --		order = "h",
 --	},
---	{--Robots
---		type = "item-subgroup",
---		name = "re-robots",
---		group = "re-machinery",
---		order = "i",
---	},
+	{--Robots
+		type = "item-subgroup",
+		name = "re-robots",
+		group = "re-machinery",
+		order = "i",
+	},
 	{type = "recipe-category",name = "red-compressing"},
 	{type = "recipe-category",name = "red-washer-chamber"},
 	{type = "recipe-category",name = "red-water-condenser"},
