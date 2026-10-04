@@ -219,66 +219,66 @@ data:extend({tech_r1})
 
 
 data:extend({
-	--{--Machinery R1--
-	--	type = "technology",
-	--	name = "machinery-r1",
-	--	icon_size = 128,
-	--	icon = "__RExtended__/graphics/Tech/Tree/Assemblers/machinery-r1.png",
-	--	effects = {{
-	--		type = "unlock-recipe",
-	--		recipe = "half-assembler-r1"
-	--	}},
-	--	prerequisites = {"electric-furnace-r1"},
-	--	unit = {
-	--		count = 100,
-	--		ingredients = {
-	--			{"automation-science-pack",1},
-	--		},
-	--		time = 25
-	--	},
-	--	order = "a-d-c"
-	--},
---{--Machinery R2--
---	type = "technology",
---	name = "machinery-r2",
---	icon_size = 128,
---	icon = "__RExtended__/graphics/Tech/Tree/Assemblers/machinery-r2.png",
---	effects = {{
---		type = "unlock-recipe",
---		recipe = "assembler-r1"
---	}},
---	prerequisites = {"automation-2","electric-furnace-r2"},
---	unit = {
---		count = 200,
---		ingredients = {
---			{"automation-science-pack",1},
---			{"logistic-science-pack",1},
---		},
---		time = 25
---	},
---	order = "c-j-c"
---},
---{--Machinery R3--
---	type = "technology",
---	name = "machinery-r3",
---	icon_size = 128,
---	icon = "__RExtended__/graphics/Tech/Tree/Assemblers/machinery-r3.png",
---	effects = {{
---		type = "unlock-recipe",
---		recipe = "assembler-r2"
---	}},
---	prerequisites = {"automation-3","machinery-r2"},
---	unit = {
---		count = 500,
---		ingredients = {
---			{"automation-science-pack",1},
---			{"logistic-science-pack",1},
---			{"chemical-science-pack", 1},
---		},
---		time = 25
---	},
---	order = "c-j-d"
---},
+	{--Machinery R1--
+		type = "technology",
+		name = "machinery-r1",
+		icon_size = 128,
+		icon = "__RExtended__/graphics/Tech/Tree/Assemblers/machinery-r1.png",
+		effects = {{
+			type = "unlock-recipe",
+			recipe = "half-assembler-r1"
+		}},
+		prerequisites = {"electric-furnace-r1"},
+		unit = {
+			count = 100,
+			ingredients = {
+				{"automation-science-pack",1},
+			},
+			time = 25
+		},
+		order = "a-d-c"
+	},
+{--Machinery R2--
+	type = "technology",
+	name = "machinery-r2",
+	icon_size = 128,
+	icon = "__RExtended__/graphics/Tech/Tree/Assemblers/machinery-r2.png",
+	effects = {{
+		type = "unlock-recipe",
+		recipe = "assembler-r1"
+	}},
+	prerequisites = {"automation-2","electric-furnace-r2"},
+	unit = {
+		count = 200,
+		ingredients = {
+			{"automation-science-pack",1},
+			{"logistic-science-pack",1},
+		},
+		time = 25
+	},
+	order = "c-j-c"
+},
+{--Machinery R3--
+	type = "technology",
+	name = "machinery-r3",
+	icon_size = 128,
+	icon = "__RExtended__/graphics/Tech/Tree/Assemblers/machinery-r3.png",
+	effects = {{
+		type = "unlock-recipe",
+		recipe = "assembler-r2"
+	}},
+	prerequisites = {"automation-3","machinery-r2"},
+	unit = {
+		count = 500,
+		ingredients = {
+			{"automation-science-pack",1},
+			{"logistic-science-pack",1},
+			{"chemical-science-pack", 1},
+		},
+		time = 25
+	},
+	order = "c-j-d"
+},
 {--Charcoal (wood to coal)--
 	type = "technology",
 	name = "charcoal-r1",
@@ -914,31 +914,31 @@ unit = {
 },
 order = "a-f-h"
 },
---{--Advanced Half Assembler--
---	type = "technology",
---	name = "adv-machinery-r2",
---	icon_size = 128,
---	icon = "__RExtended__/graphics/Tech/Tree/Assemblers/machinery-r1-1.png",
---	effects ={
---		{
---			type = "unlock-recipe",
---			recipe = "half-assembler-r2"
---		}
---	},
---	prerequisites = {"machinery-r1"},
---	unit = {
---		count = 500,
---		ingredients = {
---			{"automation-science-pack", 1},
---			{"logistic-science-pack", 1},
---			{"chemical-science-pack", 1},
---			{"production-science-pack", 1},
---			{"utility-science-pack", 1}
---		},
---		time = 40
---	},
---	order = "a-f-i"
---},
+{--Advanced Half Assembler--
+	type = "technology",
+	name = "adv-machinery-r2",
+	icon_size = 128,
+	icon = "__RExtended__/graphics/Tech/Tree/Assemblers/machinery-r1-1.png",
+	effects ={
+		{
+			type = "unlock-recipe",
+			recipe = "half-assembler-r2"
+		}
+	},
+	prerequisites = {"machinery-r1"},
+	unit = {
+		count = 500,
+		ingredients = {
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
+			{"production-science-pack", 1},
+			{"utility-science-pack", 1}
+		},
+		time = 40
+	},
+	order = "a-f-i"
+},
 {--Refinery R2--
 type = "technology",
 name = "refinery-machine-r2",
