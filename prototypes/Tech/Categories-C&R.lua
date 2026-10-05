@@ -2,7 +2,7 @@ data:extend({
 	{--Group
 		type = "item-group",
 		name = "CandR",
-		order = "daa-c",
+		order = "kca-c",
 		inventory_order = "d-a-c",
 		icon = "__RExtended__/graphics/Tech/Categories/C&R.png",
 		icon_size = 64,

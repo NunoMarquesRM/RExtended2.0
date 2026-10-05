@@ -1,38 +1,7 @@
+-- Chain 1 - Basic Metallurgy -> Ore Washing
+-- Chain 2 - Fluid Metallurgy/Casting
 data:extend({
---RECIPE
-	{-- Coal (wood)
-		type = "recipe",
-		name = "coal-r1",
-		ingredients = {{type = "item", name = "wood", amount=4}},
-		enabled = false,
-		subgroup = "chemical-products-r1",
-		order = "a-b-a",
-		results = {{type="item", name="coal", amount=1}}
-	},
-	{-- Enriched Coal
-		type = "recipe",
-		name = "enriched-coal-r1",
-		categories = {"crafting-with-fluid", "red-enrichment-chamber"},
-		enabled = false,
-		energy_required = 1,
-		ingredients = {
-			{type = "fluid", name = "diesel-fuel", amount = 50},
-			{type = "item", name = "coal", amount = 2}
-		},
-		results = {{type="item", name="enriched-coal-r1", amount=1}},
-	},
-	{--Clean Coal R1
-		type = "recipe",
-		name = "clean-coal-r1",
-		energy_required = 2,
-		enabled = false,
-		ingredients = {
-			{type = "item", name = "coal", amount = 2},
-			{type = "fluid", name ="pressurized-water-r1" , amount = 20}
-		},
-		results = {{type="item", name="clean-coal-r1", amount=1}},
-		categories = {"red-washer-chamber"}
-	},
+-- Recipes
 	{-- Clean Iron R1
 		type = "recipe",
 		name = "clean-iron-r1",
@@ -56,6 +25,207 @@ data:extend({
 		},
 		results = {{type="item", name="clean-copper-r1", amount=1}},
 		categories = {"red-washer-chamber"}
+	},
+	{--Clean Coal R1
+		type = "recipe",
+		name = "clean-coal-r1",
+		energy_required = 2,
+		enabled = false,
+		ingredients = {
+			{type = "item", name = "coal", amount = 2},
+			{type = "fluid", name ="pressurized-water-r1" , amount = 20}
+		},
+		results = {{type="item", name="clean-coal-r1", amount=1}},
+		categories = {"red-washer-chamber"}
+	},
+	{-- Iron Plate v1
+		type = "recipe",
+		name = "iron-plate-r1-v1",
+		icon = "__base__/graphics/icons/iron-plate.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		energy_required = 2,
+		enabled = false,
+		ingredients = {{type="item", name="clean-iron-r1", amount=1}},
+		results = {{type="item", name="iron-plate", amount=3}},
+		categories = {"smelting"},
+		subgroup = "plates",
+		order = "c-a-a"
+	},
+	{-- Iron Plate v2
+		type = "recipe",
+		name = "iron-plate-r1-v2",
+		icon = "__base__/graphics/icons/iron-plate.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		energy_required = 1,
+		enabled = false,
+		ingredients = {
+			{type = "fluid", name ="pressurized-water-r1", amount = 25},
+			{type = "fluid", name ="molten-iron-r1", amount = 25}
+		},
+		results = {{type="item", name="iron-plate", amount=5}},
+		categories = {"red-casting-chamber"},
+		subgroup = "plates",
+		order = "c-a-b"
+	},
+	{-- Copper Plate v1
+		type = "recipe",
+		name = "copper-plate-r1-v1",
+		icon = "__base__/graphics/icons/copper-plate.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		energy_required = 2,
+		enabled = false,
+		ingredients = {{type="item", name="clean-copper-r1", amount=1}},
+		results = {{type="item", name="copper-plate", amount=3}},
+		categories = {"smelting"},
+		subgroup = "plates",
+		order = "c-a-d"
+	},
+	{-- Copper Plate v2
+		type = "recipe",
+		name = "copper-plate-r1-v2",
+		icon = "__base__/graphics/icons/copper-plate.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		energy_required = 1,
+		enabled = false,
+		ingredients = {
+			{type = "fluid", name ="pressurized-water-r1" , amount = 25},
+			{type = "fluid", name ="molten-copper-r1" , amount = 25}
+		},
+		results = {{type="item", name="copper-plate", amount=5}},
+		categories = {"red-casting-chamber"},
+		subgroup = "plates",
+		order = "c-a-e"
+	},
+	{-- Clean Steel v1
+		type = "recipe",
+		name = "clean-steel-r1-v1",
+		icon = "__RExtended__/graphics/icons/CR/clean-steel-r1.png",
+		icon_size = 32,
+		energy_required = 3,
+		enabled = false,
+		ingredients = {
+			{type="item", name="iron-ore", amount=4},
+			{type="item", name="coal", amount=1},
+		},
+		results = {{type="item", name="clean-steel-r1", amount=1}},
+		categories = {"red-furnace"},
+		subgroup = "plate-products",
+		order = "b-a-c"
+	},
+	{-- Clean Steel v2
+		type = "recipe",
+		name = "clean-steel-r1-v2",
+		icon = "__RExtended__/graphics/icons/CR/clean-steel-r1.png",
+		icon_size = 32,
+		energy_required = 3,
+		enabled = false,
+		ingredients = {
+			{type="item", name="clean-iron-r1", amount=4},
+			{type="item", name="clean-coal-r1", amount=1},
+		},
+		results = {{type="item", name="clean-steel-r1", amount=5}},
+		categories = {"red-furnace"},
+		subgroup = "plate-products",
+		order = "b-a-d"
+	},
+	{-- Steel Plate v1
+		type = "recipe",
+		name = "steel-plate-r1-v1",
+		icon = "__base__/graphics/icons/steel-plate.png",
+		icon_size = 64, icon_mipmaps = 4,
+		energy_required = 1,
+		enabled = false,
+		ingredients = {{type="item", name="clean-steel-r1", amount=1}},
+		results = {{type="item", name="steel-plate", amount=2}},
+		categories = {"red-furnace"},
+		subgroup = "plates",
+		order = "c-a-f"
+	},
+	{-- Steel Plate v2
+		type = "recipe",
+		name = "steel-plate-r1-v2",
+		icon = "__base__/graphics/icons/steel-plate.png",
+		icon_size = 64, icon_mipmaps = 4,
+		energy_required = 1,
+		enabled = false,
+		ingredients = {
+			{type = "fluid", name ="pressurized-water-r1" , amount = 30},
+			{type = "fluid", name ="molten-steel-r1" , amount = 30}
+		},
+		results = {{type="item", name="steel-plate", amount=5}},
+		categories = {"red-casting-chamber"},
+		subgroup = "plates",
+		order = "c-a-g"
+	},
+-- Items
+	{--Clean Iron R1
+		type = "item",
+		name = "clean-iron-r1",
+		icon = "__RExtended__/graphics/icons/CR/clean-iron-r1.png",
+		icon_size = 32,
+		subgroup = "plate-products",
+		order = "b-a-a",
+		stack_size = 100
+	},
+	{--Clean Copper R1
+		type = "item",
+		name = "clean-copper-r1",
+		icon = "__RExtended__/graphics/icons/CR/clean-copper-r1.png",
+		icon_size = 32,
+		subgroup = "plate-products",
+		order = "b-a-b",
+		stack_size = 100
+	},
+	{--Clean Coal R1
+		type = "item",
+		name = "clean-coal-r1",
+		icon = "__RExtended__/graphics/icons/CR/clean-coal-r1.png",
+		icon_size = 32,
+		fuel_categories = {"chemical"},
+		fuel_value = "36MJ",
+		subgroup = "chemical-products-r1",
+		order = "a-b-b",
+		stack_size = 200
+	},
+	{--Clean Steel R1
+		type = "item",
+		name = "clean-steel-r1",
+		icon = "__RExtended__/graphics/icons/CR/clean-steel-r1.png",
+		icon_size = 32,
+		subgroup = "plate-products",
+		order = "b-a-c",
+		stack_size = 100
+	},
+})
+
+
+
+data:extend({
+--RECIPE
+	{-- Coal (wood)
+		type = "recipe",
+		name = "coal-r1",
+		ingredients = {{type = "item", name = "wood", amount=4}},
+		enabled = false,
+		subgroup = "chemical-products-r1",
+		order = "a-b-a",
+		results = {{type="item", name="coal", amount=1}}
+	},
+	{-- Enriched Coal
+		type = "recipe",
+		name = "enriched-coal-r1",
+		categories = {"crafting-with-fluid", "red-enrichment-chamber"},
+		enabled = false,
+		energy_required = 1,
+		ingredients = {
+			{type = "fluid", name = "diesel-fuel", amount = 50},
+			{type = "item", name = "coal", amount = 2}
+		},
+		results = {{type="item", name="enriched-coal-r1", amount=1}},
 	},
 	{-- Cable R1
 		type = "recipe",
@@ -118,129 +288,6 @@ data:extend({
 		results = {{type="item", name="glue-r1", amount=50}},
 		categories = {"red-mixing"},
 		order = "a-a-b",
-	},
-	{-- Clean Steel v1
-		type = "recipe",
-		name = "clean-steel-r1-v1",
-		icon = "__RExtended__/graphics/icons/CR/clean-steel-r1.png",
-		icon_size = 32,
-		energy_required = 3,
-		enabled = false,
-		ingredients = {
-			{type="item", name="iron-ore", amount=4},
-			{type="item", name="coal", amount=1},
-		},
-		results = {{type="item", name="clean-steel-r1", amount=1}},
-		categories = {"red-furnace"},
-		subgroup = "plate-products",
-		order = "b-a-c",
-	},
-	{-- Clean Steel v2
-		type = "recipe",
-		name = "clean-steel-r1-v2",
-		icon = "__RExtended__/graphics/icons/CR/clean-steel-r1.png",
-		icon_size = 32,
-		energy_required = 3,
-		enabled = false,
-		ingredients = {
-			{type="item", name="clean-iron-r1", amount=4},
-			{type="item", name="clean-coal-r1", amount=1},
-		},
-		results = {{type="item", name="clean-steel-r1", amount=5}},
-		categories = {"red-furnace"},
-		subgroup = "plate-products",
-		order = "b-a-d",
-	},
-	{-- Iron Plate v1
-		type = "recipe",
-		name = "iron-plate-r1-v1",
-		icon = "__base__/graphics/icons/iron-plate.png",
-		icon_size = 64,
-		icon_mipmaps = 4,
-		energy_required = 2,
-		enabled = false,
-		ingredients = {{type="item", name="clean-iron-r1", amount=1}},
-		results = {{type="item", name="iron-plate", amount=3}},
-		categories = {"smelting"},
-		subgroup = "plates",
-		order = "c-a-a",
-	},
-	{-- Iron Plate v2
-		type = "recipe",
-		name = "iron-plate-r1-v2",
-		icon = "__base__/graphics/icons/iron-plate.png",
-		icon_size = 64,
-		icon_mipmaps = 4,
-		energy_required = 1,
-		enabled = false,
-		ingredients = {
-			{type = "fluid", name ="pressurized-water-r1", amount = 30},
-			{type = "fluid", name ="molten-iron-r1", amount = 30}
-		},
-		results = {{type="item", name="iron-plate", amount=5}},
-		categories = {"red-casting-chamber"},
-		subgroup = "plates",
-		order = "c-a-b",
-	},
-	{-- Copper Plate v1
-		type = "recipe",
-		name = "copper-plate-r1-v1",
-		icon = "__base__/graphics/icons/copper-plate.png",
-		icon_size = 64,
-		icon_mipmaps = 4,
-		energy_required = 2,
-		enabled = false,
-		ingredients = {{type="item", name="clean-copper-r1", amount=1}},
-		results = {{type="item", name="copper-plate", amount=3}},
-		categories = {"smelting"},
-		subgroup = "plates",
-		order = "c-a-d",
-	},
-	{--Copper Plate v2
-		type = "recipe",
-		name = "copper-plate-r1-v2",
-		icon = "__base__/graphics/icons/copper-plate.png",
-		icon_size = 64,
-		icon_mipmaps = 4,
-		energy_required = 1,
-		enabled = false,
-		ingredients = {
-			{type = "fluid", name ="pressurized-water-r1" , amount = 30},
-			{type = "fluid", name ="molten-copper-r1" , amount = 30}
-		},
-		results = {{type="item", name="copper-plate", amount=5}},
-		categories = {"red-casting-chamber"},
-		subgroup = "plates",
-		order = "c-a-e",
-	},
-	{-- Steel Plate v1
-		type = "recipe",
-		name = "steel-plate-r1-v1",
-		icon = "__base__/graphics/icons/steel-plate.png",
-		icon_size = 64, icon_mipmaps = 4,
-		energy_required = 1,
-		enabled = false,
-		ingredients = {{type="item", name="clean-steel-r1", amount=1}},
-		results = {{type="item", name="steel-plate", amount=2}},
-		categories = {"red-furnace"},
-		subgroup = "plates",
-		order = "c-a-f",
-	},
-	{-- Steel Plate v2
-		type = "recipe",
-		name = "steel-plate-r1-v2",
-		icon = "__base__/graphics/icons/steel-plate.png",
-		icon_size = 64, icon_mipmaps = 4,
-		energy_required = 1,
-		enabled = false,
-		ingredients = {
-			{type = "fluid", name ="pressurized-water-r1" , amount = 30},
-			{type = "fluid", name ="molten-steel-r1" , amount = 30}
-		},
-		results = {{type="item", name="steel-plate", amount=5}},
-		categories = {"red-casting-chamber"},
-		subgroup = "plates",
-		order = "c-a-g",
 	},
 	{-- Special Component
 		type = "recipe",
@@ -341,44 +388,6 @@ data:extend({
 		subgroup = "chemical-products-r1",
 		order = "a-b-c",
 		stack_size = 200
-	},
-	{--Clean Coal R1
-		type = "item",
-		name = "clean-coal-r1",
-		icon = "__RExtended__/graphics/icons/CR/clean-coal-r1.png",
-		icon_size = 32,
-		fuel_categories = {"chemical"},
-		fuel_value = "36MJ",
-		subgroup = "chemical-products-r1",
-		order = "a-b-b",
-		stack_size = 200
-	},
-	{--Clean Iron R1
-		type = "item",
-		name = "clean-iron-r1",
-		icon = "__RExtended__/graphics/icons/CR/clean-iron-r1.png",
-		icon_size = 32,
-		subgroup = "plate-products",
-		order = "b-a-a",
-		stack_size = 100,
-	},
-	{--Clean Copper R1
-		type = "item",
-		name = "clean-copper-r1",
-		icon = "__RExtended__/graphics/icons/CR/clean-copper-r1.png",
-		icon_size = 32,
-		subgroup = "plate-products",
-		order = "b-a-b",
-		stack_size = 100,
-	},
-	{--Clean Steel R1
-		type = "item",
-		name = "clean-steel-r1",
-		icon = "__RExtended__/graphics/icons/CR/clean-steel-r1.png",
-		icon_size = 32,
-		subgroup = "plate-products",
-		order = "b-a-c",
-		stack_size = 100,
 	},
 	{--Cable R1
 		type = "item",

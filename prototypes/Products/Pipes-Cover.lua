@@ -33,7 +33,7 @@ end
 function compressor_pipepictures()
 	return {
 		north = {
-			filename = "__RExtended__/graphics/entity/Machinery/Bulk/compressor-pipe-n.png",
+			filename = "__RExtended__/graphics/entity/Pipes/compressor-pipe-n.png",
 			priority = "extra-high",
 			width = 256,
 			height = 256,
@@ -41,7 +41,7 @@ function compressor_pipepictures()
 			scale = 0.5
 		},
 		south = {
-			filename = "__RExtended__/graphics/entity/Machinery/Bulk/compressor-pipe-s.png",
+			filename = "__RExtended__/graphics/entity/Pipes/compressor-pipe-s.png",
 			priority = "extra-high",
 			width = 256,
 			height = 256,
@@ -49,7 +49,7 @@ function compressor_pipepictures()
 			scale = 0.5
 		},
 		east = {
-			filename = "__RExtended__/graphics/entity/Machinery/Bulk/compressor-pipe-e.png",
+			filename = "__RExtended__/graphics/entity/Pipes/compressor-pipe-e.png",
 			priority = "extra-high",
 			width = 256,
 			height = 256,
@@ -57,7 +57,7 @@ function compressor_pipepictures()
 			scale = 0.5
 		},
 		west = {
-			filename = "__RExtended__/graphics/entity/Machinery/Bulk/compressor-pipe-w.png",
+			filename = "__RExtended__/graphics/entity/Pipes/compressor-pipe-w.png",
 			priority = "extra-high",
 			width = 256,
 			height = 256,
@@ -69,7 +69,7 @@ end
 function washerpipepictures()
 	return {
 		north = {
-			filename = "__RExtended__/graphics/entity/Machinery/Bulk/washer-pipe-n.png",
+			filename = "__RExtended__/graphics/entity/Pipes/washer-pipe-n.png",
 			priority = "extra-high",
 			width = 256,
 			height = 256,
@@ -77,7 +77,7 @@ function washerpipepictures()
 			scale = 0.5
 		},
 		east = {
-			filename = "__RExtended__/graphics/entity/Machinery/Bulk/washer-pipe-e.png",
+			filename = "__RExtended__/graphics/entity/Pipes/washer-pipe-e.png",
 			priority = "extra-high",
 			width = 256,
 			height = 256,
@@ -85,7 +85,7 @@ function washerpipepictures()
 			scale = 0.5
 		},
 		south = {
-			filename = "__RExtended__/graphics/entity/Machinery/Bulk/washer-pipe-s.png",
+			filename = "__RExtended__/graphics/entity/Pipes/washer-pipe-s.png",
 			priority = "extra-high",
 			width = 256,
 			height = 256,
@@ -93,7 +93,7 @@ function washerpipepictures()
 			scale = 0.5
 		},
 		west = {
-			filename = "__RExtended__/graphics/entity/Machinery/Bulk/washer-pipe-w.png",
+			filename = "__RExtended__/graphics/entity/Pipes/washer-pipe-w.png",
 			priority = "extra-high",
 			width = 256,
 			height = 256,
@@ -105,7 +105,7 @@ end
 function castpipepictures()
 	return {
 		north = {
-			filename = "__RExtended__/graphics/entity/Machinery/Bulk/cast-chamber-pipe-n.png",
+			filename = "__RExtended__/graphics/entity/Pipes/cast-chamber-pipe-n.png",
 			priority = "extra-high",
 			width = 256,
 			height = 256,
@@ -113,7 +113,7 @@ function castpipepictures()
 			scale = 0.5
 		},
 		east = {
-			filename = "__RExtended__/graphics/entity/Machinery/Bulk/cast-chamber-pipe-e.png",
+			filename = "__RExtended__/graphics/entity/Pipes/cast-chamber-pipe-e.png",
 			priority = "extra-high",
 			width = 256,
 			height = 256,
@@ -121,7 +121,7 @@ function castpipepictures()
 			scale = 0.5
 		},
 		south = {
-			filename = "__RExtended__/graphics/entity/Machinery/Bulk/cast-chamber-pipe-s.png",
+			filename = "__RExtended__/graphics/entity/Pipes/cast-chamber-pipe-s.png",
 			priority = "extra-high",
 			width = 256,
 			height = 256,
@@ -129,7 +129,7 @@ function castpipepictures()
 			scale = 0.5
 		},
 		west = {
-			filename = "__RExtended__/graphics/entity/Machinery/Bulk/cast-chamber-pipe-w.png",
+			filename = "__RExtended__/graphics/entity/Pipes/cast-chamber-pipe-w.png",
 			priority = "extra-high",
 			width = 256,
 			height = 256,
@@ -141,7 +141,7 @@ end
 function forgepipepictures()
 	return {
 		north = {
-			filename = "__RExtended__/graphics/entity/Machinery/Bulk/heat-forge-n.png",
+			filename = "__RExtended__/graphics/entity/Pipes/heat-forge-n.png",
 			priority = "extra-high",
 			width = 256,
 			height = 256,
@@ -149,7 +149,7 @@ function forgepipepictures()
 			scale = 0.5
 		},
 		south = {
-			filename = "__RExtended__/graphics/entity/Machinery/Bulk/heat-forge-s.png",
+			filename = "__RExtended__/graphics/entity/Pipes/heat-forge-s.png",
 			priority = "extra-high",
 			width = 256,
 			height = 256,
@@ -157,7 +157,7 @@ function forgepipepictures()
 			scale = 0.5
 		},
 		east = {
-			filename = "__RExtended__/graphics/entity/Machinery/Bulk/heat-forge-e.png",
+			filename = "__RExtended__/graphics/entity/Pipes/heat-forge-e.png",
 			priority = "extra-high",
 			width = 256,
 			height = 256,
@@ -165,7 +165,7 @@ function forgepipepictures()
 			scale = 0.5
 		},
 		west = {
-			filename = "__RExtended__/graphics/entity/Machinery/Bulk/heat-forge-w.png",
+			filename = "__RExtended__/graphics/entity/Pipes/heat-forge-w.png",
 			priority = "extra-high",
 			width = 256,
 			height = 256,
@@ -177,7 +177,7 @@ end
 function chemicalpipepictures()
 	return {
 		north = {
-			filename = "__RExtended__/graphics/entity/Machinery/Bulk/chemical-pipe-n.png",
+			filename = "__RExtended__/graphics/entity/Pipes/chemical-pipe-n.png",
 			priority = "extra-high",
 			width = 256,
 			height = 256,
@@ -185,7 +185,7 @@ function chemicalpipepictures()
 			scale = 0.5
 		},
 		east = {
-			filename = "__RExtended__/graphics/entity/Machinery/Bulk/chemical-pipe-e.png",
+			filename = "__RExtended__/graphics/entity/Pipes/chemical-pipe-e.png",
 			priority = "extra-high",
 			width = 256,
 			height = 256,
@@ -193,7 +193,7 @@ function chemicalpipepictures()
 			scale = 0.5
 		},
 		south = {
-			filename = "__RExtended__/graphics/entity/Machinery/Bulk/chemical-pipe-s.png",
+			filename = "__RExtended__/graphics/entity/Pipes/chemical-pipe-s.png",
 			priority = "extra-high",
 			width = 256,
 			height = 256,
@@ -201,7 +201,7 @@ function chemicalpipepictures()
 			scale = 0.5
 		},
 		west = {
-			filename = "__RExtended__/graphics/entity/Machinery/Bulk/chemical-pipe-w.png",
+			filename = "__RExtended__/graphics/entity/Pipes/chemical-pipe-w.png",
 			priority = "extra-high",
 			width = 256,
 			height = 256,

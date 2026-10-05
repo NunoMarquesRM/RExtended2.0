@@ -2,7 +2,7 @@ data:extend({
 	{--Group
 		type = "item-group",
 		name = "re-railworld",
-		order = "kca-d",
+		order = "kda-d",
 		inventory_order = "d-a-d",
 		icon = "__RExtended__/graphics/Tech/Categories/RailWorld.png",
 		icon_size = 128,
