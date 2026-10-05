@@ -13,7 +13,7 @@ data:extend({
 		results = {{type="fluid", name="pressurized-water-r1", amount=50}},
 		categories = {"red-compressing"},
 		subgroup = "fluid-products",
-		order = "z-a-b",
+		order = "z-a-b"
 	},
 	{-- Molten Iron
 		type = "recipe",
@@ -82,7 +82,7 @@ data:extend({
 		flow_color = { r=65, g=68, b=109 },
 		pressure_to_speed_ratio = 0.200,
 		flow_to_energy_ratio = 0.200,
-		subgroup = "fluid-products"
+		subgroup = "fluid-products",
 		order = "z-c-a"
 	},
 	{-- Molten Copper
@@ -112,7 +112,7 @@ data:extend({
 		flow_color = { r=65, g=13, b=10 },
 		pressure_to_speed_ratio = 0.200,
 		flow_to_energy_ratio = 0.200,
-		subgroup = "fluid-products"
+		subgroup = "fluid-products",
 		order = "z-c-c"
 	}
 })

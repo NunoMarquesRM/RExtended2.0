@@ -1,4 +1,4 @@
-# Basic Metallurgy
+# Metallurgy
 
 ```
 BASIC METALLURGY

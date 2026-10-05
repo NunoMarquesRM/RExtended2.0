@@ -223,7 +223,7 @@ data:extend({
 		energy_required = 1,
 		ingredients = {
 			{type = "fluid", name = "diesel-fuel", amount = 50},
-			{type = "item", name = "coal", amount = 2}
+			{type = "item", name = "clean-coal-r1", amount = 2}
 		},
 		results = {{type="item", name="enriched-coal-r1", amount=1}},
 	},
