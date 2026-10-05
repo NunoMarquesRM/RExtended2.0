@@ -1,3 +1,6 @@
+# Basic Metallurgy
+
+```
 BASIC METALLURGY
 │
 ├── ORE WASHING (Washer Chamber)
@@ -17,3 +20,19 @@ BASIC METALLURGY
     ├── Molten Iron
     ├── Molten Copper
     └── Molten Steel
+```
+
+## Recipes
+
+- IRON
+Clean Iron → 3 plates
+Clean Iron → 50 molten → 10 plates
+
+- COPPER
+Clean Copper → 3 plates
+Clean Copper → 50 molten → 10 plates
+
+- STEEL
+Clean Steel → 2 plates
+Clean Iron + Clean Coal → 5 Clean Steel
+Clean Steel → 50 molten → 4 plates

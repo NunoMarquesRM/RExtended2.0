@@ -167,7 +167,6 @@ A Factorio mod that extends the game with new machines and production chains, of
 
 - **Factorio 2.1**: Fully compatible with the latest version of Factorio.
 - **Compatible with most other mods**: Designed to work alongside other popular mods without conflicts.
-- **Check compatibility folder**: For specific information about compatibility with other mods, refer to the compatibility folder in the mod directory.
 
 # License
 

@@ -26,7 +26,7 @@ data:extend({
 		results = {{type="item", name="clean-copper-r1", amount=1}},
 		categories = {"red-washer-chamber"}
 	},
-	{--Clean Coal R1
+	{-- Clean Coal R1
 		type = "recipe",
 		name = "clean-coal-r1",
 		energy_required = 2,
@@ -153,10 +153,10 @@ data:extend({
 		energy_required = 1,
 		enabled = false,
 		ingredients = {
-			{type = "fluid", name ="pressurized-water-r1" , amount = 30},
-			{type = "fluid", name ="molten-steel-r1" , amount = 30}
+			{type = "fluid", name ="pressurized-water-r1" , amount = 25},
+			{type = "fluid", name ="molten-steel-r1" , amount = 25}
 		},
-		results = {{type="item", name="steel-plate", amount=5}},
+		results = {{type="item", name="steel-plate", amount=2}},
 		categories = {"red-casting-chamber"},
 		subgroup = "plates",
 		order = "c-a-g"
@@ -199,7 +199,7 @@ data:extend({
 		subgroup = "plate-products",
 		order = "b-a-c",
 		stack_size = 100
-	},
+	}
 })
 
 

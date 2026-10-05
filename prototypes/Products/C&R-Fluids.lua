@@ -114,8 +114,7 @@ data:extend({
 		flow_to_energy_ratio = 0.200,
 		subgroup = "fluid-products"
 		order = "z-c-c"
-	},
-
+	}
 })
 
 
