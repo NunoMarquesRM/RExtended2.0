@@ -9,7 +9,7 @@ data:extend({
 		icon_size = 32,
 		energy_required = 1,
 		enabled = false,
-		ingredients = {{type = "fluid", name="water" , amount = 100}},
+		ingredients = {{type = "fluid", name="water" , amount = 300}},
 		results = {{type="fluid", name="pressurized-water-r1", amount=50}},
 		categories = {"red-compressing"},
 		subgroup = "fluid-products",
