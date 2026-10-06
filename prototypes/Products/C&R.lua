@@ -82,7 +82,7 @@ data:extend({
 		results = {{type="item", name="copper-plate", amount=3}},
 		categories = {"smelting"},
 		subgroup = "plates",
-		order = "c-a-d"
+		order = "c-a-c"
 	},
 	{-- Copper Plate v2
 		type = "recipe",
@@ -99,7 +99,7 @@ data:extend({
 		results = {{type="item", name="copper-plate", amount=5}},
 		categories = {"red-casting-chamber"},
 		subgroup = "plates",
-		order = "c-a-e"
+		order = "c-a-d"
 	},
 	{-- Clean Steel v1
 		type = "recipe",
@@ -144,7 +144,7 @@ data:extend({
 		results = {{type="item", name="steel-plate", amount=2}},
 		categories = {"red-furnace"},
 		subgroup = "plates",
-		order = "c-a-f"
+		order = "c-a-e"
 	},
 	{-- Steel Plate v2
 		type = "recipe",
@@ -160,10 +160,10 @@ data:extend({
 		results = {{type="item", name="steel-plate", amount=2}},
 		categories = {"red-casting-chamber"},
 		subgroup = "plates",
-		order = "c-a-g"
+		order = "c-a-f"
 	},
 -- Items
-	{--Clean Iron R1
+	{-- Clean Iron R1
 		type = "item",
 		name = "clean-iron-r1",
 		icon = "__RExtended__/graphics/icons/CR/clean-iron-r1.png",
@@ -172,7 +172,7 @@ data:extend({
 		order = "b-a-a",
 		stack_size = 100
 	},
-	{--Clean Copper R1
+	{-- Clean Copper R1
 		type = "item",
 		name = "clean-copper-r1",
 		icon = "__RExtended__/graphics/icons/CR/clean-copper-r1.png",
@@ -181,7 +181,7 @@ data:extend({
 		order = "b-a-b",
 		stack_size = 100
 	},
-	{--Clean Coal R1
+	{-- Clean Coal R1
 		type = "item",
 		name = "clean-coal-r1",
 		icon = "__RExtended__/graphics/icons/CR/clean-coal-r1.png",
@@ -189,10 +189,10 @@ data:extend({
 		fuel_categories = {"chemical"},
 		fuel_value = "36MJ",
 		subgroup = "chemical-products-r1",
-		order = "a-b-b",
+		order = "a-a-b",
 		stack_size = 200
 	},
-	{--Clean Steel R1
+	{-- Clean Steel R1
 		type = "item",
 		name = "clean-steel-r1",
 		icon = "__RExtended__/graphics/icons/CR/clean-steel-r1.png",
@@ -217,7 +217,7 @@ data:extend({
 		},
 		results = {{type="item", name="glue-r1", amount=20}},
 		categories = {"red-mixing"},
-		order = "a-a-a"
+		order = "e-a"
 	},
 	{-- Recipe 2
 		type = "recipe",
@@ -230,7 +230,7 @@ data:extend({
 		},
 		results = {{type="item", name="glue-r1", amount = 40}},
 		categories = {"red-mixing"},
-		order = "a-a-b"
+		order = "e-b"
 	},
 	{-- Cable R1
 		type = "recipe",
@@ -250,7 +250,7 @@ data:extend({
 		name = "glue-r1",
 		icon = "__RExtended__/graphics/icons/CR/glue-r1.png",
 		icon_size = 32,
-		subgroup = "reinforced-products",
+		subgroup = "eletronic-products",
 		stack_size = 500
 	},
 	{-- Cable R1
@@ -258,8 +258,8 @@ data:extend({
 		name = "cable-r1",
 		icon = "__RExtended__/graphics/icons/CR/cable-r1.png",
 		icon_size = 32,
-		subgroup = "reinforced-products",
-		order = "i-c-a",
+		subgroup = "eletronic-products",
+		order = "e-c",
 		stack_size = 200
 	}
 })
@@ -339,7 +339,7 @@ data:extend({
 		icon = "__RExtended__/graphics/icons/CR/reinforced-component-r1.png",
 		icon_size = 32,
 		subgroup = "reinforced-products",
-		order = "i-b-a",
+		order = "d-a",
 		stack_size = 400
 	},
 	{-- Reinforced Iron Plate
@@ -348,7 +348,7 @@ data:extend({
 		icon = "__RExtended__/graphics/icons/CR/reinforced-iron-plate-r1.png",
 		icon_size = 32,
 		subgroup = "reinforced-products",
-		order = "i-b-b",
+		order = "d-b",
 		stack_size = 200
 	}, 
 	{-- Reinforced Copper Plate
@@ -357,7 +357,7 @@ data:extend({
 		icon = "__RExtended__/graphics/icons/CR/reinforced-copper-plate-r1.png",
 		icon_size = 32,
 		subgroup = "reinforced-products",
-		order = "i-b-c",
+		order = "d-c",
 		stack_size = 200
 	},
 	{-- Reinforced Coal Plate
@@ -366,7 +366,7 @@ data:extend({
 		icon = "__RExtended__/graphics/icons/CR/reinforced-coal-plate-r1.png",
 		icon_size = 32,
 		subgroup = "reinforced-products",
-		order = "i-b-d",
+		order = "d-d",
 		stack_size = 200
 	},
 	{-- Eletronic Component
@@ -374,8 +374,8 @@ data:extend({
 		name = "electric-component-r1",
 		icon = "__RExtended__/graphics/icons/CR/electric-component-r1.png",
 		icon_size = 32,
-		subgroup = "reinforced-products",
-		order = "i-c-b",
+		subgroup = "eletronic-products",
+		order = "e-d",
 		stack_size = 200
 	}
 })
@@ -423,7 +423,7 @@ data:extend({
 		icon = "__RExtended__/graphics/icons/CR/reinforced-gear-iron-r1.png",
 		icon_size = 32,
 		subgroup = "reinforced-products",
-		order = "i-b-e",
+		order = "d-a-e",
 		stack_size = 200,
 	},
 	{-- Reinforced Copper Gear
@@ -432,7 +432,7 @@ data:extend({
 		icon = "__RExtended__/graphics/icons/CR/reinforced-gear-copper-r1.png",
 		icon_size = 32,
 		subgroup = "reinforced-products",
-		order = "i-b-f",
+		order = "d-a-f",
 		stack_size = 200,
 	}
 })
@@ -457,7 +457,7 @@ data:extend({
 		ingredients = {{type = "item", name = "wood", amount=4}},
 		enabled = false,
 		subgroup = "chemical-products-r1",
-		order = "a-b-a",
+		order = "a-a-a",
 		results = {{type="item", name="coal", amount=1}}
 	},
 	{-- Plastic with Clean Coal
@@ -472,7 +472,7 @@ data:extend({
 		results = {{type="item", name="plastic-bar", amount=4}},
 		categories = {"chemistry"},
 		subgroup = "chemical-products-r1",
-		order = "a-c-a"
+		order = "a-a-d"
 	},
 	{-- Enriched Coal
 		type = "recipe",
@@ -495,7 +495,7 @@ data:extend({
 		fuel_categories = {"chemical"},
 		fuel_value = "144MJ",
 		subgroup = "chemical-products-r1",
-		order = "a-b-c",
+		order = "a-a-c",
 		stack_size = 200
 	}
 })
@@ -545,7 +545,7 @@ item_quartz.name = "blue-quartz-r1"
 item_quartz.icon = "__RExtended__/graphics/icons/CR/blue-quartz-r1.png"
 item_quartz.icon_size = 32
 item_quartz.subgroup = "solar-products"
-item_quartz.order = "j-a"
+item_quartz.order = "i-a-a"
 
 --Crystalline Silicon
 local item_silicon = table.deepcopy(data.raw.item['iron-plate'])
@@ -553,7 +553,7 @@ item_silicon.name = "crystalline-silicon-r1"
 item_silicon.icon = "__RExtended__/graphics/icons/CR/crystalline-silicon-r1.png"
 item_silicon.icon_size = 32
 item_silicon.subgroup = "solar-products"
-item_silicon.order = "j-b"
+item_silicon.order = "i-a-b"
 
 --Solar Cell
 local item_solarCell = table.deepcopy(data.raw.item['iron-stick'])
@@ -561,6 +561,6 @@ item_solarCell.name = "solar-cell"
 item_solarCell.icon = "__RExtended__/graphics/icons/CR/solar-cell-r1.png"
 item_solarCell.icon_size = 32
 item_solarCell.subgroup = "solar-products"
-item_solarCell.order = "j-c"
+item_solarCell.order = "i-a-c"
 
 data:extend({item_quartz, item_silicon, item_solarCell})

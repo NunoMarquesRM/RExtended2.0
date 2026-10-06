@@ -1,25 +1,25 @@
 data:extend({
-    {--Warehouse R1
-        type = "technology",
-        name = "warehouse-tech",
-        icon = "__RExtended__/graphics/Tech/Tree/Storage/warehouse-tech.png",
-        icon_size = 128,
-        effects = {{
-            type = "unlock-recipe",
-            recipe = "warehouse-r1",
-        }},
-        prerequisites = {"steel-processing"},
-        unit = {
-            count = 750,
-            ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack",   1},
-                {"chemical-science-pack",   1}
-            },
-            time = 20
-        },
-        order = "c-e-a"
-    }
+	{--Warehouse R1
+		type = "technology",
+		name = "warehouse-tech",
+		icon = "__RExtended__/graphics/Tech/Tree/Storage/warehouse-tech.png",
+		icon_size = 128,
+		effects = {{
+			type = "unlock-recipe",
+			recipe = "warehouse-r1",
+		}},
+		prerequisites = {"steel-processing"},
+		unit = {
+			count = 750,
+			ingredients = {
+				{"automation-science-pack", 1},
+				{"logistic-science-pack",   1},
+				{"chemical-science-pack",   1}
+			},
+			time = 20
+		},
+		order = "c-e-a"
+	}
 })
 
 -- Big Storage Tank R1 - 100K
@@ -37,7 +37,7 @@ sto_tank_tech_r1.unit = {
 	ingredients = {
 		{"automation-science-pack", 1},
 		{"logistic-science-pack",   1},
-        {"chemical-science-pack",   1}
+		{"chemical-science-pack",   1}
 	},
 	time = 30
 }
@@ -298,26 +298,6 @@ data:extend({
 	},
 	order = "a-f-c"
 },
-{--Water--
-	type = "technology",
-	name = "water-r1",
-	icon = "__RExtended__/graphics/Tech/Tree/C&R/water-r1.png",
-	icon_size = 128,
-	effects = {{
-		type = "unlock-recipe",
-		recipe = "water-r1"
-	}},
-	prerequisites = {"landfill"},
-	unit = {
-		count = 50,
-		ingredients = {
-			{"automation-science-pack", 1},
-			{"logistic-science-pack", 1},
-		},
-		time = 25
-	},
-	order = "c-m-a"
-},
 {--Enriched Coal--
 	type = "technology",
 	name = "diesel-energy-r1",
@@ -372,11 +352,11 @@ data:extend({
 	order = "a-f-d"
 },
 {--Water Condenser--
-    type = "technology",
-    name = "water-product-r1",
-    icon_size = 128,
-    icon = "__RExtended__/graphics/Tech/Tree/Machinery/r-04.png",
-    effects ={
+	type = "technology",
+	name = "water-product-r1",
+	icon_size = 128,
+	icon = "__RExtended__/graphics/Tech/Tree/Machinery/r-04.png",
+	effects ={
 		{
 			type = "unlock-recipe",
 			recipe = "water-condenser-electric-r1"
@@ -384,31 +364,22 @@ data:extend({
 		{
 			type = "unlock-recipe",
 			recipe = "water-r1"
-		},
-		--{
-		--	type = "unlock-recipe",
-		--	recipe = "incinerator-r1"
-		--},
-		--{
-		--	type = "unlock-recipe",
-		--	recipe = "incinerator-liquid-r1"
-		--}
-    },
-	--prerequisites = {"machinery-r1"},
-	prerequisites = {"automation-2"},
-    unit = {
+		}
+	},
+	prerequisites = {"machinery-r1"},
+	unit = {
 		count = 150,
 		ingredients = {{"automation-science-pack", 1}},
 		time = 25
-    },
-    order = "a-d-d"
+	},
+	order = "a-d-d"
 },
 {--Initial Products--
-    type = "technology",
-    name = "initial-products-r1",
-    icon_size = 128,
-    icon = "__RExtended__/graphics/Tech/Tree/C&R/r-1.png",
-    effects ={
+	type = "technology",
+	name = "initial-products-r1",
+	icon_size = 128,
+	icon = "__RExtended__/graphics/Tech/Tree/C&R/r-1.png",
+	effects ={
 		{
 			type = "unlock-recipe",
 			recipe = "reinforced-component-r1"
@@ -425,20 +396,20 @@ data:extend({
 			type = "unlock-recipe",
 			recipe = "reinforced-gear-copper-r1"
 		}
-    },
-    unit = {
+	},
+	unit = {
 		count = 50,
 		ingredients = {{"automation-science-pack", 1}},
 		time = 25
-    },
-    order = "a-a-a"
+	},
+	order = "a-a-a"
 },
 {--Mixer Products--
-    type = "technology",
-    name = "mixer-products-r1",
-    icon_size = 128,
-    icon = "__RExtended__/graphics/Tech/Tree/C&R/r-2.png",
-    effects ={
+	type = "technology",
+	name = "mixer-products-r1",
+	icon_size = 128,
+	icon = "__RExtended__/graphics/Tech/Tree/C&R/r-2.png",
+	effects ={
 		{
 			type = "unlock-recipe",
 			recipe = "mixer-r1"
@@ -455,21 +426,21 @@ data:extend({
 			type = "unlock-recipe",
 			recipe = "reinforced-copper-plate-r1"
 		}
-    },
+	},
 	prerequisites = {"initial-products-r1"},
-    unit = {
+	unit = {
 		count = 50,
 		ingredients = {{"automation-science-pack", 1}},
 		time = 25
-    },
-    order = "a-b-a"
+	},
+	order = "a-b-a"
 },
 {--Advanced Products--
-    type = "technology",
-    name = "adv-products-r1",
-    icon_size = 128,
-    icon = "__RExtended__/graphics/Tech/Tree/C&R/r-3.png",
-    effects ={
+	type = "technology",
+	name = "adv-products-r1",
+	icon_size = 128,
+	icon = "__RExtended__/graphics/Tech/Tree/C&R/r-3.png",
+	effects ={
 		{
 			type = "unlock-recipe",
 			recipe = "electric-component-r1"
@@ -478,21 +449,21 @@ data:extend({
 			type = "unlock-recipe",
 			recipe = "cable-r1"
 		}
-    },
+	},
 	prerequisites = {"mixer-products-r1"},
-    unit = {
+	unit = {
 		count = 70,
 		ingredients = {{"automation-science-pack", 1}},
 		time = 25
-    },
-    order = "a-c-a"
+	},
+	order = "a-c-a"
 },
 {--Clean Products--
-    type = "technology",
-    name = "clean-products-r1",
-    icon_size = 128,
-    icon = "__RExtended__/graphics/Tech/Tree/Machinery/r-01.png",
-    effects ={
+	type = "technology",
+	name = "clean-products-r1",
+	icon_size = 128,
+	icon = "__RExtended__/graphics/Tech/Tree/Machinery/r-01.png",
+	effects ={
 		{
 			type = "unlock-recipe",
 			recipe = "compressor-r1"
@@ -521,24 +492,24 @@ data:extend({
 			type = "unlock-recipe",
 			recipe = "copper-plate-r1-v1"
 		}
-    },
+	},
 	prerequisites = {"automation-2","adv-products-r1"},
-    unit = {
+	unit = {
 		count = 150,
 		ingredients = {
 			{"automation-science-pack", 1},
 			{"logistic-science-pack", 1}
 		},
 		time = 25
-    },
-    order = "a-c-d"
+	},
+	order = "a-c-d"
 },
 {--Advanced Formation Furnace--
-    type = "technology",
-    name = "adv-formation-furnace-r1",
-    icon_size = 128,
-    icon = "__RExtended__/graphics/Tech/Tree/Machinery/r-06.png",
-    effects ={
+	type = "technology",
+	name = "adv-formation-furnace-r1",
+	icon_size = 128,
+	icon = "__RExtended__/graphics/Tech/Tree/Machinery/r-06.png",
+	effects ={
 		{
 			type = "unlock-recipe",
 			recipe = "formation-furnace-electric-r1"
@@ -547,9 +518,9 @@ data:extend({
 			type = "unlock-recipe",
 			recipe = "clean-steel-r1-v2"
 		}
-    },
+	},
 	prerequisites = {"electric-furnace-r1","refined-coal-r1"},
-    unit = {
+	unit = {
 		count = 200,
 		ingredients = {
 			{"automation-science-pack", 1},
@@ -557,15 +528,15 @@ data:extend({
 			{"chemical-science-pack", 1}
 		},
 		time = 25
-    },
-    order = "a-f-e"
+	},
+	order = "a-f-e"
 },
 {--Advanced Ore Processing R1--
-    type = "technology",
-    name = "adv-ore-processing-r1",
-    icon_size = 128,
-    icon = "__RExtended__/graphics/Tech/Tree/Machinery/r-05.png",
-    effects ={
+	type = "technology",
+	name = "adv-ore-processing-r1",
+	icon_size = 128,
+	icon = "__RExtended__/graphics/Tech/Tree/Machinery/r-05.png",
+	effects ={
 		{
 			type = "unlock-recipe",
 			recipe = "heat-forge-chamber-r1"
@@ -598,9 +569,9 @@ data:extend({
 			type = "unlock-recipe",
 			recipe = "steel-plate-r1-v2"
 		},
-    },
+	},
 	prerequisites = {"clean-products-r1"},
-    unit = {
+	unit = {
 		count = 400,
 		ingredients = {
 			{"automation-science-pack", 1},
@@ -608,22 +579,22 @@ data:extend({
 			{"chemical-science-pack", 1}
 		},
 		time = 25
-    },
-    order = "a-c-e"
+	},
+	order = "a-c-e"
 },
 {--Advanced Chemical Machine R1--
-    type = "technology",
-    name = "adv-chemical-machine-r1",
-    icon_size = 128,
-    icon = "__RExtended__/graphics/Tech/Tree/Machinery/r-07.png",
-    effects ={
+	type = "technology",
+	name = "adv-chemical-machine-r1",
+	icon_size = 128,
+	icon = "__RExtended__/graphics/Tech/Tree/Machinery/r-07.png",
+	effects ={
 		{
 			type = "unlock-recipe",
 			recipe = "chemical-machine-r1"
 		}
-    },
+	},
 	prerequisites = {"chemical-science-pack"},
-    unit = {
+	unit = {
 		count = 300,
 		ingredients = {
 			{"automation-science-pack", 1},
@@ -631,15 +602,15 @@ data:extend({
 			{"chemical-science-pack", 1}
 		},
 		time = 25
-    },
-    order = "a-f-e"
+	},
+	order = "a-f-e"
 },
 {--Refinery R1--
-    type = "technology",
-    name = "refinery-machine-r1",
-    icon_size = 128,
-    icon = "__RExtended__/graphics/Tech/Tree/Machinery/r-03.png",
-    effects = {
+	type = "technology",
+	name = "refinery-machine-r1",
+	icon_size = 128,
+	icon = "__RExtended__/graphics/Tech/Tree/Machinery/r-03.png",
+	effects = {
 		{
 			type = "unlock-recipe",
 			recipe = "refinery-r1"
@@ -652,9 +623,9 @@ data:extend({
 			type = "unlock-recipe",
 			recipe = "oil-basic-light-r1"
 		}
-    },
+	},
 	prerequisites = {"lubricant"},
-    unit = {
+	unit = {
 		count = 400,
 		ingredients = {
 			{"automation-science-pack", 1},
@@ -662,15 +633,15 @@ data:extend({
 			{"chemical-science-pack", 1}
 		},
 		time = 25
-    },
-    order = "b-b-a"
+	},
+	order = "b-b-a"
 },
 {--Oil Advanced Processing--
-    type = "technology",
-    name = "oil-advanced-processing-r1",
-    icon_size = 128,
-    icon = "__RExtended__/graphics/Tech/Tree/C&R/r-031.png",
-    effects = {
+	type = "technology",
+	name = "oil-advanced-processing-r1",
+	icon_size = 128,
+	icon = "__RExtended__/graphics/Tech/Tree/C&R/r-031.png",
+	effects = {
 		{
 			type = "unlock-recipe",
 			recipe = "oil-advanced-heavy-r1"
@@ -683,9 +654,9 @@ data:extend({
 			type = "unlock-recipe",
 			recipe = "oil-advanced-petroleum-r1"
 		}
-    },
+	},
 	prerequisites = {"refinery-machine-r1"},
-    unit = {
+	unit = {
 		count = 500,
 		ingredients = {
 			{"automation-science-pack", 1},
@@ -693,15 +664,15 @@ data:extend({
 			{"chemical-science-pack", 1}
 		},
 		time = 25
-    },
-    order = "b-b-b"
+	},
+	order = "b-b-b"
 },
 {--Oil Special Processing--
-    type = "technology",
-    name = "oil-special-processing-r1",
-    icon_size = 128,
-    icon = "__RExtended__/graphics/Tech/Tree/C&R/r-032.png",
-    effects = {
+	type = "technology",
+	name = "oil-special-processing-r1",
+	icon_size = 128,
+	icon = "__RExtended__/graphics/Tech/Tree/C&R/r-032.png",
+	effects = {
 		{
 			type = "unlock-recipe",
 			recipe = "oil-special-heavy-r1"
@@ -718,9 +689,9 @@ data:extend({
 			type = "unlock-recipe",
 			recipe = "oil-special-process-r1"
 		}
-    },
+	},
 	prerequisites = {"oil-advanced-processing-r1"},
-    unit = {
+	unit = {
 		count = 700,
 		ingredients = {
 			{"automation-science-pack", 1},
@@ -728,8 +699,8 @@ data:extend({
 			{"chemical-science-pack", 1}
 		},
 		time = 25
-    },
-    order = "b-b-c"
+	},
+	order = "b-b-c"
 },
 {--Advanced Products (Lithium)--
 type = "technology",

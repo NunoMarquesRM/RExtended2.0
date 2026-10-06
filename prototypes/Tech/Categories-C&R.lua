@@ -29,37 +29,25 @@ data:extend({
 		type = "item-subgroup",
 		name = "reinforced-products",
 		group = "CandR",
-		order = "i",
+		order = "d",
+	},
+	{--Eletronic Products
+		type = "item-subgroup",
+		name = "eletronic-products",
+		group = "CandR",
+		order = "e",
 	},
 	{--Solar Panels Products
 		type = "item-subgroup",
 		name = "solar-products",
 		group = "CandR",
-		order = "j",
+		order = "i",
 	},
 	{--Accumulators Products
 		type = "item-subgroup",
 		name = "accumulators-products",
 		group = "CandR",
 		order = "k",
-	},
-	{--Wood Products
-		type = "item-subgroup",
-		name = "bio-red-products",
-		group = "CandR",
-		order = "m",
-	},
-	{--Coal Products
-		type = "item-subgroup",
-		name = "bio-red-products-r1",
-		group = "CandR",
-		order = "n",
-	},
-	{--Science Packs
-		type = "item-subgroup",
-		name = "red-science-packs",
-		group = "CandR",
-		order = "t",
 	},
 	{--Initial Robot
 		type = "item-subgroup",
@@ -78,11 +66,5 @@ data:extend({
 		name = "fluid-products",
 		group = "CandR",
 		order = "z",
-	},
-	--[[{--
-		type = "item-subgroup",
-		name = "",
-		group = "CandR",
-		order = "",
-	},]]
+	}
 })

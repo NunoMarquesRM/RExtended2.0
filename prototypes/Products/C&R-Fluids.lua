@@ -117,6 +117,23 @@ data:extend({
 	}
 })
 
+-- Water
+data:extend({
+	{-- Water for the Water Condenser
+		type = "recipe",
+		name = "water-r1",
+		energy_required = 1,
+		enabled = false,
+		ingredients = {},
+		results = {{type="fluid", name="water", amount=600}},
+		categories = {"red-water-condenser"},
+		icon = "__RExtended__/graphics/icons/CR/water-r1.png",
+		icon_size = 32,
+		subgroup = "fluid-products",
+		order = "z-a-a"
+	}
+})
+
 -- Oil
 data:extend({
 -- Recipes
@@ -154,30 +171,6 @@ data:extend({
 
 data:extend({
 --RECIPE
-	{-- Water
-		type = "recipe",
-		name = "water-r1",
-		energy_required = 1,
-		enabled = false,
-		categories = {"crafting-with-fluid"},
-		ingredients = {
-			{type="fluid", name="water", amount=200}
-		},
-		results = {{type="item", name="water-r1", amount=1}},
-	},
-	{-- Water for the Water Condenser
-		type = "recipe",
-		name = "water-r1",
-		energy_required = 1,
-		enabled = false,
-		ingredients = {},
-		results = {{type="fluid", name="water", amount=600}},
-		categories = {"red-water-condenser"},
-		icon = "__RExtended__/graphics/icons/CR/water-r1.png",
-		icon_size = 32,
-		subgroup = "fluid-products",
-		order = "z-a-a",
-	},
 	{-- Molten Coal
 		type = "recipe",
 		name = "molten-coal-r1",
@@ -367,21 +360,6 @@ data:extend({
 		results = {{type = "fluid", name = "lithium-r1", amount = 50, temperature = 300}}
 	},
 --ITEM & Fluid
-	{--Water-
-		type = "item",
-		name = "water-r1",
-		tooltip = "wftt",
-		icon = "__RExtended__/graphics/Tech/Tree/C&R/water-r1.png",
-		icon_size = 128,
-		subgroup = "fluid-products",
-		order = "z-a-b",
-		stack_size = 200,
-		place_as_tile = {
-			result = "water",
-			condition_size = 1,
-			condition = { layers={water_tile=true} }
-		}
-	},
 	{--Molten Coal-
 		type = "fluid", 
 		name = "molten-coal-r1", 
