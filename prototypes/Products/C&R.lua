@@ -202,7 +202,161 @@ data:extend({
 	}
 })
 
+-- Glue
+data:extend({
+-- Recipe
+	{-- Recipe 1
+		type = "recipe",
+		name = "glue-r1-v1",
+		energy_required = 2,
+		enabled = false,
+		ingredients = {
+			{type="item", name="coal", amount=3},
+			{type="fluid", name ="water" , amount = 50}
+		},
+		results = {{type="item", name="glue-r1", amount=20}},
+		categories = {"red-mixing"},
+		order = "a-a-a"
+	},
+	{-- Recipe 2
+		type = "recipe",
+		name = "glue-r1-v2",
+		energy_required = 2,
+		enabled = false,
+		ingredients = {
+			{type="item", name="clean-coal-r1", amount=2},
+			{type="fluid", name = "water" , amount = 50}
+		},
+		results = {{type="item", name="glue-r1", amount = 40}},
+		categories = {"red-mixing"},
+		order = "a-a-b"
+	},
+-- Item
+	{
+		type = "item",
+		name = "glue-r1",
+		icon = "__RExtended__/graphics/icons/CR/glue-r1.png",
+		icon_size = 32,
+		subgroup = "reinforced-products",
+		stack_size = 500
+	}
+})
 
+-- Chain Reinforced Materials -> Eletronic Component
+data:extend({
+-- Recipe
+	{-- Special Component
+		type = "recipe",
+		name = "reinforced-component-r1",
+		energy_required = 0.5,
+		enabled = false,
+		ingredients = {
+			{type="item", name="iron-plate", amount=1},
+			{type="item", name="copper-plate", amount=1},
+		},
+		results = {{type="item", name="reinforced-component-r1", amount=4}},
+		categories = {"crafting"}
+	},
+	{-- Reinforced Iron Plate
+		type = "recipe",
+		name = "reinforced-iron-plate-r1",
+		energy_required = 0.5,
+		enabled = false,
+		ingredients = {
+			{type="item", name="iron-plate", amount=1},
+			{type="item", name="glue-r1", amount=2},
+			{type="item", name="reinforced-component-r1", amount=2}
+		},
+		results = {{type="item", name="reinforced-iron-plate-r1",amount=1}},
+		categories = {"crafting"}
+	},
+	{-- Reinforced Copper Plate
+		type = "recipe",
+		name = "reinforced-copper-plate-r1",
+		energy_required = 0.5,
+		enabled = false,
+		ingredients = {
+			{type="item", name="copper-plate", amount=1},
+			{type="item", name="glue-r1", amount=2},
+			{type="item", name="reinforced-component-r1", amount=2}
+		},
+		results = {{type="item", name="reinforced-copper-plate-r1",amount=1}},
+		categories = {"crafting"}
+	},
+	{-- Reinforced Coal Plate
+		type = "recipe",
+		name = "reinforced-coal-plate-r1",
+		energy_required = 0.5,
+		enabled = false,
+		ingredients = {
+			{type="item", name="coal", amount=2},
+			{type="item", name="iron-plate", amount=1},
+			{type="item", name="reinforced-component-r1", amount=2}
+		},
+		results = {{type="item", name="reinforced-coal-plate-r1", amount=1}},
+		categories = {"crafting"}
+	},
+	{-- Eletronic Component
+		type = "recipe",
+		name = "electric-component-r1",
+		energy_required = 2,
+		enabled = false,
+		ingredients = {
+			{type="item", name="reinforced-iron-plate-r1", amount=2},
+			{type="item", name="reinforced-copper-plate-r1", amount=2},
+			{type="item", name="reinforced-coal-plate-r1", amount=2},
+			{type="item", name="cable-r1", amount=6}
+		},
+		results = {{type="item", name="electric-component-r1", amount=1}},
+		categories = {"crafting"}
+	},
+-- Item
+	{-- Special Component
+		type = "item",
+		name = "reinforced-component-r1",
+		icon = "__RExtended__/graphics/icons/CR/reinforced-component-r1.png",
+		icon_size = 32,
+		subgroup = "reinforced-products",
+		order = "i-b-a",
+		stack_size = 400
+	},
+	{-- Reinforced Iron Plate
+		type = "item",
+		name = "reinforced-iron-plate-r1",
+		icon = "__RExtended__/graphics/icons/CR/reinforced-iron-plate-r1.png",
+		icon_size = 32,
+		subgroup = "reinforced-products",
+		order = "i-b-b",
+		stack_size = 200
+	}, 
+	{-- Reinforced Copper Plate
+		type = "item",
+		name = "reinforced-copper-plate-r1",
+		icon = "__RExtended__/graphics/icons/CR/reinforced-copper-plate-r1.png",
+		icon_size = 32,
+		subgroup = "reinforced-products",
+		order = "i-b-c",
+		stack_size = 200
+	},
+	{-- Reinforced Coal Plate
+		type = "item",
+		name = "reinforced-coal-plate-r1",
+		icon = "__RExtended__/graphics/icons/CR/reinforced-coal-plate-r1.png",
+		icon_size = 32,
+		subgroup = "reinforced-products",
+		order = "i-b-d",
+		stack_size = 200
+	},
+	{-- Eletronic Component
+		type = "item",
+		name = "electric-component-r1",
+		icon = "__RExtended__/graphics/icons/CR/electric-component-r1.png",
+		icon_size = 32,
+		subgroup = "reinforced-products",
+		order = "i-c-b",
+		stack_size = 200
+	}
+})
 
 data:extend({
 --RECIPE
@@ -261,97 +415,6 @@ data:extend({
 			{type="item", name="copper-gear-wheel-r1", amount=2}
 		},
 		results = {{type="item", name="reinforced-gear-copper-r1", amount=1}},
-		categories = {"crafting"}
-	},
-	{-- Glue (Recipe 1)
-		type = "recipe",
-		name = "glue-r1-v1",
-		energy_required = 2,
-		enabled = false,
-		ingredients = {
-			{type="item", name="coal", amount=3},
-			{type="fluid", name ="water" , amount = 50}
-		},
-		results = {{type="item", name="glue-r1", amount=20}},
-		categories = {"red-mixing"},
-		order = "a-a-a",
-	},
-	{-- Glue (Recipe 2)
-		type = "recipe",
-		name = "glue-r1-v2",
-		energy_required = 2,
-		enabled = false,
-		ingredients = {
-			{type="item", name="clean-coal-r1", amount=2},
-			{type="fluid", name ="water" , amount = 50}
-		},
-		results = {{type="item", name="glue-r1", amount=50}},
-		categories = {"red-mixing"},
-		order = "a-a-b",
-	},
-	{-- Special Component
-		type = "recipe",
-		name = "reinforced-component-r1",
-		energy_required = 0.5,
-		enabled = false,
-		ingredients = {
-			{type="item", name="iron-plate", amount=1},
-			{type="item", name="copper-plate", amount=1},
-		},
-		results = {{type="item", name="reinforced-component-r1", amount=10}},
-		categories = {"crafting"}
-	},
-	{-- Reinforced Iron Plate
-		type = "recipe",
-		name = "reinforced-iron-plate-r1",
-		energy_required = 0.5,
-		enabled = false,
-		ingredients = {
-			{type="item", name="iron-plate", amount=1},
-			{type="item", name="glue-r1", amount=2},
-			{type="item", name="reinforced-component-r1", amount=2}
-		},
-		results = {{type="item", name="reinforced-iron-plate-r1",amount=1}},
-		categories = {"crafting"}
-	},
-	{-- Reinforced Copper Plate
-		type = "recipe",
-		name = "reinforced-copper-plate-r1",
-		energy_required = 0.5,
-		enabled = false,
-		ingredients = {
-			{type="item", name="copper-plate", amount=1},
-			{type="item", name="glue-r1", amount=2},
-			{type="item", name="reinforced-component-r1", amount=2}
-		},
-		results = {{type="item", name="reinforced-copper-plate-r1",amount=1}},
-		categories = {"crafting"}
-	},
-	{-- Reinforced Coal Plate
-		type = "recipe",
-		name = "reinforced-coal-plate-r1",
-		energy_required = 0.5,
-		enabled = false,
-		ingredients = {
-			{type="item", name="coal", amount=2},
-			{type="item", name="iron-plate", amount=1},
-			{type="item", name="reinforced-component-r1", amount=2}
-		},
-		results = {{type="item", name="reinforced-coal-plate-r1", amount=1}},
-		categories = {"crafting"}
-	},
-	{-- Eletronic Component
-		type = "recipe",
-		name = "electric-component-r1",
-		energy_required = 2,
-		enabled = false,
-		ingredients = {
-			{type="item", name="reinforced-iron-plate-r1", amount=2},
-			{type="item", name="reinforced-copper-plate-r1", amount=2},
-			{type="item", name="reinforced-coal-plate-r1", amount=2},
-			{type="item", name="cable-r1", amount=6}
-		},
-		results = {{type="item", name="electric-component-r1", amount=1}},
 		categories = {"crafting"}
 	},
 	{-- Plastic with Clean Coal
@@ -414,59 +477,6 @@ data:extend({
 		icon_size = 32,
 		subgroup = "reinforced-products",
 		order = "i-b-f",
-		stack_size = 200,
-	},
-	{--Glue
-		type = "item",
-		name = "glue-r1",
-		icon = "__RExtended__/graphics/icons/CR/glue-r1.png",
-		icon_size = 32,
-		subgroup = "reinforced-products",
-		stack_size = 500,
-	},
-	{--Special Component
-		type = "item",
-		name = "reinforced-component-r1",
-		icon = "__RExtended__/graphics/icons/CR/reinforced-component-r1.png",
-		icon_size = 32,
-		subgroup = "reinforced-products",
-		order = "i-b-a",
-		stack_size = 400,
-	},
-	{--Reinforced Iron Plate
-		type = "item",
-		name = "reinforced-iron-plate-r1",
-		icon = "__RExtended__/graphics/icons/CR/reinforced-iron-plate-r1.png",
-		icon_size = 32,
-		subgroup = "reinforced-products",
-		order = "i-b-b",
-		stack_size = 200,
-	}, 
-	{--Reinforced Copper Plate
-		type = "item",
-		name = "reinforced-copper-plate-r1",
-		icon = "__RExtended__/graphics/icons/CR/reinforced-copper-plate-r1.png",
-		icon_size = 32,
-		subgroup = "reinforced-products",
-		order = "i-b-c",
-		stack_size = 200,
-	},
-	{--Reinforced Coal Plate
-		type = "item",
-		name = "reinforced-coal-plate-r1",
-		icon = "__RExtended__/graphics/icons/CR/reinforced-coal-plate-r1.png",
-		icon_size = 32,
-		subgroup = "reinforced-products",
-		order = "i-b-d",
-		stack_size = 200,
-	},
-	{--Eletronic Component
-		type = "item",
-		name = "electric-component-r1",
-		icon = "__RExtended__/graphics/icons/CR/electric-component-r1.png",
-		icon_size = 32,
-		subgroup = "reinforced-products",
-		order = "i-c-b",
 		stack_size = 200,
 	}
 })
