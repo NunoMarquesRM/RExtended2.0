@@ -117,6 +117,40 @@ data:extend({
 	}
 })
 
+-- Oil
+data:extend({
+-- Recipes
+	{-- Diesel Fuel
+		type = "recipe",
+		name = "diesel-fuel",
+		categories = {"chemistry"},
+		enabled = false,
+		energy_required = 5,
+		ingredients = {
+			{type = "fluid", name = "petroleum-gas", amount = 20},
+			{type = "fluid", name = "light-oil", amount = 20}
+		},
+		results = {{type = "fluid", name = "diesel-fuel", amount = 30, temperature = 300}}
+	},
+-- Items
+	{-- Diesel Fuel
+		type = "fluid",
+		name = "diesel-fuel",
+		icon = "__RExtended__/graphics/icons/CR/diesel-fuel.png",
+		icon_size = 32,
+		default_temperature = 300,
+		max_temperature = 300,
+		heat_capacity = "0.2kJ",
+		fuel_category = "fluid",
+		fuel_value = "2MJ",
+		base_color = {r = 0.8, g = 0.7, b = 0},
+		flow_color = {r = 0.5, g = 0.4, b = 0},
+		pressure_to_speed_ratio = 0.4,
+		flow_to_energy_ratio = 0.59,
+		subgroup = "fluid-products",
+		order = "z-b-a"
+	},
+})
 
 data:extend({
 --RECIPE
@@ -131,20 +165,6 @@ data:extend({
 		},
 		results = {{type="item", name="water-r1", amount=1}},
 	},
-{--Diesel Fuel
-	type = "recipe",
-	name = "diesel-fuel",
-	categories = {"chemistry"},
-	enabled = false,
-	energy_required = 5,
-	ingredients = {
-		{type = "fluid", name = "petroleum-gas", amount = 20},
-		{type = "fluid", name = "light-oil", amount = 20}
-	},
-	results = {
-		{type = "fluid", name = "diesel-fuel", amount = 30, temperature = 300}
-	}
-},
 	{-- Water for the Water Condenser
 		type = "recipe",
 		name = "water-r1",
@@ -361,23 +381,6 @@ data:extend({
 			condition_size = 1,
 			condition = { layers={water_tile=true} }
 		}
-	},
-	{--Diesel Fuel-
-		type = "fluid",
-		name = "diesel-fuel",
-		icon = "__RExtended__/graphics/icons/CR/diesel-fuel.png",
-		icon_size = 32,
-		default_temperature = 300,
-		max_temperature = 300,
-		heat_capacity = "0.2kJ",
-		fuel_category = "fluid",
-		fuel_value = "2MJ",
-		base_color = {r = 0.8, g = 0.7, b = 0},
-		flow_color = {r = 0.5, g = 0.4, b = 0},
-		pressure_to_speed_ratio = 0.4,
-		flow_to_energy_ratio = 0.59,
-		subgroup = "fluid-products",
-		order = "z-b-a",
 	},
 	{--Molten Coal-
 		type = "fluid", 
