@@ -7,33 +7,23 @@ battery_r1_item.order = "k-a-d"
 
 local battery_r1_recipe = table.deepcopy(data.raw.recipe['battery'])
 battery_r1_recipe.name = "battery-r1"
-battery_r1_recipe.normal = {
-	energy_required = 2,
-	enabled = false,
-	ingredients = {
-		{type="fluid", name="lithium-r1", amount=20},
-		{type = "item", name = "copper-plate", amount=1}
-	},
-	results = {{type="item", name="battery-r1", amount=1}}
+battery_r1_recipe.energy_required = 2
+battery_r1_recipe.enabled = false,
+battery_r1_recipe.ingredients = {
+	{type="fluid", name="lithium-r1", amount=25},
+	{type = "item", name = "copper-plate", amount=3}
 }
-battery_r1_recipe.expensive = {
-	energy_required = 4,
-	enabled = false,
-	ingredients = {
-		{type="fluid", name="lithium-r1", amount=50},
-		{type = "item", name = "copper-plate", amount=3}
-	},
-	results = {{type="item", name="battery-r1", amount=1}}
-}
+battery_r1_recipe.results = {{type="item", name="battery-r1", amount=1}}
 
 data:extend({battery_r1_item, battery_r1_recipe})
 
-------------- Accumulator R2
+-- Accumulator R2
 local recipe_r2 = table.deepcopy(data.raw.recipe['accumulator'])
 recipe_r2.name = "accumulator-r2"
 recipe_r2.ingredients = {
 	{type = "item", name = "accumulator",amount=2},
-	{type = "item", name = "electronic-circuit", amount = 10}
+	{type = "item", name = "electronic-circuit", amount = 10},
+	{type = "item", name = "battery-r1", amount = 2}
 }
 recipe_r2.results = {{type="item", name="accumulator-r2", amount=1}}
 
@@ -104,13 +94,13 @@ r2.discharge_light = {
 
 data:extend({recipe_r2,item_r2,r2})
 
-------------- Accumulator R3
+-- Accumulator R3
 local recipe_r3 = table.deepcopy(data.raw.recipe['accumulator'])
 recipe_r3.name = "accumulator-r3"
 recipe_r3.ingredients = {
 	{type = "item", name = "accumulator-r2",amount=1},
 	{type = "item", name = "iron-plate",amount=4},
-	{type = "item", name = "battery",amount=5}
+	{type = "item", name = "battery-r1",amount=5}
 }
 recipe_r3.results = {{type="item", name="accumulator-r3", amount=1}}
 
