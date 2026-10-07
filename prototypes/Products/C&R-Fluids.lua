@@ -245,7 +245,7 @@ data:extend({
 		subgroup = "oil-fluid-products",
 		order = "y-d-b"
 	},
-	{--Lithium
+	{-- Lithium
 		type = "fluid",
 		name = "lithium-r1",
 		icon = "__RExtended__/graphics/icons/CR/lithium-r1.png",
@@ -262,9 +262,10 @@ data:extend({
 	}
 })
 
+-- Chain: Oil
 data:extend({
 --RECIPE
-	{-- OIL Basic Heavy
+	{-- Basic Heavy
 		type = "recipe",
 		name = "oil-basic-heavy-r1",
 		icon = "__RExtended__/graphics/icons/CR/oil-basic-heavy-r1.png",
@@ -277,7 +278,7 @@ data:extend({
 		subgroup = "oil-fluid-products",
 		order = "y-a-a"
 	},
-	{-- OIL Basic Light
+	{-- Basic Light
 		type = "recipe",
 		name = "oil-basic-light-r1",
 		icon = "__RExtended__/graphics/icons/CR/oil-basic-light-r1.png",
@@ -290,7 +291,7 @@ data:extend({
 		subgroup = "oil-fluid-products",
 		order = "y-b-a"
 	},
-	{--OIL Advanced Heavy
+	{-- Advanced Heavy
 		type = "recipe",
 		name = "oil-advanced-heavy-r1",
 		icon = "__RExtended__/graphics/icons/CR/oil-advanced-heavy-r1.png",
@@ -306,7 +307,7 @@ data:extend({
 		subgroup = "oil-fluid-products",
 		order = "y-a-b"
 	},
-	{--OIL Advanced Light
+	{-- Advanced Light
 		type = "recipe",
 		name = "oil-advanced-light-r1",
 		icon = "__RExtended__/graphics/icons/CR/oil-advanced-light-r1.png",
@@ -322,7 +323,7 @@ data:extend({
 		subgroup = "oil-fluid-products",
 		order = "y-b-b"
 	},
-	{--OIL Advanced Petroleum
+	{-- Advanced Petroleum
 		type = "recipe",
 		name = "oil-advanced-petroleum-r1",
 		icon = "__RExtended__/graphics/icons/CR/oil-advanced-petroleum-r1.png",
@@ -338,7 +339,7 @@ data:extend({
 		subgroup = "oil-fluid-products",
 		order = "y-c-a"
 	},
-	{--OIL Special Heavy
+	{-- Elite Heavy
 		type = "recipe",
 		name = "oil-special-heavy-r1",
 		icon = "__RExtended__/graphics/icons/CR/oil-special-heavy-r1.png",
@@ -355,7 +356,7 @@ data:extend({
 		order = "y-a-c",
 		allow_decomposition = false
 	},
-	{--OIL Special Light
+	{-- Elite Light
 		type = "recipe",
 		name = "oil-special-light-r1",
 		icon = "__RExtended__/graphics/icons/CR/oil-special-light-r1.png",
@@ -372,7 +373,7 @@ data:extend({
 		order = "y-b-c",
 		allow_decomposition = false
 	},
-	{--OIL Special Petroleum
+	{-- Elite Petroleum
 		type = "recipe",
 		name = "oil-special-petroleum-r1",
 		icon = "__RExtended__/graphics/icons/CR/oil-special-petroleum-r1.png",
@@ -389,7 +390,7 @@ data:extend({
 		order = "y-c-c",
 		allow_decomposition = false
 	},
-	{--OIl Special Processing
+	{-- Elite Processing
 		type = "recipe",
 		name = "oil-special-process-r1",
 		icon = "__RExtended__/graphics/icons/CR/oil-special-r1.png",
