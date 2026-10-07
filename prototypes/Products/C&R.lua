@@ -239,7 +239,7 @@ data:extend({
 		enabled = false,
 		ingredients = {
 			{type = "item", name = "copper-cable", amount = 2},
-			{type = "item", name ="glue-r1", amount = 4}
+			{type = "item", name = "glue-r1", amount = 4}
 		},
 		results = {{type="item", name="cable-r1", amount=2}},
 		categories = {"crafting"}
@@ -500,8 +500,7 @@ data:extend({
 	}
 })
 
--- Chain: Solar Panels
-
+------- Chain: Solar Panels
 -- Blue Quartz
 local recipe_quartz = table.deepcopy(data.raw.recipe['iron-plate'])
 recipe_quartz.categories = {"crafting-with-fluid"}
