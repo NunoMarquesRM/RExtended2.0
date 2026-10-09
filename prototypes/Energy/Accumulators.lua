@@ -8,7 +8,7 @@ battery_r1_item.order = "k-a-d"
 local battery_r1_recipe = table.deepcopy(data.raw.recipe['battery'])
 battery_r1_recipe.name = "battery-r1"
 battery_r1_recipe.energy_required = 2
-battery_r1_recipe.enabled = false,
+battery_r1_recipe.enabled = false
 battery_r1_recipe.ingredients = {
 	{type="fluid", name="lithium-r1", amount=25},
 	{type = "item", name = "copper-plate", amount=3}

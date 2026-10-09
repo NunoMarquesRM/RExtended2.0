@@ -250,7 +250,7 @@ data:extend({
 		name = "glue-r1",
 		icon = "__RExtended__/graphics/icons/CR/glue-r1.png",
 		icon_size = 32,
-		subgroup = "eletronic-products",
+		subgroup = "electronic-products",
 		stack_size = 500
 	},
 	{-- Cable R1
@@ -258,13 +258,13 @@ data:extend({
 		name = "cable-r1",
 		icon = "__RExtended__/graphics/icons/CR/cable-r1.png",
 		icon_size = 32,
-		subgroup = "eletronic-products",
+		subgroup = "electronic-products",
 		order = "e-c",
 		stack_size = 200
 	}
 })
 
--- Chain: Reinforced Materials -> Eletronic Component
+-- Chain: Reinforced Materials -> Electronic Component
 data:extend({
 -- Recipes
 	{-- Special Component
@@ -318,7 +318,7 @@ data:extend({
 		results = {{type="item", name="reinforced-coal-plate-r1", amount=1}},
 		categories = {"crafting"}
 	},
-	{-- Eletronic Component
+	{-- Electronic Component
 		type = "recipe",
 		name = "electric-component-r1",
 		energy_required = 2,
@@ -369,12 +369,12 @@ data:extend({
 		order = "d-d",
 		stack_size = 200
 	},
-	{-- Eletronic Component
+	{-- Electronic Component
 		type = "item",
 		name = "electric-component-r1",
 		icon = "__RExtended__/graphics/icons/CR/electric-component-r1.png",
 		icon_size = 32,
-		subgroup = "eletronic-products",
+		subgroup = "electronic-products",
 		order = "e-d",
 		stack_size = 200
 	}
