@@ -9,7 +9,8 @@ data:extend({
     create_machinery_recipe("electric-stone-furnace", 0.5, false,
         {
             {type = "item", name = "stone-furnace", amount = 2},
-            {type = "item", name = "electronic-circuit", amount = 2}
+            {type = "item", name = "electronic-circuit", amount = 2},
+            {type = "item", name = "electric-component-r1", amount = 2}
         },
         {{type = "item", name = "electric-stone-furnace", amount = 1}}
     ),
@@ -17,7 +18,8 @@ data:extend({
         {
             {type = "item", name = "steel-furnace", amount = 2},
             {type = "item", name = "electronic-circuit", amount = 5},
-            {type = "item", name = "copper-gear-wheel-r1", amount = 1}
+            {type = "item", name = "reinforced-iron-plate-r1", amount = 5},
+            {type = "item", name = "reinforced-gear-copper-r1", amount = 3}
         },
         {{type = "item", name = "electric-steel-furnace", amount = 1}}
     )

@@ -6,17 +6,19 @@ data:extend({
 
     create_machinery_recipe("compressor-r1", 2, false,
         {
-            {type = "item", name = "steel-plate", amount = 5},
+            {type = "item", name = "steel-plate", amount = 8},
+            {type = "item", name = "reinforced-gear-iron-r1", amount = 3},
             {type = "item", name = "reinforced-gear-copper-r1", amount = 3},
-            {type = "item", name = "reinforced-copper-plate-r1", amount = 5},
-            {type = "item", name = "assembling-machine-2", amount = 1}
+            {type = "item", name = "reinforced-copper-plate-r1", amount = 5}
         },
         {{type = "item", name = "compressor-r1", amount = 1}}
     ),
     create_machinery_recipe("compressor-r2", 5, false,
         {
             {type = "item", name = "compressor-r1", amount = 2},
-            {type = "item", name = "steel-plate", amount = 10}
+            {type = "item", name = "steel-plate", amount = 10},
+            {type = "item", name = "reinforced-iron-plate-r1", amount = 5},
+            {type = "item", name = "reinforced-copper-plate-r1", amount = 5}
         },
         {{type = "item", name = "compressor-r2", amount = 1}}
     ),

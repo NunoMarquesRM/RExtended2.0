@@ -22,29 +22,31 @@ data:extend({
     ),
     create_machinery_recipe("half-assembler-r2", 5, false,
         {
+            {type = "item", name = "half-assembler-r1", amount = 2},
             {type = "item", name = "steel-plate", amount = 10},
-            {type = "item", name = "reinforced-iron-plate-r1", amount = 1},
-            {type = "item", name = "reinforced-copper-plate-r1", amount = 1},
-            {type = "item", name = "half-assembler-r1", amount = 2}
+            {type = "item", name = "reinforced-gear-iron-r1", amount = 5},
+            {type = "item", name = "reinforced-gear-copper-r1", amount = 5}
+
         },
         {{type = "item", name = "half-assembler-r2", amount = 1}}
     ),
     create_machinery_recipe("assembler-r1", 5, false,
         {
+            {type = "item", name = "half-assembler-r1", amount = 3},
             {type = "item", name = "reinforced-gear-iron-r1", amount = 5},
             {type = "item", name = "reinforced-gear-copper-r1", amount = 5},
-            {type = "item", name = "copper-gear-wheel-r1", amount = 5},
-            {type = "item", name = "half-assembler-r1", amount = 5},
-            {type = "item", name = "reinforced-iron-plate-r1", amount = 15}
+            {type = "item", name = "electronic-circuit", amount = 5},
+            {type = "item", name = "reinforced-iron-plate-r1", amount = 10}
         },
         {{type = "item", name = "assembler-r1", amount = 1}}
     ),
     create_machinery_recipe("assembler-r2", 5, false,
         {
-            {type = "item", name = "reinforced-gear-iron-r1", amount = 5},
-            {type = "item", name = "reinforced-gear-copper-r1", amount = 5},
+            {type = "item", name = "assembler-r1", amount = 3},
+            {type = "item", name = "steel-plate", amount = 15},
+            {type = "item", name = "reinforced-iron-plate-r1", amount = 10},
+            {type = "item", name = "reinforced-copper-plate-r1", amount = 10},
             {type = "item", name = "electric-engine-unit", amount = 5},
-            {type = "item", name = "assembler-r1", amount = 5},
             {type = "item", name = "processing-unit", amount = 5}
         },
         {{type = "item", name = "assembler-r2", amount = 1}}

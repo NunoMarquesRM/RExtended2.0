@@ -67,6 +67,7 @@ data:extend({
             {type = "item", name = "steel-plate", amount = 5},
             {type = "item", name = "reinforced-gear-iron-r1", amount = 3},
             {type = "item", name = "reinforced-coal-plate-r1", amount = 5},
+            {type = "item", name = "pipe", amount = 10},
             {type = "item", name = "assembling-machine-2", amount = 1}
         },
         {{type = "item", name = "washer-chamber-r1", amount = 1}}
@@ -80,10 +81,11 @@ data:extend({
     ),
     create_machinery_recipe("water-condenser-electric-r1", 5, false,
         {
-            {type = "item", name = "iron-plate", amount = 10},
-            {type = "item", name = "copper-plate", amount = 10},
+            {type = "item", name = "steel-plate", amount = 5},
             {type = "item", name = "reinforced-iron-plate-r1", amount = 10},
-            {type = "item", name = "cable-r1", amount = 10}
+            {type = "item", name = "reinforced-copper-plate-r1", amount = 5},
+            {type = "item", name = "cable-r1", amount = 10},
+            {type = "item", name = "electric-component-r1", amount = 3}
         },
         {{type = "item", name = "water-condenser-electric-r1", amount = 1}}
     ),
@@ -96,18 +98,18 @@ data:extend({
     ),
     create_machinery_recipe("mixer-r1", 7, false,
         {
-            {type = "item", name = "iron-plate", amount = 10},
-            {type = "item", name = "copper-plate", amount = 10},
+            {type = "item", name = "steel-plate", amount = 10},
+            {type = "item", name = "reinforced-coal-plate-r1", amount = 10},
             {type = "item", name = "iron-stick", amount = 10},
-            {type = "item", name = "reinforced-component-r1", amount = 20}
+            {type = "item", name = "reinforced-component-r1", amount = 10}
         },
         {{type = "item", name = "mixer-r1", amount = 1}}
     ),
     create_machinery_recipe("formation-furnace-r1", 2, false,
         {
             {type = "item", name = "reinforced-component-r1", amount = 4},
-            {type = "item", name = "iron-plate", amount = 4},
-            {type = "item", name = "copper-plate", amount = 4}
+            {type = "item", name = "reinforced-iron-plate-r1", amount = 4},
+            {type = "item", name = "reinforced-copper-plate-r1", amount = 4}
         },
         {{type = "item", name = "formation-furnace-r1", amount = 1}}
     ),
@@ -139,8 +141,9 @@ data:extend({
     ),
     create_machinery_recipe("heat-forge-chamber-r1", 7, false,
         {
-            {type = "item", name = "reinforced-iron-plate-r1", amount = 4},
-            {type = "item", name = "reinforced-coal-plate-r1", amount = 4},
+            {type = "item", name = "reinforced-iron-plate-r1", amount = 5},
+            {type = "item", name = "reinforced-coal-plate-r1", amount = 5},
+            {type = "item", name = "reinforced-gear-iron-r1", amount = 3},
             {type = "item", name = "pipe", amount = 10},
             {type = "item", name = "electric-component-r1", amount = 5}
         },
@@ -168,7 +171,8 @@ data:extend({
             {type = "item", name = "reinforced-gear-iron-r1", amount = 5},
             {type = "item", name = "reinforced-gear-copper-r1", amount = 5},
             {type = "item", name = "reinforced-coal-plate-r1", amount = 5},
-            {type = "item", name = "electric-component-r1", amount = 2}
+            {type = "item", name = "cable-r1", amount = 5},
+            {type = "item", name = "electric-component-r1", amount = 5}
         },
         {{type = "item", name = "beacon-r1", amount = 1}}
     ),

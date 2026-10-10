@@ -6,19 +6,21 @@ data:extend({
 
     create_machinery_recipe("chemical-machine-r1", 5, false,
         {
-            {type = "item", name = "steel-plate", amount = 12},
-            {type = "item", name = "reinforced-gear-iron-r1", amount = 5},
-            {type = "item", name = "reinforced-gear-copper-r1", amount = 3},
-            {type = "item", name = "electric-component-r1", amount = 2},
-            {type = "item", name = "pipe", amount = 6}
+            {type = "item", name = "steel-plate", amount = 10},
+            {type = "item", name = "reinforced-gear-iron-r1", amount = 4},
+            {type = "item", name = "reinforced-copper-plate-r1", amount = 5},
+            {type = "item", name = "electric-component-r1", amount = 3},
+            {type = "item", name = "pipe", amount = 10}
         },
         {{type = "item", name = "chemical-machine-r1", amount = 1}}
     ),
     create_machinery_recipe("chemical-machine-r2", 5, false,
         {
+            {type = "item", name = "chemical-machine-r1", amount = 2},
             {type = "item", name = "steel-plate", amount = 10},
-            {type = "item", name = "pipe", amount = 4},
-            {type = "item", name = "chemical-machine-r1", amount = 2}
+            {type = "item", name = "electric-component-r1", amount = 5},
+            {type = "item", name = "reinforced-copper-plate-r1", amount = 5},
+            {type = "item", name = "pipe", amount = 8}
         },
         {{type = "item", name = "chemical-machine-r2", amount = 1}}
     ),

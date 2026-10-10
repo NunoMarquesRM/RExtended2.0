@@ -107,6 +107,7 @@ data:extend({
     create_machinery_recipe("red-robot-c", 3, false,
         {
             {type = "item", name = "flying-robot-frame", amount = 1},
+            {type = "item", name = "reinforced-iron-plate-r1", amount = 2},
             {type = "item", name = "electronic-circuit", amount = 3}
         },
         {{type = "item", name = "red-robot-c", amount = 1}}
@@ -114,8 +115,9 @@ data:extend({
     create_machinery_recipe("red-roboport", 5, false,
         {
             {type = "item", name = "advanced-circuit", amount = 45},
-            {type = "item", name = "copper-gear-wheel-r1", amount = 50},
-            {type = "item", name = "steel-plate", amount = 45}
+            {type = "item", name = "reinforced-gear-copper-r1", amount = 30},
+            {type = "item", name = "reinforced-iron-plate-r1", amount = 25},
+            {type = "item", name = "steel-plate", amount = 25}
         },
         {{type = "item", name = "red-roboport", amount = 1}}
     ),
@@ -123,8 +125,7 @@ data:extend({
         {
             {type = "item", name = "reinforced-iron-plate-r1", amount = 4},
             {type = "item", name = "advanced-circuit", amount = 1},
-            {type = "item", name = "green-wire", amount = 2},
-            {type = "item", name = "red-wire", amount = 2}
+            {type = "item", name = "electric-component-r1", amount = 2}
         },
         {{type = "item", name = "red-chest-storage", amount = 1}}
     ),
@@ -132,8 +133,7 @@ data:extend({
         {
             {type = "item", name = "reinforced-copper-plate-r1", amount = 4},
             {type = "item", name = "advanced-circuit", amount = 1},
-            {type = "item", name = "green-wire", amount = 2},
-            {type = "item", name = "red-wire", amount = 2}
+            {type = "item", name = "electric-component-r1", amount = 2}
         },
         {{type = "item", name = "red-chest-passive-provider", amount = 1}}
     ),
@@ -141,8 +141,7 @@ data:extend({
         {
             {type = "item", name = "reinforced-copper-plate-r1", amount = 4},
             {type = "item", name = "advanced-circuit", amount = 1},
-            {type = "item", name = "green-wire", amount = 2},
-            {type = "item", name = "red-wire", amount = 2}
+            {type = "item", name = "electric-component-r1", amount = 2}
         },
         {{type = "item", name = "red-chest-requester", amount = 1}}
     ),
@@ -150,8 +149,7 @@ data:extend({
         {
             {type = "item", name = "reinforced-copper-plate-r1", amount = 4},
             {type = "item", name = "advanced-circuit", amount = 1},
-            {type = "item", name = "green-wire", amount = 2},
-            {type = "item", name = "red-wire", amount = 2}
+            {type = "item", name = "electric-component-r1", amount = 2}
         },
         {{type = "item", name = "red-chest-buffer", amount = 1}}
     ),
@@ -159,8 +157,7 @@ data:extend({
         {
             {type = "item", name = "reinforced-copper-plate-r1", amount = 4},
             {type = "item", name = "advanced-circuit", amount = 1},
-            {type = "item", name = "green-wire", amount = 2},
-            {type = "item", name = "red-wire", amount = 2}
+            {type = "item", name = "electric-component-r1", amount = 2}
         },
         {{type = "item", name = "red-chest-active-provider", amount = 1}}
     ),
