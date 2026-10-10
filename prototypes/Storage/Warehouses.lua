@@ -2,11 +2,11 @@ local recipe_r1 = table.deepcopy(data.raw.recipe['steel-chest'])
 recipe_r1.name = "warehouse-r1"
 recipe_r1.enabled = false
 recipe_r1.ingredients = {
-	{type = "item", name = "steel-chest", amount = 10},
-	{type = "item", name = "iron-plate", amount = 25},
-	{type = "item", name = "copper-plate", amount = 25},
-	{type = "item", name = "reinforced-iron-plate-r1", amount = 25},
-	{type = "item", name = "reinforced-coal-plate-r1", amount = 25}
+    {type = "item", name = "steel-chest", amount = 10},
+    {type = "item", name = "iron-plate", amount = 25},
+    {type = "item", name = "copper-plate", amount = 25},
+    {type = "item", name = "reinforced-iron-plate-r1", amount = 25},
+    {type = "item", name = "reinforced-coal-plate-r1", amount = 25}
 }
 recipe_r1.results = {{type="item", name="warehouse-r1", amount=1}}
 
@@ -33,24 +33,24 @@ entity_r1.selection_box = {{-3.0, -3.0}, {3.0, 3.0}}
 entity_r1.drawing_box = {{-3.0, -3.0}, {3.0, 3.0}}
 entity_r1.inventory_size = 5000
 entity_r1.picture = {
-	filename = "__RExtended__/graphics/entity/Storage/Warehouse/Warehouse-r1.png",
-	priority = "high",
-	width = 384,
-	height = 384,
-	scale = 0.5
+    filename = "__RExtended__/graphics/entity/Storage/Warehouse/Warehouse-r1.png",
+    priority = "high",
+    width = 384,
+    height = 384,
+    scale = 0.5
 }
 entity_r1.circuit_wire_max_distance = 7.5
 entity_r1.circuit_wire_connection_point = {
-	shadow =
-	{
-		red = {2.52, 0.65},
-		green = {2.01, 0.65}
-	},
-	wire =
-	{
-		red = {2.22, 0.32},
-		green = {1.71, 0.32}
-	}
+    shadow =
+    {
+        red = {2.52, 0.65},
+        green = {2.01, 0.65}
+    },
+    wire =
+    {
+        red = {2.22, 0.32},
+        green = {1.71, 0.32}
+    }
 }
 
 
