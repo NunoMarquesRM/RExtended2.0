@@ -5,26 +5,26 @@ function npipecovers()
             priority = "extra-high",
             width = 128,
             height = 128,
-            scale = 0.5,
+            scale = 0.5
         },
         east = {
             filename = "__RExtended__/graphics/entity/Pipes/clear.png",
             priority = "extra-high",
             width = 32,
-            height = 32,
+            height = 32
         },
         south = {
             filename = "__RExtended__/graphics/entity/Pipes/pipe-cover-south.png",
             priority = "extra-high",
             width = 128,
             height = 128,
-            scale = 0.5,
+            scale = 0.5
         },
         west = {
             filename = "__RExtended__/graphics/entity/Pipes/clear.png",
             priority = "extra-high",
             width = 32,
-            height = 32,
+            height = 32
         }
     }
 end

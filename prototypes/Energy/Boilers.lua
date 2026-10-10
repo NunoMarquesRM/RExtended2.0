@@ -1,34 +1,3 @@
-function npipecovers()
-    return {
-        north = {
-            filename = "__RExtended__/graphics/entity/Pipes/pipe-cover-north.png",
-            priority = "extra-high",
-            width = 128,
-            height = 128,
-            scale = 0.5
-        },
-        east = {
-            filename = "__RExtended__/graphics/entity/Pipes/clear.png",
-            priority = "extra-high",
-            width = 32,
-            height = 32
-        },
-        south = {
-            filename = "__RExtended__/graphics/entity/Pipes/pipe-cover-south.png",
-            priority = "extra-high",
-            width = 128,
-            height = 128,
-            scale = 0.5
-        },
-        west = {
-            filename = "__RExtended__/graphics/entity/Pipes/clear.png",
-            priority = "extra-high",
-            width = 32,
-            height = 32
-        }
-    }
-end
-
 local function create_boiler_recipe(base_name, name, energy_required, enabled, ingredients, results)
     local recipe = table.deepcopy(data.raw.recipe[base_name])
     recipe.name = name
@@ -68,7 +37,6 @@ local function setup_boiler_entity(entity, name, icon_name, icon_size, max_healt
     return entity
 end
 
--- Recipes
 data:extend({
     -- base_name, name, energy_required, enabled, ingredients, results
     create_boiler_recipe("boiler", "boiler-r2", 1, false,
@@ -86,11 +54,9 @@ data:extend({
             {type = "item", name = "steel-plate", amount = 3}
         },
         {{type = "item", name = "boiler-r3", amount = 1}}
-    )
-})
--- Items
-data:extend({
-    create_boiler_item("boiler-r2", "R2", 32, "b-a")
+    ),
+
+    create_boiler_item("boiler-r2", "R2", 32, "b-a"),
     create_boiler_item("boiler-r3", "R3", 64, "b-b")
 })
 
