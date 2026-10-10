@@ -9,10 +9,10 @@ require("prototypes.Tech.Categories-Railworld")
 require("prototypes.Tech.Categories-C&R")
 
 -- Energy
+require("prototypes.Energy.Boilers")
 require("prototypes.Energy.Accumulators")
 require("prototypes.Energy.Solar-Panels")
 require("prototypes.Energy.Poles")
-require("prototypes.Energy.Boilers")
 require("prototypes.Energy.Steam-Engines")
 
 -- Storage
