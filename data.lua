@@ -1,5 +1,5 @@
 -- Quality of Life
-require("prototypes.treeRockEraser.eraser")
+require("prototypes.Products.TreeRockEraser")
 require("prototypes.Products.Pipes-Cover")
 
 -- Categories
@@ -9,21 +9,27 @@ require("prototypes.Tech.Categories-Railworld")
 require("prototypes.Tech.Categories-C&R")
 
 -- Energy
+require("prototypes.Energy.Boilers")
 require("prototypes.Energy.Accumulators")
 require("prototypes.Energy.Solar-Panels")
 require("prototypes.Energy.Poles")
-require("prototypes.Energy.Boilers")
 require("prototypes.Energy.Steam-Engines")
 
--- Machinery
+-- Storage
 require("prototypes.Storage.Big-storage-tank")
 require("prototypes.Storage.Warehouses")
+
+-- Machinery
+require("prototypes.Machinery.Machinery")
 require("prototypes.Machinery.Radar")
 require("prototypes.Machinery.Mining-Drill")
 require("prototypes.Machinery.Furnaces")
-require("prototypes.Machinery.Machinery")
 require("prototypes.Machinery.Assemblers")
 require("prototypes.Machinery.Robots")
+
+require("prototypes.Machinery.Compressor")
+require("prototypes.Machinery.ChemicalMachine")
+require("prototypes.Machinery.Refinery")
 
 -- Products
 require("prototypes.Products.C&R")

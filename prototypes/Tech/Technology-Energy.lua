@@ -239,11 +239,11 @@ acc_tech_r2.effects = {
     {
         type = "unlock-recipe",
         recipe = "accumulator-r2"
+    },
+    {
+        type = "unlock-recipe",
+        recipe = "battery-r1"
     }
---{
---    type = "unlock-recipe",
---    recipe = "battery-r1"
---}
 }
 acc_tech_r2.prerequisites = {"electric-energy-accumulators"}
 acc_tech_r2.unit = {

@@ -9,14 +9,12 @@ data:extend({
         stack_size = 1,
         toggleable = false,
         show_in_library = false,
-        select =
-        {
+        select = {
             border_color = { r = 0, g = 1, b = 0 },
             mode = { "any-entity" },
             cursor_box_type = "pair"
         },
-        alt_select =
-        {
+        alt_select = {
             border_color = { r = 0, g = 0, b = 1 },
             mode = { "any-entity" },
             cursor_box_type = "pair"
