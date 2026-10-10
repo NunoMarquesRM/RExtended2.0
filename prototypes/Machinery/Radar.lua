@@ -11,6 +11,7 @@ data:extend({
         },
         {{type = "item", name = "red-radar", amount = 1}}
     ),
+    -- Entity
     {
         type = "radar",
         name = "red-radar",

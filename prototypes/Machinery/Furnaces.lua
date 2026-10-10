@@ -20,9 +20,9 @@ data:extend({
             {type = "item", name = "copper-gear-wheel-r1", amount = 1}
         },
         {{type = "item", name = "electric-steel-furnace", amount = 1}}
-    ),
+    )
 })
-
+-- Entities
 local stone_r2 = table.deepcopy(data.raw['furnace']['stone-furnace'])
 stone_r2.name = "electric-stone-furnace"
 stone_r2.icon = "__RExtended__/graphics/icons/Machinery/Furnaces/stone-furnace-r2.png"

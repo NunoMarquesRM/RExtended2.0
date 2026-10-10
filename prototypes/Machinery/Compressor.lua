@@ -20,7 +20,7 @@ data:extend({
         },
         {{type = "item", name = "compressor-r2", amount = 1}}
     ),
-
+    -- Entity
     {
         type = "assembling-machine",
         name = "compressor-r1",

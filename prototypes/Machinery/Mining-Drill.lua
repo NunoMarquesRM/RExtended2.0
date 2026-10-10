@@ -23,7 +23,7 @@ data:extend({
         },
         {{type = "item", name = "mining-drill-r3", amount = 1}}
     ),
-    --Entities
+    -- Entities
     {--Mining Drill R2
         type = "mining-drill",
         name = "mining-drill-r2",

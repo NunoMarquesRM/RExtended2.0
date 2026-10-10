@@ -230,7 +230,7 @@ data:extend({
             }
         }
     },
-    {--Water Condenser
+    {-- Water Condenser
         type = "assembling-machine",
         name = "water-condenser-electric-r1",
         icon = "__RExtended__/graphics/icons/Machinery/Bulk/water-condenser-electric-r1.png",
@@ -756,8 +756,6 @@ CastChamberR2.graphics_set.animation.west.filename = "__RExtended__/graphics/ent
 CastChamberR2.graphics_set.animation.north.filename = "__RExtended__/graphics/entity/Machinery/Bulk/cast-chamber-r2.png"
 CastChamberR2.graphics_set.animation.east.filename = "__RExtended__/graphics/entity/Machinery/Bulk/cast-chamber-r2.png"
 
-data:extend({CastChamberR2})
-
 local WasherChamberR2 = table.deepcopy(data.raw['assembling-machine']['washer-chamber-r1'])
 WasherChamberR2.name = "washer-chamber-r2"
 WasherChamberR2.icon = "__RExtended__/graphics/icons/Machinery/Bulk/washer-chamber-r2.png"
@@ -774,8 +772,6 @@ WasherChamberR2.graphics_set.animation.south.filename = "__RExtended__/graphics/
 WasherChamberR2.graphics_set.animation.west.filename = "__RExtended__/graphics/entity/Machinery/Bulk/washer-chamber-r2.png"
 WasherChamberR2.graphics_set.animation.north.filename = "__RExtended__/graphics/entity/Machinery/Bulk/washer-chamber-r2.png"
 WasherChamberR2.graphics_set.animation.east.filename = "__RExtended__/graphics/entity/Machinery/Bulk/washer-chamber-r2.png"
-
-data:extend({WasherChamberR2})
 
 local HeatForgeChamberR2 = table.deepcopy(data.raw['assembling-machine']['heat-forge-chamber-r1'])
 HeatForgeChamberR2.name = "heat-forge-chamber-r2"
@@ -794,8 +790,6 @@ HeatForgeChamberR2.graphics_set.animation.west.filename = "__RExtended__/graphic
 HeatForgeChamberR2.graphics_set.animation.north.filename = "__RExtended__/graphics/entity/Machinery/Bulk/heat-forge-chamber-r2.png"
 HeatForgeChamberR2.graphics_set.animation.east.filename = "__RExtended__/graphics/entity/Machinery/Bulk/heat-forge-chamber-r2.png"
 
-data:extend({HeatForgeChamberR2})
-
 local WaterCondenserR2 = table.deepcopy(data.raw['assembling-machine']['water-condenser-electric-r1'])
 WaterCondenserR2.name = "water-condenser-electric-r2"
 WaterCondenserR2.icon = "__RExtended__/graphics/icons/Machinery/Bulk/water-condenser-electric-r2.png"
@@ -810,4 +804,4 @@ WaterCondenserR2.module_specification = {
 }
 WaterCondenserR2.graphics_set.animation.filename = "__RExtended__/graphics/entity/Machinery/Bulk/water-condenser-electric-r2.png"
 
-data:extend({WaterCondenserR2})
+data:extend({CastChamberR2, WasherChamberR2, HeatForgeChamberR2, WaterCondenserR2})

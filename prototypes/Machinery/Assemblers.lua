@@ -49,7 +49,7 @@ data:extend({
         },
         {{type = "item", name = "assembler-r2", amount = 1}}
     ),
-    --ENTITY
+    -- Entity
     {--Half Assembler Machine
         type = "assembling-machine",
         name = "half-assembler-r1",

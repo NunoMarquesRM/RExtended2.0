@@ -21,6 +21,7 @@ data:extend({
         },
         {{type = "item", name = "refinery-r2", amount = 1}}
     ),
+    -- Entity
     {
         type = "assembling-machine",
         name = "refinery-r1",

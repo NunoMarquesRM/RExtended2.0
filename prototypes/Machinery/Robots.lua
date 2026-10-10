@@ -1,3 +1,76 @@
+local function create_logistic_container(config)
+    return {
+        type = "logistic-container",
+        name = config.name,
+        icon = config.icon,
+        icon_size = 32,
+
+        flags = {"placeable-player", "player-creation"},
+        max_health = 400,
+        corpse = "small-remnants",
+
+        collision_box = {{-0.35, -0.35}, {0.35, 0.35}},
+        selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
+
+        resistances = {
+            {type = "fire", percent = 90},
+            {type = "impact", percent = 60}
+        },
+
+        fast_replaceable_group = "container",
+
+        minable = {
+            hardness = 0.2,
+            mining_time = 0.3,
+            result = config.name
+        },
+
+        inventory_size = config.inventory_size,
+        logistic_mode = config.logistic_mode,
+        max_logistic_slots = config.max_logistic_slots,
+        logistic_slots_count = config.logistic_slots_count,
+
+        open_sound = {
+            filename = "__base__/sound/metallic-chest-open.ogg",
+            volume = 0.65
+        },
+
+        close_sound = {
+            filename = "__base__/sound/metallic-chest-close.ogg",
+            volume = 0.7
+        },
+
+        vehicle_impact_sound = {
+            filename = "__base__/sound/car-metal-impact.ogg",
+            volume = 0.65
+        },
+
+        picture = {
+            filename = config.picture,
+            priority = "extra-high",
+            width = 168,
+            height = 168,
+            shift = {0.0625, -0.125},
+            scale = 0.25
+        },
+
+        circuit_wire_connection_point = {
+            shadow = {
+                red = {0.734375, 0.453125},
+                green = {0.609375, 0.515625}
+            },
+            wire = {
+                red = {0.40625, 0.21875},
+                green = {0.40625, 0.375}
+            }
+        },
+
+        circuit_wire_max_distance = 15,
+
+        circuit_connector_sprites = circuit_connector_definitions["chest"].sprites
+    }
+end
+
 data:extend({
     create_machinery_item("red-robot-l",
         "__RExtended__/graphics/icons/Machinery/Robots/red-logistic.png",
@@ -24,7 +97,7 @@ data:extend({
         "__RExtended__/graphics/icons/Machinery/Robots/chest-active-provider.png",
         32, "re-robots", "i-b-e", 50),
     
-        create_machinery_recipe("red-robot-l", 3, false,
+    create_machinery_recipe("red-robot-l", 3, false,
         {
             {type = "item", name = "flying-robot-frame", amount = 1},
             {type = "item", name = "advanced-circuit", amount = 3}
@@ -91,7 +164,45 @@ data:extend({
         },
         {{type = "item", name = "red-chest-active-provider", amount = 1}}
     ),
-    --IMAGE
+    -- Entities
+    create_logistic_container({
+        name = "red-chest-storage",
+        icon = "__RExtended__/graphics/icons/Machinery/Robots/chest-storage.png",
+        picture = "__RExtended__/graphics/entity/Machinery/Robots/chest-storage.png",
+        inventory_size = 75,
+        logistic_mode = "storage",
+        max_logistic_slots = 1
+    }),
+    create_logistic_container({
+        name = "red-chest-passive-provider",
+        icon = "__RExtended__/graphics/icons/Machinery/Robots/chest-passive-provider.png",
+        picture = "__RExtended__/graphics/entity/Machinery/Robots/chest-passive-provider.png",
+        inventory_size = 75,
+        logistic_mode = "passive-provider"
+    }),
+    create_logistic_container({
+        name = "red-chest-requester",
+        icon = "__RExtended__/graphics/icons/Machinery/Robots/chest-requester.png",
+        picture = "__RExtended__/graphics/entity/Machinery/Robots/chest-requester.png",
+        inventory_size = 75,
+        logistic_mode = "requester",
+        logistic_slots_count = 18
+    }),
+    create_logistic_container({
+        name = "red-chest-buffer",
+        icon = "__RExtended__/graphics/icons/Machinery/Robots/chest-buffer.png",
+        picture = "__RExtended__/graphics/entity/Machinery/Robots/chest-buffer.png",
+        inventory_size = 49,
+        logistic_mode = "buffer",
+        logistic_slots_count = 18
+    }),
+    create_logistic_container({
+        name = "red-chest-active-provider",
+        icon = "__RExtended__/graphics/icons/Machinery/Robots/chest-active-provider.png",
+        picture = "__RExtended__/graphics/entity/Machinery/Robots/chest-active-provider.png",
+        inventory_size = 49,
+        logistic_mode = "active-provider"
+    }),
     {--Robot Logistic
         type = "logistic-robot",
         name = "red-robot-l",
@@ -669,243 +780,5 @@ data:extend({
         default_total_logistic_output_signal = {type = "virtual", name = "signal-Y"},
         default_available_construction_output_signal = {type = "virtual", name = "signal-Z"},
         default_total_construction_output_signal = {type = "virtual", name = "signal-T"},
-    },
-    {--Chest Storage
-        type = "logistic-container",
-        name = "red-chest-storage",
-        icon = "__RExtended__/graphics/icons/Machinery/Robots/chest-storage.png",
-        icon_size = 32,
-        flags = {"placeable-player", "player-creation"},
-        minable = {hardness = 0.2, mining_time = 0.3, result = "red-chest-storage"},
-        max_health = 400,
-        corpse = "small-remnants",
-        collision_box = {{-0.35, -0.35}, {0.35, 0.35}},
-        selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-        resistances = { { type = "fire", percent = 90 }, { type = "impact", percent = 60 } },
-        fast_replaceable_group = "container",
-        max_logistic_slots = 1,
-        inventory_size = 75,
-        logistic_mode = "storage",
-        open_sound = { filename = "__base__/sound/metallic-chest-open.ogg", volume=0.65 },
-        close_sound = { filename = "__base__/sound/metallic-chest-close.ogg", volume = 0.7 },
-        vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
-        picture = {
-            filename = "__RExtended__/graphics/entity/Machinery/Robots/chest-storage.png",
-            priority = "extra-high",
-            width = 168,
-            height = 168,
-            shift = {0.0625, -0.125},
-            scale = 0.25,
-        },
-        circuit_wire_connection_point = {
-            shadow =
-            {
-                red = {0.734375, 0.453125},
-                green = {0.609375, 0.515625},
-            },
-            wire =
-            {
-                red = {0.40625, 0.21875},
-                green = {0.40625, 0.375},
-            }
-        },
-        circuit_wire_max_distance = 15,
-        circuit_connector_definitions["chest"].sprites,
-    },
-    {--Chest Passive Provider
-        type = "logistic-container",
-        name = "red-chest-passive-provider",
-        icon = "__RExtended__/graphics/icons/Machinery/Robots/chest-passive-provider.png",
-        icon_size = 32,
-        flags = {"placeable-player", "player-creation"},
-        minable = {hardness = 0.2, mining_time = 0.3, result = "red-chest-passive-provider"},
-        max_health = 400,
-        corpse = "small-remnants",
-        collision_box = {{-0.35, -0.35}, {0.35, 0.35}},
-        selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-        resistances = {
-            {
-                type = "fire",
-                percent = 90
-            },
-            {
-                type = "impact",
-                percent = 60
-            }
-        },
-        fast_replaceable_group = "container",
-        inventory_size = 75,
-        logistic_mode = "passive-provider",
-        open_sound = { filename = "__base__/sound/metallic-chest-open.ogg", volume=0.65 },
-        close_sound = { filename = "__base__/sound/metallic-chest-close.ogg", volume = 0.7 },
-        vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
-        picture = {
-            filename = "__RExtended__/graphics/entity/Machinery/Robots/chest-passive-provider.png",
-            priority = "extra-high",
-            width = 168,
-            height = 168,
-            shift = {0.0625, -0.125},
-            scale = 0.25,
-        },
-        circuit_wire_connection_point = {
-            shadow =
-            {
-                red = {0.734375, 0.453125},
-                green = {0.609375, 0.515625},
-            },
-            wire =
-            {
-                red = {0.40625, 0.21875},
-                green = {0.40625, 0.375},
-            }
-        },
-        circuit_wire_max_distance = 15,
-        circuit_connector_definitions["chest"].sprites,
-    },
-    {--Chest Requester
-        type = "logistic-container",
-        name = "red-chest-requester",
-        icon = "__RExtended__/graphics/icons/Machinery/Robots/chest-requester.png",
-        icon_size = 32,
-        flags = {"placeable-player", "player-creation"},
-        minable = {hardness = 0.2, mining_time = 0.3, result = "red-chest-requester"},
-        max_health = 400,
-        corpse = "small-remnants",
-        collision_box = {{-0.35, -0.35}, {0.35, 0.35}},
-        selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-        resistances = {
-            {
-                type = "fire",
-                percent = 90
-            },
-            {
-                type = "impact",
-                percent = 60
-            }
-        },
-        fast_replaceable_group = "container",
-        inventory_size = 75,
-        logistic_mode = "requester",
-        logistic_slots_count = 18,
-        open_sound = { filename = "__base__/sound/metallic-chest-open.ogg", volume=0.65 },
-        close_sound = { filename = "__base__/sound/metallic-chest-close.ogg", volume = 0.7 },
-        vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
-        picture = {
-            filename = "__RExtended__/graphics/entity/Machinery/Robots/chest-requester.png",
-            priority = "extra-high",
-            width = 168,
-            height = 168,
-            shift = {0.0625, -0.125},
-            scale = 0.25,
-        },
-        circuit_wire_connection_point = {
-            shadow = {
-                red = {0.734375, 0.453125},
-                green = {0.609375, 0.515625},
-            },
-            wire = {
-                red = {0.40625, 0.21875},
-                green = {0.40625, 0.375},
-            }
-        },
-        circuit_wire_max_distance = 15,
-        circuit_connector_definitions["chest"].sprites,
-    },
-    {--Chest Buffer
-        type = "logistic-container",
-        name = "red-chest-buffer",
-        icon = "__RExtended__/graphics/icons/Machinery/Robots/chest-buffer.png",
-        icon_size = 32,
-        flags = {"placeable-player", "player-creation"},
-        minable = {hardness = 0.2, mining_time = 0.3, result = "red-chest-buffer"},
-        max_health = 400,
-        corpse = "small-remnants",
-        collision_box = {{-0.35, -0.35}, {0.35, 0.35}},
-        selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-        resistances = {
-            {
-                type = "fire",
-                percent = 90
-            },
-            {
-                type = "impact",
-                percent = 60
-            }
-        },
-        fast_replaceable_group = "container",
-        inventory_size = 49,
-        logistic_mode = "buffer",
-        logistic_slots_count = 18,
-        open_sound = { filename = "__base__/sound/metallic-chest-open.ogg", volume=0.65 },
-        close_sound = { filename = "__base__/sound/metallic-chest-close.ogg", volume = 0.7 },
-        vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
-        picture = {
-            filename = "__RExtended__/graphics/entity/Machinery/Robots/chest-buffer.png",
-            priority = "extra-high",
-            width = 168,
-            height = 168,
-            shift = {0.0625, -0.125},
-            scale = 0.25,
-        },
-        circuit_wire_connection_point = {
-            shadow = {
-                red = {0.734375, 0.453125},
-                green = {0.609375, 0.515625},
-            },
-            wire = {
-                red = {0.40625, 0.21875},
-                green = {0.40625, 0.375},
-            }
-        },
-        circuit_wire_max_distance = 15,
-        circuit_connector_definitions["chest"].sprites,
-    },
-    {--Chest Active Provider
-        type = "logistic-container",
-        name = "red-chest-active-provider",
-        icon = "__RExtended__/graphics/icons/Machinery/Robots/chest-active-provider.png",
-        icon_size = 32,
-        flags = {"placeable-player", "player-creation"},
-        minable = {hardness = 0.2, mining_time = 0.3, result = "red-chest-active-provider"},
-        max_health = 400,
-        corpse = "small-remnants",
-        collision_box = {{-0.35, -0.35}, {0.35, 0.35}},
-        selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-        resistances = {
-            {
-                type = "fire",
-                percent = 90
-            },
-            {
-                type = "impact",
-                percent = 60
-            }
-        },
-        fast_replaceable_group = "container",
-        inventory_size = 49,
-        logistic_mode = "active-provider",
-        open_sound = { filename = "__base__/sound/metallic-chest-open.ogg", volume=0.65 },
-        close_sound = { filename = "__base__/sound/metallic-chest-close.ogg", volume = 0.7 },
-        vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
-        picture = {
-            filename = "__RExtended__/graphics/entity/Machinery/Robots/chest-active-provider.png",
-            priority = "extra-high",
-            width = 168,
-            height = 168,
-            shift = {0.0625, -0.125},
-            scale = 0.25,
-        },
-        circuit_wire_connection_point = {
-            shadow = {
-                red = {0.734375, 0.453125},
-                green = {0.609375, 0.515625},
-            },
-            wire = {
-                red = {0.40625, 0.21875},
-                green = {0.40625, 0.375},
-            }
-        },
-        circuit_wire_max_distance = 15,
-        circuit_connector_definitions["chest"].sprites,
     }
 })
