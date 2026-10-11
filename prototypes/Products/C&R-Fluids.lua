@@ -11,9 +11,7 @@ data:extend({
         enabled = false,
         ingredients = {{type = "fluid", name="water" , amount = 300}},
         results = {{type="fluid", name="pressurized-water-r1", amount=50}},
-        categories = {"red-compressing"},
-        subgroup = "fluid-products",
-        order = "z-a-b"
+        categories = {"red-compressing"}
     },
     {-- Molten Iron
         type = "recipe",
@@ -68,7 +66,7 @@ data:extend({
         pressure_to_speed_ratio = 0.460,
         flow_to_energy_ratio = 0.400,
         subgroup = "fluid-products",
-        order = "z-a-b"
+        order = "z-b"
     },
     {-- Molten Iron
         type = "fluid",
@@ -130,7 +128,7 @@ data:extend({
         icon = "__RExtended__/graphics/icons/CR/water-r1.png",
         icon_size = 32,
         subgroup = "fluid-products",
-        order = "z-a-a"
+        order = "z-a"
     }
 })
 

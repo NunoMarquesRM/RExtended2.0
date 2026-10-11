@@ -1,8 +1,8 @@
 data:extend({
     create_machinery_item("chemical-machine-r1", "__RExtended__/graphics/icons/Machinery/Bulk/chemical-machine-r1.png",
-        32, "machinery-condenser", "c-c-a", 50),
+        32, "machinery-mix", "c-c", 50),
     create_machinery_item("chemical-machine-r2", "__RExtended__/graphics/icons/Machinery/Bulk/chemical-machine-r2.png",
-        32, "machinery-condenser", "c-c-b", 50),
+        32, "machinery-mix", "c-d", 50),
 
     create_machinery_recipe("chemical-machine-r1", 5, false,
         {

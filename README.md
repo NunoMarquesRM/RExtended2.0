@@ -4,7 +4,7 @@ A Factorio mod that extends the game with new machines and production chains, of
 
 ## Features
 
-- **New machines with multiple tiers (R1, R2, R3)**: Each machine has three tiers of progression, with each tier offering improved performance and efficiency.
+- **New machines with multiple tiers**: Each machine has three tiers of progression, with each tier offering improved performance and efficiency.
 - **Extended production chains**: New recipes and processing steps create deeper and more complex production chains.
 - **New fluid handling systems**: Advanced fluid processing with multiple input/output connections and specialized fluid types.
 - **Improved automation possibilities**: Enhanced logistics and production systems for more efficient automation.
@@ -28,10 +28,8 @@ A Factorio mod that extends the game with new machines and production chains, of
 
 
 #### Steam Power
-- **Steam Engine R1**: Basic steam engine with moderate power output (1.8MW), suitable for early to mid-game power needs.
 - **Steam Engine R2**: Advanced steam engine with improved efficiency (3.6MW), providing more power with less fuel consumption.
 - **Steam Engine R3**: Elite steam engine with maximum power output (7.2MW), the ultimate in steam power generation.
-- **Steam Boiler R1**: Standard boiler for steam production, converting fuel into heat for steam engines.
 - **Steam Boiler R2**: High-efficiency boiler with better fuel utilization, producing more steam with less fuel.
 - **Steam Boiler R3**: Maximum efficiency boiler with optimal heat transfer, the most efficient way to produce steam.
 
@@ -50,12 +48,12 @@ A Factorio mod that extends the game with new machines and production chains, of
 
 ### Power Distribution
 
-- **Small Electric Pole R1**: Basic power distribution with limited range (7.5 tiles), suitable for small-scale power networks.
-- **Medium Electric Pole R1**: Improved power distribution with extended range (9 tiles), covering larger areas.
-- **Large Electric Pole R1**: Advanced power distribution with maximum range (12 tiles), ideal for large-scale power networks.
-- **Substation R1**: High-capacity power distribution hub (18 tiles), connecting multiple power networks.
-- **Substation R2**: Enhanced power distribution with improved coverage (24 tiles), covering even larger areas.
-- **Substation R3**: Elite power distribution with maximum coverage (30 tiles), the ultimate in power distribution.
+- **Small Electric Pole R1**: Basic power distribution with limited range, suitable for small-scale power networks.
+- **Medium Electric Pole R1**: Improved power distribution with extended range, covering larger areas.
+- **Large Electric Pole R1**: Advanced power distribution with maximum range, ideal for large-scale power networks.
+- **Substation R1**: High-capacity power distribution hub, connecting multiple power networks.
+- **Substation R2**: Enhanced power distribution with improved coverage, covering even larger areas.
+- **Substation R3**: Elite power distribution with maximum coverage, the ultimate in power distribution.
 
 ## Machines and Objects
 
@@ -65,21 +63,21 @@ A Factorio mod that extends the game with new machines and production chains, of
 
 ### Logistics
 
-- **Warehouses**: Large storage facilities for items and fluids, with multiple access points and sorting capabilities.
+- **Warehouses**: Large storage facilities for items with multiple access points and sorting capabilities.
 - **Advanced Storage Tanks**: Massive fluid storage with multiple connection points, capable of storing large volumes of fluids.
 
 ### Processing Machines
 
 #### Basic Machines (R1)
-- **Compressor**: Compresses fluids and gases for more efficient storage and transport. Processes 1 fluid per second with 100kW power consumption.
-- **Washer Chamber**: Cleans and processes raw materials, removing impurities. Processes 1 item per second with 120kW power consumption.
-- **Water Condenser**: Extracts water from various sources, including air and other fluids. Produces 600 water per second with 150kW power consumption.
-- **Mixer**: Combines multiple fluids or materials into new compounds. Processes 2 fluids per second with 180kW power consumption.
-- **Cast Chamber**: Forms materials into specific shapes, particularly useful for molten metals. Processes 1 item per second with 200kW power consumption.
+- **Compressor**: Compresses fluids and gases for more efficient storage and transport. Processes 1 fluid per second with 260kW power consumption.
+- **Washer Chamber**: Cleans and processes raw materials, removing impurities. Processes 1 item per second with 210kW power consumption.
+- **Water Condenser**: Extracts water from various sources, including air and other fluids. Produces 600 water per second with 350kW power consumption.
+- **Mixer**: Combines multiple fluids or materials into new compounds. Processes 2 fluids per second with 200kW power consumption.
+- **Cast Chamber**: Forms materials into specific shapes, particularly useful for molten metals. Processes 1 item per second with 400kW power consumption.
 - **Heat Forge**: High-temperature processing for advanced materials, capable of reaching extreme temperatures. Processes 1 item per second with 250kW power consumption.
 - **Chemical Machine**: Handles chemical reactions and processing, creating complex chemical compounds. Processes 1 item per second with 300kW power consumption.
-- **Enrichment Chamber**: Enriches materials for higher quality products, improving their properties. Processes 1 item per second with 350kW power consumption.
-- **Refinery**: Advanced fluid processing with multiple outputs, capable of complex separation and refinement. Processes 2 fluids per second with 400kW power consumption.
+- **Enrichment Chamber**: Enriches materials for higher quality products, improving their properties. Processes 1 item per second with 1MW power consumption.
+- **Refinery**: Advanced fluid processing with multiple outputs, capable of complex separation and refinement. Processes 2 fluids per second with 650kW power consumption.
 
 #### Advanced Machines (R2)
 - All R1 machines with improved performance

@@ -26,10 +26,10 @@ require("prototypes.Machinery.Mining-Drill")
 require("prototypes.Machinery.Furnaces")
 require("prototypes.Machinery.Assemblers")
 require("prototypes.Machinery.Robots")
-
 require("prototypes.Machinery.Compressor")
 require("prototypes.Machinery.ChemicalMachine")
 require("prototypes.Machinery.Refinery")
+require("prototypes.Machinery.Air-Purification")
 
 -- Products
 require("prototypes.Products.C&R")
