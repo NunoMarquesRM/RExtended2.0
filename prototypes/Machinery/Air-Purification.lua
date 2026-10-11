@@ -23,17 +23,17 @@ local function create_air_recipe(name, energy_required, enabled, categories, ing
 end
 
 data:extend({
-    create_air_item("purificator-tool-r1", "Purificator-tool-r1", 32, "fluid-products", "z-d", 10),
-    create_air_item("purificator-tool-r1-empty", "Purificator-tool-r1-Empty", 32, "fluid-products", "z-c", 10),
+    create_air_item("purificator-tool-r1", "Purificator-tool-r1", 32, "fluid-products", "z-d", 25),
+    create_air_item("purificator-tool-r1-empty", "Purificator-tool-r1-Empty", 32, "fluid-products", "z-c", 50),
 
     create_air_recipe("purificator-tool-r1", 2, false, {"crafting-with-fluid"}, {
-            {type = "item", name = "purificator-tool-r1-empty", amount = 10},
-            {type = "fluid", name = "water", amount = 250}
+            {type = "item", name = "purificator-tool-r1-empty", amount = 2},
+            {type = "fluid", name = "water", amount = 500}
         },
         {{type = "item", name = "purificator-tool-r1", amount = 1}}),
     
     create_air_recipe("purificator-tool-r1-empty", 2, false, {"crafting"},
-        {{type = "item", name = "reinforced-iron-plate-r1", amount = 10}},
+        {{type = "item", name = "reinforced-iron-plate-r1", amount = 4}},
         {{type = "item", name = "purificator-tool-r1-empty", amount = 1}}),
 
     create_air_recipe("air-purificator-r1", 1, false, {"crafting"}, {
@@ -58,7 +58,7 @@ data:extend({
         name = "pure-air-r1",
         icon = "__RExtended__/graphics/icons/Machinery/Air-Purification/Pure-Air.png",
         icon_size = 32,
-        energy_required = 6.0,
+        energy_required = 10,
         enabled = false,
         categories = {"air-purification"},
         order = "z-e",
