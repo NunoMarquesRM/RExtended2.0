@@ -364,6 +364,22 @@ data:extend({
         {
             type = "unlock-recipe",
             recipe = "water-r1"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "air-purificator-r1"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "pure-air-r1"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "purificator-tool-r1"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "purificator-tool-r1-empty"
         }
     },
     prerequisites = {"machinery-r1"},

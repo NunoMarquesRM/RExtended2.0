@@ -1,4 +1,16 @@
--- --------------------Components and Recipes--------------------
+----------------------Components and Recipes--------------------
+local function create_item(name, icon_name, icon_size, subgroup, order, stack_size)
+    return {
+        type = "item",
+        name = name,
+        icon = "__RExtended__/graphics/icons/CR/" .. icon_name .. ".png",
+        icon_size = icon_size,
+        subgroup = subgroup,
+        order = order,
+        stack_size = stack_size
+    }
+end
+
 -- Chain 1 - Basic Metallurgy -> Ore Washing
 -- Chain 2 - Fluid Metallurgy/Casting
 data:extend({
@@ -163,24 +175,9 @@ data:extend({
         order = "c-a-f"
     },
 -- Items
-    {-- Clean Iron R1
-        type = "item",
-        name = "clean-iron-r1",
-        icon = "__RExtended__/graphics/icons/CR/clean-iron-r1.png",
-        icon_size = 32,
-        subgroup = "plate-products",
-        order = "b-a-a",
-        stack_size = 100
-    },
-    {-- Clean Copper R1
-        type = "item",
-        name = "clean-copper-r1",
-        icon = "__RExtended__/graphics/icons/CR/clean-copper-r1.png",
-        icon_size = 32,
-        subgroup = "plate-products",
-        order = "b-a-b",
-        stack_size = 100
-    },
+    create_item("clean-iron-r1", "clean-iron-r1", 32, "plate-products", "b-a-a", 100),
+    create_item("clean-copper-r1", "clean-copper-r1", 32, "plate-products", "b-a-b", 100),
+    create_item("clean-steel-r1", "clean-steel-r1", 32, "plate-products", "b-a-c", 100),
     {-- Clean Coal R1
         type = "item",
         name = "clean-coal-r1",
@@ -191,20 +188,13 @@ data:extend({
         subgroup = "chemical-products-r1",
         order = "a-a-b",
         stack_size = 200
-    },
-    {-- Clean Steel R1
-        type = "item",
-        name = "clean-steel-r1",
-        icon = "__RExtended__/graphics/icons/CR/clean-steel-r1.png",
-        icon_size = 32,
-        subgroup = "plate-products",
-        order = "b-a-c",
-        stack_size = 100
     }
 })
 
 -- Glue & Cable
 data:extend({
+    create_item("glue-r1", "glue-r1", 32, "electronic-products", "e-a", 100),
+    create_item("cable-r1", "cable-r1", 32, "electronic-products", "e-c", 200),
 -- Recipes
     {-- Recipe 1
         type = "recipe",
@@ -243,29 +233,16 @@ data:extend({
         },
         results = {{type="item", name="cable-r1", amount=2}},
         categories = {"crafting"}
-    },
--- Items
-    {-- Glue
-        type = "item",
-        name = "glue-r1",
-        icon = "__RExtended__/graphics/icons/CR/glue-r1.png",
-        icon_size = 32,
-        subgroup = "electronic-products",
-        stack_size = 500
-    },
-    {-- Cable R1
-        type = "item",
-        name = "cable-r1",
-        icon = "__RExtended__/graphics/icons/CR/cable-r1.png",
-        icon_size = 32,
-        subgroup = "electronic-products",
-        order = "e-c",
-        stack_size = 200
     }
 })
 
 -- Chain: Reinforced Materials -> Electronic Component
 data:extend({
+    create_item("reinforced-component-r1", "reinforced-component-r1", 32, "reinforced-products", "d-a", 400),
+    create_item("reinforced-iron-plate-r1", "reinforced-iron-plate-r1", 32, "reinforced-products", "d-e", 200),
+    create_item("reinforced-copper-plate-r1", "reinforced-copper-plate-r1", 32, "reinforced-products", "d-f", 200),
+    create_item("reinforced-coal-plate-r1", "reinforced-coal-plate-r1", 32, "reinforced-products", "d-g", 200),
+    create_item("electric-component-r1", "electric-component-r1", 32, "electronic-products", "e-d", 200),
 -- Recipes
     {-- Special Component
         type = "recipe",
@@ -331,57 +308,14 @@ data:extend({
         },
         results = {{type="item", name="electric-component-r1", amount=1}},
         categories = {"crafting"}
-    },
--- Item
-    {-- Special Component
-        type = "item",
-        name = "reinforced-component-r1",
-        icon = "__RExtended__/graphics/icons/CR/reinforced-component-r1.png",
-        icon_size = 32,
-        subgroup = "reinforced-products",
-        order = "d-a",
-        stack_size = 400
-    },
-    {-- Reinforced Iron Plate
-        type = "item",
-        name = "reinforced-iron-plate-r1",
-        icon = "__RExtended__/graphics/icons/CR/reinforced-iron-plate-r1.png",
-        icon_size = 32,
-        subgroup = "reinforced-products",
-        order = "d-b",
-        stack_size = 200
-    }, 
-    {-- Reinforced Copper Plate
-        type = "item",
-        name = "reinforced-copper-plate-r1",
-        icon = "__RExtended__/graphics/icons/CR/reinforced-copper-plate-r1.png",
-        icon_size = 32,
-        subgroup = "reinforced-products",
-        order = "d-c",
-        stack_size = 200
-    },
-    {-- Reinforced Coal Plate
-        type = "item",
-        name = "reinforced-coal-plate-r1",
-        icon = "__RExtended__/graphics/icons/CR/reinforced-coal-plate-r1.png",
-        icon_size = 32,
-        subgroup = "reinforced-products",
-        order = "d-d",
-        stack_size = 200
-    },
-    {-- Electronic Component
-        type = "item",
-        name = "electric-component-r1",
-        icon = "__RExtended__/graphics/icons/CR/electric-component-r1.png",
-        icon_size = 32,
-        subgroup = "electronic-products",
-        order = "e-d",
-        stack_size = 200
     }
 })
 
 -- Chain: Gears
 data:extend({
+    create_item("copper-gear-wheel-r1", "copper-gear-wheel", 32, "reinforced-products", "d-b", 100),
+    create_item("reinforced-gear-iron-r1", "reinforced-gear-iron-r1", 32, "reinforced-products", "d-c", 200),
+    create_item("reinforced-gear-copper-r1", "reinforced-gear-copper-r1", 32, "reinforced-products", "d-d", 200),
 -- Recipes
     {-- Reinforced Iron Gear
         type = "recipe",
@@ -406,34 +340,6 @@ data:extend({
         },
         results = {{type="item", name="reinforced-gear-copper-r1", amount=1}},
         categories = {"crafting"}
-    },
--- Items
-    {-- Copper Gear Wheel R1
-        type = "item",
-        name = "copper-gear-wheel-r1",
-        icon = "__RExtended__/graphics/icons/CR/copper-gear-wheel.png",
-        icon_size = 32,
-        subgroup = "intermediate-product",
-        order = "c[copper-gear-wheel]",
-        stack_size = 100
-    },
-    {-- Reinforced Iron Gear
-        type = "item",
-        name = "reinforced-gear-iron-r1",
-        icon = "__RExtended__/graphics/icons/CR/reinforced-gear-iron-r1.png",
-        icon_size = 32,
-        subgroup = "reinforced-products",
-        order = "d-a-e",
-        stack_size = 200,
-    },
-    {-- Reinforced Copper Gear
-        type = "item",
-        name = "reinforced-gear-copper-r1",
-        icon = "__RExtended__/graphics/icons/CR/reinforced-gear-copper-r1.png",
-        icon_size = 32,
-        subgroup = "reinforced-products",
-        order = "d-a-f",
-        stack_size = 200,
     }
 })
 
@@ -536,30 +442,8 @@ recipe_solarCell.ingredients = {
 }
 recipe_solarCell.results = {{type="item", name="solar-cell", amount=1}}
 
-data:extend({recipe_quartz, recipe_silicon, recipe_solarCell})
-
---Blue Quartz
-local item_quartz = table.deepcopy(data.raw.item['iron-plate'])
-item_quartz.name = "blue-quartz-r1"
-item_quartz.icon = "__RExtended__/graphics/icons/CR/blue-quartz-r1.png"
-item_quartz.icon_size = 32
-item_quartz.subgroup = "solar-products"
-item_quartz.order = "i-a-a"
-
---Crystalline Silicon
-local item_silicon = table.deepcopy(data.raw.item['iron-plate'])
-item_silicon.name = "crystalline-silicon-r1"
-item_silicon.icon = "__RExtended__/graphics/icons/CR/crystalline-silicon-r1.png"
-item_silicon.icon_size = 32
-item_silicon.subgroup = "solar-products"
-item_silicon.order = "i-a-b"
-
---Solar Cell
-local item_solarCell = table.deepcopy(data.raw.item['iron-stick'])
-item_solarCell.name = "solar-cell"
-item_solarCell.icon = "__RExtended__/graphics/icons/CR/solar-cell-r1.png"
-item_solarCell.icon_size = 32
-item_solarCell.subgroup = "solar-products"
-item_solarCell.order = "i-a-c"
-
-data:extend({item_quartz, item_silicon, item_solarCell})
+data:extend({recipe_quartz, recipe_silicon, recipe_solarCell,
+    create_item("blue-quartz-r1", "blue-quartz-r1", 32, "solar-products", "i-a-a", 100),
+    create_item("crystalline-silicon-r1", "crystalline-silicon-r1", 32, "solar-products", "i-a-b", 100),
+    create_item("solar-cell", "solar-cell-r1", 32, "solar-products", "i-a-c", 200)
+})
