@@ -193,7 +193,7 @@ data:extend({
 
 -- Glue & Cable
 data:extend({
-    create_item("glue-r1", "glue-r1", 32, "electronic-products", "e-a", 100),
+    create_item("glue-r1", "glue-r1", 32, "electronic-products", "e-a", 500),
     create_item("cable-r1", "cable-r1", 32, "electronic-products", "e-c", 200),
 -- Recipes
     {-- Recipe 1
