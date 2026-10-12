@@ -33,7 +33,7 @@ data:extend({
         {{type = "item", name = "purificator-tool-r1", amount = 1}}),
     
     create_air_recipe("purificator-tool-r1-empty", 2, false, {"crafting"},
-        {{type = "item", name = "reinforced-iron-plate-r1", amount = 4}},
+        {{type = "item", name = "reinforced-iron-plate-r1", amount = 1}},
         {{type = "item", name = "purificator-tool-r1-empty", amount = 1}}),
 
     create_air_recipe("air-purificator-r1", 1, false, {"crafting"}, {
