@@ -29,7 +29,7 @@ data:extend({
     create_power_pole_item("small-electric-pole", "small-pole-r1", "a-a-b", 50, 64),
     create_power_pole_item("medium-electric-pole", "medium-pole-r1", "a-b-a", 50, 32),
     create_power_pole_item("big-electric-pole", "long-pole-r1", "a-c-a", 50, 32),
-    create_power_pole_item("substation", "substation-pole-r1", "a-d-a", 5, 32)
+    create_power_pole_item("substation", "substation-pole-r1", "a-d-a", 50, 32)
 })
 
 -- Recipes - base_name, name, energy_required, enabled, ingredients, results
