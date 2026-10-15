@@ -58,7 +58,7 @@ data:extend({
         name = "pure-air-r1",
         icon = "__RExtended__/graphics/icons/Machinery/Air-Purification/Pure-Air.png",
         icon_size = 32,
-        energy_required = 10,
+        energy_required = 30,
         enabled = false,
         categories = {"air-purification"},
         order = "z-e",
@@ -105,7 +105,7 @@ data:extend({
             type = "electric",
             input_priority = "secondary",
             usage_priority = "secondary-input",
-            emissions_per_minute = { pollution = -20 }
+            emissions_per_minute = { pollution = -100 }
         },
         graphics_set = {
             animation = {
