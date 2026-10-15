@@ -90,12 +90,16 @@ br2.energy_source = {
     fuel_categories = {"chemical"},
     effectivity = 1,
     fuel_inventory_size = 1,
-    emissions = 0.011,
+    emissions_per_minute = { pollution = 125 },
     smoke = {{
         name = "smoke",
-        north_position={-0.125, -1}, south_position={-0.125, -1},
-        east_position={-0.125, -1}, west_position={-0.125, -1},
-        height=1, deviation={0.1, 0.1},    frequency=25
+        north_position = {-0.125, -1},
+        south_position = {-0.125, -1},
+        east_position = {-0.125, -1},
+        west_position = {-0.125, -1},
+        height = 1,
+        deviation = {0.1, 0.1},
+        frequency = 25
     }}
 }
 br2.pictures = {
@@ -249,7 +253,7 @@ br3.energy_source = {
     fuel_categories = {"chemical"},
     effectivity = 1,
     fuel_inventory_size = 1,
-    emissions = 0.011,
+    emissions_per_minute = { pollution = 333 },
     smoke = {{
         name = "smoke",
         north_position = {-0.75, -2.25},
