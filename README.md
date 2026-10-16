@@ -1,175 +1,81 @@
 # RExtended
 
-A Factorio mod that extends the game with new machines and production chains, offering enhanced automation, processing, and logistics capabilities.
+A Factorio mod that extends the game with new machines and production chains, processing machines, power equipment, storage, and logistic support content.
 
 ## Features
 
-- **New machines with multiple tiers**: Each machine has three tiers of progression, with each tier offering improved performance and efficiency.
-- **Extended production chains**: New recipes and processing steps create deeper and more complex production chains.
-- **New fluid handling systems**: Advanced fluid processing with multiple input/output connections and specialized fluid types.
-- **Improved automation possibilities**: Enhanced logistics and production systems for more efficient automation.
-- **Enhanced power generation and storage**: Multiple tiers of power generation and storage solutions.
-- **Advanced logistics solutions**: Improved transport and storage systems for both items and fluids.
+- New material processing chains for cleaning and refining resources, making reinforced components, and producing specialty fluids.
+- Custom processing machines, with tiers available for selected machines. Machine stats and tiers vary by prototype.
+- Additional power generation, energy storage, and power distribution equipment.
+- Expanded item and fluid storage, plus custom logistic and construction robots.
+- A selection tool for removing trees and supported rock entities.
 
 
-## Quality of Life
-
-- **Tree Eraser**: Efficient tree removal for expansion, clearing large areas quickly without pollution.
-- **Rock Eraser**: Efficient rock removal for expansion, clearing large areas quickly without pollution.
-
-## Energy Systems
+## Energy
 
 ### Power Generation
 
-- **Boilers**: Different types of boilers for various fuel sources, with efficiency improvements across tiers.~
-- **Steam Engines**: Multiple tiers of steam engines with varying power output, from basic 1.8MW to advanced 7.2MW.
-- **Solar Panels**: Enhanced solar power generation, with each tier providing more power per panel.
-- **Accumulators**: Advanced energy storage solutions, with increased capacity and faster charging/discharging rates.
-
-
-#### Steam Power
-- **Steam Engine R2**: Advanced steam engine with improved efficiency (3.6MW), providing more power with less fuel consumption.
-- **Steam Engine R3**: Elite steam engine with maximum power output (7.2MW), the ultimate in steam power generation.
-- **Steam Boiler R2**: High-efficiency boiler with better fuel utilization, producing more steam with less fuel.
-- **Steam Boiler R3**: Maximum efficiency boiler with optimal heat transfer, the most efficient way to produce steam.
-
-
-#### Solar Power
-
-- **Solar Panel Equipment R2**: Advanced equipment solar panel with standard power generation (100kW), providing reliable daytime power for the gadgets in the armor.
-
-- **Solar Panel R2**: Advanced solar panel with improved efficiency (600kW), generating more power per panel.
-- **Solar Panel R3**: Advanced solar panel with maximum power output (6MW), the most efficient solar power generation.
-- **Solar Panel R4**: Elite solar panel with maximum power output (36MW), the most efficient solar power generation.
-- **Solar Panel R5**: Elite solar panel with maximum power output (150MW), the most efficient solar power generation.
-
-- **Accumulator R2**: Advanced energy storage with increased capacity (15MJ), providing more backup power.
-- **Accumulator R3**: Elite energy storage with maximum capacity (30MJ), ensuring continuous power supply.
+- **Steam boilers R2 and R3**: The prototypes specify 15 MW and 60 MW of heating capacity, respectively.
+- **Steam engines R2 and R3**: Higher-tier steam engines with custom fluid handling and effectivity settings. Their prototypes do not specify fixed 3.6 MW or 7.2 MW output ratings.
+- **Solar panels R2–R5**: 600 kW, 6 MW, 36 MW, and 150 MW production, respectively.
+- **Solar panel equipment R2**: 100 kW for armor equipment grids.
+- **Accumulators R2 and R3**: 15 MJ and 30 MJ capacity, respectively.
 
 ### Power Distribution
 
-- **Small Electric Pole R1**: Basic power distribution with limited range, suitable for small-scale power networks.
-- **Medium Electric Pole R1**: Improved power distribution with extended range, covering larger areas.
-- **Large Electric Pole R1**: Advanced power distribution with maximum range, ideal for large-scale power networks.
-- **Substation R1**: High-capacity power distribution hub, connecting multiple power networks.
-- **Substation R2**: Enhanced power distribution with improved coverage, covering even larger areas.
-- **Substation R3**: Elite power distribution with maximum coverage, the ultimate in power distribution.
+The mod adds small, medium, and long-range pole variants, a substation variant, and a light pole. The custom substation is R1; there are no R2 or R3 substation prototypes.
+
 
 ## Machines and Objects
 
-### Support Systems
-
-- **Radar**: Enhanced radar systems for better map coverage, revealing larger areas and providing more detailed information.
-
-### Logistics
-
-- **Warehouses**: Large storage facilities for items with multiple access points and sorting capabilities.
-- **Advanced Storage Tanks**: Massive fluid storage with multiple connection points, capable of storing large volumes of fluids.
-
 ### Processing Machines
 
-#### Basic Machines (R1)
-- **Compressor**: Compresses fluids and gases for more efficient storage and transport. Processes 1 fluid per second with 260kW power consumption.
-- **Washer Chamber**: Cleans and processes raw materials, removing impurities. Processes 1 item per second with 210kW power consumption.
-- **Water Condenser**: Extracts water from various sources, including air and other fluids. Produces 600 water per second with 350kW power consumption.
-- **Mixer**: Combines multiple fluids or materials into new compounds. Processes 2 fluids per second with 200kW power consumption.
-- **Cast Chamber**: Forms materials into specific shapes, particularly useful for molten metals. Processes 1 item per second with 400kW power consumption.
-- **Heat Forge**: High-temperature processing for advanced materials, capable of reaching extreme temperatures. Processes 1 item per second with 250kW power consumption.
-- **Chemical Machine**: Handles chemical reactions and processing, creating complex chemical compounds. Processes 1 item per second with 300kW power consumption.
-- **Enrichment Chamber**: Enriches materials for higher quality products, improving their properties. Processes 1 item per second with 1MW power consumption.
-- **Refinery**: Advanced fluid processing with multiple outputs, capable of complex separation and refinement. Processes 2 fluids per second with 650kW power consumption.
+The mod adds or extends the following processing equipment:
 
-#### Advanced Machines (R2)
-- All R1 machines with improved performance
-- Higher processing speeds (2x faster than R1)
-- Better energy efficiency (20% less power consumption than R1)
-- Increased fluid handling capacity (2x fluid volume)
-- Improved reliability and durability
-- Enhanced module slots for better customization
+- Compressor
+- Washer chamber
+- Water condenser
+- Mixer
+- Cast chamber
+- Heat forge chamber
+- Chemical machine
+- Enrichment chamber
+- Refinery
+- Air purification equipment
+- Furnaces, assemblers, mining equipment, and a beacon
 
-#### Elite Machines (R3)
-- All R1 machines with maximum performance
-- Highest processing speeds (4x faster than R1)
-- Optimal energy efficiency (40% less power consumption than R1)
-- Maximum fluid handling capacity (4x fluid volume)
-- Superior reliability and durability
-- Maximum module slots for ultimate customization
+Some machines have additional tiers, but tiers and specifications differ by machine. Check the in-game recipe and machine tooltip for its crafting speed, power use, fluid connections, and module slots.
 
-#### Production
+### Storage and logistics
 
-- **Furnaces**: Advanced smelting and processing, with higher throughput and better fuel efficiency.
-- **Assemblers**: Specialized assembly machines for different production needs, with improved crafting speeds and efficiency.
+- **Warehouses** for item storage.
+- **Big storage tanks** for fluid storage, with multiple tiers.
+- Custom logistic and construction robots, logistic chests, and a roboport.
+- A custom radar.
 
-#### Mining
+## Materials and fluids
 
-- **Mining Drills**: Advanced mining equipment with fluid support, capable of extracting resources more efficiently.
+The added recipes include:
 
-### Fluid Systems
+- **Clean materials**: iron, copper, coal, and steel.
+- **Components**: glue, cable, reinforced components and plates, reinforced gears, and copper gear wheels.
+- **Specialty fluids**: pressurized water, molten iron, copper, steel, and coal, diesel fuel, enriched petroleum, lithium, and other processing fluids.
+- **Enriched coal** and crystalline silicon products.
 
-- **C&R Fluids**: Complex fluid handling and processing, with specialized fluid types and processing chains.
-- **C&R**: Chemical and resource processing systems, creating advanced materials through complex chemical reactions.
+These materials are used in the mod's machinery, power, storage, and robot recipes.
 
-## Products
+## Quality of Life
 
-### Solid Products
-
-#### Basic Materials
-- **Clean Iron**: Purified iron ore for higher quality products, removing impurities for better performance in crafting.
-- **Clean Copper**: Purified copper ore for higher quality products, ensuring optimal conductivity in electrical components.
-- **Clean Coal**: Purified coal for better combustion, providing more energy with less pollution.
-- **Clean Steel**: High-quality steel made from clean materials, offering superior strength and durability.
-- **Enriched Coal**: Coal enhanced with diesel fuel for better performance, providing significantly more energy than standard coal.
-
-#### Advanced Components
-- **Cable**: Enhanced copper cable with glue for better conductivity, improving electrical network efficiency.
-- **Reinforced Iron Gear**: Stronger iron gear wheels, providing better performance in mechanical systems.
-- **Reinforced Copper Gear**: Stronger copper gear wheels, offering improved durability in specialized machinery.
-- **Glue**: Adhesive material for various applications, used in the production of advanced components.
-- **Copper Gear Wheel**: Specialized gear for copper-based machinery, providing optimal performance in specific applications.
-
-### Fluid Products
-
-#### Basic Fluids
-- **Pressurized Water**: Water under pressure for industrial processes, used in cleaning and chemical reactions.
-- **Molten Iron**: Liquid iron for casting and molding, allowing for complex shapes and improved material properties.
-- **Molten Copper**: Liquid copper for casting and molding, enabling specialized copper components.
-- **Molten Steel**: Liquid steel for advanced manufacturing, providing superior material properties.
-- **Molten Coal**: Liquid coal for specialized processes, enabling new production methods.
-
-#### Chemical Products
-- **Diesel Fuel**: High-energy fuel for advanced engines, providing more power than standard fuel.
-- **Water**: Processed water for various applications, ensuring consistent quality for industrial processes.
-
-### Support Systems
-
-- **Robots**: Advanced logistic and construction robots, with improved speed, capacity, and battery life.
+The tree-rock-eraser selection tool removes trees and a defined set of rock entities in the selected area. Rock support includes some entities from the base game and Alien Biomes when that mod is installed. It does not remove arbitrary entities.
 
 
-
-# Features Removed after Factorio 2.0
+## Features Removed after Factorio 2.0
 
 - **Transport Belts**: Improved belt systems for material transport, with higher throughput and specialized variants.
 - **Incinerator**: Waste disposal and resource recovery, converting unwanted items into useful resources.
 - **Bio-Red**: Biological processing systems, using living organisms for specialized production processes.
 
 
+## Credits
 
-# Installation
-
-1. Download the latest release from the mod portal or GitHub repository.
-2. Place the folder in your Factorio mods directory (typically `%appdata%/Factorio/mods` on Windows.
-3. Enable the mod in Factorio's mod settings by checking the box next to "RExtended" in the mod list.
-4. Start a new game or load an existing save to begin using the mod's features.
-
-# Compatibility
-
-- **Factorio 2.1**: Fully compatible with the latest version of Factorio.
-- **Compatible with most other mods**: Designed to work alongside other popular mods without conflicts.
-
-# License
-
-See LICENSE file for details about the mod's licensing terms and conditions.
-
-# Credits
-
-See Credits file for details about the information for the other mods that this one used.
+See [CREDITS.txt](CREDITS.txt) for third-party mod credits and links.
