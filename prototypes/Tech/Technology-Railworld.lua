@@ -1,25 +1,8 @@
 data:extend({
-    {--Eletric Train R1--
-        type = "technology",
-        name = "electric-railway-r1",
-        icon = "__RExtended__/graphics/Tech/Tree/Railworld/eletric-train-r1.png",
-        icon_size = 128,
-        effects = {
-            {
-                type = "unlock-recipe",
-                recipe = "workshop-loco-r1"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "et-control-station-1"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "et-electric-locomotive-1"
-            }
-        },
-        prerequisites = {"railway", "electric-engine", "electric-energy-accumulators" },
-        unit = {
+    -- Electric Train R1
+    create_tech("electric-railway-r1", "Railworld/eletric-train-r1", 128, "c-k-a",
+        {"railway", "electric-engine", "electric-energy-accumulators"},
+        {
             count = 250,
             ingredients = {
                 {"automation-science-pack", 1},
@@ -27,22 +10,107 @@ data:extend({
             },
             time = 30
         },
-        order = "c-k-a",
-    },
-    {--Eletric Train R2--
-        type = "technology",
-        name = "electric-railway-r2",
-        icon = "__RExtended__/graphics/Tech/Tree/Railworld/eletric-train-r2.png",
-        icon_size = 128,
-        effects = {
-            {
-                type = "unlock-recipe",
-                recipe = "et-electric-locomotive-2"
-            }
-        },
-        prerequisites = {"electric-railway-r1"},
-        unit = {
+        {
+            create_unlock_recipe("workshop-loco-r1"),
+            create_unlock_recipe("et-control-station-1"),
+            create_unlock_recipe("et-electric-locomotive-1")
+        }
+    ),
+    -- Electric Train R2
+    create_tech("electric-railway-r2", "Railworld/eletric-train-r2", 128, "c-k-b",
+        {"sonic-tech-r2"},
+        {
             count = 500,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1}
+            },
+            time = 30
+        },
+        {create_unlock_recipe("et-electric-locomotive-2")}
+    ),
+    -- Electric Train R3
+    create_tech("electric-railway-r3", "Railworld/eletric-train-r3", 128, "c-k-f",
+        {"sonic-tech-r3"},
+        {
+            count = 500,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"military-science-pack", 1},
+                {"production-science-pack", 1},
+                {"utility-science-pack", 1},
+                {"space-science-pack", 1}
+            },
+            time = 30
+        },
+        {create_unlock_recipe("et-electric-locomotive-3")}
+    ),
+    -- Sonic Train R1
+    create_tech("sonic-tech-r1", "Railworld/sonic-r1", 128, "c-k-c",
+        {"electric-railway-r1"},
+        {
+            count = 450,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"military-science-pack", 1}
+            },
+            time = 30
+        },
+        {
+            create_unlock_recipe("sonic-train-r1"),
+            create_unlock_recipe("workshop-giga-r1"),
+            create_unlock_recipe("giga-fuel"),
+            create_unlock_recipe("giga-fuel2"),
+            create_unlock_recipe("giga-fuel3")
+        }
+    ),
+    -- Sonic Train R2
+    create_tech("sonic-tech-r2", "Railworld/sonic-r2", 128, "c-k-d",
+        {"sonic-tech-r1"},
+        {
+            count = 500,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"military-science-pack", 1}
+            },
+            time = 30
+        },
+        {
+            create_unlock_recipe("sonic-train-r2"),
+            create_unlock_recipe("giga-fuel-r2")
+        }
+    ),
+    -- Sonic Train R3
+    create_tech("sonic-tech-r3", "Railworld/sonic-r3", 128, "c-k-e",
+        {"electric-railway-r2"},
+        {
+            count = 500,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"military-science-pack", 1},
+                {"utility-science-pack", 1}
+            },
+            time = 30
+        },
+        {
+            create_unlock_recipe("sonic-train-r3"),
+            create_unlock_recipe("giga-fuel-r3")
+        }
+    ),
+    -- Wagons R1
+    create_tech("railway-r1", "Railworld/railway-r1", 128, "c-l-a",
+        {"electric-railway-r1", "fluid-wagon"},
+        {
+            count = 350,
             ingredients = {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1},
@@ -50,233 +118,51 @@ data:extend({
             },
             time = 30
         },
-        order = "c-k-b",
-    },
-    {--Eletric Train R3--
-        type = "technology",
-        name = "electric-railway-r3",
-        icon = "__RExtended__/graphics/Tech/Tree/Railworld/eletric-train-r3.png",
-        icon_size = 128,
-        effects = {
-            {
-                type = "unlock-recipe",
-                recipe = "et-electric-locomotive-3"
-            }
-        },
-        prerequisites = {"sonic-tech-r3"},
-        unit = {
+        {
+            create_unlock_recipe("workshop-wagon-r1"),
+            create_unlock_recipe("cargo-wagon-r1"),
+            create_unlock_recipe("fluid-wagon-r1")
+        }
+    ),
+    -- Wagons R2
+    create_tech("railway-r2", "Railworld/railway-r2", 128, "c-l-b",
+        {"railway-r1"},
+        {
             count = 500,
             ingredients = {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1},
                 {"chemical-science-pack", 1},
-                {"military-science-pack", 1},
                 {"utility-science-pack", 1}
             },
             time = 30
         },
-        order = "c-k-f",
-    },
-    {--Sonic Train R1--
-        type = "technology",
-        name = "sonic-tech-r1",
-        icon = "__RExtended__/graphics/Tech/Tree/Railworld/sonic-r1.png",
-        icon_size = 128,
-        effects = {
-            {
-                type = "unlock-recipe",
-                recipe = "sonic-train-r1"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "workshop-giga-r1"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "giga-fuel"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "giga-fuel2"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "giga-fuel3"
-            }
-        },
-        prerequisites = {"electric-railway-r2"},
-        unit = {
+        {
+            create_unlock_recipe("cargo-wagon-r2"),
+            create_unlock_recipe("fluid-wagon-r2")
+        }
+    ),
+    -- Wagons R3
+    create_tech("railway-r3", "Railworld/railway-r3", 128, "c-l-c",
+        {"railway-r2"},
+        {
             count = 450,
             ingredients = {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1},
                 {"chemical-science-pack", 1},
-                {"military-science-pack", 1}
-            },
-            time = 30
-        },
-        order = "c-k-c",
-    },
-    {--Sonic Train R2--
-        type = "technology",
-        name = "sonic-tech-r2",
-        icon = "__RExtended__/graphics/Tech/Tree/Railworld/sonic-r2.png",
-        icon_size = 128,
-        effects = {
-            {
-                type = "unlock-recipe",
-                recipe = "sonic-train-r2"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "giga-fuel-r2"
-            }
-        },
-        prerequisites = {"sonic-tech-r1"},
-        unit = {
-            count = 475,
-            ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1},
-                {"military-science-pack", 1}
-            },
-            time = 30
-        },
-        order = "c-k-d",
-    },
-    {--Sonic Train R3--
-        type = "technology",
-        name = "sonic-tech-r3",
-        icon = "__RExtended__/graphics/Tech/Tree/Railworld/sonic-r3.png",
-        icon_size = 128,
-        effects = {
-            {
-                type = "unlock-recipe",
-                recipe = "sonic-train-r3"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "giga-fuel-r3"
-            }
-        },
-        prerequisites = {"sonic-tech-r2"},
-        unit = {
-            count = 500,
-            ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1},
-                {"military-science-pack", 1},
                 {"utility-science-pack", 1}
             },
             time = 30
         },
-        order = "c-k-e",
-    },
-    {--Wagons R1--
-        type = "technology",
-        name = "railway-r1",
-        icon = "__RExtended__/graphics/Tech/Tree/Railworld/railway-r1.png",
-        icon_size = 128,
-        effects = {
-            {
-                type = "unlock-recipe",
-                recipe = "workshop-wagon-r1"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "cargo-wagon-r1"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "fluid-wagon-r1"
-            }
-        },
-        prerequisites = {"electric-railway-r1","fluid-wagon"},
-        unit = {
-            count = 350,
-            ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1},
-            },
-            time = 30
-        },
-        order = "c-l-a",
-    },
-    {--Wagons R2--
-        type = "technology",
-        name = "railway-r2",
-        icon = "__RExtended__/graphics/Tech/Tree/Railworld/railway-r2.png",
-        icon_size = 128,
-        effects = {
-            {
-                type = "unlock-recipe",
-                recipe = "cargo-wagon-r2"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "fluid-wagon-r2"
-            }
-        },
-        prerequisites = {"railway-r1"},
-        unit = {
-            count = 375,
-            ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1},
-            },
-            time = 30
-        },
-        order = "c-l-b",
-    },
-    {--Wagons R3--
-        type = "technology",
-        name = "railway-r3",
-        icon = "__RExtended__/graphics/Tech/Tree/Railworld/railway-r3.png",
-        icon_size = 128,
-        effects = {
-            {
-                type = "unlock-recipe",
-                recipe = "cargo-wagon-copper-r1"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "cargo-wagon-iron-r1"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "cargo-wagon-stone-r1"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "cargo-wagon-stone-r2"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "cargo-wagon-coal-r1"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "cargo-wagon-uranium-r1"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "cargo-wagon-uranium-r2"
-            }
-        },
-        prerequisites = {"railway-r2"},
-        unit = {
-            count = 400,
-            ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1},
-            },
-            time = 30
-        },
-        order = "c-l-c",
-    }
+        {
+            create_unlock_recipe("cargo-wagon-copper-r1"),
+            create_unlock_recipe("cargo-wagon-iron-r1"),
+            create_unlock_recipe("cargo-wagon-stone-r1"),
+            create_unlock_recipe("cargo-wagon-stone-r2"),
+            create_unlock_recipe("cargo-wagon-coal-r1"),
+            create_unlock_recipe("cargo-wagon-uranium-r1"),
+            create_unlock_recipe("cargo-wagon-uranium-r2")
+        }
+    )
 })

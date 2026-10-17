@@ -1,100 +1,82 @@
-data:extend({
-    {--Steam Energy 1 (Boiler && Steam Engine R2)
-       type = "technology",
-       name = "steam-energy-r1",
-       icon_size = 128,
-       icon = "__RExtended__/graphics/Tech/Tree/Energy/steam-energy-r2.png",
-       effects = {
-           {
-               type = "unlock-recipe",
-               recipe = "boiler-r2"
-           },
-           {
-               type = "unlock-recipe",
-               recipe = "steam-engine-r2"
-           }
-       },
-       prerequisites = {"steel-processing"},
-       unit = {
-           count = 100,
-           ingredients = {
-               {"automation-science-pack",1},
-           },
-           time = 25
-       },
-       order = "c-b-a"
-    },
-    {--Steam Energy 2 (Steam Engine && Boiler R3)
-       type = "technology",
-       name = "steam-energy-r2",
-       icon_size = 128,
-       icon = "__RExtended__/graphics/Tech/Tree/Energy/steam-energy-r3.png",
-       effects = {
-           {
-               type = "unlock-recipe",
-               recipe = "boiler-r3"
-           },
-           {
-               type = "unlock-recipe",
-               recipe = "steam-engine-r3"
-           }
-       },
-       prerequisites = {"steam-energy-r1"},
-       unit = {
-           count = 500,
-           ingredients = {
-               {"automation-science-pack",1},
-               {"logistic-science-pack",1},
-               {"chemical-science-pack", 1}
-           },
-           time = 30
-       },
-       order = "c-b-b"
-    },
-    {--Big Pole R2
-       type = "technology",
-       name = "electric-energy-poles-r1",
-       icon_size = 128,
-       icon = "__RExtended__/graphics/Tech/Tree/Poles/electric-energy-distribution-1.png",
-       effects = {
-           {
-               type = "unlock-recipe",
-               recipe = "light-pole-r1"
-           },
-           {
-               type = "unlock-recipe",
-               recipe = "medium-pole-r1"
-           },
-           {
-               type = "unlock-recipe",
-               recipe = "long-pole-r1"
-           }
-       },
-       prerequisites = {"electric-energy-distribution-1"},
-       unit = {
-           count = 150,
-           ingredients = {
-               {"automation-science-pack", 1},
-               {"logistic-science-pack", 1}
-           },
-           time = 30
-       },
-       order = "c-f-a"
-    },
-    {--Substation R2
+function create_unlock_recipe(name)
+    return {
+        type = "unlock-recipe",
+        recipe = name
+    }
+end
+
+function create_tech(name, icon, icon_size, order, prerequisites, unit, effects, upgrade, max_level)
+    return {
         type = "technology",
-        name = "electric-energy-poles-r2",
-        icon_size = 128,
-        icon = "__RExtended__/graphics/Tech/Tree/Poles/electric-energy-distribution-2.png",
-        effects = {
-            {
-                type = "unlock-recipe",
-                recipe = "substation-pole-r1"
-            }
+        name = name,
+        icon = "__RExtended__/graphics/Tech/Tree/" .. icon .. ".png",
+        icon_size = icon_size,
+        order = order,
+        prerequisites = prerequisites,
+        unit = unit,
+        effects = effects,
+        upgrade = upgrade,
+        max_level = max_level
+    }
+end
+
+data:extend({
+    -- Steam Energy 1 (Boiler && Steam Engine R2)
+    create_tech("steam-energy-r1", "Energy/steam-energy-r2", 128, "c-b-a",
+        {"engine"},
+        {
+            count = 200,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1}
+            },
+            time = 30
         },
-        prerequisites = {"electric-energy-distribution-2"},
-        unit = {
-            count = 110,
+        {
+            create_unlock_recipe("boiler-r2"),
+            create_unlock_recipe("steam-engine-r2")
+        }
+    ),
+    -- Steam Energy 2 (Steam Engine && Boiler R3)
+    create_tech("steam-energy-r2", "Energy/steam-energy-r3", 128, "c-b-b",
+        {"steam-energy-r1"},
+        {
+            count = 800,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1}
+            },
+            time = 30
+        },
+        {
+            create_unlock_recipe("boiler-r3"),
+            create_unlock_recipe("steam-engine-r3")
+        }
+    ),
+    -- Big Pole R2
+    create_tech("electric-energy-poles-r1", "Poles/electric-energy-distribution-1", 128, "c-f-a",
+        {"electric-energy-distribution-1"},
+        {
+            count = 300,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1}
+            },
+            time = 30
+        },
+        {
+            create_unlock_recipe("light-pole-r1"),
+            create_unlock_recipe("medium-pole-r1"),
+            create_unlock_recipe("long-pole-r1")
+        }
+    ),
+    -- Substation R2
+    create_tech("electric-energy-poles-r2", "Poles/electric-energy-distribution-2", 128, "c-f-b",
+        {"electric-energy-distribution-2", "electric-energy-poles-r1"},
+        {
+            count = 300,
             ingredients = {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1},
@@ -102,182 +84,117 @@ data:extend({
             },
             time = 30
         },
-        order = "c-f-b"
-    },
-    {--Solar Panel Equipment R2
-       type = "technology",
-       name = "solar-panel-equipment-tech-r2",
-       icon_size = 128,
-       icon = "__RExtended__/graphics/Tech/Tree/Energy/solar-panel-equipment-r2.png",
-       prerequisites = {"solar-panel-equipment"},
-       effects = {
-           {
-               type = "unlock-recipe",
-               recipe = "solar-panel-equipment-r2"
-           }
-       },
-       unit = {
-           count = 120,
-           ingredients = {
-               {"automation-science-pack",1},
-               {"logistic-science-pack",1},
-               {"chemical-science-pack",1},
-               {"production-science-pack", 1}
-           },
-           time = 15
-       },
-       order = "d-a-a"
-    },
-    {--Solar Panel R2
-       type = "technology",
-       name = "solar-energy-r2",
-       icon_size = 256,
-       icon = "__RExtended__/graphics/Tech/Tree/Energy/solar-energy-r2.png",
-       effects = {
-           {
-               type = "unlock-recipe",
-               recipe = "solar-cell"
-           },
-           {
-               type = "unlock-recipe",
-               recipe = "solar-panel-r2"
-           }
-       },
-       prerequisites = {"solar-energy"},
-       unit = {
-           count = 1000,
-           ingredients = {
-               {"automation-science-pack",1},
-               {"logistic-science-pack",1}
-           },
-           time = 30
-       },
-       order = "c-n-c"
-    },
-    {--Solar Panel R3
-       type = "technology",
-       name = "solar-energy-r3",
-       icon_size = 256,
-       icon = "__RExtended__/graphics/Tech/Tree/Energy/solar-energy-r3.png",
-       effects = {
-           {
-               type = "unlock-recipe",
-               recipe = "solar-panel-r3"
-           }
-       },
-       prerequisites = {"solar-energy-r2"},
-       unit = {
-           count = 1500,
-           ingredients = {
-               {"automation-science-pack",1},
-               {"logistic-science-pack",1},
-               {"chemical-science-pack",1}
-           },
-           time = 30
-       },
-       order = "c-n-e"
-    },
-    {--Solar Panel R4
-       type = "technology",
-       name = "solar-energy-r4",
-       icon_size = 256,
-       icon = "__RExtended__/graphics/Tech/Tree/Energy/solar-energy-r4.png",
-       effects = {
-           {
-               type = "unlock-recipe",
-               recipe = "solar-panel-r4"
-           }
-       },
-       prerequisites = {"solar-energy-r3","electric-energy-distribution-2"},
-       unit = {
-           count = 1500,
-           ingredients = {
-               {"automation-science-pack",1},
-               {"logistic-science-pack",1},
-               {"chemical-science-pack",1},
-               {"military-science-pack", 1},
-               {"production-science-pack", 1}
-           },
-           time = 30
-       },
-       order = "c-n-e"
-    },
-    {--Solar Panel R5
-       type = "technology",
-       name = "solar-energy-r5",
-       icon_size = 256,
-       icon = "__RExtended__/graphics/Tech/Tree/Energy/solar-energy-r5.png",
-       effects = {
-           {
-               type = "unlock-recipe",
-               recipe = "solar-panel-r5"
-           }
-       },
-       prerequisites = {"solar-energy-r4"},
-       unit = {
-           count = 2000,
-           ingredients = {
-               {"automation-science-pack",1},
-               {"logistic-science-pack",1},
-               {"chemical-science-pack",1},
-               {"production-science-pack", 1},
-               {"utility-science-pack", 1}
-           },
-           time = 30
-       },
-       order = "c-n-f"
-    }
+        {create_unlock_recipe("substation-pole-r1")}
+    ),
+    -- Solar Panel Equipment R2
+    create_tech("solar-panel-equipment-tech-r2", "Energy/solar-panel-equipment-r2", 128, "d-a-a",
+        {"solar-panel-equipment", "solar-energy-r2"},
+        {
+            count = 500,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1}
+            },
+            time = 30
+        },
+        {create_unlock_recipe("solar-panel-equipment-r2")}
+    ),
+    -- Solar Panel R2
+    create_tech("solar-energy-r2", "Energy/solar-energy-r2", 256, "c-n-c",
+        {"solar-energy", "silicon-processing"},
+        {
+            count = 1000,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1}
+            },
+            time = 30
+        },
+        {
+            create_unlock_recipe("solar-cell"),
+            create_unlock_recipe("solar-panel-r2")
+        }
+    ),
+    -- Solar Panel R3
+    create_tech("solar-energy-r3", "Energy/solar-energy-r3", 256, "c-n-e",
+        {"solar-energy-r2"},
+        {
+            count = 1500,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"military-science-pack", 1},
+                {"chemical-science-pack", 1}
+            },
+            time = 30
+        },
+        {create_unlock_recipe("solar-panel-r3")}
+    ),
+    -- Solar Panel R4
+    create_tech("solar-energy-r4", "Energy/solar-energy-r4", 256, "c-n-e",
+        {"solar-energy-r3", "electric-energy-distribution-2"},
+        {
+            count = 1500,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1}
+            },
+            time = 30
+        },
+        {create_unlock_recipe("solar-panel-r4")}
+    ),
+    -- Solar Panel R5
+    create_tech("solar-energy-r5", "Energy/solar-energy-r5", 256, "c-n-f",
+        {"solar-energy-r4"},
+        {
+            count = 3000,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1},
+                {"utility-science-pack", 1}
+            },
+            time = 30
+        },
+        {create_unlock_recipe("solar-panel-r5")}
+    ),
+    -- Energy Accumulator R1
+    create_tech("energy-accumulator-r1", "Energy/electric-energy-acumulators-r1", 128, "c-h-a",
+        {"electric-energy-accumulators", "lithium-r1"},
+        {
+            count = 500,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1}
+            },
+            time = 30
+        },
+        {
+            create_unlock_recipe("accumulator-r2"),
+            create_unlock_recipe("battery-r1")
+        }
+    ),
+    -- Energy Accumulator R2
+    create_tech("energy-accumulator-r2", "Energy/electric-energy-acumulators-r3", 128, "c-h-b",
+        {"energy-accumulator-r1"},
+        {
+            count = 1000,
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1},
+                {"utility-science-pack", 1}
+            },
+            time = 30
+        },
+        {create_unlock_recipe("accumulator-r3")}
+    )
 })
-
-
---Energy Accumulator R1--
-local acc_tech_r2 = table.deepcopy(data.raw.technology['electric-energy-accumulators'])
-acc_tech_r2.name = "energy-accumulator-r1"
-acc_tech_r2.icon = "__RExtended__/graphics/Tech/Tree/Energy/electric-energy-acumulators-r1.png"
-acc_tech_r2.icon_size = 128
-acc_tech_r2.effects = {
-    {
-        type = "unlock-recipe",
-        recipe = "accumulator-r2"
-    },
-    {
-        type = "unlock-recipe",
-        recipe = "battery-r1"
-    }
-}
-acc_tech_r2.prerequisites = {"electric-energy-accumulators"}
-acc_tech_r2.unit = {
-    count = 500,
-    ingredients = {
-        {"automation-science-pack",1},
-        {"logistic-science-pack",1},
-        {"chemical-science-pack",1}
-    },
-    time = 30
-}
-acc_tech_r2.order = "c-h-a"
-
---Energy Accumulator R2--
-local acc_tech_r3 = table.deepcopy(data.raw.technology['electric-energy-accumulators'])
-acc_tech_r3.name = "energy-accumulator-r2"
-acc_tech_r3.icon = "__RExtended__/graphics/Tech/Tree/Energy/electric-energy-acumulators-r3.png"
-acc_tech_r3.icon_size = 128
-acc_tech_r3.effects = {{
-    type = "unlock-recipe",
-    recipe = "accumulator-r3"
-}}
-acc_tech_r3.prerequisites = {"energy-accumulator-r1"}
-acc_tech_r3.unit = {
-    count = 500,
-    ingredients = {
-        {"automation-science-pack",1},
-        {"logistic-science-pack",1},
-        {"chemical-science-pack",1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
-    },
-    time = 30
-}
-acc_tech_r3.order = "c-h-b"
-
-data:extend({acc_tech_r2,acc_tech_r3})

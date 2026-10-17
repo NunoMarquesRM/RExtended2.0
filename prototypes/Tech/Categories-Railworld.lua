@@ -5,7 +5,7 @@ data:extend({
         order = "kda-d",
         inventory_order = "d-a-d",
         icon = "__RExtended__/graphics/Tech/Categories/RailWorld.png",
-        icon_size = 128,
+        icon_size = 128
     },
     create_item_subgroup("re-workshop", "re-railworld", "a"),     -- Machinery Workshops
     create_item_subgroup("re-eletricTrain", "re-railworld", "b"), -- Eletric Trains

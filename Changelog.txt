@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.1.3
+Date: 17.10.2026
+  Optimizations:
+    - Refactored technologies code for Energy, Robots, Machinery and Railword
+  Changes:
+    - Changed technologies prerequisites, ingredients and time for: Energy, Robots, Machinery and  
+    Railword
+    - Changed electric steel furnance mining time from 1 to 0.5
+    - Updated credits references
+    - Changed category image for machinery extended, components and fluids
+---------------------------------------------------------------------------------------------------
 Version: 2.1.2
 Date: 17.10.2026
   Balancing:
