@@ -37,6 +37,8 @@ data:extend({
         collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
         selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
         module_slots = 3,
+        next_upgrade = "refinery-r2",
+        fast_replaceable_group = "assembling-machine",
         module_specification = {
             module_info_icon_shift = {0, 0.2},
             module_info_multi_row_initial_height_modifier = -0.3
@@ -49,7 +51,7 @@ data:extend({
         energy_source = {
             type = "electric",
             usage_priority = "secondary-input",
-            emissions = 0.05
+            emissions_per_minute = { pollution = 32.5 }
         },
         energy_usage = "650kW",
         ingredient_count = 4,
@@ -170,7 +172,9 @@ RefineryR2.name = "refinery-r2"
 RefineryR2.icon = "__RExtended__/graphics/icons/Machinery/Bulk/refinery-r2.png"
 RefineryR2.icon_size = 32
 RefineryR2.minable.result = "refinery-r2"
-RefineryR2.energy_usage = "1.5MW"
+RefineryR2.energy_usage = "5MW"
+RefineryR2.next_upgrade = nil
+RefineryR2.energy_source.emissions_per_minute = { pollution = 250 }
 RefineryR2.crafting_speed = 4
 RefineryR2.module_slots = 3
 RefineryR2.module_specification = {

@@ -68,7 +68,8 @@ data:extend({
         energy_usage = "150kW",
         ingredient_count = 1,
         crafting_speed = 2,
-        energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.025, },
+        next_upgrade = "half-assembler-r2",
+        energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions_per_minute = { pollution = 3.75 }},
         fast_replaceable_group = "assembling-machine",
         open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
         close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
@@ -111,9 +112,9 @@ data:extend({
         energy_usage = "350kW",
         ingredient_count = 6,
         crafting_speed = 1.5,
+        next_upgrade = "assembler-r2",
         fast_replaceable_group = "assembling-machine",
-        energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.01, },
-        fast_replaceable_group = "assembling-machine",
+        energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions_per_minute = { pollution = 3.5 }},
         open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
         close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
         module_slots = 3,
@@ -244,11 +245,10 @@ data:extend({
         collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
         selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
         crafting_categories = {"crafting", "advanced-crafting", "crafting-with-fluid"},
-        energy_usage = "750kW",
+        energy_usage = "5MW",
         ingredient_count = 6,
         crafting_speed = 4,
-        fast_replaceable_group = "assembling-machine",
-        energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.018, },
+        energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions_per_minute = { pollution = 13.5 }},
         fast_replaceable_group = "assembling-machine",
         open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
         close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
@@ -374,7 +374,9 @@ HalfAssemblerMachineR2.name = "half-assembler-r2"
 HalfAssemblerMachineR2.icon = "__RExtended__/graphics/icons/Machinery/Assemblers/half-assembler-r2.png"
 HalfAssemblerMachineR2.icon_size = 32
 HalfAssemblerMachineR2.minable.result = "half-assembler-r2"
-HalfAssemblerMachineR2.energy_usage = "750kW"
+HalfAssemblerMachineR2.energy_usage = "2MW"
+HalfAssemblerMachineR2.next_upgrade = nil
+HalfAssemblerMachineR2.energy_source.emissions_per_minute = { pollution = 18.75 }
 HalfAssemblerMachineR2.crafting_speed = 4
 HalfAssemblerMachineR2.module_slots = 3
 HalfAssemblerMachineR2.module_specification = {

@@ -210,8 +210,8 @@ data:extend({
         max_health = 250,
         resistances = {
             {type = "fire", percent = 85 },
-            {type = "physical", decrease = 10, percent = 40 },
-        },        
+            {type = "physical", decrease = 10, percent = 40 }
+        },
         collision_box = {{0, 0}, {0, 0}},
         selection_box = {{-0.5, -1.5}, {0.5, -0.5}},
         max_payload_size = 2,
@@ -232,7 +232,7 @@ data:extend({
             frame_count = 1,
             shift = {0,0},
             scale = 0.5,
-            direction_count = 16,
+            direction_count = 16
         },
         idle_with_cargo = {
             filename = "__RExtended__/graphics/entity/Machinery/Robots/red-logistic-off.png",
@@ -243,7 +243,7 @@ data:extend({
             frame_count = 1,
             shift = {0,0},
             scale = 0.5,
-            direction_count = 16,            
+            direction_count = 16
         },
         in_motion = {
             filename = "__RExtended__/graphics/entity/Machinery/Robots/red-logistic-on.png",
@@ -254,7 +254,7 @@ data:extend({
             frame_count = 1,
             shift = {0,0},
             scale = 0.5,
-            direction_count = 16,            
+            direction_count = 16
         },
         in_motion_with_cargo = {
             filename = "__RExtended__/graphics/entity/Machinery/Robots/red-logistic-off.png",
@@ -265,7 +265,7 @@ data:extend({
             frame_count = 1,
             shift = {0,0},
             scale = 0.5,
-            direction_count = 16,            
+            direction_count = 16
         },
         shadow_idle = {
             filename = "__base__/graphics/entity/logistic-robot/logistic-robot-shadow.png",
@@ -365,48 +365,48 @@ data:extend({
             },
         },
         working_sound = {
-        {
-            filename = "__base__/sound/construction-robot-11.ogg", volume = 0.47
-        },
-        {
-            filename = "__base__/sound/construction-robot-12.ogg", volume = 0.47
-        },
-        {
-            filename = "__base__/sound/construction-robot-13.ogg", volume = 0.47
-        },
-        {
-            filename = "__base__/sound/construction-robot-14.ogg", volume = 0.47
-        },
-        {
-            filename = "__base__/sound/construction-robot-15.ogg", volume = 0.47
-        },
-        {
-            filename = "__base__/sound/construction-robot-16.ogg", volume = 0.47
-        },
-        {
-            filename = "__base__/sound/construction-robot-17.ogg", volume = 0.47
-        },
-        {
-            filename = "__base__/sound/construction-robot-18.ogg", volume = 0.47
-        },
-        {
-            filename = "__base__/sound/construction-robot-19.ogg", volume = 0.47
-        },
-        {
-            filename = "__base__/sound/flying-robot-1.ogg", volume = 0.43
-        },
-        {
-            filename = "__base__/sound/flying-robot-2.ogg", volume = 0.43
-        },
-        {
-            filename = "__base__/sound/flying-robot-3.ogg", volume = 0.43
-        },
-        {
-            filename = "__base__/sound/flying-robot-4.ogg", volume = 0.43
-        },
-        {
-            filename = "__base__/sound/flying-robot-5.ogg", volume = 0.43
-        }
+            {
+                filename = "__base__/sound/construction-robot-11.ogg", volume = 0.47
+            },
+            {
+                filename = "__base__/sound/construction-robot-12.ogg", volume = 0.47
+            },
+            {
+                filename = "__base__/sound/construction-robot-13.ogg", volume = 0.47
+            },
+            {
+                filename = "__base__/sound/construction-robot-14.ogg", volume = 0.47
+            },
+            {
+                filename = "__base__/sound/construction-robot-15.ogg", volume = 0.47
+            },
+            {
+                filename = "__base__/sound/construction-robot-16.ogg", volume = 0.47
+            },
+            {
+                filename = "__base__/sound/construction-robot-17.ogg", volume = 0.47
+            },
+            {
+                filename = "__base__/sound/construction-robot-18.ogg", volume = 0.47
+            },
+            {
+                filename = "__base__/sound/construction-robot-19.ogg", volume = 0.47
+            },
+            {
+                filename = "__base__/sound/flying-robot-1.ogg", volume = 0.43
+            },
+            {
+                filename = "__base__/sound/flying-robot-2.ogg", volume = 0.43
+            },
+            {
+                filename = "__base__/sound/flying-robot-3.ogg", volume = 0.43
+            },
+            {
+                filename = "__base__/sound/flying-robot-4.ogg", volume = 0.43
+            },
+            {
+                filename = "__base__/sound/flying-robot-5.ogg", volume = 0.43
+            }
         },
         max_sounds_per_type = 5,
         audible_distance_modifier = 1,
@@ -423,7 +423,7 @@ data:extend({
         minable = {hardness = 0.1, mining_time = 0.1, result = "red-robot-c"},
         resistances = { 
             {type = "fire", percent = 85 },
-            {type = "physical", decrease = 10, percent = 40 },        
+            {type = "physical", decrease = 10, percent = 40 }
         },
         max_health = 250,
         collision_box = {{0, 0}, {0, 0}},
@@ -516,7 +516,7 @@ data:extend({
             shift = {0, 0},
             scale = 0.5,
             direction_count = 16,
-            animation_speed = 0.3,
+            animation_speed = 0.3
         },
         shadow_working = {
             filename = "__base__/graphics/entity/construction-robot/construction-robot-shadow.png",
@@ -550,7 +550,7 @@ data:extend({
             frame_count = 19,
             line_length = 19,
             shift = {0.078125, -0.15625},
-            animation_speed = 0.3,
+            animation_speed = 0.3
         },
         sparks = {
             {
@@ -561,7 +561,7 @@ data:extend({
                 line_length = 19,
                 shift = {-0.109375, 0.3125},
                 tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
-                animation_speed = 0.3,
+                animation_speed = 0.3
             },
             {
                 filename = "__base__/graphics/entity/sparks/sparks-02.png",
@@ -571,7 +571,7 @@ data:extend({
                 line_length = 19,
                 shift = {0.03125, 0.125},
                 tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
-                animation_speed = 0.3,
+                animation_speed = 0.3
             },
             {
                 filename = "__base__/graphics/entity/sparks/sparks-03.png",
@@ -581,7 +581,7 @@ data:extend({
                 line_length = 19,
                 shift = {-0.0625, 0.203125},
                 tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
-                animation_speed = 0.3,
+                animation_speed = 0.3
             },
             {
                 filename = "__base__/graphics/entity/sparks/sparks-04.png",
@@ -591,7 +591,7 @@ data:extend({
                 line_length = 19,
                 shift = {-0.0625, 0.234375},
                 tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
-                animation_speed = 0.3,
+                animation_speed = 0.3
             },
             {
                 filename = "__base__/graphics/entity/sparks/sparks-05.png",
@@ -601,7 +601,7 @@ data:extend({
                 line_length = 19,
                 shift = {-0.109375, 0.171875},
                 tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
-                animation_speed = 0.3,
+                animation_speed = 0.3
             },
             {
                 filename = "__base__/graphics/entity/sparks/sparks-06.png",
@@ -611,52 +611,52 @@ data:extend({
                 line_length = 19,
                 shift = {0.03125, 0.3125},
                 tint = { r = 1.0, g = 0.9, b = 0.0, a = 1.0 },
-                animation_speed = 0.3,
+                animation_speed = 0.3
             },
         },
         working_sound = {
-        {
-            filename = "__base__/sound/construction-robot-1.ogg", volume = 0.47
-        },
-        {
-            filename = "__base__/sound/construction-robot-2.ogg", volume = 0.47
-        },
-        {
-            filename = "__base__/sound/construction-robot-3.ogg", volume = 0.47
-        },
-        {
-            filename = "__base__/sound/construction-robot-4.ogg", volume = 0.47
-        },
-        {
-            filename = "__base__/sound/construction-robot-5.ogg", volume = 0.47
-        },
-        {
-            filename = "__base__/sound/construction-robot-6.ogg", volume = 0.47
-        },
-        {
-            filename = "__base__/sound/construction-robot-7.ogg", volume = 0.47
-        },
-        {
-            filename = "__base__/sound/construction-robot-8.ogg", volume = 0.47
-        },
-        {
-            filename = "__base__/sound/construction-robot-9.ogg", volume = 0.47
-        },
-        {
-            filename = "__base__/sound/flying-robot-1.ogg", volume = 0.43
-        },
-        {
-            filename = "__base__/sound/flying-robot-2.ogg", volume = 0.43
-        },
-        {
-            filename = "__base__/sound/flying-robot-3.ogg", volume = 0.43
-        },
-        {
-            filename = "__base__/sound/flying-robot-4.ogg", volume = 0.43
-        },
-        {
-            filename = "__base__/sound/flying-robot-5.ogg", volume = 0.43
-        }
+            {
+                filename = "__base__/sound/construction-robot-1.ogg", volume = 0.47
+            },
+            {
+                filename = "__base__/sound/construction-robot-2.ogg", volume = 0.47
+            },
+            {
+                filename = "__base__/sound/construction-robot-3.ogg", volume = 0.47
+            },
+            {
+                filename = "__base__/sound/construction-robot-4.ogg", volume = 0.47
+            },
+            {
+                filename = "__base__/sound/construction-robot-5.ogg", volume = 0.47
+            },
+            {
+                filename = "__base__/sound/construction-robot-6.ogg", volume = 0.47
+            },
+            {
+                filename = "__base__/sound/construction-robot-7.ogg", volume = 0.47
+            },
+            {
+                filename = "__base__/sound/construction-robot-8.ogg", volume = 0.47
+            },
+            {
+                filename = "__base__/sound/construction-robot-9.ogg", volume = 0.47
+            },
+            {
+                filename = "__base__/sound/flying-robot-1.ogg", volume = 0.43
+            },
+            {
+                filename = "__base__/sound/flying-robot-2.ogg", volume = 0.43
+            },
+            {
+                filename = "__base__/sound/flying-robot-3.ogg", volume = 0.43
+            },
+            {
+                filename = "__base__/sound/flying-robot-4.ogg", volume = 0.43
+            },
+            {
+                filename = "__base__/sound/flying-robot-5.ogg", volume = 0.43
+            }
         },
         max_sounds_per_type = 5,
         audible_distance_modifier = 1,
@@ -701,14 +701,14 @@ data:extend({
             {-1.5, -0.5}, {1.5, -0.5}, {1.5, 1}, {-1.5, 1},
             {-1.3, -0.3}, {1.3, -0.3}, {1.3, 0.8}, {-1.3, 0.8},
             {-1.8, -0.8}, {1.8, -0.8}, {1.8, -1.8}, {-1.8, -1.8},
-            {-2, -1}, {2, -1}, {2, -2}, {-2, -2},
+            {-2, -1}, {2, -1}, {2, -2}, {-2, -2}
         },
         base = {
             filename = "__RExtended__/graphics/entity/Machinery/Robots/red-roboport-idle.png",
             width = 412,
             height = 412,
             shift = {0.84375, -1.03125},
-            scale = 0.5,
+            scale = 0.5
         },
         base_patch = {
             filename = "__RExtended__/graphics/entity/Storage/BigStorageTank/empty.png",
@@ -726,7 +726,7 @@ data:extend({
             frame_count = 4,
             animation_speed = 0.05,
             shift = {0.84375, -1.03125},
-            scale = 0.5,
+            scale = 0.5
         },
         door_animation_up = {
             filename = "__RExtended__/graphics/entity/Storage/BigStorageTank/empty.png",
@@ -755,7 +755,7 @@ data:extend({
         },
         vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
         working_sound = {
-            sound = { filename = "__base__/sound/roboport-working.ogg", volume = 0.6 },
+            sound = { filename = "__base__/sound/roboport-working.ogg", volume = 0.4 },
             max_sounds_per_type = 3,
             audible_distance_modifier = 0.5,
             probability = 1 / (5 * 60) -- average pause between the sound is 5 seconds
@@ -765,8 +765,8 @@ data:extend({
         spawn_and_station_height = -0.1,
         draw_logistic_radius_visualization = true,
         draw_construction_radius_visualization = true,
-        open_door_trigger_effect = { { type = "play-sound", sound = { filename = "__base__/sound/roboport-door.ogg", volume = 1.2 } }, },
-        close_door_trigger_effect = { { type = "play-sound", sound = { filename = "__base__/sound/roboport-door.ogg", volume = 0.75 } }, },
+        open_door_trigger_effect = {{ type = "play-sound", sound = { filename = "__base__/sound/roboport-door.ogg", volume = 0.7 }}},
+        close_door_trigger_effect = {{ type = "play-sound", sound = { filename = "__base__/sound/roboport-door.ogg", volume = 0.65 }}},
         circuit_wire_connection_point = {
             shadow = { red = {1.17188, 1.98438}, green = {1.04688, 2.04688} },
             wire = { red = {0.78125, 1.375}, green = {0.78125, 1.53125} }
@@ -776,6 +776,6 @@ data:extend({
         default_available_logistic_output_signal = {type = "virtual", name = "signal-X"},
         default_total_logistic_output_signal = {type = "virtual", name = "signal-Y"},
         default_available_construction_output_signal = {type = "virtual", name = "signal-Z"},
-        default_total_construction_output_signal = {type = "virtual", name = "signal-T"},
+        default_total_construction_output_signal = {type = "virtual", name = "signal-T"}
     }
 })

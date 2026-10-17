@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.1.2
+Date: 17.10.2026
+  Balancing:
+    - Energy consumption and Pollution:
+      - Assemblers, ChemicalMachines, Compressors, Furnances, Mining Drills, Washer Chambers, Water
+      Condensors, Refineries, Cast Chambers, Heat Forges, Mixer, Formation Furnances and Enrichment
+      Chamber
+  Changes:
+    - Added upgrade entities for:
+      - Assemblers, ChemicalMachines, Compressors, Furnances, Mining Drills, Washer Chambers, Water
+      Condensors, Refineries, Cast Chamber and Heat Forge
+---------------------------------------------------------------------------------------------------
 Version: 2.1.1
 Date: 16.10.2026
   Changes:

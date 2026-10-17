@@ -70,7 +70,8 @@ data:extend({
         energy_usage = "260kW",
         ingredient_count = 4,
         crafting_speed = 1,
-        energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.004, },
+        next_upgrade = "compressor-r2",
+        energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions_per_minute = { pollution = 1.04 }},
         fast_replaceable_group = "assembling-machine",
         module_slots = 2,
         module_specification = {
@@ -79,9 +80,9 @@ data:extend({
         },
         allowed_effects = {"consumption", "speed", "productivity", "pollution"},
         working_sound = {
-            sound = {{ filename = "__base__/sound/chemical-plant.ogg", volume = 0.8 },},
-            idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
-            apparent_volume = 1.5,
+            sound = {{ filename = "__base__/sound/chemical-plant.ogg", volume = 0.6 },},
+            idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.4 },
+            apparent_volume = 0.8,
         },
         graphics_set = {
             animation = {
@@ -99,7 +100,9 @@ CompressorR2.name = "compressor-r2"
 CompressorR2.icon = "__RExtended__/graphics/icons/Machinery/Bulk/compressor-r2.png"
 CompressorR2.icon_size = 32
 CompressorR2.minable.result = "compressor-r2"
-CompressorR2.energy_usage = "750kW"
+CompressorR2.energy_usage = "2MW"
+CompressorR2.next_upgrade = nil
+CompressorR2.energy_source.emissions_per_minute = { pollution = 8 }
 CompressorR2.crafting_speed = 4
 CompressorR2.module_slots = 3
 CompressorR2.module_specification = {
