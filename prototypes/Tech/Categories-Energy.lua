@@ -1,12 +1,3 @@
-function create_item_subgroup(name, group, order)
-    return {
-        type = "item-subgroup",
-        name = name,
-        group = group,
-        order = order,
-    }
-end
-
 data:extend({
     {--Group
         type = "item-group",

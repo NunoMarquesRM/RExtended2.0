@@ -24,7 +24,7 @@ local function create_logistic_container(config)
             mining_time = 0.3,
             result = config.name
         },
-
+        icon_draw_specification = {scale = 0.8},
         inventory_size = config.inventory_size,
         logistic_mode = config.logistic_mode,
         max_logistic_slots = config.max_logistic_slots,

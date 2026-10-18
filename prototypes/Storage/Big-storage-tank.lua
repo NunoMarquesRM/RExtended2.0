@@ -29,10 +29,7 @@ local function setup_big_storage_tank(entity, name, tier, volume, max_health)
     entity.icon = "__RExtended__/graphics/icons/Storage/BigStorageTank/big-storage-tank-" .. tier .. ".png"
     entity.icon_size = 32
     entity.flags = {"placeable-player", "player-creation"}
-    entity.minable = {
-        mining_time = 1,
-        result = name
-    }
+    entity.minable = {mining_time = 0.5, result = name}
     entity.max_health = max_health
     entity.corpse = "medium-remnants"
     entity.collision_box = {{-1.2, -1.2}, {1.2, 1.2}}

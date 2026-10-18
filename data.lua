@@ -1,3 +1,7 @@
+-- Functions
+require("prototypes.Tech.Tech-Control")
+require("prototypes.Machinery.Machinery-Control")
+
 -- Quality of Life
 require("prototypes.Products.TreeRockEraser")
 require("prototypes.Products.Pipes-Cover")
