@@ -205,12 +205,13 @@ data:extend({
         },
         fluid_boxes_off_when_no_fluid_recipe = true,
         collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
-        selection_box = {{-1.5, -1.5}, {1.5, 1.5}},    
+        selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
         crafting_categories = {"red-washer-chamber"},
         energy_usage = "210kW",
         ingredient_count = 4,
         crafting_speed = 1,
-        energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.021, },
+        next_upgrade = "washer-chamber-r2",
+        energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions_per_minute = { pollution = 4.41 }},
         fast_replaceable_group = "assembling-machine",
         open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
         close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
@@ -264,7 +265,8 @@ data:extend({
         energy_usage = "350kW",
         ingredient_count = 4,
         crafting_speed = 1,
-        energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.008, },
+        next_upgrade = "water-condenser-electric-r2",
+        energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions_per_minute = { pollution = 2.8 }},
         fast_replaceable_group = "assembling-machine",
         open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
         close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
@@ -275,9 +277,9 @@ data:extend({
         },
         allowed_effects = {"consumption", "speed", "productivity", "pollution"},
         working_sound = {
-            sound = {{ filename = "__base__/sound/chemical-plant.ogg", },},
+            sound = {{ filename = "__base__/sound/chemical-plant.ogg" }},
             idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
-            apparent_volume = 1.5,
+            apparent_volume = 0.8
         },
         graphics_set = {
             animation = { 
@@ -324,7 +326,7 @@ data:extend({
         energy_usage = "200kW",
         ingredient_count = 4,
         crafting_speed = 1,
-        energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.005, },
+        energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions_per_minute = { pollution = 1 }},
         fast_replaceable_group = "assembling-machine",
         module_slots = 2,
         module_specification = {
@@ -369,7 +371,7 @@ data:extend({
             type = "burner",
             effectivity = 1,
             fuel_inventory_size = 1,
-            emissions = 0.007,
+            emissions_per_minute = { pollution = 2.38 },
             smoke = { {
                 name = "smoke",
                 deviation = {0.1, 0.1},
@@ -430,7 +432,7 @@ data:extend({
         energy_source = {
             type = "electric",
             usage_priority = "secondary-input",
-            emissions = 0.005
+            emissions_per_minute = { pollution = 1.75 }
         },
         graphics_set = {
             animation = {
@@ -468,6 +470,7 @@ data:extend({
         minable = {hardness = 0.2, mining_time = 0.5, result = "cast-chamber-r1"},
         max_health = 300,
         corpse = "big-remnants",
+        next_upgrade = "cast-chamber-r2",
         resistances = {{ type = "fire", percent = 70}},
         fluid_boxes = {
             {
@@ -510,7 +513,7 @@ data:extend({
             type = "electric",
             input_priority = "secondary",
             usage_priority = "secondary-input",
-            emissions = 0.018,
+            emissions_per_minute = { pollution = 7.2 },
         },
         fast_replaceable_group = "assembling-machine",
         module_slots = 2,
@@ -577,6 +580,7 @@ data:extend({
         minable = {hardness = 0.2, mining_time = 0.5, result = "heat-forge-chamber-r1"},
         max_health = 300,
         corpse = "big-remnants",
+        next_upgrade = "heat-forge-chamber-r2",
         resistances = {{type = "fire",percent = 70}},
         fluid_boxes = {
             {
@@ -601,7 +605,7 @@ data:extend({
         energy_usage = "400kW",
         ingredient_count = 4,
         crafting_speed = 1,
-        energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.023, },
+        energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions_per_minute = { pollution = 9.2 }},
         fast_replaceable_group = "assembling-machine",
         module_slots = 2,
         module_specification = {
@@ -662,7 +666,7 @@ data:extend({
         energy_usage = "1MW",
         ingredient_count = 4,
         crafting_speed = 1,
-        energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.05, },
+        energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions_per_minute = { pollution = 50 }},
         module_slots = 5,
         module_specification = {
             module_info_icon_shift = {0, 0.2},
@@ -748,7 +752,9 @@ CastChamberR2.name = "cast-chamber-r2"
 CastChamberR2.icon = "__RExtended__/graphics/icons/Machinery/Bulk/cast-chamber-r2.png"
 CastChamberR2.icon_size = 32
 CastChamberR2.minable.result = "cast-chamber-r2"
-CastChamberR2.energy_usage = "750kW"
+CastChamberR2.energy_usage = "2MW"
+CastChamberR2.next_upgrade = nil
+CastChamberR2.energy_source.emissions_per_minute = { pollution = 36 }
 CastChamberR2.crafting_speed = 4
 CastChamberR2.module_slots = 3
 CastChamberR2.module_specification = {
@@ -765,7 +771,9 @@ WasherChamberR2.name = "washer-chamber-r2"
 WasherChamberR2.icon = "__RExtended__/graphics/icons/Machinery/Bulk/washer-chamber-r2.png"
 WasherChamberR2.icon_size = 32
 WasherChamberR2.minable.result = "washer-chamber-r2"
-WasherChamberR2.energy_usage = "750kW"
+WasherChamberR2.energy_usage = "2MW"
+WasherChamberR2.next_upgrade = nil
+WasherChamberR2.energy_source.emissions_per_minute = { pollution = 42 }
 WasherChamberR2.crafting_speed = 4
 WasherChamberR2.module_slots = 3
 WasherChamberR2.module_specification = {
@@ -782,7 +790,9 @@ HeatForgeChamberR2.name = "heat-forge-chamber-r2"
 HeatForgeChamberR2.icon = "__RExtended__/graphics/icons/Machinery/Bulk/heat-forge-chamber-r2.png"
 HeatForgeChamberR2.icon_size = 32
 HeatForgeChamberR2.minable.result = "heat-forge-chamber-r2"
-HeatForgeChamberR2.energy_usage = "750kW"
+HeatForgeChamberR2.energy_usage = "2MW"
+HeatForgeChamberR2.next_upgrade = nil
+HeatForgeChamberR2.energy_source.emissions_per_minute = { pollution = 46 }
 HeatForgeChamberR2.crafting_speed = 4
 HeatForgeChamberR2.module_slots = 3
 HeatForgeChamberR2.module_specification = {
@@ -799,7 +809,9 @@ WaterCondenserR2.name = "water-condenser-electric-r2"
 WaterCondenserR2.icon = "__RExtended__/graphics/icons/Machinery/Bulk/water-condenser-electric-r2.png"
 WaterCondenserR2.icon_size = 32
 WaterCondenserR2.minable.result = "water-condenser-electric-r2"
-WaterCondenserR2.energy_usage = "750kW"
+WaterCondenserR2.energy_usage = "2MW"
+WaterCondenserR2.next_upgrade = nil
+WaterCondenserR2.energy_source.emissions_per_minute = { pollution = 16 }
 WaterCondenserR2.crafting_speed = 4
 WaterCondenserR2.module_slots = 3
 WaterCondenserR2.module_specification = {

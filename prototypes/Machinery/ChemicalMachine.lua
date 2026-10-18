@@ -82,7 +82,8 @@ data:extend({
         energy_usage = "350kW",
         ingredient_count = 6,
         crafting_speed = 2,
-        energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.018, },
+        next_upgrade = "chemical-machine-r2",
+        energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions_per_minute = { pollution = 6.3 }},
         fast_replaceable_group = "assembling-machine",
         module_slots = 3,
         module_specification = {
@@ -115,7 +116,9 @@ ChemicalMachineR2.name = "chemical-machine-r2"
 ChemicalMachineR2.icon = "__RExtended__/graphics/icons/Machinery/Bulk/chemical-machine-r2.png"
 ChemicalMachineR2.icon_size = 32
 ChemicalMachineR2.minable.result = "chemical-machine-r2"
-ChemicalMachineR2.energy_usage = "750kW"
+ChemicalMachineR2.energy_usage = "2MW"
+ChemicalMachineR2.next_upgrade = nil
+ChemicalMachineR2.energy_source.emissions_per_minute = { pollution = 36 }
 ChemicalMachineR2.graphics_set.animation.filename = "__RExtended__/graphics/entity/Machinery/Bulk/chemical-machine-r2.png"
 ChemicalMachineR2.crafting_speed = 4
 

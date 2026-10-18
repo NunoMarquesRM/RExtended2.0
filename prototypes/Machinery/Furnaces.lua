@@ -33,11 +33,12 @@ stone_r2.minable.result = "electric-stone-furnace"
 stone_r2.fast_replaceable_group = "furnace"
 stone_r2.max_health = 250
 stone_r2.crafting_speed = 2
+stone_r2.next_upgrade = "electric-steel-furnace"
 stone_r2.energy_usage = "250kW"
 stone_r2.energy_source = {
     type = "electric",
     usage_priority = "secondary-input",
-    emissions = 0.005
+    emissions_per_minute = { pollution = 1.25 }
 }
 stone_r2.graphics_set = {
     animation = { layers = {{
@@ -47,7 +48,7 @@ stone_r2.graphics_set = {
         height = 128,
         frame_count = 1,
         shift = {0.46875, 0 },
-        scale = 0.5,
+        scale = 0.5
     }}},
     working_visualisations = {{
         north_position = { 0.078125, 0.5234375},
@@ -71,7 +72,7 @@ data:extend({stone_r2,
         icon = "__RExtended__/graphics/icons/Machinery/Furnaces/steel-furnace-r2.png",
         icon_size = 32,
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
-        minable = {mining_time = 1, result = "electric-steel-furnace"},
+        minable = {mining_time = 0.5, result = "electric-steel-furnace"},
         max_health = 400,
         corpse = "medium-remnants",
         resistances = {{type = "fire",percent = 80}},
@@ -84,14 +85,14 @@ data:extend({stone_r2,
         collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
         selection_box = {{-0.8, -1}, {0.8, 1}},
         crafting_categories = {"smelting"},
-        energy_usage = "350kW",
+        energy_usage = "2MW",
         result_inventory_size = 1,
         source_inventory_size = 1,
         crafting_speed = 4,
         energy_source = {
             type = "electric",
             usage_priority = "secondary-input",
-            emissions_per_minute = { pollution = 0.005 }
+            emissions_per_minute = { pollution = 10 }
         },
         graphics_set = {
             animation = {

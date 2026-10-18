@@ -5,7 +5,7 @@ data:extend({
         order = "kaa-a",
         inventory_order = "d-a-a",
         icon = "__RExtended__/graphics/Tech/Categories/Machinery.png",
-        icon_size = 128
+        icon_size = 246
     },
     create_item_subgroup("machinery-assemblers", "re-machinery", "a"), -- Craft Machines
     create_item_subgroup("machinery-ore", "re-machinery", "b"),        -- Ore Machines

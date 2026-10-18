@@ -40,6 +40,8 @@ data:extend({
         collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
         selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
         mining_speed = 4,
+        next_upgrade = "mining-drill-r3",
+        fast_replaceable_group = "mining-drill",
         input_fluid_box = {
             production_type = "input-output",
             volume = 100,
@@ -49,7 +51,7 @@ data:extend({
         working_sound = {sound = {filename = "__base__/sound/electric-mining-drill.ogg", volume = 0.8},},
         energy_source = {
             type = "electric",
-            emissions = 0.04,
+            emissions_per_minute = { pollution = 8.8 },
             usage_priority = "secondary-input"
         },
         energy_usage = "220kW",
@@ -142,19 +144,20 @@ data:extend({
         collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
         selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
         mining_speed = 15,
+        fast_replaceable_group = "mining-drill",
         input_fluid_box = {
             production_type = "input-output",
-            base_area = 1,
             volume = 100,
+            base_area = 1,
             pipe_connections = {{ direction = defines.direction.south, position = {0, 2} }}
         },
         working_sound = {sound = {filename = "__base__/sound/electric-mining-drill.ogg", volume = 0.8},},
         energy_source = {
             type = "electric",
-            emissions = 0.04,
+            emissions_per_minute = { pollution = 200 },
             usage_priority = "secondary-input"
         },
-        energy_usage = "750kW",
+        energy_usage = "5MW",
         mining_power = 1,
         module_slots = 2,
         module_specification = {

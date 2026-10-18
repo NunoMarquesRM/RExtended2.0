@@ -13,3 +13,5 @@ Mods >v2.0:
     https://mods.factorio.com/mod/NPUtils-redux
 - NPUtils X Redux
     https://mods.factorio.com/mod/NPUtilsX-redux
+- Krastorio 2 - Elite Storage Tank
+    https://mods.factorio.com/mod/Krastorio2

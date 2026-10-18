@@ -1,69 +1,32 @@
-
 data:extend({
-    {
-        type = "technology",
-        name = "red-robots",
-        icon = "__RExtended__/graphics/Tech/Tree/Robots/Red-Robots.png",
-        icon_size = 128,
-        effects = {
-            {
-                type = "unlock-recipe",
-                recipe = "red-robot-l"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "red-robot-c"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "red-roboport"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "red-chest-storage"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "red-chest-passive-provider"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "red-chest-requester"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "red-chest-buffer"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "red-chest-active-provider"
-            },
-        },
-        prerequisites = {"construction-robotics","logistic-robotics"},
-        unit = {
-            count = 10,
+    create_tech("red-robots", "Robots/Red-Robots", 128, "n",
+        {"construction-robotics", "logistic-robotics"},
+        {
+            count = 500,
             ingredients = {
                 {"automation-science-pack", 1},
                 {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1}
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1},
+                {"utility-science-pack", 1}
             },
-            time = 30
+            time = 60
         },
-        order = "n"
-    },
-    {-- Worker Robot Battery 1
-        type = "technology",
-        name = "worker-robot-battery-1",
-        icon = "__RExtended__/graphics/Tech/Tree/Robots/worker-robot-battery.png",
-        icon_size = 128,
-        effects = {
-            {
-                type = "worker-robot-battery",
-                modifier = 0.2
-            }
-        },
-        prerequisites = {"robotics"},
-        unit = {
+        {
+            create_unlock_recipe("red-robot-l"),
+            create_unlock_recipe("red-robot-c"),
+            create_unlock_recipe("red-roboport"),
+            create_unlock_recipe("red-chest-storage"),
+            create_unlock_recipe("red-chest-passive-provider"),
+            create_unlock_recipe("red-chest-requester"),
+            create_unlock_recipe("red-chest-buffer"),
+            create_unlock_recipe("red-chest-active-provider")
+        }
+    ),
+    -- Worker Robot Battery 1
+    create_tech("worker-robot-battery-1", "Robots/worker-robot-battery", 128, "c-k-h-e",
+        {"robotics"},
+        {
             count_formula = "100*L",
             ingredients = {
                 {"automation-science-pack", 1},
@@ -72,23 +35,14 @@ data:extend({
             },
             time = 30
         },
-        upgrade = true,
-        max_level = 3,
-        order = "c-k-h-e"
-    },
-    {-- Worker Robot Battery 2
-        type = "technology",
-        name = "worker-robot-battery-4",
-        icon = "__RExtended__/graphics/Tech/Tree/Robots/worker-robot-battery.png",
-        icon_size = 128,
-        effects = {
-            {
-                type = "worker-robot-battery",
-                modifier = 0.2
-            }
-        },
-        prerequisites = {"worker-robot-battery-1"},
-        unit = {
+        {{type = "worker-robot-battery", modifier = 0.2}},
+        true,
+        3
+    ),
+    -- Worker Robot Battery 2
+    create_tech("worker-robot-battery-4", "Robots/worker-robot-battery", 128, "c-k-h-f",
+        {"worker-robot-battery-1"},
+        {
             count_formula = "100*L",
             ingredients = {
                 {"automation-science-pack", 1},
@@ -98,23 +52,13 @@ data:extend({
             },
             time = 45
         },
-        upgrade = true,
-        max_level = 7,
-        order = "c-k-h-f"
-    },
-    {--Worker Robot Battery 3--
-        type = "technology",
-        name = "worker-robot-battery-8",
-        icon = "__RExtended__/graphics/Tech/Tree/Robots/worker-robot-battery.png",
-        icon_size = 128,
-        effects = {
-            {
-                type = "worker-robot-battery",
-                modifier = 0.2
-            }
-        },
-        prerequisites = {"worker-robot-battery-4"},
-        unit =
+        {{type = "worker-robot-battery", modifier = 0.2}},
+        true,
+        7
+    ),
+    -- Worker Robot Battery 3
+    create_tech("worker-robot-battery-8", "Robots/worker-robot-battery", 128, "c-k-h-g",
+        {"worker-robot-battery-4"},
         {
             count_formula = "100*L",
             ingredients = {
@@ -126,23 +70,13 @@ data:extend({
             },
             time = 60
         },
-        upgrade = true,
-        max_level = 11,
-        order = "c-k-h-g"
-    },
-    {-- Worker Robot Battery 4
-        type = "technology",
-        name = "worker-robot-battery-12",
-        icon = "__RExtended__/graphics/Tech/Tree/Robots/worker-robot-battery.png",
-        icon_size = 128,
-        effects = {
-            {
-                type = "worker-robot-battery",
-                modifier = 0.2
-            }
-        },
-        prerequisites = {"worker-robot-battery-8"},
-        unit =
+        {{type = "worker-robot-battery", modifier = 0.2}},
+        true,
+        11
+    ),
+    -- Worker Robot Battery 4
+    create_tech("worker-robot-battery-12", "Robots/worker-robot-battery", 128, "c-k-h-h",
+        {"worker-robot-battery-8"},
         {
             count_formula = "100*L",
             ingredients = {
@@ -155,8 +89,8 @@ data:extend({
             },
             time = 60
         },
-        upgrade = true,
-        max_level = "infinite",
-        order = "c-k-h-h"
-    }
+        {{type = "worker-robot-battery", modifier = 0.2}},
+        true,
+        "infinite"
+    )
 })
