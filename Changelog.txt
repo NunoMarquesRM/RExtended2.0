@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.1.5
+Date: 17.10.2026
+  Changes:
+    - Changed crystalline silicon energy required from 10 to 5
+    - Increased the energy capacity of accumulator R1 from 15 to 30MJ
+    - Increased the energy capacity of accumulator R2 from 30 to 50MJ
+---------------------------------------------------------------------------------------------------
 Version: 2.1.4
 Date: 17.10.2026
   Optimizations:
