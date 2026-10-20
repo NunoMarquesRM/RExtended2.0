@@ -1,14 +1,14 @@
 data:extend({
     create_tech("red-robots", "Robots/Red-Robots", 128, "n",
-        {"construction-robotics", "logistic-robotics"},
+        {"construction-robotics", "logistic-robotics","logistic-system"},
         {
             count = 500,
             ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1},
-                {"production-science-pack", 1},
-                {"utility-science-pack", 1}
+                {science_packs.red, 1},
+                {science_packs.green, 1},
+                {science_packs.blue, 1},
+                {science_packs.purple, 1},
+                {science_packs.yellow, 1}
             },
             time = 60
         },
@@ -29,9 +29,9 @@ data:extend({
         {
             count_formula = "100*L",
             ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1}
+                {science_packs.red, 1},
+                {science_packs.green, 1},
+                {science_packs.blue, 1}
             },
             time = 30
         },
@@ -45,10 +45,10 @@ data:extend({
         {
             count_formula = "100*L",
             ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1},
-                {"production-science-pack", 1}
+                {science_packs.red, 1},
+                {science_packs.green, 1},
+                {science_packs.blue, 1},
+                {science_packs.purple, 1}
             },
             time = 45
         },
@@ -62,11 +62,11 @@ data:extend({
         {
             count_formula = "100*L",
             ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1},
-                {"production-science-pack", 1},
-                {"utility-science-pack", 1}
+                {science_packs.red, 1},
+                {science_packs.green, 1},
+                {science_packs.blue, 1},
+                {science_packs.purple, 1},
+                {science_packs.yellow, 1}
             },
             time = 60
         },
@@ -80,12 +80,12 @@ data:extend({
         {
             count_formula = "100*L",
             ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1},
-                {"production-science-pack", 1},
-                {"utility-science-pack", 1},
-                {"space-science-pack", 1}
+                {science_packs.red, 1},
+                {science_packs.green, 1},
+                {science_packs.blue, 1},
+                {science_packs.purple, 1},
+                {science_packs.yellow, 1},
+                {science_packs.white, 1}
             },
             time = 60
         },

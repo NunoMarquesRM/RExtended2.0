@@ -13,5 +13,15 @@ Mods >v2.0:
     https://mods.factorio.com/mod/NPUtils-redux
 - NPUtils X Redux
     https://mods.factorio.com/mod/NPUtilsX-redux
-- Krastorio 2 - Elite Storage Tank
+- Krastorio 2 -> Elite Storage Tank
     https://mods.factorio.com/mod/Krastorio2
+- Simple Silicon -> Idea and solar cell item
+    https://mods.factorio.com/mod/SimpleSilicon
+- Yuoki Industries -> Boiler entity
+    https://mods.factorio.com/mod/Yuoki
+- Yuoki Industries - Railways
+    https://mods.factorio.com/mod/yi_railway
+- Angel's Addons - Mass Transit -> Smelting Train entity
+    https://mods.factorio.com/mod/angelsaddons-mobility
+- YIR - Uranium Power Trains
+    https://mods.factorio.com/mod/z_yira_UP

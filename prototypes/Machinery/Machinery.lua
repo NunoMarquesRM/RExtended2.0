@@ -1,27 +1,3 @@
-function create_machinery_item(name, icon, icon_size, subgroup, order, stack_size)
-    return {
-        type = "item",
-        name = name,
-        icon = icon,
-        icon_size = icon_size,
-        subgroup = subgroup,
-        order = order,
-        place_result = name,
-        stack_size = stack_size
-    }
-end
-
-function create_machinery_recipe(name, energy_required, enabled, ingredients, results)
-    return {
-        type = "recipe",
-        name = name,
-        energy_required = energy_required,
-        enabled = enabled,
-        ingredients = ingredients,
-        results = results
-    }
-end
-
 data:extend({
     create_machinery_item("washer-chamber-r1",
         "__RExtended__/graphics/icons/Machinery/Bulk/washer-chamber-r1.png",

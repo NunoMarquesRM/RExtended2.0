@@ -1,9 +1,9 @@
 {
     "name": "RExtended",
-    "version": "2.1.3",
+    "version": "2.1.6",
     "title": "Red Extended",
     "author": "RedMike-PT",
-    "contact": "",
+    "contact": "https://steamcommunity.com/id/RedMikePT/",
     "homepage": "https://github.com/NunoMarquesRM/RExtended2.0",
     "factorio_version": "2.1",
     "dependencies": ["base >= 2.1"],

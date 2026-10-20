@@ -422,7 +422,7 @@ recipe_quartz.results = {{type="item", name="blue-quartz-r1", amount=1}}
 -- Crystalline Silicon
 local recipe_silicon = table.deepcopy(data.raw.recipe['engine-unit'])
 recipe_silicon.name = "crystalline-silicon-r1"
-recipe_silicon.energy_required = 10
+recipe_silicon.energy_required = 5
 recipe_silicon.enabled = false
 recipe_silicon.ingredients = {
     {type = "item", name = "blue-quartz-r1", amount = 2},

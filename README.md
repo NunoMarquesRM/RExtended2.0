@@ -19,7 +19,7 @@ A Factorio mod that extends the game with new machines and production chains, pr
 - **Steam engines R2 and R3**: Higher-tier steam engines with custom fluid handling and effectivity settings. Their prototypes do not specify fixed 3.6 MW or 7.2 MW output ratings.
 - **Solar panels R2–R5**: 600 kW, 6 MW, 36 MW, and 150 MW production, respectively.
 - **Solar panel equipment R2**: 100 kW for armor equipment grids.
-- **Accumulators R2 and R3**: 15 MJ and 30 MJ capacity, respectively.
+- **Accumulators R2 and R3**: 30 MJ and 50 MJ capacity, respectively.
 
 ### Power Distribution
 
