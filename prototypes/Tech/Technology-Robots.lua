@@ -1,6 +1,6 @@
 data:extend({
     create_tech("red-robots", "Robots/Red-Robots", 128, "n",
-        {"construction-robotics", "logistic-robotics"},
+        {"construction-robotics", "logistic-robotics","logistic-system"},
         {
             count = 500,
             ingredients = {

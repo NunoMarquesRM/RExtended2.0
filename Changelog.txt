@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.1.6
+Date: 20.10.2026
+  Info:
+    - Added contact information (steam)
+  Changes:
+    - Added logistic system prerequisite to Sonic Robots and Chests tech
+---------------------------------------------------------------------------------------------------
 Version: 2.1.5
 Date: 17.10.2026
   Changes:
