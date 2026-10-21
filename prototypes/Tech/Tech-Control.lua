@@ -38,3 +38,53 @@ function create_tech(name, icon, icon_size, order, prerequisites, unit, effects,
         max_level = max_level
     }
 end
+
+function create_tech_qol(tiers, prefix, tech_type, icon_name, description_factory, order_group)
+    local technologies = {}
+    for tier_index, tier in ipairs(tiers) do
+        local technology_count = math.max(tier.technology_count, 1)
+        for technology_index = 1, technology_count do
+            local prerequisites = {}
+            if technology_index == 1 then
+                for _, prerequisite in ipairs(tier.prerequisites) do
+                    prerequisites[#prerequisites + 1] = prerequisite
+                end
+                if tier.previous_tier > 0 then
+                    prerequisites[#prerequisites + 1] = ("%s%d-%d"):format(
+                        prefix, tier_index - 1, tier.previous_tier
+                    )
+                end
+            else
+                prerequisites[1] = ("%s%d-%d"):format(prefix, tier_index, technology_index - 1)
+            end
+
+            local technology = {
+                type = "technology",
+                name = ("%s%d-%d"):format(prefix, tier_index, technology_index),
+                localised_name = tier.name,
+                localised_description = description_factory(tier.bonus),
+                icon = "__RExtended__/graphics/Tech/Tree/QoL/" .. icon_name .. ".png",
+                icon_size = 128,
+                prerequisites = prerequisites,
+                effects = {
+                    {
+                        type = tech_type,
+                        modifier = tier.bonus,
+                    },
+                },
+                unit = {
+                    count_formula = tier.count_formula,
+                    time = tier.time,
+                    ingredients = tier.ingredients,
+                },
+                upgrade = true,
+                order = ("z[%s]-%02d-%02d"):format(order_group, tier_index, technology_index),
+            }
+            if tier.technology_count == 0 then
+                technology.max_level = "infinite"
+            end
+            technologies[#technologies + 1] = technology
+        end
+    end
+    return technologies
+end

@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.2.0
+Date: 21.10.2026
+  Major Features:
+    - Added Quality of Life research integration: Movement Speed, Inventory Space, Crafting Speed 
+      and Mining Speed
+    - Added settings startup to Quality of Life research
+  Changes:
+    - Added reference in credits for the new mod integration
+---------------------------------------------------------------------------------------------------
 Version: 2.1.6
 Date: 20.10.2026
   Info:

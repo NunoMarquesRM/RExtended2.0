@@ -6,6 +6,9 @@ require("prototypes.Machinery.Machinery-Control")
 require("prototypes.Products.TreeRockEraser")
 require("prototypes.Products.Pipes-Cover")
 
+require("prototypes.Tech.Technology-QoL")
+
+
 -- Categories
 require("prototypes.Tech.Categories-Energy")
 require("prototypes.Tech.Categories-Machinery")
