@@ -25,3 +25,5 @@ Mods >v2.0:
     https://mods.factorio.com/mod/angelsaddons-mobility
 - YIR - Uranium Power Trains
     https://mods.factorio.com/mod/z_yira_UP
+- Quality of Life research
+    https://mods.factorio.com/mod/qol_research
