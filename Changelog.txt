@@ -1,0 +1,88 @@
+---------------------------------------------------------------------------------------------------
+Version: 2.3.0
+Date: 22.10.2026
+  Major Features:
+    - Added Light Bot Start integration with settings startup
+  Changes:
+    - Added reference in credits for the new mod integration
+---------------------------------------------------------------------------------------------------
+Version: 2.2.0
+Date: 21.10.2026
+  Major Features:
+    - Added Quality of Life research integration: Movement Speed, Inventory Space, Crafting Speed 
+      and Mining Speed
+    - Added settings startup to Quality of Life research
+  Changes:
+    - Added reference in credits for the new mod integration
+---------------------------------------------------------------------------------------------------
+Version: 2.1.6
+Date: 20.10.2026
+  Info:
+    - Added contact information (steam)
+  Changes:
+    - Added logistic system prerequisite to Sonic Robots and Chests tech
+---------------------------------------------------------------------------------------------------
+Version: 2.1.5
+Date: 17.10.2026
+  Changes:
+    - Changed crystalline silicon energy required from 10 to 5
+    - Increased the energy capacity of accumulator R1 from 15 to 30MJ
+    - Increased the energy capacity of accumulator R2 from 30 to 50MJ
+---------------------------------------------------------------------------------------------------
+Version: 2.1.4
+Date: 17.10.2026
+  Optimizations:
+    - Created control file for: tech and machinery
+    - Created a dictionary with the names of the science packs
+  Changes:
+    - Changed technology ingredients for: Electric Furnace R2 and Machinery R3
+    - Changed Warehouse and Big Storage Tanks mining time from 1 to 0.5
+    - Changed icon of item in robots chests from 1 to 0.8
+---------------------------------------------------------------------------------------------------
+Version: 2.1.3
+Date: 17.10.2026
+  Optimizations:
+    - Refactored technologies code for Energy, Robots, Machinery and Railword
+  Changes:
+    - Changed technologies prerequisites, ingredients and time for: Energy, Robots, Machinery and  
+    Railword
+    - Changed electric steel furnance mining time from 1 to 0.5
+    - Updated credits references
+    - Changed category image for machinery extended, components and fluids
+---------------------------------------------------------------------------------------------------
+Version: 2.1.2
+Date: 17.10.2026
+  Balancing:
+    - Energy consumption and Pollution:
+      - Assemblers, ChemicalMachines, Compressors, Furnances, Mining Drills, Washer Chambers, Water
+      Condensors, Refineries, Cast Chambers, Heat Forges, Mixer, Formation Furnances and Enrichment
+      Chamber
+  Changes:
+    - Added upgrade entities for:
+      - Assemblers, ChemicalMachines, Compressors, Furnances, Mining Drills, Washer Chambers, Water
+      Condensors, Refineries, Cast Chamber and Heat Forge
+---------------------------------------------------------------------------------------------------
+Version: 2.1.1
+Date: 16.10.2026
+  Changes:
+    - Added Changelog
+---------------------------------------------------------------------------------------------------
+Version: 2.1.0
+Date: 16.10.2026
+  Changes:
+    - Fixed Recipes and some typos
+    - Added Air Purification Chain
+---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Date: 04.10.2026
+  Changes:
+    - Full compatibility with Factorio v >= 2.0
+---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+Date: 21.11.2021
+  Full release
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+Date: 2019
+  Modpack created
+---------------------------------------------------------------------------------------------------

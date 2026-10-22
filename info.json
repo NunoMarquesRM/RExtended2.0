@@ -1,11 +1,12 @@
 {
-	"name": "RExtended",
-	"version": "2.0.0",
-	"title": "Red Extended",
-	"author": "RedMike-PT",
-	"contact": "",
-	"homepage": "https://github.com/NunoMarquesRM/RExtended",
-	"factorio_version": "2.1.0",
-	"dependencies": ["base >= 2.1.0"],
-	"description": "This mod extends the game with new Content."
+    "name": "RExtended",
+    "version": "2.3.0",
+    "title": "Red Extended",
+    "author": "RedMike-PT",
+    "contact": "https://steamcommunity.com/id/RedMikePT/",
+    "homepage": "https://github.com/NunoMarquesRM/RExtended2.0",
+    "factorio_version": "2.1",
+    "dependencies": ["base >= 2.1",
+        "? space-age >= 2.1.0"],
+    "description": "Extends the game with new machines and production chains, processing machines, power equipment, storage, and logistic support content."
 }
