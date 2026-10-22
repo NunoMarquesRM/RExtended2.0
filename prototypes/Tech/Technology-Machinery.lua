@@ -208,6 +208,7 @@ data:extend({
         },
         {
             create_unlock_recipe("enriched-coal-r1"),
+            create_unlock_recipe("diesel-fuel"),
             create_unlock_recipe("enrichment-chamber-r1")
         }
     ),

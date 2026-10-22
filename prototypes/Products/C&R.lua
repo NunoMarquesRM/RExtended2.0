@@ -378,7 +378,7 @@ data:extend({
         results = {{type="item", name="plastic-bar", amount=4}},
         categories = {"chemistry"},
         subgroup = "chemical-products-r1",
-        order = "a-a-d"
+        order = "a-a-c"
     },
     {-- Enriched Coal
         type = "recipe",
@@ -401,7 +401,7 @@ data:extend({
         fuel_categories = {"chemical"},
         fuel_value = "144MJ",
         subgroup = "chemical-products-r1",
-        order = "a-a-c",
+        order = "a-a-e",
         stack_size = 200
     }
 })
