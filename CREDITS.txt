@@ -27,3 +27,5 @@ Mods >v2.0:
     https://mods.factorio.com/mod/z_yira_UP
 - Quality of Life research
     https://mods.factorio.com/mod/qol_research
+- Light Bot Start
+    https://mods.factorio.com/mod/rt-light-bot-start

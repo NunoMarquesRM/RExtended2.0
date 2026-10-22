@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.3.0
+Date: 22.10.2026
+  Major Features:
+    - Added Light Bot Start integration with settings startup
+  Changes:
+    - Added reference in credits for the new mod integration
+---------------------------------------------------------------------------------------------------
 Version: 2.2.0
 Date: 21.10.2026
   Major Features:
