@@ -42,8 +42,12 @@ require("prototypes.Machinery.Air-Purification")
 require("prototypes.Products.C&R")
 require("prototypes.Products.C&R-Fluids")
 
+-- Military
+require("prototypes.Military.Laser-Turret")
+
 -- Tech
 require("prototypes.Tech.Technology-Energy")
 require("prototypes.Tech.Technology-Machinery")
 require("prototypes.Tech.Technology-Railworld")
 require("prototypes.Tech.Technology-Robots")
+require("prototypes.Tech.Technology-Military")

@@ -24,12 +24,13 @@ function create_unlock_recipe(name)
     }
 end
 
-function create_tech(name, icon, icon_size, order, prerequisites, unit, effects, upgrade, max_level)
+function create_tech(name, icon, icon_size, order, prerequisites, unit, effects, upgrade, max_level, icon_mipmaps)
     return {
         type = "technology",
         name = name,
         icon = "__RExtended__/graphics/Tech/Tree/" .. icon .. ".png",
         icon_size = icon_size,
+        icon_mipmaps = 4,
         order = order,
         prerequisites = prerequisites,
         unit = unit,

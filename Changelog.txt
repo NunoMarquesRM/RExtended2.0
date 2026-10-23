@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.4.0
+Date: 23.10.2026
+  Major Features:
+    - Added the Laser Turret R2, a more powerful turret with significantly higher power consumption
+  Changes:
+    - Added credit for the inspiration behind this integration
+---------------------------------------------------------------------------------------------------
 Version: 2.3.1
 Date: 22.10.2026
   Bugfixes:
