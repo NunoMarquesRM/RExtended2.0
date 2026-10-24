@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.4.1
+Date: 24.10.2026
+  Features:
+    - Added the Exoskeleton R2, a late-game equipment module that provides a 100% movement speed
+      bonus, with a 1 MW power draw.
+  Changes:
+    - Reduced the mining time for Half Assembler R1|R2 (1 -> 0.2|1 -> 0.4), Assembler R2 (1 -> 0.5)
+      Chemical Machine R1 (0.5 -> 0.3), Compressor R1 (0.5 -> 0.3).
+---------------------------------------------------------------------------------------------------
 Version: 2.4.0
 Date: 23.10.2026
   Major Features:

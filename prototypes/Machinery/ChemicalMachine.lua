@@ -31,7 +31,7 @@ data:extend({
         icon = "__RExtended__/graphics/icons/Machinery/Bulk/chemical-machine-r1.png",
         icon_size = 32,
         flags = {"placeable-neutral","placeable-player", "player-creation"},
-        minable = {hardness = 0.2, mining_time = 0.5, result = "chemical-machine-r1"},
+        minable = {hardness = 0.2, mining_time = 0.3, result = "chemical-machine-r1"},
         max_health = 500,
         corpse = "big-remnants",
         resistances = {{type = "fire",percent = 70}},
@@ -115,7 +115,7 @@ local ChemicalMachineR2 = table.deepcopy(data.raw['assembling-machine']['chemica
 ChemicalMachineR2.name = "chemical-machine-r2"
 ChemicalMachineR2.icon = "__RExtended__/graphics/icons/Machinery/Bulk/chemical-machine-r2.png"
 ChemicalMachineR2.icon_size = 32
-ChemicalMachineR2.minable.result = "chemical-machine-r2"
+ChemicalMachineR2.minable = {hardness = 0.1, mining_time = 0.5, result = "chemical-machine-r2"}
 ChemicalMachineR2.energy_usage = "2MW"
 ChemicalMachineR2.next_upgrade = nil
 ChemicalMachineR2.energy_source.emissions_per_minute = { pollution = 36 }

@@ -62,7 +62,9 @@ These materials are used in the mod's machinery, power, storage, and robot recip
 
 ## Quality of Life
 
-
+ - **Exoskeleton R2**:
+ A late-game 2×4 equipment module that provides a 100% movement speed bonus.
+ It frees armor-grid space compared with installing several vanilla exoskeletons, at the cost of drawing up to 1 MW while active.
 
 #### Research
 

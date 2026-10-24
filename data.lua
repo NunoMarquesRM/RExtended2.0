@@ -44,6 +44,7 @@ require("prototypes.Products.C&R-Fluids")
 
 -- Military
 require("prototypes.Military.Laser-Turret")
+require("prototypes.Military.Equipment")
 
 -- Tech
 require("prototypes.Tech.Technology-Energy")
