@@ -1,12 +1,12 @@
 I forgot some mods that i used in factorio v < 1.0, but i'm trying to get all of that information.
 So right now what i had found from v >= 2.0:
 
-  - Red Extended:
-    - tree-eraser
+  - *Red Extended*:
+    - Tree Eraser
         https://mods.factorio.com/mod/tree-eraser
-    - rock-eraser
+    - Rock Eraser
         https://mods.factorio.com/mod/rock-eraser
-    - aai-containers
+    - AAI Containers & Warehouses -> Big warehouse entity
         https://mods.factorio.com/mod/aai-containers
     - Robot Battery Research
         https://mods.factorio.com/mod/Robot_Battery_Research2
@@ -27,7 +27,7 @@ So right now what i had found from v >= 2.0:
     - Extended Laser Turrets -> The idea for a mix of Ranger and Damager
         https://mods.factorio.com/mod/Extended-Laser-Turrets
 
-  - Red Railworld Extended:
+  - *Red Railworld Extended*:
       - ElectricTrain
         https://mods.factorio.com/mod/ElectricTrainFix
       - Yuoki Industries - Railways
