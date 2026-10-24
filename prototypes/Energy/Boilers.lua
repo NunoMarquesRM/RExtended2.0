@@ -66,6 +66,7 @@ local br2 = setup_boiler_entity(table.deepcopy(data.raw["boiler"]["boiler"]),
 
 br2.collision_box = {{-1.2, -1.2}, {1.2, 1.2}}
 br2.selection_box = {{-1.5, -1.5}, {1.5, 1.5}}
+br2.next_upgrade = "boiler-r3"
 br2.fluid_box = {
     volume = 1000,
     base_level = -1,

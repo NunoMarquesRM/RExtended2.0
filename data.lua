@@ -49,6 +49,9 @@ require("prototypes.Military.Equipment")
 -- Tech
 require("prototypes.Tech.Technology-Energy")
 require("prototypes.Tech.Technology-Machinery")
-require("prototypes.Tech.Technology-Railworld")
 require("prototypes.Tech.Technology-Robots")
 require("prototypes.Tech.Technology-Military")
+
+if mods["RERailworld"] then
+    require("prototypes.Tech.Technology-Railworld")
+end
