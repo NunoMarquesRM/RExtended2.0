@@ -58,7 +58,7 @@ data:extend({
         icon = "__RExtended__/graphics/icons/Machinery/Assemblers/half-assembler-r1.png",
         icon_size = 32,
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
-        minable = {mining_time = 1, result = "half-assembler-r1"},
+        minable = {mining_time = 0.2, result = "half-assembler-r1"},
         max_health = 200,
         corpse = "medium-remnants",
         resistances = {{type = "fire",percent = 80}},
@@ -238,7 +238,7 @@ data:extend({
         icon = "__RExtended__/graphics/icons/Machinery/Assemblers/assembler-r2.png",
         icon_size = 32,
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
-        minable = {mining_time = 1, result = "assembler-r2"},
+        minable = {mining_time = 0.5, result = "assembler-r2"},
         max_health = 500,
         corpse = "medium-remnants",
         resistances = {{type = "fire",percent = 90}},
@@ -373,7 +373,7 @@ local HalfAssemblerMachineR2 = table.deepcopy(data.raw['assembling-machine']['ha
 HalfAssemblerMachineR2.name = "half-assembler-r2"
 HalfAssemblerMachineR2.icon = "__RExtended__/graphics/icons/Machinery/Assemblers/half-assembler-r2.png"
 HalfAssemblerMachineR2.icon_size = 32
-HalfAssemblerMachineR2.minable.result = "half-assembler-r2"
+HalfAssemblerMachineR2.minable = {mining_time = 0.4, result = "half-assembler-r2"}
 HalfAssemblerMachineR2.energy_usage = "2MW"
 HalfAssemblerMachineR2.next_upgrade = nil
 HalfAssemblerMachineR2.energy_source.emissions_per_minute = { pollution = 18.75 }

@@ -29,7 +29,7 @@ data:extend({
         icon = "__RExtended__/graphics/icons/Machinery/Bulk/compressor-r1.png",
         icon_size = 32,
         flags = {"placeable-neutral","placeable-player", "player-creation"},
-        minable = {hardness = 0.2, mining_time = 0.5, result = "compressor-r1"},
+        minable = {hardness = 0.2, mining_time = 0.3, result = "compressor-r1"},
         max_health = 300,
         corpse = "big-remnants",
         resistances = {{type = "fire",percent = 70}},
@@ -99,7 +99,7 @@ local CompressorR2 = table.deepcopy(data.raw['assembling-machine']['compressor-r
 CompressorR2.name = "compressor-r2"
 CompressorR2.icon = "__RExtended__/graphics/icons/Machinery/Bulk/compressor-r2.png"
 CompressorR2.icon_size = 32
-CompressorR2.minable.result = "compressor-r2"
+CompressorR2.minable = {hardness = 0.1, mining_time = 0.5, result = "compressor-r2"}
 CompressorR2.energy_usage = "2MW"
 CompressorR2.next_upgrade = nil
 CompressorR2.energy_source.emissions_per_minute = { pollution = 8 }

@@ -162,8 +162,8 @@ data:extend({
         flow_color = {r = 0.5, g = 0.4, b = 0},
         pressure_to_speed_ratio = 0.4,
         flow_to_energy_ratio = 0.59,
-        subgroup = "fluid-products",
-        order = "z-b-a"
+        subgroup = "chemical-products-r1",
+        order = "a-a-d"
     }
 })
 

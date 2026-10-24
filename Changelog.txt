@@ -1,4 +1,36 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.4.3
+Date: 24.10.2026
+  Changes:
+    - Forced the next_upgrade to nil for accumulators.
+    - Added next_upgrade target for Boiler R2.
+---------------------------------------------------------------------------------------------------
+Version: 2.4.2
+Date: 24.10.2026
+  Bugfixes:
+    - Made the dependency on my other mod optional.
+---------------------------------------------------------------------------------------------------
+Version: 2.4.1
+Date: 24.10.2026
+  Features:
+    - Added the Exoskeleton R2, a late-game equipment module that provides a 100% movement speed
+      bonus, with a 1 MW power draw.
+  Changes:
+    - Reduced the mining time for Half Assembler R1|R2 (1 -> 0.2|1 -> 0.4), Assembler R2 (1 -> 0.5)
+      Chemical Machine R1 (0.5 -> 0.3), Compressor R1 (0.5 -> 0.3).
+---------------------------------------------------------------------------------------------------
+Version: 2.4.0
+Date: 23.10.2026
+  Major Features:
+    - Added the Laser Turret R2, a more powerful turret with significantly higher power consumption
+  Changes:
+    - Added credit for the inspiration behind this integration
+---------------------------------------------------------------------------------------------------
+Version: 2.3.1
+Date: 22.10.2026
+  Bugfixes:
+    - Added missing diesel fuel recipe to diesel energy r1
+---------------------------------------------------------------------------------------------------
 Version: 2.3.0
 Date: 22.10.2026
   Major Features:

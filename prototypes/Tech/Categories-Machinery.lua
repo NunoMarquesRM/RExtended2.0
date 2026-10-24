@@ -16,6 +16,8 @@ data:extend({
     create_item_subgroup("machinery-lab", "re-machinery", "g"),        -- Lab & Warehouse
     create_item_subgroup("machinery-condenser", "re-machinery", "h"),  -- Water & Air Machines
     create_item_subgroup("re-robots", "re-machinery", "i"),            -- Robots
+    create_item_subgroup("machinery-military", "re-machinery", "k"),   -- Military
+    create_item_subgroup("red-equipment", "re-machinery", "l"),  -- Equipment
 
     {type = "recipe-category", name = "red-compressing"},
     {type = "recipe-category", name = "red-washer-chamber"},
