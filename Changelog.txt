@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.4.4
+Date: 28.10.2026
+  Bugfixes:
+    - Fixed a typo in the solar panel shadow's location.
+  Changes:
+    - Removed the lower-resolution graphics for the solar panel entities.
+---------------------------------------------------------------------------------------------------
 Version: 2.4.3
 Date: 24.10.2026
   Changes:
