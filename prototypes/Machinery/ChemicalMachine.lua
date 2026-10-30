@@ -1,8 +1,8 @@
 data:extend({
     create_machinery_item("chemical-machine-r1", "__RExtended__/graphics/icons/Machinery/Bulk/chemical-machine-r1.png",
-        32, "machinery-mix", "c-c", 50),
-    create_machinery_item("chemical-machine-r2", "__RExtended__/graphics/icons/Machinery/Bulk/chemical-machine-r2.png",
         32, "machinery-mix", "c-d", 50),
+    create_machinery_item("chemical-machine-r2", "__RExtended__/graphics/icons/Machinery/Bulk/chemical-machine-r2.png",
+        32, "machinery-mix", "c-e", 50),
 
     create_machinery_recipe("chemical-machine-r1", 5, false,
         {
@@ -90,7 +90,9 @@ data:extend({
             module_info_icon_shift = {0, 0.2},
             module_info_multi_row_initial_height_modifier = -0.3
         },
-        allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+        allowed_effects = add_quality_effect_if_available(
+            {"consumption", "speed", "productivity", "pollution"}
+        ),
         working_sound = {
             sound = { { filename = "__base__/sound/chemical-plant.ogg", volume = 0.8 }, },
             idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },

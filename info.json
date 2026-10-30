@@ -1,12 +1,14 @@
 {
     "name": "RExtended",
-    "version": "2.4.4",
+    "version": "2.5.0",
     "title": "Red Extended",
     "author": "RedMike-PT",
     "contact": "https://steamcommunity.com/id/RedMikePT/",
     "homepage": "https://github.com/NunoMarquesRM/RExtended2.0",
     "factorio_version": "2.1",
     "dependencies": ["base >= 2.1",
-        "? space-age >= 2.1.0"],
+        "? space-age >= 2.1",
+        "? quality >= 2.1"
+    ],
     "description": "Extends the game with new machines and production chains, processing machines, power equipment, storage, and logistic support content."
 }

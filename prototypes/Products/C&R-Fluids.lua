@@ -410,3 +410,28 @@ data:extend({
         allow_decomposition = false
     }
 })
+
+if mods["quality"] then
+    for _, recipe_name in ipairs({
+        "pressurized-water-r1",
+        "molten-iron-r1",
+        "molten-copper-r1",
+        "molten-steel-r1",
+        "water-r1",
+        "diesel-fuel",
+        "molten-coal-r1",
+        "enriched-petro-r1",
+        "lithium-r1",
+        "oil-basic-heavy-r1",
+        "oil-basic-light-r1",
+        "oil-advanced-heavy-r1",
+        "oil-advanced-light-r1",
+        "oil-advanced-petroleum-r1",
+        "oil-special-heavy-r1",
+        "oil-special-light-r1",
+        "oil-special-petroleum-r1",
+        "oil-special-process-r1"
+    }) do
+        data.raw.recipe[recipe_name].allow_quality = false
+    end
+end

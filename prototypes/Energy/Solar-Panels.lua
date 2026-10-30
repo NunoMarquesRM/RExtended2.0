@@ -103,7 +103,7 @@ data:extend({
 local recipe_spe_r2 = table.deepcopy(data.raw.recipe['solar-panel-equipment'])
 recipe_spe_r2.name = "solar-panel-equipment-r2"
 recipe_spe_r2.ingredients = {
-    {type = "item", name = "solar-panel-equipment", amount = 1},
+    {type = "item", name = "solar-panel-equipment", amount = 2},
     {type = "item", name = "solar-cell", amount = 4},
     {type = "item", name = "advanced-circuit", amount = 2}
 }

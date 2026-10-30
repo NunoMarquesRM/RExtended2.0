@@ -1,4 +1,20 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.5.0
+Date: 28.10.2026
+  Major Features:
+    - Added support for the Quality mod (included with the Space Age DLC)
+  Features:
+  - Added the Centrifuge R2 with a crafting speed of 4
+  Changes:
+    - Solar Panel Equipment R2 recipe: increased Solar Panel Equipment cost (1 -> 2)
+    - Mining Drills:
+      - R1: increased pollution (8.8 -> 45)
+      - R2: reduced module slots (2 -> 1)
+    - Added module support and 2 module slots to the Formation Furnace
+    - Pure Air can no longer be crafted by hand
+  Graphics:
+    - Changed the Tree Rock Eraser icon
+---------------------------------------------------------------------------------------------------
 Version: 2.4.4
 Date: 28.10.2026
   Bugfixes:

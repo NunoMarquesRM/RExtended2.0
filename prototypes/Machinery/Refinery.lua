@@ -1,8 +1,8 @@
 data:extend({
     create_machinery_item("refinery-r1", "__RExtended__/graphics/icons/Machinery/Bulk/refinery-r1.png",
-        32, "machinery-mix", "c-e", 50),
-    create_machinery_item("refinery-r2", "__RExtended__/graphics/icons/Machinery/Bulk/refinery-r2.png",
         32, "machinery-mix", "c-f", 50),
+    create_machinery_item("refinery-r2", "__RExtended__/graphics/icons/Machinery/Bulk/refinery-r2.png",
+        32, "machinery-mix", "c-g", 50),
     
     create_machinery_recipe("refinery-r1", 5, false,
         {

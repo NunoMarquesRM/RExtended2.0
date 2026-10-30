@@ -36,7 +36,7 @@ data:extend({
         minable = {mining_time = 1, result = "mining-drill-r2"},
         max_health = 320,
         corpse = "medium-remnants",
-        resistances = {{type = "fire",percent = 80}},
+        resistances = {{type = "fire", percent = 80}},
         collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
         selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
         mining_speed = 4,
@@ -51,7 +51,7 @@ data:extend({
         working_sound = {sound = {filename = "__base__/sound/electric-mining-drill.ogg", volume = 0.8},},
         energy_source = {
             type = "electric",
-            emissions_per_minute = { pollution = 8.8 },
+            emissions_per_minute = { pollution = 45 },
             usage_priority = "secondary-input"
         },
         energy_usage = "220kW",
@@ -61,7 +61,9 @@ data:extend({
             module_info_icon_shift = {0, 0.2},
             module_info_multi_row_initial_height_modifier = -0.3
         },
-        allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+        allowed_effects = add_quality_effect_if_available(
+            {"consumption", "speed", "productivity", "pollution"}
+        ),
         graphics_set = {
             animation = {
                  north = {
@@ -159,12 +161,14 @@ data:extend({
         },
         energy_usage = "5MW",
         mining_power = 1,
-        module_slots = 2,
+        module_slots = 1,
         module_specification = {
             module_info_icon_shift = {0, 0.2},
             module_info_multi_row_initial_height_modifier = -0.3
         },
-        allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+        allowed_effects = add_quality_effect_if_available(
+            {"consumption", "speed", "productivity", "pollution"}
+        ),
         graphics_set = {
             animation = {
                 north = {

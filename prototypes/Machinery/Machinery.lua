@@ -37,6 +37,8 @@ data:extend({
         32, "machinery-formation", "d-b-a", 50),
     create_machinery_item("beacon-r1", "__RExtended__/graphics/icons/Machinery/Bulk/beacon-r1.png",
         64, "machinery-lab", "g-c-a", 25),
+    create_machinery_item("centrifuge-r2", "__RExtended__/graphics/icons/Machinery/Bulk/Centrifuge-R2.png",
+        64, "machinery-mix", "c-c", 50),
 
     create_machinery_recipe("washer-chamber-r1", 4, false,
         {
@@ -152,6 +154,14 @@ data:extend({
         },
         {{type = "item", name = "beacon-r1", amount = 1}}
     ),
+    create_machinery_recipe("centrifuge-r2", 4, false,
+        {
+            {type = "item", name = "centrifuge", amount = 2},
+            {type = "item", name = "reinforced-gear-iron-r1", amount = 10},
+            {type = "item", name = "electric-component-r1", amount = 10}
+        },
+        {{type = "item", name = "centrifuge-r2", amount = 1}}
+    ),
 --ENTITY
     {-- Washer Chamber
         type = "assembling-machine",
@@ -196,7 +206,9 @@ data:extend({
             module_info_icon_shift = {0, 0.2},
             module_info_multi_row_initial_height_modifier = -0.3
         },
-        allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+        allowed_effects = add_quality_effect_if_available(
+            {"consumption", "speed", "productivity", "pollution"}
+        ),
         working_sound = {
             sound = {{ filename = "__base__/sound/chemical-plant.ogg", volume = 0.8 },},
             idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
@@ -309,7 +321,9 @@ data:extend({
             module_info_icon_shift = {0, 0.2},
             module_info_multi_row_initial_height_modifier = -0.3
         },
-        allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+        allowed_effects = add_quality_effect_if_available(
+            {"consumption", "speed", "productivity", "pollution"}
+        ),
         working_sound = {
             sound = {{filename = "__base__/sound/chemical-plant.ogg",volume = 0.8},},
             idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
@@ -343,6 +357,14 @@ data:extend({
         energy_usage = "340kW",
         ingredient_count = 2,
         crafting_speed = 1,
+        module_slots = 2,
+        module_specification = {
+            module_info_icon_shift = {0, 0.2},
+            module_info_multi_row_initial_height_modifier = -0.3
+        },
+        allowed_effects = add_quality_effect_if_available(
+            {"consumption", "speed", "productivity", "pollution"}
+        ),
         energy_source = {
             type = "burner",
             effectivity = 1,
@@ -396,7 +418,9 @@ data:extend({
             module_info_icon_shift = {0, 0.2},
             module_info_multi_row_initial_height_modifier = -0.3
         },
-        allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+        allowed_effects = add_quality_effect_if_available(
+            {"consumption", "speed", "productivity", "pollution"}
+        ),
         working_sound = { sound = { filename = "__base__/sound/furnace.ogg" } },
         resistances = {{ type = "fire", percent = 100 }},
         collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
@@ -497,7 +521,9 @@ data:extend({
             module_info_icon_shift = {0, 0.2},
             module_info_multi_row_initial_height_modifier = -0.3
         },
-        allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+        allowed_effects = add_quality_effect_if_available(
+            {"consumption", "speed", "productivity", "pollution"}
+        ),
         working_sound = {
             sound = {{ filename = "__base__/sound/chemical-plant.ogg", volume = 0.8 },},
             idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
@@ -648,7 +674,9 @@ data:extend({
             module_info_icon_shift = {0, 0.2},
             module_info_multi_row_initial_height_modifier = -0.3
         },
-        allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+        allowed_effects = add_quality_effect_if_available(
+            {"consumption", "speed", "productivity", "pollution"}
+        ),
         working_sound = {
             sound = { { filename = "__base__/sound/chemical-plant.ogg", volume = 0.8 }, },
             idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
@@ -688,7 +716,9 @@ data:extend({
             module_info_icon_shift = {0, 0.2},
             module_info_multi_row_initial_height_modifier = -0.3
         },
-        allowed_effects = {"consumption", "speed", "pollution"},        
+        allowed_effects = add_quality_effect_if_available(
+            {"consumption", "speed", "pollution"}
+        ),
         base_picture = {
             filename = "__RExtended__/graphics/entity/Machinery/Bulk/beacon-r1-stop.png",
             width = 288,
@@ -720,6 +750,50 @@ data:extend({
             width = 10,
             height = 10
         }
+    },
+    {-- Centrifuge R2
+        type = "assembling-machine",
+        name = "centrifuge-r2",
+        icon = "__RExtended__/graphics/icons/Machinery/Bulk/Centrifuge-R2.png",
+        icon_size = 64,
+        flags = {"placeable-neutral", "placeable-player", "player-creation"},
+        minable = {mining_time = 0.1, result = "centrifuge-r2"},
+        fast_replaceable_group = "centrifuge",
+        max_health = 500,
+        corpse = "medium-remnants",
+        impact_category = "metal-large",
+        icon_draw_specification = {shift = {0, -0.3}},
+        circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,
+        circuit_connector = circuit_connector_definitions["centrifuge"],
+        resistances = {{ type = "fire", percent = 80}},
+        collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+        selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+        crafting_categories = {"centrifuging"},
+        crafting_speed = 4,
+        energy_usage = "1.2MW",
+        energy_source = {type = "electric", usage_priority = "secondary-input", emissions_per_minute = { pollution = 15 }},
+        graphics_set = {
+            animation = {
+                south = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/Centrifuge-R2.png", width = 256, height = 256, shift = {0.34375, -0.5}, scale = 0.5, frame_count = 32, line_length = 8, animation_speed=0.1 },
+                west  = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/Centrifuge-R2.png", width = 256, height = 256, shift = {0.34375, -0.5}, scale = 0.5, frame_count = 32, line_length = 8, animation_speed=0.1 },
+                north = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/Centrifuge-R2.png", width = 256, height = 256, shift = {0.34375, -0.5}, scale = 0.5, frame_count = 32, line_length = 8, animation_speed=0.1 },
+                east  = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/Centrifuge-R2.png", width = 256, height = 256, shift = {0.34375, -0.5}, scale = 0.5, frame_count = 32, line_length = 8, animation_speed=0.1 }
+            }
+        },
+        open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
+        close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+        working_sound = {
+            sound = {
+                { filename = "__base__/sound/assembling-machine-t1-1.ogg", volume = 0.8 },
+                { filename = "__base__/sound/assembling-machine-t1-2.ogg", volume = 0.8 },
+            },
+            idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+            apparent_volume = 1.5,
+        },
+        module_slots = 2,
+        allowed_effects = add_quality_effect_if_available(
+            {"consumption", "speed", "productivity", "pollution"}
+        )
     }
 })
 
