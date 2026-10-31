@@ -7,6 +7,12 @@
 - A selection tool for removing trees and supported rock entities.
 - Trains and Cargos check: https://mods.factorio.com/mod/RERailworld
 
+## Supported Languages
+
+- English
+- Portuguese (Portugal)
+- Portuguese (Brazil)
+
 ---------------------------------------------------------------------------------------------------
 
 ## Energy
