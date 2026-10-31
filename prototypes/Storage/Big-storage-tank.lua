@@ -36,7 +36,7 @@ local function setup_big_storage_tank(entity, name, tier, volume, max_health)
     entity.selection_box = {{-1.5, -1.5}, {1.5, 1.5}}
     entity.fluid_box = {
         volume = volume,
-        pipe_covers = npipecovers(),
+        pipe_covers = pipe_r2_covers(),
         pipe_connections = {
             {direction = defines.direction.north, position = {0, -1.2}},
             {direction = defines.direction.east, position = {1.2, 0}},
@@ -108,9 +108,9 @@ local function setup_big_storage_tank(entity, name, tier, volume, max_health)
 end
 
 data:extend({
-    create_storage_tank_item("big-storage-tank-r1", "big-storage-tank-r1", "e-a-a", 25),
-    create_storage_tank_item("big-storage-tank-r2", "big-storage-tank-r2", "e-a-b", 20),
-    create_storage_tank_item("elite-storage-tank-r3", "Elite-storage-tank-r3", "e-a-c", 10),
+    create_storage_tank_item("big-storage-tank-r1", "big-storage-tank-r1", "e-a", 25),
+    create_storage_tank_item("big-storage-tank-r2", "big-storage-tank-r2", "e-b", 20),
+    create_storage_tank_item("elite-storage-tank-r3", "Elite-storage-tank-r3", "e-c", 10),
     
     create_storage_tank_recipe("big-storage-tank-r1",
         {

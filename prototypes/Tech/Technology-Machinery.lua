@@ -41,7 +41,13 @@ data:extend({
             },
             time = 30
         },
-        {create_unlock_recipe("big-storage-tank-r2")}
+        {
+            create_unlock_recipe("big-storage-tank-r2"),
+            create_unlock_recipe("pipe-r1"),
+            create_unlock_recipe("pipe-under-r1"),
+            create_unlock_recipe("pipe-r2"),
+            create_unlock_recipe("pipe-under-r2")
+        }
     ),
     -- Big Storage Tank R3 - 5M
     create_tech("elite-storage-tank-r3", "Storage/Elite-storage-tank-r3", 128, "c-e-h",

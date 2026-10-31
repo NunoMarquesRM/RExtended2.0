@@ -177,7 +177,7 @@ data:extend({
             {
                 production_type = "input",
                 pipe_picture = washerpipepictures(),
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 base_area = 10,
                 base_level = -1,
                 volume = 1000,
@@ -236,7 +236,7 @@ data:extend({
         fluid_boxes = {{
             production_type = "output",
             pipe_picture = washerpipepictures(),
-            pipe_covers = npipecovers(),
+            pipe_covers = pipe_r2_covers(),
             volume = 1000,
             pipe_connections = { 
                 {flow_direction="output", direction = defines.direction.south, position = {0, 1}},
@@ -289,7 +289,7 @@ data:extend({
             {
                 production_type = "input",
                 pipe_picture = compressor_pipepictures(),
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 base_area = 10,
                 base_level = -1,
                 volume = 1000,
@@ -299,7 +299,7 @@ data:extend({
             {
                 production_type = "output",
                 pipe_picture = compressor_pipepictures(),
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 base_area = 10,
                 base_level = 1,
                 volume = 1000,
@@ -476,7 +476,7 @@ data:extend({
             {
                 production_type = "input",
                 pipe_picture = castpipepictures(),
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 base_area = 10,
                 base_level = -1,
                 volume = 1000,
@@ -490,7 +490,7 @@ data:extend({
             {
                 production_type = "input",
                 pipe_picture = castpipepictures(),
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 base_area = 10,
                 base_level = -1,
                 volume = 1000,
@@ -588,7 +588,7 @@ data:extend({
             {
                 production_type = "output",
                 pipe_picture = forgepipepictures(),
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 base_area = 10,
                 base_level = 1,
                 volume = 1000,
@@ -643,7 +643,7 @@ data:extend({
             {
                 production_type = "input",
                 pipe_picture = compressor_pipepictures(),
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 base_area = 10,
                 base_level = -1,
                 volume = 1000,
@@ -653,7 +653,7 @@ data:extend({
             {
                 production_type = "output",
                 pipe_picture = compressor_pipepictures(),
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 base_area = 10,
                 base_level = 1,
                 volume = 1000,

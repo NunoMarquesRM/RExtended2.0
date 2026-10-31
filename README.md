@@ -17,7 +17,7 @@
 - **Steam engines R2 and R3**: Higher-tier steam engines with custom fluid handling and effectivity settings. Their prototypes do not specify fixed 3.6 MW or 7.2 MW output ratings.
 - **Solar panels R2–R5**: 600 kW, 6 MW, 36 MW, and 150 MW production, respectively.
 - **Solar panel equipment R2**: 100 kW for armor equipment grids.
-- **Accumulators R2 and R3**: 15 MJ and 30 MJ capacity, respectively.
+- **Accumulators R2 and R3**: 30 MJ and 50 MJ capacity, respectively.
 
 #### Power Distribution
 
@@ -51,6 +51,11 @@ Some machines have additional tiers, but tiers and specifications differ by mach
 - **Big storage tanks** for fluid storage, with multiple tiers.
 - Custom logistic and construction robots, logistic chests, and a roboport.
 - A custom radar.
+
+#### Pipes
+
+- **Copper Pipe** and **Iron Pipe**, with matching underground variants.
+- Each pipe has a fluid capacity of 250; the underground pipes connect across a distance of up to 21 tiles.
 
 ---------------------------------------------------------------------------------------------------
 

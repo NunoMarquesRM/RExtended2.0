@@ -37,7 +37,7 @@ data:extend({
             {
                 production_type = "input",
                 pipe_picture = compressor_pipepictures(),
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 base_area = 10,
                 base_level = -1,
                 volume = 1000,
@@ -51,7 +51,7 @@ data:extend({
             {
                 production_type = "output",
                 pipe_picture = compressor_pipepictures(),
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 base_area = 10,
                 base_level = 1,
                 volume = 1000,

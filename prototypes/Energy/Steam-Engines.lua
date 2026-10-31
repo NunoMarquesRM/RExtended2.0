@@ -1,34 +1,3 @@
-function npipecovers()
-    return {
-        north = {
-            filename = "__RExtended__/graphics/entity/Pipes/pipe-cover-north.png",
-            priority = "extra-high",
-            width = 128,
-            height = 128,
-            scale = 0.5
-        },
-        east = {
-            filename = "__RExtended__/graphics/entity/Pipes/clear.png",
-            priority = "extra-high",
-            width = 32,
-            height = 32
-        },
-        south = {
-            filename = "__RExtended__/graphics/entity/Pipes/pipe-cover-south.png",
-            priority = "extra-high",
-            width = 128,
-            height = 128,
-            scale = 0.5
-        },
-        west = {
-            filename = "__RExtended__/graphics/entity/Pipes/clear.png",
-            priority = "extra-high",
-            width = 32,
-            height = 32
-        }
-    }
-end
-
 local function create_steam_engine_recipe(name, ingredients)
     local recipe = table.deepcopy(data.raw.recipe["steam-engine"])
     recipe.name = name
@@ -93,7 +62,7 @@ local function setup_steam_engine_entity(entity, name, tier, max_health, effecti
     entity.fluid_box = {
         volume = 1000,
         base_area = base_area,
-        pipe_covers = npipecovers(),
+        pipe_covers = pipe_r2_covers(),
         pipe_connections = {
             {
                 flow_direction = "input-output",

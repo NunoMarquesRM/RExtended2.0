@@ -39,7 +39,7 @@ data:extend({
             {
                 production_type = "input",
                 pipe_picture = chemicalpipepictures(),
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 base_area = 10,
                 base_level = -1,
                 volume = 1000,
@@ -49,7 +49,7 @@ data:extend({
             {
                 production_type = "input",
                 pipe_picture = chemicalpipepictures(),
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 base_area = 10,
                 base_level = -1,
                 volume = 1000,
@@ -59,7 +59,7 @@ data:extend({
             {
                 production_type = "output",
                 pipe_picture = chemicalpipepictures(),
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 base_level = 1,
                 volume = 1000,
                 pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {-1, 1} }},
@@ -68,7 +68,7 @@ data:extend({
             {
                 production_type = "output",
                 pipe_picture = chemicalpipepictures(),
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 base_level = 1,
                 volume = 1000,
                 pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {1, 1} }},

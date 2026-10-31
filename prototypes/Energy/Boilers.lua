@@ -70,7 +70,7 @@ br2.next_upgrade = "boiler-r3"
 br2.fluid_box = {
     volume = 1000,
     base_level = -1,
-    pipe_covers = npipecovers(),
+    pipe_covers = pipe_r2_covers(),
     pipe_connections = {
         {flow_direction = "input-output", direction = defines.direction.west,  position = {-1.2, 0}},
         {flow_direction = "input-output", direction = defines.direction.south, position = {0, 1.2} },
@@ -81,7 +81,7 @@ br2.fluid_box = {
 }
 br2.output_fluid_box = {
     volume = 1000,
-    pipe_covers = npipecovers(),
+    pipe_covers = pipe_r2_covers(),
     pipe_connections = {{flow_direction = "output", direction = defines.direction.north, position = {0, -1.2}}},
     production_type = "output",
     filter = "steam"

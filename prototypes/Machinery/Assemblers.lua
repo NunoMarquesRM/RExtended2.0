@@ -172,7 +172,7 @@ data:extend({
                         scale = 0.5,
                     }
                 },
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 volume = 1000,
                 pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {0, -1} }},
                 secondary_draw_orders = { north = -1 }
@@ -213,7 +213,7 @@ data:extend({
                         scale = 0.5,
                     }
                 },
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 volume = 1000,
                 pipe_connections = {{flow_direction = "output", direction = defines.direction.south, position = {0, 1} }},
                 secondary_draw_orders = { north = -1 }
@@ -309,7 +309,7 @@ data:extend({
                         scale = 0.5,
                     }
                 },
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 volume = 1000,
                 pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {0, -1}}},
                 secondary_draw_orders = { north = -1 }
@@ -350,7 +350,7 @@ data:extend({
                         scale = 0.5,
                     }
                 },
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 volume = 1000,
                 pipe_connections = {{flow_direction = "output", direction = defines.direction.south, position = {0, 1} }},
                 secondary_draw_orders = { north = -1 }
