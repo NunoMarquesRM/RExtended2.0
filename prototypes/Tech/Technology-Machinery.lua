@@ -41,7 +41,13 @@ data:extend({
             },
             time = 30
         },
-        {create_unlock_recipe("big-storage-tank-r2")}
+        {
+            create_unlock_recipe("big-storage-tank-r2"),
+            create_unlock_recipe("pipe-r1"),
+            create_unlock_recipe("pipe-under-r1"),
+            create_unlock_recipe("pipe-r2"),
+            create_unlock_recipe("pipe-under-r2")
+        }
     ),
     -- Big Storage Tank R3 - 5M
     create_tech("elite-storage-tank-r3", "Storage/Elite-storage-tank-r3", 128, "c-e-h",
@@ -556,6 +562,24 @@ data:extend({
             time = 40
         },
         {create_unlock_recipe("half-assembler-r2")}
+    ),
+    -- Advanced Centrifuge
+    create_tech("centrifuge-tech-r2", "Machinery/n-48", 128, "a-k-a",
+        {"nuclear-power", "kovarex-enrichment-process", "adv-machinery-r2"},
+        {
+            count = 1500,
+            ingredients = {
+                {science_packs.red, 1},
+                {science_packs.green, 1},
+                {science_packs.black, 1},
+                {science_packs.blue, 1},
+                {science_packs.purple, 1},
+                {science_packs.yellow, 1},
+                {science_packs.white, 1}
+            },
+            time = 40
+        },
+        {create_unlock_recipe("centrifuge-r2")}
     ),
     -- Refinery R2
     create_tech("refinery-machine-r2", "Machinery/r-03-1", 128, "a-f-j",

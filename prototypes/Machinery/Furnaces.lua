@@ -40,6 +40,9 @@ stone_r2.energy_source = {
     usage_priority = "secondary-input",
     emissions_per_minute = { pollution = 1.25 }
 }
+stone_r2.allowed_effects = add_quality_effect_if_available(
+    {"consumption", "speed", "pollution"}
+)
 stone_r2.graphics_set = {
     animation = { layers = {{
         filename = "__RExtended__/graphics/entity/Machinery/Furnaces/electric-stone-furnace/r2.png",
@@ -79,7 +82,9 @@ data:extend({stone_r2,
         open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
         close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
         module_slots = 3,
-        allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+        allowed_effects = add_quality_effect_if_available(
+            {"consumption", "speed", "productivity", "pollution"}
+        ),
         working_sound = { sound = { filename = "__base__/sound/furnace.ogg" }},
         resistances = {{ type = "fire", percent = 80 }},
         collision_box = {{-0.7, -0.7}, {0.7, 0.7}},

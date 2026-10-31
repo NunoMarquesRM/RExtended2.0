@@ -60,6 +60,7 @@ data:extend({
         icon_size = 32,
         energy_required = 30,
         enabled = false,
+        allow_as_intermediate = false,
         categories = {"air-purification"},
         order = "z-e",
         subgroup = "fluid-products",

@@ -41,6 +41,8 @@ require("prototypes.Machinery.Air-Purification")
 -- Products
 require("prototypes.Products.C&R")
 require("prototypes.Products.C&R-Fluids")
+require("prototypes.Products.Pipes")
+
 
 -- Military
 require("prototypes.Military.Laser-Turret")

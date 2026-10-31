@@ -2,8 +2,8 @@ data:extend({
     {
         type = "selection-tool",
         name = "tree-rock-eraser",
-        icon = "__RExtended__/graphics/tree-eraser.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/Tree-Rock-Eraser.png",
+        icon_size = 256,
         subgroup = "tool",
         order = "c[automated-construction]-b[deconstruction-planner]-c",
         stack_size = 1,
@@ -27,10 +27,10 @@ data:extend({
         name = 'tree-rock-eraser',
         action = 'spawn-item',
         item_to_spawn = 'tree-rock-eraser',
-        icon_size = 32,
-        icon = "__RExtended__/graphics/tree-eraser.png",
-        small_icon_size = 24,
-        small_icon = "__RExtended__/graphics/tree-eraser.png",
-        disabled_small_icon = "__RExtended__/graphics/tree-eraser.png"
+        icon_size = 256,
+        icon = "__RExtended__/graphics/Tree-Rock-Eraser.png",
+        small_icon_size = 64,
+        small_icon = "__RExtended__/graphics/Tree-Rock-Eraser.png",
+        disabled_small_icon = "__RExtended__/graphics/Tree-Rock-Eraser.png"
     }
 })

@@ -1,8 +1,8 @@
 data:extend({
     create_machinery_item("refinery-r1", "__RExtended__/graphics/icons/Machinery/Bulk/refinery-r1.png",
-        32, "machinery-mix", "c-e", 50),
-    create_machinery_item("refinery-r2", "__RExtended__/graphics/icons/Machinery/Bulk/refinery-r2.png",
         32, "machinery-mix", "c-f", 50),
+    create_machinery_item("refinery-r2", "__RExtended__/graphics/icons/Machinery/Bulk/refinery-r2.png",
+        32, "machinery-mix", "c-g", 50),
     
     create_machinery_recipe("refinery-r1", 5, false,
         {
@@ -108,7 +108,7 @@ data:extend({
         fluid_boxes = {
             {
                 production_type = "input",
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 base_area = 10,
                 base_level = -1,
                 volume = 1000,
@@ -120,7 +120,7 @@ data:extend({
             },
             {
                 production_type = "input",
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 base_area = 10,
                 base_level = -1,
                 volume = 1000,
@@ -132,7 +132,7 @@ data:extend({
             },
             {
                 production_type = "output",
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 base_level = 1,
                 volume = 1000,
                 pipe_connections = {{
@@ -143,7 +143,7 @@ data:extend({
             },
             {
                 production_type = "output",
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 base_level = 1,
                 volume = 1000,
                 pipe_connections = {{
@@ -154,7 +154,7 @@ data:extend({
             },
             {
                 production_type = "output",
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 base_level = 1,
                 volume = 1000,
                 pipe_connections = {{

@@ -78,7 +78,9 @@ data:extend({
             module_info_icon_shift = {0, 0.2},
             module_info_multi_row_initial_height_modifier = -0.3
         },
-        allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+        allowed_effects = add_quality_effect_if_available(
+            {"consumption", "speed", "productivity", "pollution"}
+        ),
         working_sound = {
             sound = {
                 { filename = "__base__/sound/assembling-machine-t1-1.ogg", volume = 0.8 },
@@ -122,7 +124,9 @@ data:extend({
             module_info_icon_shift = {0, 0.2},
             module_info_multi_row_initial_height_modifier = -0.3
         },
-        allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+        allowed_effects = add_quality_effect_if_available(
+            {"consumption", "speed", "productivity", "pollution"}
+        ),
         working_sound = {
             sound = {
                 { filename = "__base__/sound/assembling-machine-t1-1.ogg", volume = 0.8 },
@@ -168,7 +172,7 @@ data:extend({
                         scale = 0.5,
                     }
                 },
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 volume = 1000,
                 pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {0, -1} }},
                 secondary_draw_orders = { north = -1 }
@@ -209,7 +213,7 @@ data:extend({
                         scale = 0.5,
                     }
                 },
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 volume = 1000,
                 pipe_connections = {{flow_direction = "output", direction = defines.direction.south, position = {0, 1} }},
                 secondary_draw_orders = { north = -1 }
@@ -257,7 +261,9 @@ data:extend({
             module_info_icon_shift = {0, 0.2},
             module_info_multi_row_initial_height_modifier = -0.3
         },
-        allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+        allowed_effects = add_quality_effect_if_available(
+            {"consumption", "speed", "productivity", "pollution"}
+        ),
         working_sound = {
             sound = {
                 { filename = "__base__/sound/assembling-machine-t1-1.ogg", volume = 0.8 },
@@ -303,7 +309,7 @@ data:extend({
                         scale = 0.5,
                     }
                 },
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 volume = 1000,
                 pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {0, -1}}},
                 secondary_draw_orders = { north = -1 }
@@ -344,7 +350,7 @@ data:extend({
                         scale = 0.5,
                     }
                 },
-                pipe_covers = npipecovers(),
+                pipe_covers = pipe_r2_covers(),
                 volume = 1000,
                 pipe_connections = {{flow_direction = "output", direction = defines.direction.south, position = {0, 1} }},
                 secondary_draw_orders = { north = -1 }

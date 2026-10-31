@@ -37,34 +37,19 @@ local function create_solar_panel_entity(tier, max_health, production)
         {
             filename = "__RExtended__/graphics/entity/Energy/Solar-Panel/R" .. tier .. "/r" .. tier .. ".png",
             priority = "high",
-            width = 116,
-            height = 112,
-            shift = util.by_pixel(-3, 3),
-            hr_version = {
-                filename = "__RExtended__/graphics/entity/Energy/Solar-Panel/R" .. tier .. "/hr-r" .. tier .. ".png",
-                priority = "high",
-                width = 230,
-                height = 224,
-                shift = util.by_pixel(-3, 3.5),
-                scale = 0.5
-            }
+            width = 230,
+            height = 224,
+            shift = util.by_pixel(-3, 3.5),
+            scale = 0.5
         },
         {
-            filename = "__base__/graphics/entity/Solar-Panel/solar-panel-shadow.png",
+            filename = "__RExtended__/graphics/entity/Energy/Solar-Panel/solar-panel-shadow.png",
             priority = "high",
-            width = 112,
-            height = 90,
-            shift = util.by_pixel(10, 6),
+            width = 220,
+            height = 180,
+            shift = util.by_pixel(9.5, 6),
             draw_as_shadow = true,
-            hr_version = {
-                filename = "__base__/graphics/entity/Solar-Panel/hr-solar-panel-shadow.png",
-                priority = "high",
-                width = 220,
-                height = 180,
-                shift = util.by_pixel(9.5, 6),
-                draw_as_shadow = true,
-                scale = 0.5
-            }
+            scale = 0.5
         }
     }
     entity.production = production
@@ -118,7 +103,7 @@ data:extend({
 local recipe_spe_r2 = table.deepcopy(data.raw.recipe['solar-panel-equipment'])
 recipe_spe_r2.name = "solar-panel-equipment-r2"
 recipe_spe_r2.ingredients = {
-    {type = "item", name = "solar-panel-equipment", amount = 1},
+    {type = "item", name = "solar-panel-equipment", amount = 2},
     {type = "item", name = "solar-cell", amount = 4},
     {type = "item", name = "advanced-circuit", amount = 2}
 }
