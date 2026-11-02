@@ -201,7 +201,7 @@ data:extend({
         {create_unlock_recipe("coal-r1")}
     ),
     -- Enriched Coal
-    create_tech("diesel-energy-r1", "C&R/enrichedCoal-r1", 128, "c-b-d",
+    create_tech("diesel-energy-r1", "CR/Diesel-Fuel-R1", 256, "c-b-d",
         {"steam-energy-r2", "oil-processing"},
         {
             count = 750,
@@ -219,7 +219,7 @@ data:extend({
         }
     ),
     -- Refined Coal
-    create_tech("refined-coal-r1", "C&R/clean-coal-r1", 32, "a-f-d",
+    create_tech("refined-coal-r1", "CR/Clean-Coal-R1", 256, "a-f-d",
         {"charcoal-r1", "clean-products-r1"},
         {
             count = 100,
@@ -281,7 +281,7 @@ data:extend({
         }
     ),
     -- Advanced Products
-    create_tech("adv-products-r1", "C&R/r-3", 128, "a-c-a",
+    create_tech("adv-products-r1", "CR/Adv-Products-R1", 256, "a-c-a",
         {"mixer-products-r1"},
         {
             count = 100,
@@ -428,7 +428,7 @@ data:extend({
         }
     ),
     -- Lithium
-    create_tech("lithium-r1", "C&R/lithium-r1", 128, "c-n-b",
+    create_tech("lithium-r1", "CR/Lithium-R1", 256, "c-n-b",
         {"silicon-processing", "oil-processing"},
         {
             count = 200,

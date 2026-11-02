@@ -148,6 +148,7 @@ data:extend({
         name = "elite-storage-tank-r3",
         icon = "__RExtended__/graphics/icons/Storage/BigStorageTank/Elite-storage-tank-r3.png",
         icon_size = 32,
+        icon_draw_specification = {scale = 2},
         flags = {"placeable-player", "player-creation"},
         minable = {mining_time = 1, result = "elite-storage-tank-r3"},
         max_health = 2000,

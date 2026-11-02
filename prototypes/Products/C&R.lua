@@ -116,8 +116,8 @@ data:extend({
     {-- Clean Steel v1
         type = "recipe",
         name = "clean-steel-r1-v1",
-        icon = "__RExtended__/graphics/icons/CR/clean-steel-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/CR/HR/Clean-Steel-R1.png",
+        icon_size = 256,
         energy_required = 3,
         enabled = false,
         ingredients = {
@@ -132,8 +132,8 @@ data:extend({
     {-- Clean Steel v2
         type = "recipe",
         name = "clean-steel-r1-v2",
-        icon = "__RExtended__/graphics/icons/CR/clean-steel-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/CR/HR/Clean-Steel-R1.png",
+        icon_size = 256,
         energy_required = 3,
         enabled = false,
         ingredients = {
@@ -175,14 +175,14 @@ data:extend({
         order = "c-a-f"
     },
 -- Items
-    create_item("clean-iron-r1", "clean-iron-r1", 32, "plate-products", "b-a-a", 100),
-    create_item("clean-copper-r1", "clean-copper-r1", 32, "plate-products", "b-a-b", 100),
-    create_item("clean-steel-r1", "clean-steel-r1", 32, "plate-products", "b-a-c", 100),
+    create_item("clean-iron-r1", "HR/Clean-Iron-R1", 256, "plate-products", "b-a-a", 100),
+    create_item("clean-copper-r1", "HR/Clean-Copper-R1", 256, "plate-products", "b-a-b", 100),
+    create_item("clean-steel-r1", "HR/Clean-Steel-R1", 256, "plate-products", "b-a-c", 100),
     {-- Clean Coal R1
         type = "item",
         name = "clean-coal-r1",
-        icon = "__RExtended__/graphics/icons/CR/clean-coal-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/CR/HR/Clean-Coal-R1.png",
+        icon_size = 256,
         fuel_categories = {"chemical"},
         fuel_value = "36MJ",
         subgroup = "chemical-products-r1",
@@ -194,7 +194,7 @@ data:extend({
 -- Glue & Cable
 data:extend({
     create_item("glue-r1", "glue-r1", 32, "electronic-products", "e-a", 500),
-    create_item("cable-r1", "cable-r1", 32, "electronic-products", "e-c", 200),
+    create_item("cable-r1", "HR/Cable-R1", 256, "electronic-products", "e-c", 200),
 -- Recipes
     {-- Recipe 1
         type = "recipe",
@@ -242,7 +242,7 @@ data:extend({
     create_item("reinforced-iron-plate-r1", "reinforced-iron-plate-r1", 32, "reinforced-products", "d-e", 200),
     create_item("reinforced-copper-plate-r1", "reinforced-copper-plate-r1", 32, "reinforced-products", "d-f", 200),
     create_item("reinforced-coal-plate-r1", "reinforced-coal-plate-r1", 32, "reinforced-products", "d-g", 200),
-    create_item("electric-component-r1", "electric-component-r1", 32, "electronic-products", "e-d", 200),
+    create_item("electric-component-r1", "HR/Electric-Component-R1", 256, "electronic-products", "e-d", 200),
 -- Recipes
     {-- Special Component
         type = "recipe",
@@ -396,8 +396,8 @@ data:extend({
     {--Enriched Coal
         type = "item",
         name = "enriched-coal-r1",
-        icon = "__RExtended__/graphics/icons/CR/enrichedCoal-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/CR/HR/Clean-Coal-R3.png",
+        icon_size = 256,
         fuel_categories = {"chemical"},
         fuel_value = "144MJ",
         subgroup = "chemical-products-r1",

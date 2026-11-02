@@ -1,4 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.5.2
+Date: 01.11.2026
+  Changes:
+    - Warehouse R1: Increased icon draw specification (0.7 -> 2)
+    - Elite Storage Tank: Increased icon draw specification (0.7 -> 2)
+  Graphics:
+    - Updated icons and increased resolution (32x32 -> 256x256) for:
+        Electronic Component, Enriched Coal, Diesel Fuel, Clean Iron, Molten Iron, Clean Copper,
+        Molten Copper, Clean Steel, Molten Steel, Clean Coal, Molten Coal, Enriched Petroleum,
+        Lithium, Water, Pressurized Water, Cable
+    - Updated tech icons and increased resolution (128x128 -> 256x256) for:
+        Refined Coal, Enriched Coal, Lithium Processing, Advanced Products
+---------------------------------------------------------------------------------------------------
 Version: 2.5.1
 Date: 31.10.2026
   Features:

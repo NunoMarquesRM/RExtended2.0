@@ -26,6 +26,7 @@ entity_r1.icon_size = 64
 entity_r1.minable = {mining_time = 0.5, result = "warehouse-r1"}
 entity_r1.max_health = 1000
 entity_r1.corpse = "big-remnants"
+entity_r1.icon_draw_specification = {scale = 2}
 entity_r1.collision_box = {{-2.8, -2.8}, {2.8, 2.8}}
 entity_r1.selection_box = {{-3.0, -3.0}, {3.0, 3.0}}
 entity_r1.drawing_box = {{-3.0, -3.0}, {3.0, 3.0}}
