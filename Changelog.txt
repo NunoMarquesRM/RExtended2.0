@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.5.2
-Date: 01.11.2026
+Date: 02.11.2026
   Changes:
     - Warehouse R1: Increased icon draw specification (0.7 -> 2)
     - Elite Storage Tank: Increased icon draw specification (0.7 -> 2)
