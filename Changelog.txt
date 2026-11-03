@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.5.3
+Date: 03.11.2026
+  Features:
+    - Added new Intermediate Products: Infuse Tool
+    - Added new Fuel Products: Infused Coal (72MJ)
+  Changes:
+    - Changed stack size of Clean Coal (200 -> 250), Enriched Coal (200 -> 100)
+---------------------------------------------------------------------------------------------------
 Version: 2.5.2
 Date: 02.11.2026
   Changes:

@@ -200,24 +200,6 @@ data:extend({
         },
         {create_unlock_recipe("coal-r1")}
     ),
-    -- Enriched Coal
-    create_tech("diesel-energy-r1", "CR/Diesel-Fuel-R1", 256, "c-b-d",
-        {"steam-energy-r2", "oil-processing"},
-        {
-            count = 750,
-            ingredients = {
-                {science_packs.red, 1},
-                {science_packs.green, 1},
-                {science_packs.blue, 1}
-            },
-            time = 30
-        },
-        {
-            create_unlock_recipe("enriched-coal-r1"),
-            create_unlock_recipe("diesel-fuel"),
-            create_unlock_recipe("enrichment-chamber-r1")
-        }
-    ),
     -- Refined Coal
     create_tech("refined-coal-r1", "CR/Clean-Coal-R1", 256, "a-f-d",
         {"charcoal-r1", "clean-products-r1"},
@@ -232,6 +214,42 @@ data:extend({
         {
             create_unlock_recipe("clean-coal-r1"),
             create_unlock_recipe("glue-r1-v2")
+        }
+    ),
+    -- Infused Coal
+    create_tech("refined-coal-r2", "CR/Infused-Products-R1", 256, "c-b-e",
+        {"refined-coal-r1"},
+        {
+            count = 750,
+            ingredients = {
+                {science_packs.red, 1},
+                {science_packs.green, 1},
+                {science_packs.black, 1},
+                {science_packs.blue, 1}
+            },
+            time = 30
+        },
+        {
+            create_unlock_recipe("clean-coal-r2"),
+            create_unlock_recipe("infuse-tool-r1")
+        }
+    ),
+    -- Enriched Coal
+    create_tech("diesel-energy-r1", "CR/Diesel-Fuel-R1", 256, "c-b-d",
+        {"steam-energy-r2", "oil-processing"},
+        {
+            count = 750,
+            ingredients = {
+                {science_packs.red, 1},
+                {science_packs.green, 1},
+                {science_packs.blue, 1}
+            },
+            time = 30
+        },
+        {
+            create_unlock_recipe("clean-coal-r3"),
+            create_unlock_recipe("diesel-fuel"),
+            create_unlock_recipe("enrichment-chamber-r1")
         }
     ),
     -- Water Condenser

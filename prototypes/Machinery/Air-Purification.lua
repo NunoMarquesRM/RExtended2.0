@@ -23,8 +23,8 @@ local function create_air_recipe(name, energy_required, enabled, categories, ing
 end
 
 data:extend({
-    create_air_item("purificator-tool-r1", "Purificator-tool-r1", 32, "fluid-products", "z-d", 25),
-    create_air_item("purificator-tool-r1-empty", "Purificator-tool-r1-Empty", 32, "fluid-products", "z-c", 50),
+    create_air_item("purificator-tool-r1", "Purificator-tool-r1", 32, "other-products", "z-d", 25),
+    create_air_item("purificator-tool-r1-empty", "Purificator-tool-r1-Empty", 32, "other-products", "z-c", 50),
 
     create_air_recipe("purificator-tool-r1", 2, false, {"crafting-with-fluid"}, {
             {type = "item", name = "purificator-tool-r1-empty", amount = 2},
@@ -63,7 +63,7 @@ data:extend({
         allow_as_intermediate = false,
         categories = {"air-purification"},
         order = "z-e",
-        subgroup = "fluid-products",
+        subgroup = "other-products",
         ingredients = {{type = "item", name = "purificator-tool-r1", amount = 1}},
         results = {{type = "item", name = "purificator-tool-r1-empty", amount = 1}}
     },

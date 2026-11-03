@@ -1,22 +1,3 @@
-local battery_r1_item = table.deepcopy(data.raw.item['battery'])
-battery_r1_item.name = "battery-r1"
-battery_r1_item.icon_size = 64
-battery_r1_item.icon = "__RExtended__/graphics/icons/CR/battery-r1.png"
-battery_r1_item.subgroup = "accumulators-products"
-battery_r1_item.order = "k-a-d"
-
-local battery_r1_recipe = table.deepcopy(data.raw.recipe['battery'])
-battery_r1_recipe.name = "battery-r1"
-battery_r1_recipe.energy_required = 2
-battery_r1_recipe.enabled = false
-battery_r1_recipe.ingredients = {
-    {type="fluid", name="lithium-r1", amount=25},
-    {type = "item", name = "copper-plate", amount=3}
-}
-battery_r1_recipe.results = {{type="item", name="battery-r1", amount=1}}
-
-data:extend({battery_r1_item, battery_r1_recipe})
-
 -- Accumulator R2
 local recipe_r2 = table.deepcopy(data.raw.recipe['accumulator'])
 recipe_r2.name = "accumulator-r2"

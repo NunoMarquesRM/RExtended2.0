@@ -65,24 +65,23 @@ data:extend({
         subgroup = "plate-products",
         order = "b-b-c"
     },
-
     create_item("pressurized-water-r1", "HR/Pressurized-Water-R1", 256,
-        "fluid-products", "z-b", 23, 100, "0.1kJ",
+        "other-products", "z-b", 23, 100, "0.1kJ",
         { r=189, g=189, b=189 },
         { r=130, g=130, b=130 }, 0.460, 0.400
     ),
     create_item("molten-iron-r1", "HR/Molten-Iron-R1", 256,
-        "fluid-products", "z-c-a", 110, 150, "1kJ",
+        "plate-products", "b-b-a", 110, 150, "1kJ",
         { r=20, g=23, b=62 },
         { r=65, g=68, b=109 }, 0.200, 0.200
     ),
     create_item("molten-copper-r1", "HR/Molten-Copper-R1", 256,
-        "fluid-products", "z-c-b", 110, 150, "1kJ",
+        "plate-products", "b-b-b", 110, 150, "1kJ",
         { r=85, g=28, b=12 },
         { r=65, g=13, b=10 }, 0.200, 0.200
     ),
     create_item("molten-steel-r1", "HR/Molten-Steel-R1", 256,
-        "fluid-products", "z-c-c", 110, 150, "1kJ",
+        "plate-products", "b-b-c", 110, 150, "1kJ",
         { r=85, g=28, b=12 },
         { r=65, g=13, b=10 }, 0.200, 0.200
     )
@@ -100,14 +99,15 @@ data:extend({
         ingredients = {},
         results = {{type="fluid", name="water", amount=600}},
         categories = {"red-water-condenser"},
-        subgroup = "fluid-products",
+        subgroup = "other-products",
         order = "z-a"
     }
 })
 
--- Chain: Diesel Fuel
+-- Chain: Fuilds
 data:extend({
-    {-- Recipe
+    -- Recipes
+    {-- Diesel Fuel
         type = "recipe",
         name = "diesel-fuel",
         categories = {"chemistry"},
@@ -119,16 +119,6 @@ data:extend({
         },
         results = {{type = "fluid", name = "diesel-fuel", amount = 30, temperature = 300}}
     },
-    create_item("diesel-fuel", "HR/Diesel-Fuel-R1", 256,
-        "chemical-products-r1", "a-a-d", 300, 300, "2MJ",
-        { r=0.8, g=0.7, b=0 },
-        { r=0.5, g=0.4, b=0 }, 0.4, 0.59
-    )
-})
-
--- Chain: Energy Storage
-data:extend({
-    -- Recipes
     {-- Molten Coal
         type = "recipe",
         name = "molten-coal-r1",
@@ -136,9 +126,7 @@ data:extend({
         enabled = false,
         ingredients = {{type = "item", name = "clean-coal-r1", amount = 2}},
         results = {{type="fluid", name="molten-coal-r1", amount=50}},
-        categories = {"red-forge-chamber"},
-        subgroup = "accumulators-products",
-        order = "k-a-a"
+        categories = {"red-forge-chamber"}
     },
     {-- Enriched Petroleum
         type = "recipe",
@@ -151,9 +139,7 @@ data:extend({
             {type="fluid", name="molten-coal-r1", amount=100},
             {type="fluid", name="crude-oil", amount=200}
         },
-        results= {{type="fluid", name="enriched-petro-r1", amount=250}},
-        subgroup = "accumulators-products",
-        order = "k-a-b"
+        results= {{type="fluid", name="enriched-petro-r1", amount=250}}
     },
     {-- Lithium
         type = "recipe",
@@ -167,19 +153,23 @@ data:extend({
         },
         results = {{type = "fluid", name = "lithium-r1", amount = 50, temperature = 300}}
     },
-    
+    create_item("diesel-fuel", "HR/Diesel-Fuel-R1", 256,
+        "fluid-products", "k-a", 300, 300, "2MJ",
+        { r=0.8, g=0.7, b=0 },
+        { r=0.5, g=0.4, b=0 }, 0.4, 0.59
+    ),
     create_item("molten-coal-r1", "HR/Molten-Coal-R1", 256,
-        "fluid-products", "z-c-d", 110, 150, "1kJ",
+        "fluid-products", "k-b", 110, 150, "1kJ",
         { r=85, g=28, b=12 },
         { r=65, g=13, b=10 }, 0.200, 0.200
     ),
     create_item("enriched-petro-r1", "HR/Enriched-Petroleum-R1", 256,
-        "oil-fluid-products", "y-d-b", 110, 150, "1kJ",
+        "fluid-products", "k-c", 110, 150, "1kJ",
         { r=85, g=28, b=12 },
         { r=65, g=13, b=10 }, 0.200, 0.200
     ),
     create_item("lithium-r1", "HR/Lithium-R1", 256,
-        "accumulators-products", "k-a-c", 300, 300, "0.2kJ",
+        "fluid-products", "k-d", 300, 300, "0.2kJ",
         { r=0.8, g=0.7, b=0 },
         { r=0.5, g=0.4, b=0 }, 0.200, 0.200
     )
