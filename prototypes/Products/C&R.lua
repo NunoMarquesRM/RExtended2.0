@@ -341,7 +341,7 @@ data:extend({
 ------- Chain: Clean Coal
 data:extend({
     -- Items
-    {-- Clean Coal
+    {-- (R1) Clean Coal
         type = "item",
         name = "clean-coal-r1",
         icon = "__RExtended__/graphics/icons/CR/HR/Clean-Coal-R1.png",
@@ -352,7 +352,7 @@ data:extend({
         order = "a-c",
         stack_size = 250
     },
-    {-- Infused Clean Coal
+    {-- (R2) Infused Clean Coal
         type = "item",
         name = "clean-coal-r2",
         icon = "__RExtended__/graphics/icons/CR/HR/Clean-Coal-R2.png",
@@ -363,7 +363,7 @@ data:extend({
         order = "a-d",
         stack_size = 150
     },
-    {--Enriched Coal
+    {-- (R3) Enriched Coal
         type = "item",
         name = "clean-coal-r3",
         icon = "__RExtended__/graphics/icons/CR/HR/Clean-Coal-R3.png",
@@ -437,45 +437,44 @@ data:extend({
 
 
 ------- Chain: Solar Panels
--- Blue Quartz
-local recipe_quartz = table.deepcopy(data.raw.recipe['iron-plate'])
-recipe_quartz.categories = {"crafting-with-fluid"}
-recipe_quartz.name = "blue-quartz-r1"
-recipe_quartz.energy_required = 1
-recipe_quartz.enabled = false
-recipe_quartz.ingredients = {
-    {type = "item", name = "stone", amount = 4},
-    {type = "fluid", name = "pressurized-water-r1", amount = 75}
-}
-recipe_quartz.results = {{type="item", name="blue-quartz-r1", amount=1}}
-
--- Crystalline Silicon
-local recipe_silicon = table.deepcopy(data.raw.recipe['engine-unit'])
-recipe_silicon.name = "crystalline-silicon-r1"
-recipe_silicon.energy_required = 5
-recipe_silicon.enabled = false
-recipe_silicon.ingredients = {
-    {type = "item", name = "blue-quartz-r1", amount = 2},
-    {type = "item", name = "clean-coal-r1", amount = 1}
-}
-recipe_silicon.results = {{type="item", name="crystalline-silicon-r1", amount=1}}
-
--- Solar Cell
-local recipe_solarCell = table.deepcopy(data.raw.recipe['engine-unit'])
-recipe_solarCell.name = "solar-cell"
-recipe_solarCell.energy_required = 5
-recipe_solarCell.enabled = false
-recipe_solarCell.ingredients = {
-    {type = "item", name = "crystalline-silicon-r1", amount = 2},
-    {type = "item", name = "electric-component-r1", amount = 1},
-    {type = "item", name = "cable-r1", amount = 2}
-}
-recipe_solarCell.results = {{type="item", name="solar-cell", amount=1}}
-
-data:extend({recipe_quartz, recipe_silicon, recipe_solarCell,
-    create_item("blue-quartz-r1", "blue-quartz-r1", 32, "energy-products", "i-a", 100),
-    create_item("crystalline-silicon-r1", "crystalline-silicon-r1", 32, "energy-products", "i-b", 100),
-    create_item("solar-cell", "solar-cell-r1", 32, "energy-products", "i-c", 200)
+data:extend({
+    create_item("blue-quartz-r1", "HR/Blue-Quartz-R1", 256, "energy-products", "i-a", 100),
+    create_item("crystalline-silicon-r1", "HR/Crystalline-Silicon-R1", 256, "energy-products", "i-b", 100),
+    create_item("solar-cell-r1", "HR/Solar-Cell-R1", 256, "energy-products", "i-c", 200),
+    create_recipe("blue-quartz-r1",
+        {
+            {type = "item", name = "stone", amount = 4},
+            {type = "fluid", name = "pressurized-water-r1", amount = 75}
+        },
+        {{type = "item", name = "blue-quartz-r1", amount = 1}},
+        {
+            categories = {"crafting-with-fluid"},
+            energy_required = 1
+        }
+    ),
+    create_recipe("crystalline-silicon-r1",
+        {
+            {type = "item", name = "blue-quartz-r1", amount = 2},
+            {type = "item", name = "clean-coal-r1", amount = 1}
+        },
+        {{type = "item", name = "crystalline-silicon-r1", amount = 1}},
+        {
+            energy_required = 5,
+            allow_productivity = true
+        }
+    ),
+    create_recipe("solar-cell-r1",
+        {
+            {type = "item", name = "crystalline-silicon-r1", amount = 2},
+            {type = "item", name = "electric-component-r1", amount = 1},
+            {type = "item", name = "cable-r1", amount = 2}
+        },
+        {{type = "item", name = "solar-cell-r1", amount = 1}},
+        {
+            energy_required = 5,
+            allow_productivity = true
+        }
+    )
 })
 
 local battery_r1_item = table.deepcopy(data.raw.item['battery'])

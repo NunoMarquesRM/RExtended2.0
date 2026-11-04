@@ -1,11 +1,16 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.5.3
-Date: 03.11.2026
+Date: 05.11.2026
   Features:
     - Added new Intermediate Products: Infuse Tool
     - Added new Fuel Products: Infused Coal (72MJ)
   Changes:
     - Changed stack size of Clean Coal (200 -> 250), Enriched Coal (200 -> 100)
+  Graphics:
+    - Updated icons and increased resolution (32x32 -> 256x256) for:
+        Blue Quartz, Crystalline Silicon, Solar Cell
+    - Updated tech icons and increased resolution (128x128 -> 256x256) for:
+        Silicon Processing, Charcoal
 ---------------------------------------------------------------------------------------------------
 Version: 2.5.2
 Date: 02.11.2026

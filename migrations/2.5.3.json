@@ -1,8 +1,10 @@
 {
     "item": [
-        ["enriched-coal-r1","clean-coal-r3"]
+        ["enriched-coal-r1","clean-coal-r3"],
+        ["solar-cell","solar-cell-r1"]
     ],
     "recipe": [
-        ["enriched-coal-r1","clean-coal-r3"]
+        ["enriched-coal-r1","clean-coal-r3"],
+        ["solar-cell","solar-cell-r1"]
     ]
 }

@@ -92,7 +92,7 @@ data:extend({
             time = 30
         },
         {
-            create_unlock_recipe("solar-cell"),
+            create_unlock_recipe("solar-cell-r1"),
             create_unlock_recipe("solar-panel-r2")
         }
     ),
