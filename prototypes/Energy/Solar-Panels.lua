@@ -35,7 +35,7 @@ local function create_solar_panel_entity(tier, max_health, production)
     entity.max_health = max_health
     entity.picture.layers = {
         {
-            filename = "__RExtended__/graphics/entity/Energy/Solar-Panel/R" .. tier .. "/r" .. tier .. ".png",
+            filename = "__RExtended__/graphics/entity/Energy/Solar-Panel/R" .. tier .. ".png",
             priority = "high",
             width = 230,
             height = 224,

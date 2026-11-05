@@ -10,7 +10,7 @@ Date: 05.11.2026
     - Updated icons and increased resolution (32x32 -> 256x256) for:
         Blue Quartz, Crystalline Silicon, Solar Cell
     - Updated tech icons and increased resolution (128x128 -> 256x256) for:
-        Silicon Processing, Charcoal
+        Silicon Processing, Charcoal, Steam Energy 1, Steam Energy 2, Solar Panel R2
 ---------------------------------------------------------------------------------------------------
 Version: 2.5.2
 Date: 02.11.2026

@@ -1,6 +1,6 @@
 data:extend({
     -- Steam Energy 1 (Boiler && Steam Engine R2)
-    create_tech("steam-energy-r1", "Energy/steam-energy-r2", 128, "c-b-a",
+    create_tech("steam-energy-r1", "Energy/Steam-Energy-R2", 256, "c-b-a",
         {"engine"},
         {
             count = 200,
@@ -16,7 +16,7 @@ data:extend({
         }
     ),
     -- Steam Energy 2 (Steam Engine && Boiler R3)
-    create_tech("steam-energy-r2", "Energy/steam-energy-r3", 128, "c-b-b",
+    create_tech("steam-energy-r2", "Energy/Steam-Energy-R3", 256, "c-b-b",
         {"steam-energy-r1"},
         {
             count = 800,
@@ -80,7 +80,7 @@ data:extend({
         {create_unlock_recipe("solar-panel-equipment-r2")}
     ),
     -- Solar Panel R2
-    create_tech("solar-energy-r2", "Energy/solar-energy-r2", 256, "c-n-c",
+    create_tech("solar-energy-r2", "Energy/Solar-Energy-R2", 256, "c-n-c",
         {"solar-energy", "silicon-processing"},
         {
             count = 1000,
