@@ -1,6 +1,6 @@
 data:extend({
     -- Warehouse R1
-    create_tech("warehouse-tech", "Storage/warehouse-tech", 128, "c-e-a",
+    create_tech("warehouse-tech", "Storage/Warehouse-Tech", 256, "c-e-a",
         {"steel-processing"},
         {
             count = 750,

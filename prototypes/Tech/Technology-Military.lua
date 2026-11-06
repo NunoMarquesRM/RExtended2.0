@@ -14,7 +14,10 @@ data:extend({
             },
             time = 60,
         },
-        {{type = "unlock-recipe", recipe = "laser-turret-r2"}}
+        {{type = "unlock-recipe", recipe = "laser-turret-r2"}},
+        nil,
+        nil,
+        4
     ),
     create_tech("exoskeleton-tech-r2", "Military/Exoskeleton-Tech-r2", 256, "a-j-b",
         {"exoskeleton-equipment", "power-armor-mk2"},
@@ -31,6 +34,9 @@ data:extend({
             },
             time = 30,
         },
-        {{type = "unlock-recipe", recipe = "exoskeleton-equipment-r2"}}
+        {{type = "unlock-recipe", recipe = "exoskeleton-equipment-r2"}},
+        nil,
+        nil,
+        4
     )
 })
