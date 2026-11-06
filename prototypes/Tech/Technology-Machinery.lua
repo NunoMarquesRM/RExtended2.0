@@ -1,6 +1,6 @@
 data:extend({
     -- Warehouse R1
-    create_tech("warehouse-tech", "Storage/warehouse-tech", 128, "c-e-a",
+    create_tech("warehouse-tech", "Storage/Warehouse-Tech", 256, "c-e-a",
         {"steel-processing"},
         {
             count = 750,
@@ -136,7 +136,7 @@ data:extend({
         return tech
     end)(),
     -- Silicon Processing
-    create_tech("silicon-processing", "C&R/silicon-processing", 128, "c-n-a",
+    create_tech("silicon-processing", "CR/Silicon-Processing-R1", 256, "c-n-a",
         {"solar-energy"},
         {
             count = 175,
@@ -191,7 +191,7 @@ data:extend({
         {create_unlock_recipe("assembler-r2")}
     ),
     -- Charcoal (wood to coal)
-    create_tech("charcoal-r1", "C&R/charcoal-r1", 128, "a-f-c",
+    create_tech("charcoal-r1", "CR/Charcoal-R1", 256, "a-f-c",
         {"logistics"},
         {
             count = 100,

@@ -1,11 +1,22 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.5.3
-Date: 03.11.2026
+Date: 05.11.2026
   Features:
     - Added new Intermediate Products: Infuse Tool
     - Added new Fuel Products: Infused Coal (72MJ)
   Changes:
     - Changed stack size of Clean Coal (200 -> 250), Enriched Coal (200 -> 100)
+    - Added items descriptions
+    - Added technologies descriptions
+  Graphics:
+    - Updated icons and increased resolution (32x32 -> 256x256) for:
+        Blue Quartz, Crystalline Silicon, Solar Cell
+    - Updated tech icons and increased resolution (128x128 -> 256x256) for:
+        Silicon Processing, Charcoal, Steam Energy 1, Steam Energy 2,
+        Advanced Accumulator, High-Capacity Accumulator, Warehouse Tech 1
+    - Changed tech icon for:
+        Improved Solar Panel, Advanced Solar Panel, Elite Solar Panel, Ultimate Solar Panel,
+        Portable Solar Panel R2
 ---------------------------------------------------------------------------------------------------
 Version: 2.5.2
 Date: 02.11.2026

@@ -15,6 +15,11 @@ require("prototypes.Tech.Categories-Machinery")
 require("prototypes.Tech.Categories-Railworld")
 require("prototypes.Tech.Categories-C&R")
 
+-- Products
+require("prototypes.Products.C&R")
+require("prototypes.Products.C&R-Fluids")
+require("prototypes.Products.Pipes")
+
 -- Energy
 require("prototypes.Energy.Boilers")
 require("prototypes.Energy.Accumulators")
@@ -37,11 +42,6 @@ require("prototypes.Machinery.Compressor")
 require("prototypes.Machinery.ChemicalMachine")
 require("prototypes.Machinery.Refinery")
 require("prototypes.Machinery.Air-Purification")
-
--- Products
-require("prototypes.Products.C&R")
-require("prototypes.Products.C&R-Fluids")
-require("prototypes.Products.Pipes")
 
 
 -- Military

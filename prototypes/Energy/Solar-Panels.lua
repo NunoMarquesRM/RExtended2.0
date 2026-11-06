@@ -35,7 +35,7 @@ local function create_solar_panel_entity(tier, max_health, production)
     entity.max_health = max_health
     entity.picture.layers = {
         {
-            filename = "__RExtended__/graphics/entity/Energy/Solar-Panel/R" .. tier .. "/r" .. tier .. ".png",
+            filename = "__RExtended__/graphics/entity/Energy/Solar-Panel/R" .. tier .. ".png",
             priority = "high",
             width = 230,
             height = 224,
@@ -62,19 +62,19 @@ data:extend({
     create_solar_panel_recipe(2, {
         {type = "item", name = "solar-panel", amount = 2},
         {type = "item", name = "electric-component-r1", amount = 5},
-        {type = "item", name = "solar-cell", amount = 10}
+        {type = "item", name = "solar-cell-r1", amount = 10}
     }),
     
     create_solar_panel_recipe(3, {
         {type = "item", name = "solar-panel-r2", amount = 2},
         {type = "item", name = "electronic-circuit", amount = 4},
-        {type = "item", name = "solar-cell", amount = 4}
+        {type = "item", name = "solar-cell-r1", amount = 4}
     }),
     
     create_solar_panel_recipe(4, {
         {type = "item", name = "solar-panel-r3", amount = 2},
         {type = "item", name = "advanced-circuit", amount = 2},
-        {type = "item", name = "solar-cell", amount = 1}
+        {type = "item", name = "solar-cell-r1", amount = 1}
     }),
     
     create_solar_panel_recipe(5, {
@@ -104,7 +104,7 @@ local recipe_spe_r2 = table.deepcopy(data.raw.recipe['solar-panel-equipment'])
 recipe_spe_r2.name = "solar-panel-equipment-r2"
 recipe_spe_r2.ingredients = {
     {type = "item", name = "solar-panel-equipment", amount = 2},
-    {type = "item", name = "solar-cell", amount = 4},
+    {type = "item", name = "solar-cell-r1", amount = 4},
     {type = "item", name = "advanced-circuit", amount = 2}
 }
 recipe_spe_r2.results = {{type = "item", name = "solar-panel-equipment-r2", amount = 1}}
