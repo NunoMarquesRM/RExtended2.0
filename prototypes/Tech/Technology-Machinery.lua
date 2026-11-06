@@ -270,7 +270,7 @@ data:extend({
         }
     ),
     -- Initial Products
-    create_tech("initial-products-r1", "C&R/r-1", 128, "a-a-a", nil,
+    create_tech("initial-products-r1", "CR/Initial-Products-R1", 256, "a-a-a", nil,
         {
             count = 50,
             ingredients = {{science_packs.red, 1}},
@@ -284,7 +284,7 @@ data:extend({
         }
     ),
     -- Mixer Products
-    create_tech("mixer-products-r1", "C&R/r-2", 128, "a-b-a",
+    create_tech("mixer-products-r1", "CR/Mixer-Products-R1", 256, "a-b-a",
         {"initial-products-r1"},
         {
             count = 50,

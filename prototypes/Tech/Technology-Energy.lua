@@ -97,7 +97,7 @@ data:extend({
         }
     ),
     -- Solar Panel R3
-    create_tech("solar-energy-r3", "Energy/Solar-Energy-r3", 256, "c-n-e",
+    create_tech("solar-energy-r3", "Energy/Solar-Energy-R3", 256, "c-n-e",
         {"solar-energy-r2"},
         {
             count = 1500,
