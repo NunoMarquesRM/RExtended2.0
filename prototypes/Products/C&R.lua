@@ -393,7 +393,7 @@ data:extend({
         {{type = "item", name = "clean-coal-r2", amount = 1}},
         {
             energy_required = 2,
-            categories = {"red-washer-chamber"}
+            categories = {"red-furnace"}
         }
     ),
     create_recipe("clean-coal-r3",
@@ -403,7 +403,7 @@ data:extend({
         },
         {{type = "item", name = "clean-coal-r3", amount = 1}},
         {
-            categories = {"crafting-with-fluid", "red-enrichment-chamber"},
+            categories = {"red-enrichment-chamber"},
             energy_required = 1
         }
     )

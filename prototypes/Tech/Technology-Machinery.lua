@@ -218,7 +218,7 @@ data:extend({
     ),
     -- Infused Coal
     create_tech("refined-coal-r2", "CR/Infused-Products-R1", 256, "c-b-e",
-        {"refined-coal-r1"},
+        {"adv-formation-furnace-r1"},
         {
             count = 750,
             ingredients = {

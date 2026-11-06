@@ -6,6 +6,7 @@ Date: 06.11.2026
     - Added new Fuel Product: Infused Coal (72MJ).
   Changes:
     - Changed stack size of Clean Coal (200 -> 250), Enriched Coal (200 -> 100).
+    - Removed recipe category "crafting with fluid" for Enriched Coal.
     - Added items descriptions.
     - Added technologies descriptions.
   Graphics:
