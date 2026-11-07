@@ -275,3 +275,5 @@ if settings.startup["red-robots-starting-enabled"].value then
         end
     end)
 end
+
+-- Calculator (future)

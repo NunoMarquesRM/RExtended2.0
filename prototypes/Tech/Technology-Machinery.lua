@@ -1,72 +1,4 @@
 data:extend({
-    -- Warehouse R1
-    create_tech("warehouse-tech", "Storage/Warehouse-Tech", 256, "c-e-a",
-        {"steel-processing"},
-        {
-            count = 750,
-            ingredients = {
-                {science_packs.red, 1},
-                {science_packs.green, 1},
-                {science_packs.blue, 1}
-            },
-            time = 20
-        },
-        {create_unlock_recipe("warehouse-r1")}
-    ),
-    -- Big Storage Tank R1 - 100K
-    create_tech("big-storage-tank-r1", "Storage/big-storage-tank-r1", 128, "c-e-f",
-        {"fluid-handling"},
-        {
-            count = 250,
-            ingredients = {
-                {science_packs.red, 1},
-                {science_packs.green, 1},
-                {science_packs.blue, 1}
-            },
-            time = 30
-        },
-        {create_unlock_recipe("big-storage-tank-r1")}
-    ),
-    -- Big Storage Tank R2 - 500K
-    create_tech("big-storage-tank-r2", "Storage/big-storage-tank-r2", 128, "c-e-g",
-        {"big-storage-tank-r1"},
-        {
-            count = 350,
-            ingredients = {
-                {science_packs.red, 1},
-                {science_packs.green, 1},
-                {science_packs.black, 1},
-                {science_packs.blue, 1},
-                {science_packs.purple, 1}
-            },
-            time = 30
-        },
-        {
-            create_unlock_recipe("big-storage-tank-r2"),
-            create_unlock_recipe("pipe-r1"),
-            create_unlock_recipe("pipe-under-r1"),
-            create_unlock_recipe("pipe-r2"),
-            create_unlock_recipe("pipe-under-r2")
-        }
-    ),
-    -- Big Storage Tank R3 - 5M
-    create_tech("elite-storage-tank-r3", "Storage/Elite-storage-tank-r3", 128, "c-e-h",
-        {"big-storage-tank-r2"},
-        {
-            count = 500,
-            ingredients = {
-                {science_packs.red, 1},
-                {science_packs.green, 1},
-                {science_packs.black, 1},
-                {science_packs.blue, 1},
-                {science_packs.purple, 1},
-                {science_packs.yellow, 1},
-                {science_packs.white, 1}
-            },
-            time = 30
-        },
-        {create_unlock_recipe("elite-storage-tank-r3")}
-    ),
     -- Electric Mining Drill R2
     create_tech("electric-mining-r2", "Machinery/r-08", 128, "c-i-a",
         {"automation-2"},
@@ -270,7 +202,7 @@ data:extend({
         }
     ),
     -- Initial Products
-    create_tech("initial-products-r1", "CR/Initial-Products-R1", 256, "a-a-a", nil,
+    create_tech("initial-products-r1", "CR/Initial-Products-Reinforced-R1", 256, "a-a-a", nil,
         {
             count = 50,
             ingredients = {{science_packs.red, 1}},
@@ -614,5 +546,77 @@ data:extend({
             time = 40
         },
         {create_unlock_recipe("refinery-r2")}
+    )
+})
+
+-- Storage
+data:extend({
+    -- Warehouse R1
+    create_tech("warehouse-tech", "Storage/Elite-Warehouse-Tech", 256, "c-e-a",
+        {"steel-processing"},
+        {
+            count = 750,
+            ingredients = {
+                {science_packs.red, 1},
+                {science_packs.green, 1},
+                {science_packs.blue, 1}
+            },
+            time = 20
+        },
+        {create_unlock_recipe("warehouse-r1")}
+    ),
+    -- Big Storage Tank R1 - 100K
+    create_tech("big-storage-tank-r1", "Storage/big-storage-tank-r1", 128, "c-e-f",
+        {"fluid-handling"},
+        {
+            count = 250,
+            ingredients = {
+                {science_packs.red, 1},
+                {science_packs.green, 1},
+                {science_packs.blue, 1}
+            },
+            time = 30
+        },
+        {create_unlock_recipe("big-storage-tank-r1")}
+    ),
+    -- Big Storage Tank R2 - 500K
+    create_tech("big-storage-tank-r2", "Storage/big-storage-tank-r2", 128, "c-e-g",
+        {"big-storage-tank-r1"},
+        {
+            count = 350,
+            ingredients = {
+                {science_packs.red, 1},
+                {science_packs.green, 1},
+                {science_packs.black, 1},
+                {science_packs.blue, 1},
+                {science_packs.purple, 1}
+            },
+            time = 30
+        },
+        {
+            create_unlock_recipe("big-storage-tank-r2"),
+            create_unlock_recipe("pipe-r1"),
+            create_unlock_recipe("pipe-under-r1"),
+            create_unlock_recipe("pipe-r2"),
+            create_unlock_recipe("pipe-under-r2")
+        }
+    ),
+    -- Big Storage Tank R3 - 5M
+    create_tech("elite-storage-tank-r3", "Storage/Elite-storage-tank-r3", 128, "c-e-h",
+        {"big-storage-tank-r2"},
+        {
+            count = 500,
+            ingredients = {
+                {science_packs.red, 1},
+                {science_packs.green, 1},
+                {science_packs.black, 1},
+                {science_packs.blue, 1},
+                {science_packs.purple, 1},
+                {science_packs.yellow, 1},
+                {science_packs.white, 1}
+            },
+            time = 30
+        },
+        {create_unlock_recipe("elite-storage-tank-r3")}
     )
 })

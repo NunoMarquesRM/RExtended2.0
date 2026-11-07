@@ -12,8 +12,8 @@ recipe_r1.results = {{type="item", name="warehouse-r1", amount=1}}
 
 local item_r1 = table.deepcopy(data.raw.item['steel-chest'])
 item_r1.name = "warehouse-r1"
-item_r1.icon = "__RExtended__/graphics/icons/Storage/Warehouse/Warehouse-r1.png"
-item_r1.icon_size = 64
+item_r1.icon = "__RExtended__/graphics/icons/Storage/Elite-Warehouse-Circuit.png"
+item_r1.icon_size = 256
 item_r1.subgroup = "machinery-lab"
 item_r1.order = "g-b"
 item_r1.place_result = "warehouse-r1"
@@ -21,8 +21,8 @@ item_r1.stack_size = 5
 
 local entity_r1 = table.deepcopy(data.raw['container']['steel-chest'])
 entity_r1.name = "warehouse-r1"
-entity_r1.icon = "__RExtended__/graphics/icons/Storage/Warehouse/Warehouse-r1.png"
-entity_r1.icon_size = 64
+entity_r1.icon = "__RExtended__/graphics/icons/Storage/Elite-Warehouse-Circuit.png"
+entity_r1.icon_size = 256
 entity_r1.minable = {mining_time = 0.5, result = "warehouse-r1"}
 entity_r1.max_health = 1000
 entity_r1.corpse = "big-remnants"
@@ -32,7 +32,7 @@ entity_r1.selection_box = {{-3.0, -3.0}, {3.0, 3.0}}
 entity_r1.drawing_box = {{-3.0, -3.0}, {3.0, 3.0}}
 entity_r1.inventory_size = 5000
 entity_r1.picture = {
-    filename = "__RExtended__/graphics/entity/Storage/Warehouse/Warehouse-r1.png",
+    filename = "__RExtended__/graphics/entity/Storage/Warehouse/Elite-Warehouse-Circuit.png",
     priority = "high",
     width = 384,
     height = 384,

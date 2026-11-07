@@ -34,9 +34,6 @@ data:extend({
             },
             time = 30,
         },
-        {{type = "unlock-recipe", recipe = "exoskeleton-equipment-r2"}},
-        nil,
-        nil,
-        4
+        {{type = "unlock-recipe", recipe = "exoskeleton-equipment-r2"}}
     )
 })

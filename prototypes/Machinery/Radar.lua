@@ -1,7 +1,7 @@
 data:extend({
     create_machinery_item("red-radar",
-        "__RExtended__/graphics/icons/Machinery/Radar.png",
-        64, "machinery-lab", "g-d-a", 20),
+        "__RExtended__/graphics/icons/Machinery/Radar-Elite.png",
+        256, "machinery-lab", "g-d-a", 20),
     
     create_machinery_recipe("red-radar", 5, true,
         {
@@ -16,8 +16,8 @@ data:extend({
     {
         type = "radar",
         name = "red-radar",
-        icon = "__RExtended__/graphics/icons/Machinery/Radar.png",
-        icon_size = 64,
+        icon = "__RExtended__/graphics/icons/Machinery/Radar-Elite.png",
+        icon_size = 256,
         flags = {"placeable-player", "player-creation"},
         minable = {hardness = 0.2, mining_time = 0.5, result = "red-radar"},
         max_health = 1000,
@@ -45,7 +45,7 @@ data:extend({
         energy_usage = "1MW",
         pictures = {
             layers = {{
-                filename = "__RExtended__/graphics/entity/Machinery/Radar.png",
+                filename = "__RExtended__/graphics/entity/Machinery/Radar-Elite.png",
                 priority = "low",
                 width = 256,
                 height = 256,

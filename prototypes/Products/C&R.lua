@@ -176,7 +176,7 @@ data:extend({
 
 -- Glue & Cable
 data:extend({
-    create_item("glue-r1", "glue-r1", 32, "electronic-products", "e-a", 500),
+    create_item("glue-r1", "HR/Glue-R1", 256, "electronic-products", "e-a", 500),
     create_item("cable-r1", "HR/Cable-R1", 256, "electronic-products", "e-c", 200),
     create_recipe("glue-r1-v1",
         {
@@ -217,10 +217,10 @@ data:extend({
 
 -- Chain: Reinforced Materials -> Electronic Component
 data:extend({
-    create_item("reinforced-component-r1", "reinforced-component-r1", 32, "reinforced-products", "d-a", 400),
-    create_item("reinforced-iron-plate-r1", "reinforced-iron-plate-r1", 32, "reinforced-products", "d-e", 200),
-    create_item("reinforced-copper-plate-r1", "reinforced-copper-plate-r1", 32, "reinforced-products", "d-f", 200),
-    create_item("reinforced-coal-plate-r1", "reinforced-coal-plate-r1", 32, "reinforced-products", "d-g", 200),
+    create_item("reinforced-component-r1", "HR/Reinforced-Component-R1", 256, "reinforced-products", "d-a", 400),
+    create_item("reinforced-iron-plate-r1", "HR/Reinforced-Iron-Plate-R1", 256, "reinforced-products", "d-e", 200),
+    create_item("reinforced-copper-plate-r1", "HR/Reinforced-Copper-Plate-R1", 256, "reinforced-products", "d-f", 200),
+    create_item("reinforced-coal-plate-r1", "HR/Reinforced-Coal-Plate-R1", 256, "reinforced-products", "d-g", 200),
     create_item("electric-component-r1", "HR/Electric-Component-R1", 256, "electronic-products", "e-d", 200),
     create_recipe("reinforced-component-r1",
         {
@@ -287,8 +287,8 @@ data:extend({
 -- Chain: Gears & Infused Tools
 data:extend({
     create_item("copper-gear-wheel-r1", "copper-gear-wheel", 32, "reinforced-products", "d-b", 100),
-    create_item("reinforced-gear-iron-r1", "reinforced-gear-iron-r1", 32, "reinforced-products", "d-c", 200),
-    create_item("reinforced-gear-copper-r1", "reinforced-gear-copper-r1", 32, "reinforced-products", "d-d", 200),
+    create_item("reinforced-gear-iron-r1", "HR/Reinforced-Iron-Gear-R1", 256, "reinforced-products", "d-c", 200),
+    create_item("reinforced-gear-copper-r1", "HR/Reinforced-Copper-Gear-R1", 256, "reinforced-products", "d-d", 200),
     create_item("infuse-tool-r1", "HR/Infuse-Tool-R1", 256, "reinforced-products", "d-h", 100),
     create_recipe("copper-gear-wheel-r1",
         {{type = "item", name = "copper-plate", amount = 4}},
@@ -479,8 +479,8 @@ data:extend({
 
 local battery_r1_item = table.deepcopy(data.raw.item['battery'])
 battery_r1_item.name = "battery-r1"
-battery_r1_item.icon_size = 64
-battery_r1_item.icon = "__RExtended__/graphics/icons/CR/battery-r1.png"
+battery_r1_item.icon_size = 256
+battery_r1_item.icon = "__RExtended__/graphics/icons/CR/HR/Battery-R1.png"
 battery_r1_item.subgroup = "energy-products"
 battery_r1_item.order = "i-d"
 

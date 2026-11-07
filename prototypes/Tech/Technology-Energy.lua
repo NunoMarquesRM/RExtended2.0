@@ -34,7 +34,7 @@ data:extend({
         }
     ),
     -- Big Pole R2
-    create_tech("electric-energy-poles-r1", "Poles/electric-energy-distribution-1", 128, "c-f-a",
+    create_tech("electric-energy-poles-r1", "Energy/Electric-Energy-Distribution-R1", 256, "c-f-a",
         {"electric-energy-distribution-1"},
         {
             count = 300,
@@ -51,7 +51,7 @@ data:extend({
         }
     ),
     -- Substation R2
-    create_tech("electric-energy-poles-r2", "Poles/electric-energy-distribution-2", 128, "c-f-b",
+    create_tech("electric-energy-poles-r2", "Energy/Electric-Energy-Distribution-R2", 256, "c-f-b",
         {"electric-energy-distribution-2", "electric-energy-poles-r1"},
         {
             count = 300,

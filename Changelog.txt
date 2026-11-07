@@ -1,4 +1,33 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.5.4
+Date: 07.11.2026
+  Bugfixes:
+    - Fixed the changelog filename casing and removed trailing whitespace so the changelog
+      displays correctly in-game.
+  Changes:
+    - Updated localized names for the electric poles and substation.
+    - Renamed Warehouse R1 to Elite Warehouse in English and Portuguese.
+  Graphics:
+    - Updated item icons from 32x32 to 256x256 for Glue, Special Component, Reinforced Iron
+      Plate, Reinforced Copper Plate, Reinforced Coal Plate, Reinforced Iron Gear, and
+      Reinforced Copper Gear.
+    - Updated item icons from 64x64 to 256x256 for Battery R1 and Elite Warehouse.
+    - Updated item icons and entity graphics for the Extended Medium Electric Pole,
+      Extended Big Electric Pole, and Advanced Substation.
+    - Updated item icons and entity graphics for Exoskeleton R2 and Elite Radar.
+    - Updated item icons and entity graphics for the Roboport, Advanced Construction Robot,
+      and Advanced Logistic Robot.
+    - Updated item icons and entity graphics for the Active Provider, Buffer, Passive Provider,
+      Requester, and Storage Chests.
+    - Redesigned the Elite Warehouse entity with silver armor, gold braces, and emerald circuitry.
+    - Updated the warehouse technology icon to match the Elite Warehouse redesign.
+    - Updated the Initial Products technology icon to show the four items it unlocks.
+    - Updated the Red Robots technology icon to show the roboport, both robots, and a storage chest.
+    - Updated technology icons from 128x128 to 256x256 for Electric Energy Poles 1,
+      Electric Energy Poles 2, and Exoskeleton Equipment R2.
+    - Added distinct 256x256 icons for Worker Robot Battery tiers 1, 4, 8, and 12,
+      replacing the shared 128x128 icon.
+---------------------------------------------------------------------------------------------------
 Version: 2.5.3
 Date: 06.11.2026
   Features:
@@ -12,10 +41,10 @@ Date: 06.11.2026
   Graphics:
     - Changed icon for category Machinery Extends, Power Extends and Components and Recipes.
     - Updated icons and increased resolution (32x32 -> 256x256) for:
-        Blue Quartz, Crystalline Silicon, Solar Cell.
+      - Blue Quartz, Crystalline Silicon, Solar Cell.
     - Updated icons and increased resolution (32x32 -> 128x128) for the solar panels chain.
     - Updated tech icons and increased resolution (128x128 -> 256x256) for:
-        Silicon Processing, Charcoal, Steam Energy 1, Steam Energy 2, Initial Products,
+      - Silicon Processing, Charcoal, Steam Energy 1, Steam Energy 2, Initial Products,
         Advanced Accumulator, High-Capacity Accumulator, Warehouse Tech 1, Mixer Products.
     - Changed tech icon for:
         Improved Solar Panel, Advanced Solar Panel, Elite Solar Panel, Ultimate Solar Panel,
@@ -24,15 +53,15 @@ Date: 06.11.2026
 Version: 2.5.2
 Date: 02.11.2026
   Changes:
-    - Warehouse R1: Increased icon draw specification (0.7 -> 2)
-    - Elite Storage Tank: Increased icon draw specification (0.7 -> 2)
+    - Warehouse R1: Increased icon draw specification (0.7 -> 2).
+    - Elite Storage Tank: Increased icon draw specification (0.7 -> 2).
   Graphics:
     - Updated icons and increased resolution (32x32 -> 256x256) for:
-        Electronic Component, Enriched Coal, Diesel Fuel, Clean Iron, Molten Iron, Clean Copper,
+      - Electronic Component, Enriched Coal, Diesel Fuel, Clean Iron, Molten Iron, Clean Copper,
         Molten Copper, Clean Steel, Molten Steel, Clean Coal, Molten Coal, Enriched Petroleum,
-        Lithium, Water, Pressurized Water, Cable
+        Lithium, Water, Pressurized Water, Cable.
     - Updated tech icons and increased resolution (128x128 -> 256x256) for:
-        Refined Coal, Enriched Coal, Lithium Processing, Advanced Products
+      - Refined Coal, Enriched Coal, Lithium Processing, Advanced Products.
 ---------------------------------------------------------------------------------------------------
 Version: 2.5.1
 Date: 31.10.2026
@@ -106,7 +135,7 @@ Date: 22.10.2026
 Version: 2.2.0
 Date: 21.10.2026
   Major Features:
-    - Added Quality of Life research integration: Movement Speed, Inventory Space, Crafting Speed 
+    - Added Quality of Life research integration: Movement Speed, Inventory Space, Crafting Speed
       and Mining Speed
     - Added settings startup to Quality of Life research
   Changes:
@@ -141,7 +170,7 @@ Date: 17.10.2026
   Optimizations:
     - Refactored technologies code for Energy, Robots, Machinery and Railword
   Changes:
-    - Changed technologies prerequisites, ingredients and time for: Energy, Robots, Machinery and  
+    - Changed technologies prerequisites, ingredients and time for: Energy, Robots, Machinery and
     Railword
     - Changed electric steel furnance mining time from 1 to 0.5
     - Updated credits references

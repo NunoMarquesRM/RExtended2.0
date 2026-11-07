@@ -1,5 +1,5 @@
 data:extend({
-    create_tech("red-robots", "Robots/Red-Robots", 128, "n",
+    create_tech("red-robots", "Robots/Red-Robots-Network", 256, "n",
         {"construction-robotics", "logistic-robotics","logistic-system"},
         {
             count = 500,
@@ -24,7 +24,7 @@ data:extend({
         }
     ),
     -- Worker Robot Battery 1
-    create_tech("worker-robot-battery-1", "Robots/worker-robot-battery", 128, "c-k-h-e",
+    create_tech("worker-robot-battery-1", "Robots/worker-robot-battery-1", 256, "c-k-h-e",
         {"robotics"},
         {
             count_formula = "100*L",
@@ -40,7 +40,7 @@ data:extend({
         3
     ),
     -- Worker Robot Battery 2
-    create_tech("worker-robot-battery-4", "Robots/worker-robot-battery", 128, "c-k-h-f",
+    create_tech("worker-robot-battery-4", "Robots/worker-robot-battery-4", 256, "c-k-h-f",
         {"worker-robot-battery-1"},
         {
             count_formula = "100*L",
@@ -57,7 +57,7 @@ data:extend({
         7
     ),
     -- Worker Robot Battery 3
-    create_tech("worker-robot-battery-8", "Robots/worker-robot-battery", 128, "c-k-h-g",
+    create_tech("worker-robot-battery-8", "Robots/worker-robot-battery-8", 256, "c-k-h-g",
         {"worker-robot-battery-4"},
         {
             count_formula = "100*L",
@@ -75,7 +75,7 @@ data:extend({
         11
     ),
     -- Worker Robot Battery 4
-    create_tech("worker-robot-battery-12", "Robots/worker-robot-battery", 128, "c-k-h-h",
+    create_tech("worker-robot-battery-12", "Robots/worker-robot-battery-12", 256, "c-k-h-h",
         {"worker-robot-battery-8"},
         {
             count_formula = "100*L",

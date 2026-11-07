@@ -3,22 +3,17 @@ local function create_logistic_container(config)
         type = "logistic-container",
         name = config.name,
         icon = config.icon,
-        icon_size = 32,
-
+        icon_size = 256,
         flags = {"placeable-player", "player-creation"},
         max_health = 400,
         corpse = "small-remnants",
-
         collision_box = {{-0.35, -0.35}, {0.35, 0.35}},
         selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-
         resistances = {
             {type = "fire", percent = 90},
             {type = "impact", percent = 60}
         },
-
         fast_replaceable_group = "container",
-
         minable = {
             hardness = 0.2,
             mining_time = 0.3,
@@ -29,31 +24,25 @@ local function create_logistic_container(config)
         logistic_mode = config.logistic_mode,
         max_logistic_slots = config.max_logistic_slots,
         logistic_slots_count = config.logistic_slots_count,
-
         open_sound = {
             filename = "__base__/sound/metallic-chest-open.ogg",
             volume = 0.65
         },
-
         close_sound = {
             filename = "__base__/sound/metallic-chest-close.ogg",
             volume = 0.7
         },
-
         vehicle_impact_sound = {
             filename = "__base__/sound/car-metal-impact.ogg",
             volume = 0.65
         },
-
         picture = {
             filename = config.picture,
             priority = "extra-high",
-            width = 168,
-            height = 168,
-            shift = {0.0625, -0.125},
-            scale = 0.25
+            width = 256,
+            height = 256,
+            scale = 0.16
         },
-
         circuit_wire_connection_point = {
             shadow = {
                 red = {0.734375, 0.453125},
@@ -64,38 +53,36 @@ local function create_logistic_container(config)
                 green = {0.40625, 0.375}
             }
         },
-
         circuit_wire_max_distance = 15,
-
         circuit_connector_sprites = circuit_connector_definitions["chest"].sprites
     }
 end
 
 data:extend({
     create_machinery_item("red-robot-l",
-        "__RExtended__/graphics/icons/Machinery/Robots/red-logistic.png",
-        32, "re-robots", "i-a-b", 50),
+        "__RExtended__/graphics/icons/Machinery/Robots/red-logistic-advanced.png",
+        256, "re-robots", "i-a-b", 50),
     create_machinery_item("red-robot-c",
-        "__RExtended__/graphics/icons/Machinery/Robots/red-construction.png",
-        32, "re-robots", "i-a-c", 50),
+        "__RExtended__/graphics/icons/Machinery/Robots/red-construction-advanced.png",
+        256, "re-robots", "i-a-c", 50),
     create_machinery_item("red-roboport",
-        "__RExtended__/graphics/icons/Machinery/Robots/red-roboport.png",
-        64, "re-robots", "i-a-a", 20),
+        "__RExtended__/graphics/icons/Machinery/Robots/red-roboport-advanced.png",
+        256, "re-robots", "i-a-a", 20),
     create_machinery_item("red-chest-storage",
-        "__RExtended__/graphics/icons/Machinery/Robots/chest-storage.png",
-        32, "re-robots", "i-b-a", 50),
+        "__RExtended__/graphics/icons/Machinery/Robots/chest-storage-advanced.png",
+        256, "re-robots", "i-b-a", 50),
     create_machinery_item("red-chest-passive-provider",
-        "__RExtended__/graphics/icons/Machinery/Robots/chest-passive-provider.png",
-        32, "re-robots", "i-b-b", 50),
+        "__RExtended__/graphics/icons/Machinery/Robots/chest-passive-provider-advanced.png",
+        256, "re-robots", "i-b-b", 50),
     create_machinery_item("red-chest-requester",
-        "__RExtended__/graphics/icons/Machinery/Robots/chest-requester.png",
-        32, "re-robots", "i-b-c", 50),
+        "__RExtended__/graphics/icons/Machinery/Robots/chest-requester-advanced.png",
+        256, "re-robots", "i-b-c", 50),
     create_machinery_item("red-chest-buffer",
-        "__RExtended__/graphics/icons/Machinery/Robots/chest-buffer.png",
-        32, "re-robots", "i-b-d", 50),
+        "__RExtended__/graphics/icons/Machinery/Robots/chest-buffer-advanced.png",
+        256, "re-robots", "i-b-d", 50),
     create_machinery_item("red-chest-active-provider",
-        "__RExtended__/graphics/icons/Machinery/Robots/chest-active-provider.png",
-        32, "re-robots", "i-b-e", 50),
+        "__RExtended__/graphics/icons/Machinery/Robots/chest-active-provider-advanced.png",
+        256, "re-robots", "i-b-e", 50),
     
     create_machinery_recipe("red-robot-l", 3, false,
         {
@@ -164,47 +151,47 @@ data:extend({
     -- Entities
     create_logistic_container({
         name = "red-chest-storage",
-        icon = "__RExtended__/graphics/icons/Machinery/Robots/chest-storage.png",
-        picture = "__RExtended__/graphics/entity/Machinery/Robots/chest-storage.png",
+        icon = "__RExtended__/graphics/icons/Machinery/Robots/chest-storage-advanced.png",
+        picture = "__RExtended__/graphics/entity/Machinery/Robots/chest-storage-advanced.png",
         inventory_size = 75,
         logistic_mode = "storage",
         max_logistic_slots = 1
     }),
     create_logistic_container({
         name = "red-chest-passive-provider",
-        icon = "__RExtended__/graphics/icons/Machinery/Robots/chest-passive-provider.png",
-        picture = "__RExtended__/graphics/entity/Machinery/Robots/chest-passive-provider.png",
+        icon = "__RExtended__/graphics/icons/Machinery/Robots/chest-passive-provider-advanced.png",
+        picture = "__RExtended__/graphics/entity/Machinery/Robots/chest-passive-provider-advanced.png",
         inventory_size = 75,
         logistic_mode = "passive-provider"
     }),
     create_logistic_container({
         name = "red-chest-requester",
-        icon = "__RExtended__/graphics/icons/Machinery/Robots/chest-requester.png",
-        picture = "__RExtended__/graphics/entity/Machinery/Robots/chest-requester.png",
+        icon = "__RExtended__/graphics/icons/Machinery/Robots/chest-requester-advanced.png",
+        picture = "__RExtended__/graphics/entity/Machinery/Robots/chest-requester-advanced.png",
         inventory_size = 75,
         logistic_mode = "requester",
         logistic_slots_count = 18
     }),
     create_logistic_container({
         name = "red-chest-buffer",
-        icon = "__RExtended__/graphics/icons/Machinery/Robots/chest-buffer.png",
-        picture = "__RExtended__/graphics/entity/Machinery/Robots/chest-buffer.png",
+        icon = "__RExtended__/graphics/icons/Machinery/Robots/chest-buffer-advanced.png",
+        picture = "__RExtended__/graphics/entity/Machinery/Robots/chest-buffer-advanced.png",
         inventory_size = 49,
         logistic_mode = "buffer",
         logistic_slots_count = 18
     }),
     create_logistic_container({
         name = "red-chest-active-provider",
-        icon = "__RExtended__/graphics/icons/Machinery/Robots/chest-active-provider.png",
-        picture = "__RExtended__/graphics/entity/Machinery/Robots/chest-active-provider.png",
+        icon = "__RExtended__/graphics/icons/Machinery/Robots/chest-active-provider-advanced.png",
+        picture = "__RExtended__/graphics/entity/Machinery/Robots/chest-active-provider-advanced.png",
         inventory_size = 49,
         logistic_mode = "active-provider"
     }),
     {--Robot Logistic
         type = "logistic-robot",
         name = "red-robot-l",
-        icon = "__RExtended__/graphics/icons/Machinery/Robots/red-logistic.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/Machinery/Robots/red-logistic-advanced.png",
+        icon_size = 256,
         flags = {"placeable-player", "player-creation", "placeable-off-grid", "not-on-map"},
         minable = {hardness = 0.1, mining_time = 0.1, result = "red-robot-l"},
         max_health = 250,
@@ -224,7 +211,7 @@ data:extend({
         min_to_charge = 0.2,
         max_to_charge = 0.9,
         idle = {
-            filename = "__RExtended__/graphics/entity/Machinery/Robots/red-logistic-on.png",
+            filename = "__RExtended__/graphics/entity/Machinery/Robots/red-logistic-on-advanced.png",
             priority = "high",
             line_length = 16,
             width = 80,
@@ -235,7 +222,7 @@ data:extend({
             direction_count = 16
         },
         idle_with_cargo = {
-            filename = "__RExtended__/graphics/entity/Machinery/Robots/red-logistic-off.png",
+            filename = "__RExtended__/graphics/entity/Machinery/Robots/red-logistic-off-advanced.png",
             priority = "high",
             line_length = 16,
             width = 80,
@@ -246,7 +233,7 @@ data:extend({
             direction_count = 16
         },
         in_motion = {
-            filename = "__RExtended__/graphics/entity/Machinery/Robots/red-logistic-on.png",
+            filename = "__RExtended__/graphics/entity/Machinery/Robots/red-logistic-on-advanced.png",
             priority = "high",
             line_length = 16,
             width = 80,
@@ -257,7 +244,7 @@ data:extend({
             direction_count = 16
         },
         in_motion_with_cargo = {
-            filename = "__RExtended__/graphics/entity/Machinery/Robots/red-logistic-off.png",
+            filename = "__RExtended__/graphics/entity/Machinery/Robots/red-logistic-off-advanced.png",
             priority = "high",
             line_length = 16,
             width = 80,
@@ -271,98 +258,52 @@ data:extend({
             filename = "__base__/graphics/entity/logistic-robot/logistic-robot-shadow.png",
             priority = "high",
             line_length = 16,
-            width = 58,
-            height = 29,
+            width = 115,
+            height = 57,
             frame_count = 1,
-            shift = util.by_pixel(32, 19.5),
+            shift = util.by_pixel(31.75, 19.75),
             direction_count = 16,
-            y = 29,
-            draw_as_shadow = true,
-            hr_version = {
-                filename = "__base__/graphics/entity/logistic-robot/hr-logistic-robot-shadow.png",
-                priority = "high",
-                line_length = 16,
-                width = 115,
-                height = 57,
-                frame_count = 1,
-                shift = util.by_pixel(31.75, 19.75),
-                direction_count = 16,
-                y = 57,
-                scale = 0.5,
-                draw_as_shadow = true
-            },
+            y = 57,
+            scale = 0.5,
+            draw_as_shadow = true
         },
         shadow_idle_with_cargo = {
             filename = "__base__/graphics/entity/logistic-robot/logistic-robot-shadow.png",
             priority = "high",
             line_length = 16,
-            width = 58,
-            height = 29,
+            width = 115,
+            height = 57,
             frame_count = 1,
-            shift = util.by_pixel(32, 19.5),
+            shift = util.by_pixel(31.75, 19.75),
             direction_count = 16,
-            draw_as_shadow = true,
-            hr_version = {
-                filename = "__base__/graphics/entity/logistic-robot/hr-logistic-robot-shadow.png",
-                priority = "high",
-                line_length = 16,
-                width = 115,
-                height = 57,
-                frame_count = 1,
-                shift = util.by_pixel(31.75, 19.75),
-                direction_count = 16,
-                scale = 0.5,
-                draw_as_shadow = true
-            },
+            scale = 0.5,
+            draw_as_shadow = true
         },
         shadow_in_motion = {
             filename = "__base__/graphics/entity/logistic-robot/logistic-robot-shadow.png",
             priority = "high",
             line_length = 16,
-            width = 58,
-            height = 29,
+            width = 115,
+            height = 57,
             frame_count = 1,
-            shift = util.by_pixel(32, 19.5),
+            shift = util.by_pixel(31.75, 19.75),
             direction_count = 16,
-            y = 29,
-            draw_as_shadow = true,
-            hr_version = {
-                filename = "__base__/graphics/entity/logistic-robot/hr-logistic-robot-shadow.png",
-                priority = "high",
-                line_length = 16,
-                width = 115,
-                height = 57,
-                frame_count = 1,
-                shift = util.by_pixel(31.75, 19.75),
-                direction_count = 16,
-                y = 57*3,
-                scale = 0.5,
-                draw_as_shadow = true
-            },
+            y = 57*3,
+            scale = 0.5,
+            draw_as_shadow = true
         },
         shadow_in_motion_with_cargo = {
             filename = "__base__/graphics/entity/logistic-robot/logistic-robot-shadow.png",
             priority = "high",
             line_length = 16,
-            width = 58,
-            height = 29,
+            width = 115,
+            height = 57,
             frame_count = 1,
-            shift = util.by_pixel(32, 19.5),
+            shift = util.by_pixel(31.75, 19.75),
             direction_count = 16,
-            draw_as_shadow = true,
-            hr_version = {
-                filename = "__base__/graphics/entity/logistic-robot/hr-logistic-robot-shadow.png",
-                priority = "high",
-                line_length = 16,
-                width = 115,
-                height = 57,
-                frame_count = 1,
-                shift = util.by_pixel(31.75, 19.75),
-                direction_count = 16,
-                y = 114,
-                scale = 0.5,
-                draw_as_shadow = true
-            },
+            y = 114,
+            scale = 0.5,
+            draw_as_shadow = true
         },
         working_sound = {
             {
@@ -417,8 +358,8 @@ data:extend({
     {--Robot Construction
         type = "construction-robot",
         name = "red-robot-c",
-        icon = "__RExtended__/graphics/icons/Machinery/Robots/red-construction.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/Machinery/Robots/red-construction-advanced.png",
+        icon_size = 256,
         flags = {"placeable-player", "player-creation", "placeable-off-grid", "not-on-map"},
         minable = {hardness = 0.1, mining_time = 0.1, result = "red-robot-c"},
         resistances = { 
@@ -426,6 +367,7 @@ data:extend({
             {type = "physical", decrease = 10, percent = 40 }
         },
         max_health = 250,
+        dying_explosion = "construction-robot-explosion",
         collision_box = {{0, 0}, {0, 0}},
         selection_box = {{-0.5, -1.5}, {0.5, -0.5}},
         max_payload_size = 1,
@@ -438,8 +380,9 @@ data:extend({
         min_to_charge = 0.2,
         max_to_charge = 0.9,
         working_light = {intensity = 0.8, size = 3, color = {r = 0.8, g = 0.8, b = 0.8}},
+        icon_draw_specification = {shift = {0, -0.2}, scale = 0.5, render_layer = "air-entity-info-icon"},
         idle = {
-            filename = "__RExtended__/graphics/entity/Machinery/Robots/red-construction.png",
+            filename = "__RExtended__/graphics/entity/Machinery/Robots/red-construction-advanced.png",
             priority = "high",
             line_length = 16,
             width = 80,
@@ -450,7 +393,7 @@ data:extend({
             direction_count = 16
         },
         in_motion = {
-            filename = "__RExtended__/graphics/entity/Machinery/Robots/red-construction.png",
+            filename = "__RExtended__/graphics/entity/Machinery/Robots/red-construction-advanced.png",
             priority = "high",
             line_length = 16,
             width = 80,
@@ -464,84 +407,51 @@ data:extend({
             filename = "__base__/graphics/entity/construction-robot/construction-robot-shadow.png",
             priority = "high",
             line_length = 16,
-            width = 53,
-            height = 25,
+            width = 104,
+            height = 49,
             frame_count = 1,
-            shift = util.by_pixel(33.5, 18.5),
+            shift = util.by_pixel(33.5, 18.75),
             direction_count = 16,
-            draw_as_shadow = true,
-            hr_version = {
-                filename = "__base__/graphics/entity/construction-robot/hr-construction-robot-shadow.png",
-                priority = "high",
-                line_length = 16,
-                width = 104,
-                height = 49,
-                frame_count = 1,
-                shift = util.by_pixel(33.5, 18.75),
-                direction_count = 16,
-                scale = 0.5,
-                draw_as_shadow = true
-            },
+            scale = 0.5,
+            draw_as_shadow = true
         },
         shadow_in_motion = {
             filename = "__base__/graphics/entity/construction-robot/construction-robot-shadow.png",
             priority = "high",
             line_length = 16,
-            width = 53,
-            height = 25,
+            width = 104,
+            height = 49,
             frame_count = 1,
-            shift = util.by_pixel(33.5, 18.5),
+            shift = util.by_pixel(33.5, 18.75),
             direction_count = 16,
-            draw_as_shadow = true,
-            hr_version = {
-                filename = "__base__/graphics/entity/construction-robot/hr-construction-robot-shadow.png",
-                priority = "high",
-                line_length = 16,
-                width = 104,
-                height = 49,
-                frame_count = 1,
-                shift = util.by_pixel(33.5, 18.75),
-                direction_count = 16,
-                scale = 0.5,
-                draw_as_shadow = true
-            },
+            scale = 0.5,
+            draw_as_shadow = true
         },
         working = {
-            filename = "__RExtended__/graphics/entity/Machinery/Robots/red-construction-work.png",
+            filename = "__RExtended__/graphics/entity/Machinery/Robots/red-construction-work-advanced.png",
             priority = "high",
             line_length = 2,
             width = 80,
             height = 80,
             frame_count = 2,
-            shift = {0, 0},
-            scale = 0.5,
+            --shift = {0, 0},
             direction_count = 16,
-            animation_speed = 0.3
+            animation_speed = 0.3,
+            scale = 0.5
+            --frame_sequence = {2, 1}
         },
         shadow_working = {
             filename = "__base__/graphics/entity/construction-robot/construction-robot-shadow.png",
             priority = "high",
             line_length = 16,
-            width = 53,
-            height = 25,
+            width = 104,
+            height = 49,
             frame_count = 1,
             repeat_count = 2,
-            shift = util.by_pixel(33.5, 18.5),
+            shift = util.by_pixel(33.5, 18.75),
             direction_count = 16,
-            draw_as_shadow = true,
-            hr_version = {
-                filename = "__base__/graphics/entity/construction-robot/hr-construction-robot-shadow.png",
-                priority = "high",
-                line_length = 16,
-                width = 104,
-                height = 49,
-                frame_count = 1,
-                repeat_count = 2,
-                shift = util.by_pixel(33.5, 18.75),
-                direction_count = 16,
-                scale = 0.5,
-                draw_as_shadow = true
-            },
+            scale = 0.5,
+            draw_as_shadow = true
         },
         smoke = {
             filename = "__base__/graphics/entity/smoke-construction/smoke-01.png",
@@ -663,13 +573,13 @@ data:extend({
         probability = 1 / (10 * 60), -- average pause between the sound is 10 seconds
         cargo_centered = {0.0, 0.2},
         water_reflection = robot_reflection(1),
-        construction_vector = {0.30, 0.22},
+        construction_vector = {0.30, 0.22}
     },
     {--Roboport
         type = "roboport",
         name = "red-roboport",
-        icon = "__RExtended__/graphics/icons/Machinery/Robots/red-roboport.png",
-        icon_size = 64,
+        icon = "__RExtended__/graphics/icons/Machinery/Robots/red-roboport-advanced.png",
+        icon_size = 256,
         flags = {"placeable-player", "player-creation"},
         minable = {hardness = 0.2, mining_time = 0.5, result = "red-roboport"},
         max_health = 750,
@@ -704,7 +614,7 @@ data:extend({
             {-2, -1}, {2, -1}, {2, -2}, {-2, -2}
         },
         base = {
-            filename = "__RExtended__/graphics/entity/Machinery/Robots/red-roboport-idle.png",
+            filename = "__RExtended__/graphics/entity/Machinery/Robots/red-roboport-advanced-idle.png",
             width = 412,
             height = 412,
             shift = {0.84375, -1.03125},
@@ -719,7 +629,7 @@ data:extend({
             shift = {0, 0}
         },
         base_animation = {
-            filename = "__RExtended__/graphics/entity/Machinery/Robots/red-roboport.png",
+            filename = "__RExtended__/graphics/entity/Machinery/Robots/red-roboport-advanced.png",
             priority = "medium",
             width = 412,
             height = 412,
