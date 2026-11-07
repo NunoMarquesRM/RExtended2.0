@@ -168,7 +168,7 @@ Date: 17.10.2026
     - Refactored technologies code for Energy, Robots, Machinery and Railword
   Changes:
     - Changed technologies prerequisites, ingredients and time for: Energy, Robots, Machinery and
-    Railword
+      Railword
     - Changed electric steel furnance mining time from 1 to 0.5
     - Updated credits references
     - Changed category image for machinery extended, components and fluids
@@ -178,12 +178,12 @@ Date: 17.10.2026
   Balancing:
     - Energy consumption and Pollution:
       - Assemblers, ChemicalMachines, Compressors, Furnances, Mining Drills, Washer Chambers, Water
-      Condensors, Refineries, Cast Chambers, Heat Forges, Mixer, Formation Furnances and Enrichment
-      Chamber
+        Condensors, Refineries, Cast Chambers, Heat Forges, Mixer, Formation Furnances and
+        Enrichment Chamber
   Changes:
     - Added upgrade entities for:
       - Assemblers, ChemicalMachines, Compressors, Furnances, Mining Drills, Washer Chambers, Water
-      Condensors, Refineries, Cast Chamber and Heat Forge
+        Condensors, Refineries, Cast Chamber and Heat Forge
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.1
 Date: 16.10.2026
@@ -203,9 +203,11 @@ Date: 04.10.2026
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.0
 Date: 21.11.2021
-  Full release
+  Major Features:
+    - Full release
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.1
 Date: 2019
-  Modpack created
+  Major Features:
+    - Modpack created
 ---------------------------------------------------------------------------------------------------
