@@ -141,7 +141,7 @@ So right now what i had found from v >= 2.0:
         https://mods.factorio.com/mod/NPUtilsX-redux
     - Krastorio 2 -> Elite Storage Tank
         https://mods.factorio.com/mod/Krastorio2
-    - Simple Silicon -> Idea and solar cell item
+    - Simple Silicon -> Idea
         https://mods.factorio.com/mod/SimpleSilicon
     - Yuoki Industries -> Boiler entity
         https://mods.factorio.com/mod/Yuoki
