@@ -200,8 +200,8 @@ data:extend({
     {
         type = "item",
         name = "light-pole-r1",
-        icon = "__RExtended__/graphics/icons/Energy/Poles/light-pole-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/Energy/Poles/light-pole-r1-modern.png",
+        icon_size = 256,
         place_result = "light-pole-r1",
         subgroup = "power-poles",
         order = "a-a-a",
@@ -210,8 +210,8 @@ data:extend({
     {
         type = "recipe",
         name = "light-pole-r1",
-        icon = "__RExtended__/graphics/icons/Energy/Poles/light-pole-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/Energy/Poles/light-pole-r1-modern.png",
+        icon_size = 256,
         energy_required = 1,
         enabled = false,
         ingredients = {
@@ -224,8 +224,8 @@ data:extend({
     {
         type = "lamp",
         name = "light-pole-r1",
-        icon = "__RExtended__/graphics/icons/Energy/Poles/light-pole-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/Energy/Poles/light-pole-r1-modern.png",
+        icon_size = 256,
         flags = {"placeable-neutral", "player-creation"},
         minable = {hardness = 0.5, mining_time = 1.0, result = "light-pole-r1"},
         max_health = 150,
@@ -237,7 +237,7 @@ data:extend({
         collision_box = {{-0.65, -0.65}, {0.65, 0.65}},
         selection_box = {{-1, -1}, {1, 1}},
         picture_off = {
-            filename = "__RExtended__/graphics/entity/Energy/Poles/light-pole-r1-off.png",
+            filename = "__RExtended__/graphics/entity/Energy/Poles/light-pole-r1-off-modern.png",
             priority = "high",
             width = 360,
             height = 360,
@@ -245,7 +245,7 @@ data:extend({
             shift = {0.90625, -1.78125}
         },
         picture_on = {
-            filename = "__RExtended__/graphics/entity/Energy/Poles/light-pole-r1-on.png",
+            filename = "__RExtended__/graphics/entity/Energy/Poles/light-pole-r1-on-modern.png",
             priority = "high",
             width = 360,
             height = 360,

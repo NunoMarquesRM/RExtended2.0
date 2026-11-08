@@ -29,14 +29,14 @@ r2.energy_source.buffer_capacity = "30MJ"
 r2.energy_source.input_flow_limit = "900kW"
 r2.energy_source.output_flow_limit = "900kW"
 r2.chargable_graphics.picture = {
-    filename = "__RExtended__/graphics/entity/Energy/Accumulator/R2/accumulator-idle.png",
+    filename = "__RExtended__/graphics/entity/Energy/Accumulator/accumulator-r2-idle.png",
     priority = "extra-high",
     width = 157,
     height = 244,
     shift = {0.43, -1.781}
 }
 r2.chargable_graphics.charge_animation = {
-    filename = "__RExtended__/graphics/entity/Energy/Accumulator/R2/accumulator-charging.png",
+    filename = "__RExtended__/graphics/entity/Energy/Accumulator/accumulator-r2-charging.png",
     width = 157,
     height = 244,
     line_length = 10,
@@ -55,7 +55,7 @@ r2.charge_light = {
     }
 }
 r2.chargable_graphics.discharge_animation = {
-    filename = "__RExtended__/graphics/entity/Energy/Accumulator/R2/accumulator-discharging.png",
+    filename = "__RExtended__/graphics/entity/Energy/Accumulator/accumulator-r2-discharging.png",
     width = 157,
     height = 244,
     line_length = 10,
@@ -107,14 +107,14 @@ r3.energy_source.input_flow_limit = "1.5MW"
 r3.energy_source.output_flow_limit = "1.5MW"
 r3.next_upgrade = nil
 r3.chargable_graphics.picture = {
-    filename = "__RExtended__/graphics/entity/Energy/Accumulator/R3/charged.png",
+    filename = "__RExtended__/graphics/entity/Energy/Accumulator/accumulator-r3-idle.png",
     priority = "extra-high",
     width = 192,
     height = 288,
     shift = util.by_pixel(16, -64),
 }
 r3.chargable_graphics.charge_animation = {
-    filename = "__RExtended__/graphics/entity/Energy/Accumulator/R3/charging.png",
+    filename = "__RExtended__/graphics/entity/Energy/Accumulator/accumulator-r3-charging.png",
     width = 192,
     height = 288,
     line_length = 10,
@@ -133,7 +133,7 @@ r3.charge_light = {
     }
 }
 r3.chargable_graphics.discharge_animation = {
-    filename = "__RExtended__/graphics/entity/Energy/Accumulator/R3/discharge.png",
+    filename = "__RExtended__/graphics/entity/Energy/Accumulator/accumulator-r3-discharging.png",
     width = 192,
     height = 288,
     line_length = 9,

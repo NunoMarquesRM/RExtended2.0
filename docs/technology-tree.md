@@ -43,8 +43,10 @@ Initial Products
                                                   ├── Advanced Ore Processing R1
 Electric Furnace R1 ── Advanced Formation Furnace┘      └── Advanced Ore Processing R2
 
-Electric Furnace R1 ── Machinery R1 ── Advanced Half Assembler R2
-                                  └── Water Product R1 ── Advanced Water R2
+Electric Furnace R1 ── Machinery R1 ──┐
+                                      ├── Advanced Half Assembler R2
+Electric Furnace R2 ── Machinery R2 ──┘
+                       Machinery R1 ── Water Product R1 ── Advanced Water R2
 
 Electric Furnace R2 ── Machinery R2 ── Machinery R3
 
@@ -134,7 +136,9 @@ Worker Robot Battery 1 [Robotics]
 - Red Robots requires Automation, Logistic, Chemical, Production, and Utility science packs. It unlocks Red Logistic/Construction Robots, Red Roboport, and the five Red logistic chests.
 - Worker Robot Battery 1 requires Automation, Logistic, and Chemical packs. Battery 4 adds Production; Battery 8 adds Utility; Battery 12 adds Space. These are infinite technologies with research costs that scale by level.
 
-## Railworld
+## Railworld (requires the RERailworld mod)
+
+These technologies are loaded only when `RERailworld` is installed.
 
 ```text
 Electric Railway R1

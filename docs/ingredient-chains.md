@@ -142,11 +142,11 @@ Coal (wood recipe)
    └── Wood
 
 Plastic Bar (mod recipe)
-   ├── Clean Coal
+   ├── Clean Coal (direct ingredient)
    │      ├── Coal
    │      └── Pressurized Water
-   └── Petroleum Gas
-       └── Crude Oil Processing
+   └── Petroleum Gas (direct ingredient)
+          └── Crude Oil Processing
 
 Enriched Coal
    ├── Diesel Fuel

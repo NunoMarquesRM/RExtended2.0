@@ -580,7 +580,7 @@ data:extend({
         {create_unlock_recipe("big-storage-tank-r1")}
     ),
     -- Big Storage Tank R2 - 500K
-    create_tech("big-storage-tank-r2", "Storage/big-storage-tank-r2", 128, "c-e-g",
+    create_tech("big-storage-tank-r2", "Storage/big-storage-tank-r2-advanced", 256, "c-e-g",
         {"big-storage-tank-r1"},
         {
             count = 350,

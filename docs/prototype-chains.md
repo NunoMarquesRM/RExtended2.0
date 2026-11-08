@@ -382,9 +382,13 @@ Purificator Tool (Filled)
 Purificator Tool (Empty)
    └── Reinforced Iron Plate
 
-Pure Air Recipe
-   └── Purificator Tool (Filled)
-       └── returns Purificator Tool (Empty)
+Purificator Tool Use (recipe named "Pure Air")
+   ├── Consumes Purificator Tool (Filled)
+   │      ├── Purificator Tool (Empty)
+   │      └── Water
+   └── Returns Purificator Tool (Empty)
+
+The recipe does not produce a separate Pure Air item; it consumes a filled tool and returns an empty one.
 ```
 
 See [Reinforced Materials and Gears](ingredient-chains.md#reinforced-materials-and-gears), [Glue and Cable Chain](ingredient-chains.md#glue-and-cable-chain), and [Solar Cell Chain](ingredient-chains.md#solar-cell-chain) for expanded mod-added components.
