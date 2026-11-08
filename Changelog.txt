@@ -1,4 +1,24 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.5.5
+Date: 08.11.2026
+  Changes:
+    - Renamed Light Pole R1 to Advanced Light Pole in English and Portuguese.
+  Graphics:
+    - Redesigned the Advanced Light Pole entity sprites with a silver frame, a black shadow when
+      unlit, and yellow lamp glows when lit.
+    - Updated the Advanced Light Pole icon from 32x32 to 256x256 with the redesigned pole
+      shown unlit.
+    - Updated both Compressor R1 sprite orientations with a silver housing and teal accents,
+      and increased its icon resolution from 32x32 to 256x256.
+    - Redesigned the Big Storage Tank R2 entity with a reinforced collar, pressure gauge,
+      fill-level window, bypass pipes, and a black cast shadow.
+    - Updated the Big Storage Tank R2 inventory icon from 32x32 to 256x256.
+    - Updated the Big Storage Tank R2 technology icon from 128x128 to 256x256.
+    - Redesigned the Solar Panel R5 entity with darker red cells and slim zigzag braces
+      with gold inlays.
+    - Updated the Solar Panel R5 inventory icon to match the redesign and increased its
+      resolution from 128x128 to 256x256.
+---------------------------------------------------------------------------------------------------
 Version: 2.5.4
 Date: 07.11.2026
   Bugfixes:
