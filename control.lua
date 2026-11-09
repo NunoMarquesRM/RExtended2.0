@@ -74,6 +74,9 @@ script.on_event(defines.events.on_player_dropped_item, function(event)
 end)
 
 -- Robots Start
+local initialize_starting_items
+local handle_starting_items_for_new_player
+
 if settings.startup["red-robots-starting-enabled"].value then
     local equipment_order = {
         "personal-roboport-equipment", -- #1 construction
@@ -195,7 +198,7 @@ if settings.startup["red-robots-starting-enabled"].value then
         wear_modular_armor(character, main)
     
         local grid = character.grid
-            if not grid then
+        if not grid then
             return
         end
     
@@ -206,7 +209,7 @@ if settings.startup["red-robots-starting-enabled"].value then
     local function grant_and_equip(player)
         local character = character_for(player)
         if not character then
-          return
+            return
         end
         local not_added = insert_all_bonus_items(character)
         if next(not_added) then
@@ -249,7 +252,7 @@ if settings.startup["red-robots-starting-enabled"].value then
     end
     -----------------------------------------------------------
     -- Event handlers
-    script.on_init(function()
+    initialize_starting_items = function()
         -- New freeplay games: register items so freeplay inserts them on player create.
         if has_freeplay_created_items() then
             register_freeplay_items()
@@ -259,21 +262,98 @@ if settings.startup["red-robots-starting-enabled"].value then
         for _, player in pairs(game.players) do
             grant_and_equip(player)
         end
-    end)
+    end
     
-    script.on_event(defines.events.on_player_created, function(event)
-        local player = game.get_player(event.player_index)
-        if not player then
-          return
-        end
-        
+    handle_starting_items_for_new_player = function(player)
         if has_freeplay_created_items() then
             -- Items come from freeplay; equip on the next tick after they land in inventory.
             queue_equip(player.index)
         else
             grant_and_equip(player)
         end
-    end)
+    end
+end
+
+-- Far Reach
+local function red_reach_apply_settings_player(player)
+    local reach_settings = settings.global
+    if player and player.character then
+        player.character_build_distance_bonus = reach_settings["red-build-distance-bonus"].value
+        player.character_reach_distance_bonus = reach_settings["red-reach-distance-bonus"].value
+        player.character_resource_reach_distance_bonus = reach_settings["red-resource-reach-distance-bonus"].value
+        player.character_item_drop_distance_bonus = reach_settings["red-item-drop-distance-bonus"].value
+        player.character_item_pickup_distance_bonus = reach_settings["red-item-pickup-distance-bonus"].value
+    end
+end
+
+local function red_reach_apply_settings_all()
+    for _, player in pairs(game.players) do
+        red_reach_apply_settings_player(player)
+    end
+end
+
+-- fix for https://mods.factorio.com/mod/space-exploration resetting far reach settings.
+local function hook_space_exploration()
+    if script.active_mods["space-exploration"] and remote.interfaces["space-exploration"] and remote.interfaces["space-exploration"]["get_on_player_respawned_event"] then
+        script.on_event(remote.call("space-exploration", "get_on_player_respawned_event"), red_reach_apply_settings_all)
+    end
+end
+
+script.on_init(function()
+    if initialize_starting_items then
+        initialize_starting_items()
+    end
+    -- Far Reach integration: apply map settings after initializing starter items.
+    red_reach_apply_settings_all()
+    hook_space_exploration()
+end)
+
+script.on_event(defines.events.on_player_created, function(event)
+    local player = game.get_player(event.player_index)
+    if player and handle_starting_items_for_new_player then
+        handle_starting_items_for_new_player(player)
+    end
+    -- Far Reach integration: apply bonuses without replacing the starter-items handler.
+    red_reach_apply_settings_player(player)
+end)
+
+script.on_load(hook_space_exploration)
+script.on_configuration_changed(red_reach_apply_settings_all)
+
+local reach_setting_names = {
+    ["red-build-distance-bonus"] = true,
+    ["red-reach-distance-bonus"] = true,
+    ["red-resource-reach-distance-bonus"] = true,
+    ["red-item-drop-distance-bonus"] = true,
+    ["red-item-pickup-distance-bonus"] = true
+}
+
+script.on_event(defines.events.on_runtime_mod_setting_changed, function(event)
+    if reach_setting_names[event.setting] then
+        red_reach_apply_settings_all()
+    end
+end)
+
+script.on_event({
+        defines.events.on_player_joined_game,
+        defines.events.on_player_changed_force,
+        defines.events.on_player_respawned,
+        defines.events.on_cutscene_cancelled,
+        defines.events.on_cutscene_waypoint_reached,
+        defines.events.on_technology_effects_reset
+    }, function(event)
+        if event.player_index then
+            red_reach_apply_settings_player(game.get_player(event.player_index))
+        else
+            red_reach_apply_settings_all()
+        end
+end)
+
+-- fix for https://mods.factorio.com/mod/jetpack resetting far reach settings.
+if script.active_mods["jetpack"] then
+    remote.add_interface("rextended-far-reach", {
+        on_character_swapped = red_reach_apply_settings_all
+    })
 end
 
 -- Calculator (future)

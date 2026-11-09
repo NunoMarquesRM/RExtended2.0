@@ -129,35 +129,21 @@ I forgot some mods that i used in factorio v < 1.0, but i'm trying to get all of
 So right now what i had found from v >= 2.0:
 
   - *Red Extended*:
-    - Tree Eraser
-        https://mods.factorio.com/mod/tree-eraser
-    - Rock Eraser
-        https://mods.factorio.com/mod/rock-eraser
-    - Robot Battery Research
-        https://mods.factorio.com/mod/Robot_Battery_Research2
-    - NPUtils Redux
-        https://mods.factorio.com/mod/NPUtils-redux
-    - NPUtils X Redux
-        https://mods.factorio.com/mod/NPUtilsX-redux
-    - Krastorio 2 -> Elite Storage Tank
-        https://mods.factorio.com/mod/Krastorio2
-    - Simple Silicon -> Idea
-        https://mods.factorio.com/mod/SimpleSilicon
-    - Yuoki Industries -> Boiler entity
-        https://mods.factorio.com/mod/Yuoki
-    - Quality of Life research
-        https://mods.factorio.com/mod/qol_research
-    - Light Bot Start
-        https://mods.factorio.com/mod/rt-light-bot-start
-    - Extended Laser Turrets -> The idea for a mix of Ranger and Damager
-        https://mods.factorio.com/mod/Extended-Laser-Turrets
+    - [Tree Eraser](https://mods.factorio.com/mod/tree-eraser)
+    - [Rock Eraser](https://mods.factorio.com/mod/rock-eraser)
+    - [Quality of Life research](https://mods.factorio.com/mod/qol_research)
+    - [Light Bot Start](https://mods.factorio.com/mod/rt-light-bot-start)
+    - [Robot Battery Research](https://mods.factorio.com/mod/Robot_Battery_Research2)
+    - [Far Reach](https://mods.factorio.com/mod/far-reach)
+    - [NPUtils Redux](https://mods.factorio.com/mod/NPUtils-redux)
+    - [NPUtils X Redux](https://mods.factorio.com/mod/NPUtilsX-redux)
+    - [Simple Silicon -> Idea](https://mods.factorio.com/mod/SimpleSilicon)
+    - [Extended Laser Turrets -> The idea for a mix of Ranger and Damager](https://mods.factorio.com/mod/Extended-Laser-Turrets)
+    - [Yuoki Industries -> Boiler entity](https://mods.factorio.com/mod/Yuoki)
+    - [Krastorio 2 -> Elite Storage Tank](https://mods.factorio.com/mod/Krastorio2)
 
   - *Red Railworld Extended*:
-      - ElectricTrain
-        https://mods.factorio.com/mod/ElectricTrainFix
-      - Yuoki Industries - Railways
-        https://mods.factorio.com/mod/yi_railway
-      - Angel's Addons - Mass Transit -> Smelting Train entity
-        https://mods.factorio.com/mod/angelsaddons-mobility
-      - YIR - Uranium Power Trains
-        https://mods.factorio.com/mod/z_yira_UP
+    - [ElectricTrain](https://mods.factorio.com/mod/ElectricTrainFix)
+    - [Yuoki Industries - Railways](https://mods.factorio.com/mod/yi_railway)
+    - [YIR - Uranium Power Trains](https://mods.factorio.com/mod/angelsaddons-mobility)
+    - [Angel's Addons - Mass Transit -> Smelting Train entity](https://mods.factorio.com/mod/z_yira_UP)

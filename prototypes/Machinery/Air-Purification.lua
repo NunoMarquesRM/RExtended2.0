@@ -46,8 +46,8 @@ data:extend({
     {
         type = "item",
         name = "air-purificator-r1",
-        icon = "__RExtended__/graphics/icons/Machinery/Air-Purification/Air-Purification-r1.png",
-        icon_size = 64,
+        icon = "__RExtended__/graphics/icons/Machinery/Air-Purification/Air-Purificator-r1.png",
+        icon_size = 256,
         subgroup = "machinery-condenser",
         order = "h-c",
         place_result = "air-purificator-r1",
@@ -70,8 +70,8 @@ data:extend({
     {-- Entity Air Purificator
         type = "assembling-machine",
         name = "air-purificator-r1",
-        icon = "__RExtended__/graphics/icons/Machinery/Air-Purification/Air-Purification-r1.png",
-        icon_size = 64,
+        icon = "__RExtended__/graphics/icons/Machinery/Air-Purification/Air-Purificator-r1.png",
+        icon_size = 256,
         flags = {"placeable-neutral","placeable-player", "player-creation"},
         ingredient_count = 4,
         crafting_speed = 1,
@@ -110,10 +110,10 @@ data:extend({
         },
         graphics_set = {
             animation = {
-                south = {filename = "__RExtended__/graphics/entity/Machinery/Air-Purification/Air-Purification-r1.png", width = 256, height = 256, shift = {0.3, -0}, frame_count = 16, line_length = 8, scale = 0.5, animation_speed=1.0},
-                west  = {filename = "__RExtended__/graphics/entity/Machinery/Air-Purification/Air-Purification-r1.png", width = 256, height = 256, shift = {0.3, -0}, frame_count = 16, line_length = 8, scale = 0.5, animation_speed=1.0},
-                north = {filename = "__RExtended__/graphics/entity/Machinery/Air-Purification/Air-Purification-r1.png", width = 256, height = 256, shift = {0.3, -0}, frame_count = 16, line_length = 8, scale = 0.5, animation_speed=1.0},
-                east  = {filename = "__RExtended__/graphics/entity/Machinery/Air-Purification/Air-Purification-r1.png", width = 256, height = 256, shift = {0.3, -0}, frame_count = 16, line_length = 8, scale = 0.5, animation_speed=1.0}
+                south = {filename = "__RExtended__/graphics/entity/Machinery/Air-Purification/Air-Purificator-r1.png", width = 256, height = 256, shift = {0.3, -0}, frame_count = 16, line_length = 8, scale = 0.5, animation_speed=1.0},
+                west  = {filename = "__RExtended__/graphics/entity/Machinery/Air-Purification/Air-Purificator-r1.png", width = 256, height = 256, shift = {0.3, -0}, frame_count = 16, line_length = 8, scale = 0.5, animation_speed=1.0},
+                north = {filename = "__RExtended__/graphics/entity/Machinery/Air-Purification/Air-Purificator-r1.png", width = 256, height = 256, shift = {0.3, -0}, frame_count = 16, line_length = 8, scale = 0.5, animation_speed=1.0},
+                east  = {filename = "__RExtended__/graphics/entity/Machinery/Air-Purification/Air-Purificator-r1.png", width = 256, height = 256, shift = {0.3, -0}, frame_count = 16, line_length = 8, scale = 0.5, animation_speed=1.0}
             }
         },
         fast_replaceable_group = "assembling-machine",

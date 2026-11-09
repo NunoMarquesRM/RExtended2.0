@@ -16,7 +16,7 @@ local function create_solar_panel_item(tier, order, stack_size)
 
     item.name = "solar-panel-r" .. tier
     item.icon = "__RExtended__/graphics/icons/Energy/Solar-Panels/solar-panel-r" .. tier .. ".png"
-    item.icon_size = tier == 5 and 256 or 128
+    item.icon_size = tier >= 3 and 256 or 128
     item.subgroup = "power-solar"
     item.order = "g-" .. order
     item.place_result = item.name

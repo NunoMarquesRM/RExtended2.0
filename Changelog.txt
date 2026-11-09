@@ -1,23 +1,44 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.5.5
 Date: 08.11.2026
+  Major Features:
+    - Full integration with the Far Reach mod:
+      Added map settings for build, interaction, resource reach, item drop, and item pickup
+      distance bonuses.
+      All bonuses default to zero, with recommended values shown in the setting descriptions.
   Changes:
     - Renamed Light Pole R1 to Advanced Light Pole in English and Portuguese.
   Graphics:
-    - Redesigned the Advanced Light Pole entity sprites with a silver frame, a black shadow when
-      unlit, and yellow lamp glows when lit.
-    - Updated the Advanced Light Pole icon from 32x32 to 256x256 with the redesigned pole
-      shown unlit.
-    - Updated both Compressor R1 sprite orientations with a silver housing and teal accents,
-      and increased its icon resolution from 32x32 to 256x256.
-    - Redesigned the Big Storage Tank R2 entity with a reinforced collar, pressure gauge,
-      fill-level window, bypass pipes, and a black cast shadow.
-    - Updated the Big Storage Tank R2 inventory icon from 32x32 to 256x256.
-    - Updated the Big Storage Tank R2 technology icon from 128x128 to 256x256.
-    - Redesigned the Solar Panel R5 entity with darker red cells and slim zigzag braces
-      with gold inlays.
-    - Updated the Solar Panel R5 inventory icon to match the redesign and increased its
-      resolution from 128x128 to 256x256.
+    - Updated the Advanced Light Pole:
+      - Redesigned the entity sprites with a silver frame, a black shadow when unlit, and
+        yellow lamp glows when lit.
+      - Increased the inventory icon resolution from 32x32 to 256x256.
+    - Updated the Compressor R1:
+      - Redesigned both sprite orientations with a silver housing and teal accents.
+      - Increased the inventory icon resolution from 32x32 to 256x256.
+    - Updated the Big Storage Tank R2:
+      - Redesigned the entity with a reinforced collar, pressure gauge, fill-level window,
+        bypass pipes, and a black cast shadow.
+      - Increased the inventory icon resolution from 32x32 to 256x256.
+      - Increased the technology icon resolution from 128x128 to 256x256.
+    - Updated the Solar Panel R3:
+      - Redesigned the entity with etched violet cells and slim beveled frames.
+      - Increased the inventory icon resolution from 128x128 to 256x256.
+      - Updated the Solar Energy R3 technology icon to match the redesigned violet panels.
+    - Updated the Solar Panel R4:
+      - Redesigned the entity with recessed teal cells and chamfered silver rails.
+      - Increased the inventory icon resolution from 128x128 to 256x256.
+      - Updated the Solar Energy R4 technology icon to match the redesigned teal panels.
+    - Updated the Solar Panel R5:
+      - Redesigned the entity with recessed burgundy hexagonal cells and straight
+        gold-inlaid dividers.
+      - Updated the inventory icon to match and increased its resolution from 128x128 to 256x256.
+      - Updated the Solar Energy R5 technology icon with burgundy hexagonal cells and a
+        layered silver badge.
+    - Updated the Air Purificator R1:
+      - Redesigned the entity with silver housing, gold trim, counter-rotating fans, and
+        pulsing blue hubs.
+      - Increased the inventory icon resolution from 64x64 to 256x256.
 ---------------------------------------------------------------------------------------------------
 Version: 2.5.4
 Date: 07.11.2026
