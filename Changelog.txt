@@ -1,7 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.5.5
-Date: 08.11.2026
+Date: 11.11.2026
   Major Features:
+    - Added a calculator accessible from the in-game shortcut, with a calculation history.
     - Full integration with the Far Reach mod:
       Added map settings for build, interaction, resource reach, item drop, and item pickup
       distance bonuses.

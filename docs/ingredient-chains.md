@@ -148,13 +148,24 @@ Plastic Bar (mod recipe)
    └── Petroleum Gas (direct ingredient)
           └── Crude Oil Processing
 
-Enriched Coal
+Clean Coal R1
+   ├── Coal
+   └── Pressurized Water
+          └── Water
+
+Infused Coal (Clean Coal R2)
+   ├── Clean Coal R1
+   └── Infuse Tool R1
+          ├── Reinforced Iron Gear
+          ├── Copper Gear Wheel
+          ├── Reinforced Iron Plate
+          └── Reinforced Copper Plate
+
+Enriched Coal (Clean Coal R3)
    ├── Diesel Fuel
    │      ├── Petroleum Gas
    │      └── Light Oil
-   └── Clean Coal
-          ├── Coal
-          └── Pressurized Water
+   └── Clean Coal R1
 
 Enriched Petroleum
    ├── Molten Coal
