@@ -28,26 +28,21 @@ data:extend({
         },
         {create_unlock_recipe("mining-drill-r3")}
     ),
-    -- Electric Furnace R1 (use the vanilla icon)
-    (function()
-        local tech = create_tech("electric-furnace-r1", "Machinery/r-01", 256, "a-d-b",
-            {"electronics"},
-            {
-                count = 60,
-                ingredients = {{science_packs.red, 1}},
-                time = 15
-            },
-            {
-                create_unlock_recipe("electric-stone-furnace"),
-                create_unlock_recipe("clean-steel-r1-v1"),
-                create_unlock_recipe("formation-furnace-r1"),
-                create_unlock_recipe("steel-plate-r1-v1")
-            }
-        )
-        tech.icon = "__base__/graphics/technology/advanced-material-processing.png"
-        tech.icon_mipmaps = 4
-        return tech
-    end)(),
+    -- Electric Furnace R1
+    create_tech("electric-furnace-r1", "Machinery/Electric-Furnace-R1", 256, "a-d-b",
+        {"electronics"},
+        {
+            count = 60,
+            ingredients = {{science_packs.red, 1}},
+            time = 15
+        },
+        {
+            create_unlock_recipe("electric-stone-furnace"),
+            create_unlock_recipe("clean-steel-r1-v1"),
+            create_unlock_recipe("formation-furnace-r1"),
+            create_unlock_recipe("steel-plate-r1-v1")
+        }
+    ),
     -- Electric Furnace R2 (use the vanilla icon)
     (function()
         local tech = create_tech("electric-furnace-r2", "Machinery/r-01", 256, "c-j-b",
@@ -184,8 +179,8 @@ data:extend({
             create_unlock_recipe("enrichment-chamber-r1")
         }
     ),
-    -- Water Condenser
-    create_tech("water-product-r1", "Machinery/r-04", 128, "a-d-d",
+    -- Atmospheric Processing R1
+    create_tech("water-product-r1", "Machinery/Atmospheric-Processing-R1", 256, "a-d-d",
         {"machinery-r1"},
         {
             count = 150,
@@ -247,7 +242,7 @@ data:extend({
         }
     ),
     -- Clean Products
-    create_tech("clean-products-r1", "Machinery/r-01", 128, "a-c-d",
+    create_tech("clean-products-r1", "Machinery/Clean-Products-R1", 256, "a-c-d",
         {"automation-2", "adv-products-r1"},
         {
             count = 150,
@@ -268,7 +263,7 @@ data:extend({
         }
     ),
     -- Advanced Formation Furnace
-    create_tech("adv-formation-furnace-r1", "Machinery/r-06", 128, "a-f-e",
+    create_tech("adv-formation-furnace-r1", "Machinery/Advanced-Formation-Furnace-R1", 128, "a-f-e",
         {"electric-furnace-r1", "refined-coal-r1"},
         {
             count = 200,
@@ -285,7 +280,7 @@ data:extend({
         }
     ),
     -- Advanced Ore Processing R1
-    create_tech("adv-ore-processing-r1", "Machinery/r-05", 128, "a-c-e",
+    create_tech("adv-ore-processing-r1", "Machinery/Advanced-Ore-Processing-R1", 128, "a-c-e",
         {"clean-products-r1", "adv-formation-furnace-r1"},
         {
             count = 500,
@@ -309,7 +304,7 @@ data:extend({
         }
     ),
     -- Advanced Chemical Machine R1
-    create_tech("adv-chemical-machine-r1", "Machinery/r-07", 128, "a-f-e",
+    create_tech("adv-chemical-machine-r1", "Machinery/Chemical-Machine-R1", 256, "a-f-e",
         {"chemical-science-pack"},
         {
             count = 300,
@@ -395,7 +390,7 @@ data:extend({
         }
     ),
     -- Beacon
-    create_tech("beacon-r1", "Machinery/beacon-r1", 128, "a-c-d",
+    create_tech("beacon-r1", "Machinery/Beacon-Elite-R1", 256, "a-c-d",
         {"effect-transmission"},
         {
             count = 200,
@@ -444,7 +439,7 @@ data:extend({
         {create_unlock_recipe("chemical-machine-r2")}
     ),
     -- Advanced Clean Products R2
-    create_tech("adv-clean-products-r2", "Machinery/r-01-1", 128, "a-f-g",
+    create_tech("adv-clean-products-r2", "Machinery/Clean-Products-R2", 128, "a-f-g",
         {"clean-products-r1"},
         {
             count = 500,
@@ -463,7 +458,7 @@ data:extend({
         }
     ),
     -- Advanced Ore Processing R2
-    create_tech("adv-ore-processing-r2", "Machinery/r-05-1", 128, "a-f-h",
+    create_tech("adv-ore-processing-r2", "Machinery/Advanced-Ore-Processing-R2", 128, "a-f-h",
         {"adv-ore-processing-r1"},
         {
             count = 500,

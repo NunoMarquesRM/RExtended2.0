@@ -12,8 +12,8 @@ data:extend({
         "__RExtended__/graphics/icons/Machinery/Bulk/cast-chamber-r2.png",
         32, "machinery-ore", "a-d-b", 50),
     create_machinery_item("water-condenser-electric-r1",
-        "__RExtended__/graphics/icons/Machinery/Bulk/water-condenser-electric-r1.png",
-        32, "machinery-condenser", "h-a", 50),
+        "__RExtended__/graphics/icons/Machinery/Bulk/Water-Condenser-R1.png",
+        256, "machinery-condenser", "h-a", 50),
     create_machinery_item("water-condenser-electric-r2",
         "__RExtended__/graphics/icons/Machinery/Bulk/water-condenser-electric-r2.png",
         32, "machinery-condenser", "h-b", 50),
@@ -24,13 +24,13 @@ data:extend({
         "__RExtended__/graphics/icons/Machinery/Bulk/enrichment-chamber-r1.png",
         32, "machinery-mix", "c-b", 50),
     create_machinery_item("formation-furnace-r1",
-        "__RExtended__/graphics/icons/Machinery/Bulk/formation-furnace-r1.png",
-        32, "machinery-formation", "d-a-a", 50),
+        "__RExtended__/graphics/icons/Machinery/Furnaces/formation-furnace-r1.png",
+        256, "machinery-formation", "d-a-a", 50),
     create_machinery_item("formation-furnace-electric-r1",
         "__RExtended__/graphics/icons/Machinery/Bulk/electric-formation-furnace-r1.png",
         32, "machinery-formation", "d-b-a", 50),
-    create_machinery_item("beacon-r1", "__RExtended__/graphics/icons/Machinery/Bulk/beacon-r1.png",
-        64, "machinery-lab", "g-c-a", 25),
+    create_machinery_item("beacon-r1", "__RExtended__/graphics/icons/Machinery/Bulk/Beacon-Elite-R1.png",
+        256, "machinery-lab", "g-c-a", 25),
     create_machinery_item("centrifuge-r2", "__RExtended__/graphics/icons/Machinery/Bulk/Centrifuge-R2.png",
         64, "machinery-mix", "c-c", 50),
 
@@ -143,8 +143,8 @@ data:extend({
     {-- Water Condenser
         type = "assembling-machine",
         name = "water-condenser-electric-r1",
-        icon = "__RExtended__/graphics/icons/Machinery/Bulk/water-condenser-electric-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/Machinery/Bulk/Water-Condenser-R1.png",
+        icon_size = 256,
         flags = {"placeable-neutral","placeable-player", "player-creation"},
         minable = {hardness = 0.2, mining_time = 0.5, result = "water-condenser-electric-r1"},
         max_health = 240,
@@ -188,7 +188,7 @@ data:extend({
         },
         graphics_set = {
             animation = { 
-                filename = "__RExtended__/graphics/entity/Machinery/Bulk/water-condenser-electric-r1.png", width = 256, height = 304, shift = {0.375, -0.71875}, frame_count = 24, line_length = 8, scale = 0.5, animation_speed=0.4,
+                filename = "__RExtended__/graphics/entity/Machinery/Bulk/Water-Condenser-Electric-R1-Animated.png", width = 256, height = 304, shift = {0.375, -0.71875}, frame_count = 24, line_length = 8, scale = 0.5, animation_speed=0.4,
             }
         }
     },
@@ -258,8 +258,8 @@ data:extend({
     {-- Formation Furnace
         type = "assembling-machine",
         name = "formation-furnace-r1",
-        icon = "__RExtended__/graphics/icons/Machinery/Bulk/formation-furnace-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/Machinery/Furnaces/formation-furnace-r1.png",
+        icon_size = 256,
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
         minable = {mining_time = 1, result = "formation-furnace-r1"},
         max_health = 200,
@@ -297,10 +297,11 @@ data:extend({
         },
         graphics_set = {
             animation = {
-                filename = "__RExtended__/graphics/entity/Machinery/Bulk/formation-furnace-r1.png",
+                filename = "__RExtended__/graphics/entity/Machinery/Furnaces/formation-furnace-r1.png",
                 priority = "extra-high",
-                width = 96,
-                height = 64,
+                width = 384,
+                height = 256,
+                scale = 0.25,
                 frame_count = 1,
                 shift = {0.3, 0}
             },
@@ -310,10 +311,12 @@ data:extend({
                 south_position = { 0.078125, 0.5234375},
                 east_position = { 0.078125, 0.5234375},
                 animation = {
-                    filename = "__RExtended__/graphics/entity/Machinery/Bulk/formation-furnace-r1-fire.png",
-                    width = 23,
-                    height = 38,
+                    filename = "__RExtended__/graphics/entity/Machinery/Furnaces/formation-furnace-r1-fire.png",
+                    width = 92,
+                    height = 152,
+                    scale = 0.25,
                     frame_count = 12,
+                    animation_speed = 0.4,
                 }
             }}
         },
@@ -611,8 +614,8 @@ data:extend({
     {-- Beacon
         type = "beacon",
         name = "beacon-r1",
-        icon = "__RExtended__/graphics/icons/Machinery/Bulk/beacon-r1.png",
-        icon_size = 64,
+        icon = "__RExtended__/graphics/icons/Machinery/Bulk/Beacon-Elite-R1.png",
+        icon_size = 256,
         flags = {"placeable-player", "player-creation"},
         minable = {mining_time = 1, result = "beacon-r1"},
         max_health = 400,
@@ -637,29 +640,31 @@ data:extend({
             {"consumption", "speed", "pollution"}
         ),
         base_picture = {
-            filename = "__RExtended__/graphics/entity/Machinery/Bulk/beacon-r1-stop.png",
-            width = 288,
-            height = 288,
+            filename = "__RExtended__/graphics/entity/Machinery/Beacons/Beacon-R1-Idle.png",
+            width = 576,
+            height = 576,
             shift = { 0.4375, -1},
-            scale = 0.5,
+            scale = 0.25,
         },
         animation = {
-            filename = "__RExtended__/graphics/entity/Machinery/Bulk/beacon-r1.png",
-            width = 288,
-            height = 288,
+            filename = "__RExtended__/graphics/entity/Machinery/Beacons/Beacon-R1-Animated.png",
+            width = 576,
+            height = 576,
             line_length = 6,
             frame_count = 30,
             shift = { 0.4375, -1},
-            scale = 0.5,
+            scale = 0.25,
             animation_speed = 0.25
         },
         animation_shadow = {        
-            filename = "__RExtended__/graphics/entity/Pipes/clear.png",
-            width = 3,
-            height = 3,
+            filename = "__RExtended__/graphics/entity/Machinery/Beacons/Beacon-R1-Shadow.png",
+            width = 576,
+            height = 576,
             line_length = 6,
             frame_count = 30,
-            shift = { 0, 0},    
+            shift = {0.4375, -1},
+            scale = 0.25,
+            animation_speed = 0.25
         },        
         radius_visualisation_picture = {
             filename = "__base__/graphics/entity/beacon/beacon-radius-visualization.png",
