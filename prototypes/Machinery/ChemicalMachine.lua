@@ -1,6 +1,6 @@
 data:extend({
-    create_machinery_item("chemical-machine-r1", "__RExtended__/graphics/icons/Machinery/Bulk/chemical-machine-r1.png",
-        32, "machinery-mix", "c-d", 50),
+    create_machinery_item("chemical-machine-r1", "__RExtended__/graphics/icons/Machinery/Bulk/Chemical-Machine-Advanced-R1.png",
+        256, "machinery-mix", "c-d", 50),
     create_machinery_item("chemical-machine-r2", "__RExtended__/graphics/icons/Machinery/Bulk/chemical-machine-r2.png",
         32, "machinery-mix", "c-e", 50),
 
@@ -28,8 +28,8 @@ data:extend({
     {
         type = "assembling-machine",
         name = "chemical-machine-r1",
-        icon = "__RExtended__/graphics/icons/Machinery/Bulk/chemical-machine-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/Machinery/Bulk/Chemical-Machine-Advanced-R1.png",
+        icon_size = 256,
         flags = {"placeable-neutral","placeable-player", "player-creation"},
         minable = {hardness = 0.2, mining_time = 0.3, result = "chemical-machine-r1"},
         max_health = 500,
@@ -100,14 +100,14 @@ data:extend({
         },
         graphics_set = {
             animation = {
-                filename = "__RExtended__/graphics/entity/Machinery/Bulk/chemical-machine-r1.png",
-                width = 320,
-                height = 320,
-                frame_count = 8,
-                line_length = 4,
-                animation_speed=0.3,
+                filename = "__RExtended__/graphics/entity/Machinery/Bulk/Chemical-Machine-R1-Animated.png",
+                width = 640,
+                height = 640,
+                frame_count = 24,
+                line_length = 8,
+                animation_speed = 0.25,
                 shift = {0.875, -0.8125},
-                scale  = 0.5,
+                scale = 0.25,
             }
         }
     }
@@ -121,7 +121,16 @@ ChemicalMachineR2.minable = {hardness = 0.1, mining_time = 0.5, result = "chemic
 ChemicalMachineR2.energy_usage = "2MW"
 ChemicalMachineR2.next_upgrade = nil
 ChemicalMachineR2.energy_source.emissions_per_minute = { pollution = 36 }
-ChemicalMachineR2.graphics_set.animation.filename = "__RExtended__/graphics/entity/Machinery/Bulk/chemical-machine-r2.png"
+ChemicalMachineR2.graphics_set.animation = {
+    filename = "__RExtended__/graphics/entity/Machinery/Bulk/chemical-machine-r2.png",
+    width = 320,
+    height = 320,
+    frame_count = 8,
+    line_length = 4,
+    animation_speed = 0.3,
+    shift = {0.875, -0.8125},
+    scale = 0.5
+}
 ChemicalMachineR2.crafting_speed = 4
 
 data:extend({ChemicalMachineR2})

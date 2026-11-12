@@ -1,13 +1,13 @@
 data:extend({
     create_machinery_item("heat-forge-chamber-r1",
         "__RExtended__/graphics/icons/Machinery/Bulk/heat-forge-chamber-r1.png",
-        32, "machinery-ore", "a-c-a", 50),
+        256, "machinery-ore", "a-c-a", 50),
     create_machinery_item("heat-forge-chamber-r2",
         "__RExtended__/graphics/icons/Machinery/Bulk/heat-forge-chamber-r2.png",
         32, "machinery-ore", "a-c-b", 50),
     create_machinery_item("cast-chamber-r1",
         "__RExtended__/graphics/icons/Machinery/Bulk/cast-chamber-r1.png",
-        32, "machinery-ore", "a-d-a", 50),
+        256, "machinery-ore", "a-d-a", 50),
     create_machinery_item("cast-chamber-r2",
         "__RExtended__/graphics/icons/Machinery/Bulk/cast-chamber-r2.png",
         32, "machinery-ore", "a-d-b", 50),
@@ -385,7 +385,7 @@ data:extend({
         type = "assembling-machine",
         name = "cast-chamber-r1",
         icon = "__RExtended__/graphics/icons/Machinery/Bulk/cast-chamber-r1.png",
-        icon_size = 32,
+        icon_size = 256,
         flags = {"placeable-neutral","placeable-player", "player-creation"},
         minable = {hardness = 0.2, mining_time = 0.5, result = "cast-chamber-r1"},
         max_health = 300,
@@ -452,43 +452,61 @@ data:extend({
         graphics_set = {
             animation = {
                 south = {
-                    filename = "__RExtended__/graphics/entity/Machinery/Bulk/cast-chamber-r1.png",
-                    width = 256,
-                    height = 256,
+                    filename = "__RExtended__/graphics/entity/Machinery/Bulk/Cast-Chamber-R1-Idle.png",
+                    width = 512,
+                    height = 512,
                     shift = {0.28125, 0.1875},
-                    scale = 0.5,
-                    frame_count = 16,
-                    line_length = 8,
-                    animation_speed=0.25
+                    scale = 0.25,
+                    frame_count = 1,
+                    line_length = 1
                 },
-                west  = {
-                    filename = "__RExtended__/graphics/entity/Machinery/Bulk/cast-chamber-r1.png",
-                    width = 256,
-                    height = 256,
+                west = {
+                    filename = "__RExtended__/graphics/entity/Machinery/Bulk/Cast-Chamber-R1-Idle.png",
+                    width = 512,
+                    height = 512,
                     shift = {0.28125, 0.1875},
-                    scale = 0.5,
-                    frame_count = 16,
-                    line_length = 8,
-                    animation_speed=0.25
+                    scale = 0.25,
+                    frame_count = 1,
+                    line_length = 1
                 },
                 north = {
-                    filename = "__RExtended__/graphics/entity/Machinery/Bulk/cast-chamber-r1.png",
-                    width = 256,
-                    height = 256,
+                    filename = "__RExtended__/graphics/entity/Machinery/Bulk/Cast-Chamber-R1-Idle.png",
+                    width = 512,
+                    height = 512,
                     shift = {0.28125, 0.1875},
-                    scale = 0.5,
-                    frame_count = 16,
-                    line_length = 8,
-                    animation_speed=0.25
+                    scale = 0.25,
+                    frame_count = 1,
+                    line_length = 1
                 },
-                east  = {
-                    filename = "__RExtended__/graphics/entity/Machinery/Bulk/cast-chamber-r1.png",
-                    width = 256,
-                    height = 256,
+                east = {
+                    filename = "__RExtended__/graphics/entity/Machinery/Bulk/Cast-Chamber-R1-Idle.png",
+                    width = 512,
+                    height = 512,
                     shift = {0.28125, 0.1875},
-                    scale = 0.5, frame_count = 16,
-                    line_length = 8,
-                    animation_speed=0.25
+                    scale = 0.25,
+                    frame_count = 1,
+                    line_length = 1
+                },
+            },
+            working_visualisations = {
+                {
+                    always_draw = false,
+                    fadeout = false,
+                    secondary_draw_order = 1,
+                    north_position = {0, 0},
+                    east_position = {0, 0},
+                    south_position = {0, 0},
+                    west_position = {0, 0},
+                    animation = {
+                        filename = "__RExtended__/graphics/entity/Machinery/Bulk/Cast-Chamber-R1-Animated.png",
+                        width = 512,
+                        height = 512,
+                        shift = {0.28125, 0.1875},
+                        scale = 0.25,
+                        frame_count = 32,
+                        line_length = 8,
+                        animation_speed = 0.25
+                    }
                 }
             }
         }
@@ -497,7 +515,7 @@ data:extend({
         type = "assembling-machine",
         name = "heat-forge-chamber-r1",
         icon = "__RExtended__/graphics/icons/Machinery/Bulk/heat-forge-chamber-r1.png",
-        icon_size = 32,
+        icon_size = 256,
         flags = {"placeable-neutral","placeable-player", "player-creation"},
         minable = {hardness = 0.2, mining_time = 0.5, result = "heat-forge-chamber-r1"},
         max_health = 300,
@@ -542,11 +560,39 @@ data:extend({
         },
         graphics_set = {
             animation = {
-                south = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/heat-forge-chamber-r1.png", width = 256, height = 256, shift = {0.25, 0.125}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, }    ,                            
-                west  = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/heat-forge-chamber-r1.png", width = 256, height = 256, shift = {0.25, 0.125}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, }    ,                    
-                north = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/heat-forge-chamber-r1.png", width = 256, height = 256, shift = {0.25, 0.125}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, }    ,                            
-                east  = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/heat-forge-chamber-r1.png", width = 256, height = 256, shift = {0.25, 0.125}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, }    ,                        
-            }
+                south = {
+                    filename = "__RExtended__/graphics/entity/Machinery/Bulk/Heat-Forge-Chamber-R1-Idle.png",
+                    width = 512, height = 512, shift = {0.25, 0.125}, scale = 0.25,
+                    frame_count = 1, line_length = 1,
+                },
+                west = {
+                    filename = "__RExtended__/graphics/entity/Machinery/Bulk/Heat-Forge-Chamber-R1-Idle.png",
+                    width = 512, height = 512, shift = {0.25, 0.125}, scale = 0.25,
+                    frame_count = 1, line_length = 1,
+                },
+                north = {
+                    filename = "__RExtended__/graphics/entity/Machinery/Bulk/Heat-Forge-Chamber-R1-Idle.png",
+                    width = 512, height = 512, shift = {0.25, 0.125}, scale = 0.25,
+                    frame_count = 1, line_length = 1,
+                },
+                east = {
+                    filename = "__RExtended__/graphics/entity/Machinery/Bulk/Heat-Forge-Chamber-R1-Idle.png",
+                    width = 512, height = 512, shift = {0.25, 0.125}, scale = 0.25,
+                    frame_count = 1, line_length = 1,
+                },
+            },
+            working_visualisations = {
+                {
+                    always_draw = false, fadeout = false, secondary_draw_order = 1,
+                    north_position = {0, 0}, east_position = {0, 0},
+                    south_position = {0, 0}, west_position = {0, 0},
+                    animation = {
+                        filename = "__RExtended__/graphics/entity/Machinery/Bulk/Heat-Forge-Chamber-R1-Animated.png",
+                        width = 512, height = 512, shift = {0.25, 0.125}, scale = 0.25,
+                        frame_count = 32, line_length = 8, animation_speed = 0.25,
+                    },
+                },
+            },
         }
     },
     {-- Enrichement Chamber
@@ -640,32 +686,51 @@ data:extend({
             {"consumption", "speed", "pollution"}
         ),
         base_picture = {
-            filename = "__RExtended__/graphics/entity/Machinery/Beacons/Beacon-R1-Idle.png",
-            width = 576,
-            height = 576,
-            shift = { 0.4375, -1},
-            scale = 0.25,
+            layers = {
+                {
+                    filename = "__RExtended__/graphics/entity/Machinery/Beacons/Beacon-R1-Idle.png",
+                    width = 576,
+                    height = 576,
+                    shift = {0.4375, -1},
+                    scale = 0.25
+                },
+                {
+                    filename = "__RExtended__/graphics/entity/Machinery/Beacons/Beacon-R1-Shadow.png",
+                    width = 576,
+                    height = 576,
+                    frame_count = 1,
+                    line_length = 6,
+                    shift = {0.4375, -1},
+                    scale = 0.25,
+                    draw_as_shadow = true
+                }
+            }
         },
         animation = {
-            filename = "__RExtended__/graphics/entity/Machinery/Beacons/Beacon-R1-Animated.png",
-            width = 576,
-            height = 576,
-            line_length = 6,
-            frame_count = 30,
-            shift = { 0.4375, -1},
-            scale = 0.25,
-            animation_speed = 0.25
+            layers = {
+                {
+                    filename = "__RExtended__/graphics/entity/Machinery/Beacons/Beacon-R1-Animated.png",
+                    width = 576,
+                    height = 576,
+                    line_length = 6,
+                    frame_count = 30,
+                    shift = {0.4375, -1},
+                    scale = 0.25,
+                    animation_speed = 0.25
+                },
+                {
+                    filename = "__RExtended__/graphics/entity/Machinery/Beacons/Beacon-R1-Shadow.png",
+                    width = 576,
+                    height = 576,
+                    line_length = 6,
+                    frame_count = 30,
+                    shift = {0.4375, -1},
+                    scale = 0.25,
+                    animation_speed = 0.25,
+                    draw_as_shadow = true
+                }
+            }
         },
-        animation_shadow = {        
-            filename = "__RExtended__/graphics/entity/Machinery/Beacons/Beacon-R1-Shadow.png",
-            width = 576,
-            height = 576,
-            line_length = 6,
-            frame_count = 30,
-            shift = {0.4375, -1},
-            scale = 0.25,
-            animation_speed = 0.25
-        },        
         radius_visualisation_picture = {
             filename = "__base__/graphics/entity/beacon/beacon-radius-visualization.png",
             priority = "extra-high-no-scale",
@@ -720,6 +785,17 @@ data:extend({
 })
 
 local CastChamberR2 = table.deepcopy(data.raw['assembling-machine']['cast-chamber-r1'])
+-- R2 keeps its original animation instead of inheriting R1's new casting overlay.
+CastChamberR2.graphics_set.working_visualisations = nil
+for _, direction in ipairs({"north", "east", "south", "west"}) do
+    local animation = CastChamberR2.graphics_set.animation[direction]
+    animation.width = 256
+    animation.height = 256
+    animation.frame_count = 16
+    animation.line_length = 8
+    animation.animation_speed = 0.25
+    animation.scale = 0.5
+end
 CastChamberR2.name = "cast-chamber-r2"
 CastChamberR2.icon = "__RExtended__/graphics/icons/Machinery/Bulk/cast-chamber-r2.png"
 CastChamberR2.icon_size = 32
@@ -739,6 +815,17 @@ CastChamberR2.graphics_set.animation.north.filename = "__RExtended__/graphics/en
 CastChamberR2.graphics_set.animation.east.filename = "__RExtended__/graphics/entity/Machinery/Bulk/cast-chamber-r2.png"
 
 local HeatForgeChamberR2 = table.deepcopy(data.raw['assembling-machine']['heat-forge-chamber-r1'])
+-- Keep R2 on its original sprite layout rather than inheriting the HD R1 animation.
+HeatForgeChamberR2.graphics_set.working_visualisations = nil
+for _, direction in ipairs({"north", "east", "south", "west"}) do
+    local animation = HeatForgeChamberR2.graphics_set.animation[direction]
+    animation.width = 256
+    animation.height = 256
+    animation.scale = 0.5
+    animation.frame_count = 16
+    animation.line_length = 8
+    animation.animation_speed = 1.0
+end
 HeatForgeChamberR2.name = "heat-forge-chamber-r2"
 HeatForgeChamberR2.icon = "__RExtended__/graphics/icons/Machinery/Bulk/heat-forge-chamber-r2.png"
 HeatForgeChamberR2.icon_size = 32

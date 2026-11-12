@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.5.5
-Date: 11.11.2026
+Date: 12.11.2026
   Major Features:
     - Added a calculator accessible from the in-game shortcut, with a calculation history.
     - Full integration with the Far Reach mod:
@@ -12,16 +12,51 @@ Date: 11.11.2026
     - Renamed Water Condenser & Incinerators to Atmospheric Processing in English and Portuguese.
     - Renamed Light Pole R1 to Advanced Light Pole in English and Portuguese.
   Graphics:
+    - Updated the oil-processing technology icons:
+      - Matched Advanced Processing to the steel-and-teal recipe design with one chevron.
+      - Matched Elite Processing to reinforced silver and gold with two chevrons.
+      - Added all three output symbols and increased both icons from 128x128 to 256x256.
+      - Moved the technology artwork from Tree/C&R to Tree/CR.
+    - Updated the oil-processing recipe icons:
+      - Added a consistent separator design with distinct heavy oil, light oil, and gas symbols.
+      - Distinguished basic steel, advanced teal, and elite gold tiers with matching hardware.
+      - Added all three output symbols to the elite mixed-output recipe icon.
+      - Increased all nine icons from 32x32 to 256x256 and placed them in CR_Fluids/HR.
+    - Updated the Advanced Ore Processing R1 technology icon:
+      - Added the redesigned Cast Chamber and Heat Forge with all three molten-metal droplets.
+      - Increased the transparent technology icon resolution from 128x128 to 256x256.
+    - Updated the Heat Forge Chamber R1:
+      - Redesigned the HD entity with steel, graphite, teal trim, and a lined molten reservoir.
+      - Added a strong orange-to-yellow heat pulse and slow movement in the molten metal.
+      - Added a black cast shadow and a separate idle view while preserving the in-game size.
+      - Updated the inventory icon to match the redesign and increased it from 32x32 to 256x256.
+    - Updated the Cast Chamber R1:
+      - Redesigned the HD entity with steel, teal trim, a lined reservoir, and visible molds.
+      - Added a 32-frame filling, cooling, release, and reset cycle with moving casting heads.
+      - Added a black cast shadow and a separate idle view.
+      - Updated the inventory icon to match the redesign and increased it from 32x32 to 256x256.
+    - Updated the Refinery R1:
+      - Redesigned all four directions with brighter brushed steel, graphite, and teal trim.
+      - Added HD 896x896 sprites and black shadows while preserving the in-game size.
+      - Aligned both animated flares with the redesigned stacks in each direction.
+      - Updated the inventory icon from 32x32 to 256x256 and the tech icon from 128x128 to 256x256.
+    - Updated the Clean Copper R1 icon:
+      - Matched the Clean Iron ingot shape and texture with a clean reddish-copper finish.
+    - Updated the Copper Gear Wheel:
+      - Added a reddish brushed-copper finish while retaining its simple tilted gear shape.
+      - Increased the item and recipe icon resolution from 32x32 to 256x256.
     - Updated the Beacon R1:
       - Redesigned the HD entity with brighter silver, teal accents, and copper emitters.
       - Rebuilt the rotating assembly with connected bearings, solid mounts, and vertical coils.
       - Kept the cables attached to the heads and added a gentle cyan emitter pulse.
       - Rebuilt the black shadow to align with the base and follow the rotating heads.
+      - Fixed shadow rendering by using shadow layers in both active and idle graphics.
       - Increased the inventory icon from 64x64 to 256x256.
       - Increased the technology icon from 128x128 to 256x256.
     - Updated the Chemical Machine R1:
       - Redesigned the HD entity with teal housing, steel pipes, and a glass reaction chamber.
       - Added swirling violet liquid, rising bubbles, and a gentle reaction glow.
+      - Added a shorter, broader black cast shadow with soft edges around the vessel and pipes.
       - Updated the inventory icon to match the redesign and increased it from 32x32 to 256x256.
       - Updated the technology icon to match the redesign and increased it from 128x128 to 256x256.
     - Updated the Electric Furnace R1 technology icon:
@@ -49,6 +84,7 @@ Date: 11.11.2026
     - Updated the Washer Chamber R1:
       - Redesigned the entity with steel panels, muted blue trim, a pressure gauge, and a
         rotating agitator in the washing basin.
+      - Added a black cast shadow in the same direction as the R2 machine.
       - Increased the inventory icon resolution from 32x32 to 256x256.
     - Updated the Advanced Light Pole:
       - Redesigned the entity sprites with a silver frame, a black shadow when unlit, and
@@ -90,6 +126,14 @@ Date: 07.11.2026
     - Updated localized names for the electric poles and substation.
     - Renamed Warehouse R1 to Elite Warehouse in English and Portuguese.
   Graphics:
+    - Updated the Advanced Ore Processing R1 technology icon:
+      - Added the redesigned Cast Chamber and Heat Forge with all three molten-metal droplets.
+      - Increased the transparent technology icon resolution from 128x128 to 256x256.
+    - Updated the Heat Forge Chamber R1:
+      - Redesigned the HD entity with steel, graphite, teal trim, and a lined molten reservoir.
+      - Added a strong orange-to-yellow heat pulse and slow movement in the molten metal.
+      - Added a black cast shadow and a separate idle view while preserving the in-game size.
+      - Updated the inventory icon to match the redesign and increased it from 32x32 to 256x256.
     - Updated item icons from 32x32 to 256x256 for Glue, Special Component, Reinforced Iron
       Plate, Reinforced Copper Plate, Reinforced Coal Plate, Reinforced Iron Gear, and
       Reinforced Copper Gear.
@@ -118,6 +162,14 @@ Date: 06.11.2026
     - Added items descriptions.
     - Added technologies descriptions.
   Graphics:
+    - Updated the Advanced Ore Processing R1 technology icon:
+      - Added the redesigned Cast Chamber and Heat Forge with all three molten-metal droplets.
+      - Increased the transparent technology icon resolution from 128x128 to 256x256.
+    - Updated the Heat Forge Chamber R1:
+      - Redesigned the HD entity with steel, graphite, teal trim, and a lined molten reservoir.
+      - Added a strong orange-to-yellow heat pulse and slow movement in the molten metal.
+      - Added a black cast shadow and a separate idle view while preserving the in-game size.
+      - Updated the inventory icon to match the redesign and increased it from 32x32 to 256x256.
     - Changed icon for category Machinery Extends, Power Extends and Components and Recipes.
     - Updated icons and increased resolution (32x32 -> 256x256) for:
       - Blue Quartz, Crystalline Silicon, Solar Cell.
@@ -135,6 +187,14 @@ Date: 02.11.2026
     - Warehouse R1: Increased icon draw specification (0.7 -> 2).
     - Elite Storage Tank: Increased icon draw specification (0.7 -> 2).
   Graphics:
+    - Updated the Advanced Ore Processing R1 technology icon:
+      - Added the redesigned Cast Chamber and Heat Forge with all three molten-metal droplets.
+      - Increased the transparent technology icon resolution from 128x128 to 256x256.
+    - Updated the Heat Forge Chamber R1:
+      - Redesigned the HD entity with steel, graphite, teal trim, and a lined molten reservoir.
+      - Added a strong orange-to-yellow heat pulse and slow movement in the molten metal.
+      - Added a black cast shadow and a separate idle view while preserving the in-game size.
+      - Updated the inventory icon to match the redesign and increased it from 32x32 to 256x256.
     - Updated icons and increased resolution (32x32 -> 256x256) for:
       - Electronic Component, Enriched Coal, Diesel Fuel, Clean Iron, Molten Iron, Clean Copper,
         Molten Copper, Clean Steel, Molten Steel, Clean Coal, Molten Coal, Enriched Petroleum,
@@ -163,6 +223,14 @@ Date: 30.10.2026
     - Added module support and 2 module slots to the Formation Furnace.
     - Pure Air can no longer be crafted by hand.
   Graphics:
+    - Updated the Advanced Ore Processing R1 technology icon:
+      - Added the redesigned Cast Chamber and Heat Forge with all three molten-metal droplets.
+      - Increased the transparent technology icon resolution from 128x128 to 256x256.
+    - Updated the Heat Forge Chamber R1:
+      - Redesigned the HD entity with steel, graphite, teal trim, and a lined molten reservoir.
+      - Added a strong orange-to-yellow heat pulse and slow movement in the molten metal.
+      - Added a black cast shadow and a separate idle view while preserving the in-game size.
+      - Updated the inventory icon to match the redesign and increased it from 32x32 to 256x256.
     - Changed the Tree Rock Eraser icon.
 ---------------------------------------------------------------------------------------------------
 Version: 2.4.4
@@ -170,6 +238,14 @@ Date: 28.10.2026
   Bugfixes:
     - Fixed a typo in the solar panel shadow's location.
   Graphics:
+    - Updated the Advanced Ore Processing R1 technology icon:
+      - Added the redesigned Cast Chamber and Heat Forge with all three molten-metal droplets.
+      - Increased the transparent technology icon resolution from 128x128 to 256x256.
+    - Updated the Heat Forge Chamber R1:
+      - Redesigned the HD entity with steel, graphite, teal trim, and a lined molten reservoir.
+      - Added a strong orange-to-yellow heat pulse and slow movement in the molten metal.
+      - Added a black cast shadow and a separate idle view while preserving the in-game size.
+      - Updated the inventory icon to match the redesign and increased it from 32x32 to 256x256.
     - Removed the lower-resolution graphics for the solar panel entities.
 ---------------------------------------------------------------------------------------------------
 Version: 2.4.3

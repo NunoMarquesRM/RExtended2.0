@@ -280,7 +280,7 @@ data:extend({
         }
     ),
     -- Advanced Ore Processing R1
-    create_tech("adv-ore-processing-r1", "Machinery/Advanced-Ore-Processing-R1", 128, "a-c-e",
+    create_tech("adv-ore-processing-r1", "Machinery/Advanced-Ore-Processing-R1", 256, "a-c-e",
         {"clean-products-r1", "adv-formation-furnace-r1"},
         {
             count = 500,
@@ -318,7 +318,7 @@ data:extend({
         {create_unlock_recipe("chemical-machine-r1")}
     ),
     -- Refinery R1
-    create_tech("refinery-machine-r1", "Machinery/r-03", 128, "b-b-a",
+    create_tech("refinery-machine-r1", "Machinery/Refinery-R1", 256, "b-b-a",
         {"lubricant"},
         {
             count = 400,
@@ -336,7 +336,7 @@ data:extend({
         }
     ),
     -- Oil Advanced Processing
-    create_tech("oil-advanced-processing-r1", "C&R/r-031", 128, "b-b-b",
+    create_tech("oil-advanced-processing-r1", "CR/Oil-Advanced-Processing-R1", 256, "b-b-b",
         {"refinery-machine-r1"},
         {
             count = 500,
@@ -354,7 +354,7 @@ data:extend({
         }
     ),
     -- Oil Special Processing
-    create_tech("oil-special-processing-r1", "C&R/r-032", 128, "b-b-c",
+    create_tech("oil-special-processing-r1", "CR/Oil-Special-Processing-R1", 256, "b-b-c",
         {"oil-advanced-processing-r1"},
         {
             count = 700,

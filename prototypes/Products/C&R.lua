@@ -30,9 +30,9 @@ end
 -- Chain 1 - Basic Metallurgy -> Ore Washing
 -- Chain 2 - Fluid Metallurgy/Casting
 data:extend({
-    create_item("clean-iron-r1", "HR/Clean-Iron-R1", 256, "plate-products", "b-a-a", 100),
-    create_item("clean-copper-r1", "HR/Clean-Copper-R1", 256, "plate-products", "b-a-b", 100),
-    create_item("clean-steel-r1", "HR/Clean-Steel-R1", 256, "plate-products", "b-a-c", 100),
+    create_item("clean-iron-r1", "Clean-Iron-R1", 256, "plate-products", "b-a-a", 100),
+    create_item("clean-copper-r1", "Clean-Copper-R1", 256, "plate-products", "b-a-b", 100),
+    create_item("clean-steel-r1", "Clean-Steel-R1", 256, "plate-products", "b-a-c", 100),
     create_recipe("clean-iron-r1",
         {
             {type = "item", name = "iron-ore", amount = 1},
@@ -120,7 +120,7 @@ data:extend({
         },
         {{type = "item", name = "clean-steel-r1", amount = 1}},
         {
-            icon = "__RExtended__/graphics/icons/CR/HR/Clean-Steel-R1.png",
+            icon = "__RExtended__/graphics/icons/CR/Clean-Steel-R1.png",
             icon_size = 256,
             energy_required = 3,
             categories = {"red-furnace"},
@@ -135,7 +135,7 @@ data:extend({
         },
         {{type = "item", name = "clean-steel-r1", amount = 5}},
         {
-            icon = "__RExtended__/graphics/icons/CR/HR/Clean-Steel-R1.png",
+            icon = "__RExtended__/graphics/icons/CR/Clean-Steel-R1.png",
             icon_size = 256,
             energy_required = 3,
             categories = {"red-furnace"},
@@ -176,8 +176,8 @@ data:extend({
 
 -- Glue & Cable
 data:extend({
-    create_item("glue-r1", "HR/Glue-R1", 256, "electronic-products", "e-a", 500),
-    create_item("cable-r1", "HR/Cable-R1", 256, "electronic-products", "e-c", 200),
+    create_item("glue-r1", "Glue-R1", 256, "electronic-products", "e-a", 500),
+    create_item("cable-r1", "Cable-R1", 256, "electronic-products", "e-c", 200),
     create_recipe("glue-r1-v1",
         {
             {type = "item", name = "coal", amount = 3},
@@ -217,11 +217,11 @@ data:extend({
 
 -- Chain: Reinforced Materials -> Electronic Component
 data:extend({
-    create_item("reinforced-component-r1", "HR/Reinforced-Component-R1", 256, "reinforced-products", "d-a", 400),
-    create_item("reinforced-iron-plate-r1", "HR/Reinforced-Iron-Plate-R1", 256, "reinforced-products", "d-e", 200),
-    create_item("reinforced-copper-plate-r1", "HR/Reinforced-Copper-Plate-R1", 256, "reinforced-products", "d-f", 200),
-    create_item("reinforced-coal-plate-r1", "HR/Reinforced-Coal-Plate-R1", 256, "reinforced-products", "d-g", 200),
-    create_item("electric-component-r1", "HR/Electric-Component-R1", 256, "electronic-products", "e-d", 200),
+    create_item("reinforced-component-r1", "Reinforced-Component-R1", 256, "reinforced-products", "d-a", 400),
+    create_item("reinforced-iron-plate-r1", "Reinforced-Iron-Plate-R1", 256, "reinforced-products", "d-e", 200),
+    create_item("reinforced-copper-plate-r1", "Reinforced-Copper-Plate-R1", 256, "reinforced-products", "d-f", 200),
+    create_item("reinforced-coal-plate-r1", "Reinforced-Coal-Plate-R1", 256, "reinforced-products", "d-g", 200),
+    create_item("electric-component-r1", "Electric-Component-R1", 256, "electronic-products", "e-d", 200),
     create_recipe("reinforced-component-r1",
         {
             {type = "item", name = "iron-plate", amount = 1},
@@ -286,16 +286,16 @@ data:extend({
 
 -- Chain: Gears & Infused Tools
 data:extend({
-    create_item("copper-gear-wheel-r1", "copper-gear-wheel", 32, "reinforced-products", "d-b", 100),
-    create_item("reinforced-gear-iron-r1", "HR/Reinforced-Iron-Gear-R1", 256, "reinforced-products", "d-c", 200),
-    create_item("reinforced-gear-copper-r1", "HR/Reinforced-Copper-Gear-R1", 256, "reinforced-products", "d-d", 200),
-    create_item("infuse-tool-r1", "HR/Infuse-Tool-R1", 256, "reinforced-products", "d-h", 100),
+    create_item("copper-gear-wheel-r1", "Copper-Gear-Wheel-R1", 256, "reinforced-products", "d-b", 100),
+    create_item("reinforced-gear-iron-r1", "Reinforced-Iron-Gear-R1", 256, "reinforced-products", "d-c", 200),
+    create_item("reinforced-gear-copper-r1", "Reinforced-Copper-Gear-R1", 256, "reinforced-products", "d-d", 200),
+    create_item("infuse-tool-r1", "Infuse-Tool-R1", 256, "reinforced-products", "d-h", 100),
     create_recipe("copper-gear-wheel-r1",
         {{type = "item", name = "copper-plate", amount = 4}},
         {{type = "item", name = "copper-gear-wheel-r1", amount = 1}},
         {
-            icon = "__RExtended__/graphics/icons/CR/copper-gear-wheel.png",
-            icon_size = 32,
+            icon = "__RExtended__/graphics/icons/CR/Copper-Gear-Wheel-R1.png",
+            icon_size = 256,
             enabled = true,
             energy_required = 0.5,
             --categories = {"crafting"}
@@ -344,7 +344,7 @@ data:extend({
     {-- (R1) Clean Coal
         type = "item",
         name = "clean-coal-r1",
-        icon = "__RExtended__/graphics/icons/CR/HR/Clean-Coal-R1.png",
+        icon = "__RExtended__/graphics/icons/CR/Clean-Coal-R1.png",
         icon_size = 256,
         fuel_categories = {"chemical"},
         fuel_value = "36MJ",
@@ -355,7 +355,7 @@ data:extend({
     {-- (R2) Infused Clean Coal
         type = "item",
         name = "clean-coal-r2",
-        icon = "__RExtended__/graphics/icons/CR/HR/Clean-Coal-R2.png",
+        icon = "__RExtended__/graphics/icons/CR/Clean-Coal-R2.png",
         icon_size = 256,
         fuel_categories = {"chemical"},
         fuel_value = "72MJ",
@@ -366,7 +366,7 @@ data:extend({
     {-- (R3) Enriched Coal
         type = "item",
         name = "clean-coal-r3",
-        icon = "__RExtended__/graphics/icons/CR/HR/Clean-Coal-R3.png",
+        icon = "__RExtended__/graphics/icons/CR/Clean-Coal-R3.png",
         icon_size = 256,
         fuel_categories = {"chemical"},
         fuel_value = "144MJ",
@@ -438,9 +438,9 @@ data:extend({
 
 ------- Chain: Solar Panels
 data:extend({
-    create_item("blue-quartz-r1", "HR/Blue-Quartz-R1", 256, "energy-products", "i-a", 100),
-    create_item("crystalline-silicon-r1", "HR/Crystalline-Silicon-R1", 256, "energy-products", "i-b", 100),
-    create_item("solar-cell-r1", "HR/Solar-Cell-R1", 256, "energy-products", "i-c", 200),
+    create_item("blue-quartz-r1", "Blue-Quartz-R1", 256, "energy-products", "i-a", 100),
+    create_item("crystalline-silicon-r1", "Crystalline-Silicon-R1", 256, "energy-products", "i-b", 100),
+    create_item("solar-cell-r1", "Solar-Cell-R1", 256, "energy-products", "i-c", 200),
     create_recipe("blue-quartz-r1",
         {
             {type = "item", name = "stone", amount = 4},
@@ -480,7 +480,7 @@ data:extend({
 local battery_r1_item = table.deepcopy(data.raw.item['battery'])
 battery_r1_item.name = "battery-r1"
 battery_r1_item.icon_size = 256
-battery_r1_item.icon = "__RExtended__/graphics/icons/CR/HR/Battery-R1.png"
+battery_r1_item.icon = "__RExtended__/graphics/icons/CR/Battery-R1.png"
 battery_r1_item.subgroup = "energy-products"
 battery_r1_item.order = "i-d"
 
