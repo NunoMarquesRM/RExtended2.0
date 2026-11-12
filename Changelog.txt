@@ -21,7 +21,7 @@ Date: 12.11.2026
       - Added a consistent separator design with distinct heavy oil, light oil, and gas symbols.
       - Distinguished basic steel, advanced teal, and elite gold tiers with matching hardware.
       - Added all three output symbols to the elite mixed-output recipe icon.
-      - Increased all nine icons from 32x32 to 256x256 and placed them in CR_Fluids/HR.
+      - Increased all nine icons from 32x32 to 256x256 and placed them in CR_Fluids.
     - Updated the Advanced Ore Processing R1 technology icon:
       - Added the redesigned Cast Chamber and Heat Forge with all three molten-metal droplets.
       - Increased the transparent technology icon resolution from 128x128 to 256x256.
