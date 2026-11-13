@@ -8,17 +8,20 @@
 - New material processing chains for cleaning and refining resources, making reinforced components, and producing specialty fluids.
 - Custom processing machines, with tiers available for selected machines. Machine stats and tiers vary by prototype.
 - Additional power generation, energy storage, and power distribution equipment.
+- Configurable build, interaction, and resource reach bonuses through Mod settings.
+- An in-game calculator with calculation history, accessible from its shortcut.
 - Quality mod support for quality modules in supported machines.
 - Centrifuge R2, a high-speed centrifuge for advanced processing.
 - Expanded item and fluid storage, plus custom logistic and construction robots.
 - A selection tool for removing trees and supported rock entities.
-- [Red Railworld Extended](https://mods.factorio.com/mod/RERailworld)
+- Trains: [Red Railworld Extended](https://mods.factorio.com/mod/RERailworld)
 
 ## Supported Languages
 
 - English
 - Portuguese (Portugal)
 - Portuguese (Brazil)
+- Japanese, translated by [K.Tarutaru](https://mods.factorio.com/user/K.Tarutaru). Thank you for the contribution.
 
 ---------------------------------------------------------------------------------------------------
 
@@ -79,8 +82,10 @@ The added recipes include:
 
 - **Clean materials**: iron, copper, coal, and steel.
 - **Components**: glue, cable, reinforced components and plates, reinforced gears, and copper gear wheels.
+- **Coal products**: Clean Coal, Infused Coal, and Enriched Coal. Infused Coal uses the Infuse Tool R1 recipe chain.
+- **Infuse Tool R1**: an intermediate product used to make Infused Coal.
 - **Specialty fluids**: pressurized water, molten iron, copper, steel, and coal, diesel fuel, enriched petroleum, lithium, and other processing fluids.
-- **Enriched coal** and crystalline silicon products.
+- **Crystalline silicon products** for the solar panel production chain.
 
 These materials are used in the mod's machinery, power, storage, and robot recipes.
 

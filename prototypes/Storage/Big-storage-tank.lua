@@ -29,7 +29,7 @@ local function setup_big_storage_tank(entity, name, tier, volume, max_health)
     local icon_name = tier == "r2" and "big-storage-tank-r2-advanced" or "big-storage-tank-" .. tier
     entity.name = name
     entity.icon = "__RExtended__/graphics/icons/Storage/" .. icon_name .. ".png"
-    entity.icon_size = tier == "r2" and 256 or 32
+    entity.icon_size = (tier == "r1" or tier == "r2") and 256 or 32
     entity.flags = {"placeable-player", "player-creation"}
     entity.minable = {mining_time = 0.5, result = name}
     entity.max_health = max_health
@@ -53,9 +53,9 @@ local function setup_big_storage_tank(entity, name, tier, volume, max_health)
                 filename = "__RExtended__/graphics/entity/Storage/BigStorageTank/" .. picture_name .. ".png",
                 priority = "extra-high",
                 frames = 1,
-                width = 256,
-                height = 256,
-                scale = 0.5,
+                width = (tier == "r1" or tier == "r2") and 512 or 256,
+                height = (tier == "r1" or tier == "r2") and 512 or 256,
+                scale = (tier == "r1" or tier == "r2") and 0.25 or 0.5,
                 shift = {0.4375, -0.375}
             }}
         },
@@ -110,7 +110,7 @@ local function setup_big_storage_tank(entity, name, tier, volume, max_health)
 end
 
 data:extend({
-    create_storage_tank_item("big-storage-tank-r1", "big-storage-tank-r1", "e-a", 25),
+    create_storage_tank_item("big-storage-tank-r1", "big-storage-tank-r1", "e-a", 25, 256),
     create_storage_tank_item("big-storage-tank-r2", "big-storage-tank-r2-advanced", "e-b", 20, 256),
     create_storage_tank_item("elite-storage-tank-r3", "Elite-storage-tank-r3", "e-c", 10),
     

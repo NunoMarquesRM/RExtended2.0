@@ -1,30 +1,38 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.5.5
-Date: 12.11.2026
+Date: 13.11.2026
   Major Features:
     - Added a calculator accessible from the in-game shortcut, with a calculation history.
     - Full integration with the Far Reach mod:
-      Added map settings for build, interaction, resource reach, item drop, and item pickup
-      distance bonuses.
-      All bonuses default to zero, with recommended values shown in the setting descriptions.
-  Changes:
-    - Corrected the English spelling of the Powerful Transmission technology name.
+      - Added map settings for build, interaction, resource reach, item drop, and item pickup
+        distance bonuses.
+      - All bonuses default to zero, with recommended values shown in the setting descriptions.
+  Bugfixes:
+    - Fixed compatibility for the Laser Turret R2 with the mod Factorio+.
+  Translation:
+    - Added Japanese localization, translated by K.Tarutaru. Thank you for the contribution.
     - Renamed Water Condenser & Incinerators to Atmospheric Processing in English and Portuguese.
     - Renamed Light Pole R1 to Advanced Light Pole in English and Portuguese.
   Graphics:
+    - Updated the Big Storage Tank R1:
+      - Redesigned and increased the entity (to 512x512), icon and technology (to 256x256).
+    - Updated the Big Storage Tank R2 entity, icon and technology:
+      - Redesigned the entity with a reinforced collar, pressure gauge, fill-level window,
+        bypass pipes, and a black cast shadow.
+      - Increased the inventory icon resolution from 32x32 to 256x256.
+      - Increased the technology icon resolution from 128x128 to 256x256.
     - Updated the oil-processing technology icons:
       - Matched Advanced Processing to the steel-and-teal recipe design with one chevron.
       - Matched Elite Processing to reinforced silver and gold with two chevrons.
       - Added all three output symbols and increased both icons from 128x128 to 256x256.
-      - Moved the technology artwork from Tree/C&R to Tree/CR.
     - Updated the oil-processing recipe icons:
       - Added a consistent separator design with distinct heavy oil, light oil, and gas symbols.
       - Distinguished basic steel, advanced teal, and elite gold tiers with matching hardware.
       - Added all three output symbols to the elite mixed-output recipe icon.
-      - Increased all nine icons from 32x32 to 256x256 and placed them in CR_Fluids.
+      - Increased all nine icons from 32x32 to 256x256.
     - Updated the Advanced Ore Processing R1 technology icon:
       - Added the redesigned Cast Chamber and Heat Forge with all three molten-metal droplets.
-      - Increased the transparent technology icon resolution from 128x128 to 256x256.
+      - Increased the tech icon resolution from 128x128 to 256x256.
     - Updated the Heat Forge Chamber R1:
       - Redesigned the HD entity with steel, graphite, teal trim, and a lined molten reservoir.
       - Added a strong orange-to-yellow heat pulse and slow movement in the molten metal.
@@ -34,11 +42,9 @@ Date: 12.11.2026
       - Redesigned the HD entity with steel, teal trim, a lined reservoir, and visible molds.
       - Added a 32-frame filling, cooling, release, and reset cycle with moving casting heads.
       - Added a black cast shadow and a separate idle view.
-      - Updated the inventory icon to match the redesign and increased it from 32x32 to 256x256.
+      - Updated the inventory icon and increased it from 32x32 to 256x256.
     - Updated the Refinery R1:
       - Redesigned all four directions with brighter brushed steel, graphite, and teal trim.
-      - Added HD 896x896 sprites and black shadows while preserving the in-game size.
-      - Aligned both animated flares with the redesigned stacks in each direction.
       - Updated the inventory icon from 32x32 to 256x256 and the tech icon from 128x128 to 256x256.
     - Updated the Clean Copper R1 icon:
       - Matched the Clean Iron ingot shape and texture with a clean reddish-copper finish.
@@ -47,64 +53,51 @@ Date: 12.11.2026
       - Increased the item and recipe icon resolution from 32x32 to 256x256.
     - Updated the Beacon R1:
       - Redesigned the HD entity with brighter silver, teal accents, and copper emitters.
-      - Rebuilt the rotating assembly with connected bearings, solid mounts, and vertical coils.
-      - Kept the cables attached to the heads and added a gentle cyan emitter pulse.
-      - Rebuilt the black shadow to align with the base and follow the rotating heads.
-      - Fixed shadow rendering by using shadow layers in both active and idle graphics.
       - Increased the inventory icon from 64x64 to 256x256.
       - Increased the technology icon from 128x128 to 256x256.
     - Updated the Chemical Machine R1:
       - Redesigned the HD entity with teal housing, steel pipes, and a glass reaction chamber.
       - Added swirling violet liquid, rising bubbles, and a gentle reaction glow.
       - Added a shorter, broader black cast shadow with soft edges around the vessel and pipes.
-      - Updated the inventory icon to match the redesign and increased it from 32x32 to 256x256.
+      - Updated the icon to match the redesign and increased it from 32x32 to 256x256.
       - Updated the technology icon to match the redesign and increased it from 128x128 to 256x256.
-    - Updated the Electric Furnace R1 technology icon:
+    - Updated the Electric Furnace R1 technology icon (256x256):
       - Replaced the vanilla artwork with both redesigned furnaces and a stack of steel plates.
-      - Added a transparent 256x256 icon.
     - Updated the Electric Stone Furnace:
       - Redesigned the HD entity with blue steel panels, stone lining, and larger heating coils.
       - Added a rotating fan and coils pulsing from deep orange to yellow with reflected heat.
-      - Updated the inventory icon to match the redesign and increased it from 32x32 to 256x256.
+      - Updated the inventory icon to match the redesign and increased it (32x32 to 256x256).
     - Updated the Formation Furnace R1:
       - Redesigned the steel casing with dark braces, vents, and a recessed lined firebox.
       - Reworked the 12-frame flame animation to flicker inside the firebox.
-      - Increased both sprites to 4x resolution while preserving their in-game size.
-      - Updated the inventory icon to match the redesign and increased it from 32x32 to 256x256.
-    - Updated the Atmospheric Processing R1 technology icon:
+      - Updated the inventory icon to match the redesign and increased it (32x32 -> 256x256).
+    - Updated the Atmospheric Processing R1 technology icon (from 128x128 to 256x256):
       - Combined the redesigned Electric Water Condenser R1 and Air Purificator R1.
-      - Increased the resolution from 128x128 to 256x256.
     - Updated the Electric Water Condenser R1:
       - Redesigned the entity with silver collectors, blue grilles, and a glass collection vessel.
       - Animated the rotating collectors and a decorative water fill-and-discharge cycle.
-      - Increased the inventory icon resolution from 32x32 to 256x256.
-    - Updated the Clean Products R1 technology icon:
+      - Increased the icon resolution from 32x32 to 256x256.
+    - Updated the Clean Products R1 technology icon (from 128x128 to 256x256):
       - Replaced the machines with the redesigned Compressor R1 and Washer Chamber R1.
-      - Increased the resolution from 128x128 to 256x256.
     - Updated the Washer Chamber R1:
       - Redesigned the entity with steel panels, muted blue trim, a pressure gauge, and a
         rotating agitator in the washing basin.
       - Added a black cast shadow in the same direction as the R2 machine.
-      - Increased the inventory icon resolution from 32x32 to 256x256.
+      - Increased the inventory icon resolution 256x256.
     - Updated the Advanced Light Pole:
       - Redesigned the entity sprites with a silver frame, a black shadow when unlit, and
         yellow lamp glows when lit.
-      - Increased the inventory icon resolution from 32x32 to 256x256.
+      - Increased the inventory icon resolution (32x32 to 256x256).
     - Updated the Compressor R1:
       - Redesigned both sprite orientations with a silver housing and teal accents.
-      - Increased the inventory icon resolution from 32x32 to 256x256.
-    - Updated the Big Storage Tank R2:
-      - Redesigned the entity with a reinforced collar, pressure gauge, fill-level window,
-        bypass pipes, and a black cast shadow.
-      - Increased the inventory icon resolution from 32x32 to 256x256.
-      - Increased the technology icon resolution from 128x128 to 256x256.
+      - Increased the inventory icon resolution (32x32 -> 256x256).
     - Updated the Solar Panel R3:
       - Redesigned the entity with etched violet cells and slim beveled frames.
       - Increased the inventory icon resolution from 128x128 to 256x256.
       - Updated the Solar Energy R3 technology icon to match the redesigned violet panels.
     - Updated the Solar Panel R4:
       - Redesigned the entity with recessed teal cells and chamfered silver rails.
-      - Increased the inventory icon resolution from 128x128 to 256x256.
+      - Increased the inventory icon resolution (128x128 to 256x256).
       - Updated the Solar Energy R4 technology icon to match the redesigned teal panels.
     - Updated the Solar Panel R5:
       - Redesigned the entity with recessed burgundy hexagonal cells and straight
@@ -335,8 +328,8 @@ Version: 2.1.2
 Date: 17.10.2026
   Balancing:
     - Energy consumption and Pollution:
-      - Assemblers, ChemicalMachines, Compressors, Furnances, Mining Drills, Washer Chambers, Water
-        Condensors, Refineries, Cast Chambers, Heat Forges, Mixer, Formation Furnances and
+      - Assemblers, ChemicalMachines, Compressors, Furnances, Mining Drills, Washer Chambers, Cast
+        Chambers, Refineries, Water Condensors, Heat Forges, Mixer, Formation Furnances and
         Enrichment Chamber
   Changes:
     - Added upgrade entities for:
