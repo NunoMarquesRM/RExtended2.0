@@ -5,7 +5,7 @@ data:extend({
         order = "kba-a",
         inventory_order = "g-a-a",
         icon = "__RExtended__/graphics/Tech/Categories/Energy.png",
-        icon_size = 64
+        icon_size = 256
     },
     create_item_subgroup("power-poles", "power-extends", "a"),   -- Poles
     create_item_subgroup("power-boilers", "power-extends", "b"), -- Boiler

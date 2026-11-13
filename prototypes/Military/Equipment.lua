@@ -1,8 +1,9 @@
-function create_equipment_item(name, icon, subgroup, order, stack_size, inventory_move_sound, pick_sound, drop_sound)
+local function create_equipment_item(name, icon, icon_size, subgroup, order, stack_size, inventory_move_sound, pick_sound, drop_sound)
     return {
         type = "item",
         name = name,
         icon = "__RExtended__/graphics/icons/Military/" .. icon .. ".png",
+        icon_size = icon_size,
         place_as_equipment_result = name,
         subgroup = subgroup,
         order = order,
@@ -13,7 +14,7 @@ function create_equipment_item(name, icon, subgroup, order, stack_size, inventor
     }
 end
 
-function create_equipment_recipe(name, energy_required, enabled, ingredients, results)
+local function create_equipment_recipe(name, energy_required, enabled, ingredients, results)
     return {
         type = "recipe",
         name = name,
@@ -25,7 +26,7 @@ function create_equipment_recipe(name, energy_required, enabled, ingredients, re
 end
 
 data:extend({
-    create_equipment_item("exoskeleton-equipment-r2", "Exoskeleton-Equipment-r2",
+    create_equipment_item("exoskeleton-equipment-r2", "Exoskeleton-Equipment-r2", 256,
         "red-equipment", "l-a", 10,
         {
             filename = "__base__/sound/item/exoskeleton-inventory-move.ogg",
@@ -58,10 +59,10 @@ data:extend({
         name = "exoskeleton-equipment-r2",
         sprite = {
             filename = "__RExtended__/graphics/entity/Military/Exoskeleton-Equipment-r2.png",
-            width = 128,
-            height = 256,
+            width = 363,
+            height = 628,
             priority = "medium",
-            scale = 0.5
+            scale = 0.8
         },
         shape = {
             width = 2,

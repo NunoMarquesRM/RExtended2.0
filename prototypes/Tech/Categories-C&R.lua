@@ -4,7 +4,7 @@ data:extend({
         name = "CandR",
         order = "kca-c",
         inventory_order = "d-a-c",
-        icon = "__RExtended__/graphics/Tech/Categories/C&R.png",
+        icon = "__RExtended__/graphics/Tech/Categories/CR.png",
         icon_size = 256
     },
     create_item_subgroup("chemical-products-r1", "CandR", "a"),  -- Chemical Products

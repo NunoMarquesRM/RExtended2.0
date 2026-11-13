@@ -8,17 +8,20 @@
 - New material processing chains for cleaning and refining resources, making reinforced components, and producing specialty fluids.
 - Custom processing machines, with tiers available for selected machines. Machine stats and tiers vary by prototype.
 - Additional power generation, energy storage, and power distribution equipment.
+- Configurable build, interaction, and resource reach bonuses through Mod settings.
+- An in-game calculator with calculation history, accessible from its shortcut.
 - Quality mod support for quality modules in supported machines.
 - Centrifuge R2, a high-speed centrifuge for advanced processing.
 - Expanded item and fluid storage, plus custom logistic and construction robots.
 - A selection tool for removing trees and supported rock entities.
-- [Red Railworld Extended](https://mods.factorio.com/mod/RERailworld)
+- Trains: [Red Railworld Extended](https://mods.factorio.com/mod/RERailworld)
 
 ## Supported Languages
 
 - English
 - Portuguese (Portugal)
 - Portuguese (Brazil)
+- Japanese, translated by [K.Tarutaru](https://mods.factorio.com/user/K.Tarutaru). Thank you for the contribution.
 
 ---------------------------------------------------------------------------------------------------
 
@@ -79,8 +82,10 @@ The added recipes include:
 
 - **Clean materials**: iron, copper, coal, and steel.
 - **Components**: glue, cable, reinforced components and plates, reinforced gears, and copper gear wheels.
+- **Coal products**: Clean Coal, Infused Coal, and Enriched Coal. Infused Coal uses the Infuse Tool R1 recipe chain.
+- **Infuse Tool R1**: an intermediate product used to make Infused Coal.
 - **Specialty fluids**: pressurized water, molten iron, copper, steel, and coal, diesel fuel, enriched petroleum, lithium, and other processing fluids.
-- **Enriched coal** and crystalline silicon products.
+- **Crystalline silicon products** for the solar panel production chain.
 
 These materials are used in the mod's machinery, power, storage, and robot recipes.
 
@@ -129,37 +134,21 @@ I forgot some mods that i used in factorio v < 1.0, but i'm trying to get all of
 So right now what i had found from v >= 2.0:
 
   - *Red Extended*:
-    - Tree Eraser
-        https://mods.factorio.com/mod/tree-eraser
-    - Rock Eraser
-        https://mods.factorio.com/mod/rock-eraser
-    - AAI Containers & Warehouses -> Big warehouse entity
-        https://mods.factorio.com/mod/aai-containers
-    - Robot Battery Research
-        https://mods.factorio.com/mod/Robot_Battery_Research2
-    - NPUtils Redux
-        https://mods.factorio.com/mod/NPUtils-redux
-    - NPUtils X Redux
-        https://mods.factorio.com/mod/NPUtilsX-redux
-    - Krastorio 2 -> Elite Storage Tank
-        https://mods.factorio.com/mod/Krastorio2
-    - Simple Silicon -> Idea and solar cell item
-        https://mods.factorio.com/mod/SimpleSilicon
-    - Yuoki Industries -> Boiler entity
-        https://mods.factorio.com/mod/Yuoki
-    - Quality of Life research
-        https://mods.factorio.com/mod/qol_research
-    - Light Bot Start
-        https://mods.factorio.com/mod/rt-light-bot-start
-    - Extended Laser Turrets -> The idea for a mix of Ranger and Damager
-        https://mods.factorio.com/mod/Extended-Laser-Turrets
+    - [Tree Eraser](https://mods.factorio.com/mod/tree-eraser)
+    - [Rock Eraser](https://mods.factorio.com/mod/rock-eraser)
+    - [Quality of Life research](https://mods.factorio.com/mod/qol_research)
+    - [Light Bot Start](https://mods.factorio.com/mod/rt-light-bot-start)
+    - [Robot Battery Research](https://mods.factorio.com/mod/Robot_Battery_Research2)
+    - [Far Reach](https://mods.factorio.com/mod/far-reach)
+    - [NPUtils Redux](https://mods.factorio.com/mod/NPUtils-redux)
+    - [NPUtils X Redux](https://mods.factorio.com/mod/NPUtilsX-redux)
+    - [Simple Silicon -> Idea](https://mods.factorio.com/mod/SimpleSilicon)
+    - [Extended Laser Turrets -> The idea for a mix of Ranger and Damager](https://mods.factorio.com/mod/Extended-Laser-Turrets)
+    - [Yuoki Industries -> Boiler entity](https://mods.factorio.com/mod/Yuoki)
+    - [Krastorio 2 -> Elite Storage Tank](https://mods.factorio.com/mod/Krastorio2)
 
   - *Red Railworld Extended*:
-      - ElectricTrain
-        https://mods.factorio.com/mod/ElectricTrainFix
-      - Yuoki Industries - Railways
-        https://mods.factorio.com/mod/yi_railway
-      - Angel's Addons - Mass Transit -> Smelting Train entity
-        https://mods.factorio.com/mod/angelsaddons-mobility
-      - YIR - Uranium Power Trains
-        https://mods.factorio.com/mod/z_yira_UP
+    - [ElectricTrain](https://mods.factorio.com/mod/ElectricTrainFix)
+    - [Yuoki Industries - Railways](https://mods.factorio.com/mod/yi_railway)
+    - [YIR - Uranium Power Trains](https://mods.factorio.com/mod/angelsaddons-mobility)
+    - [Angel's Addons - Mass Transit -> Smelting Train entity](https://mods.factorio.com/mod/z_yira_UP)

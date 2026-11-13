@@ -1,6 +1,6 @@
 data:extend({
-    create_machinery_item("compressor-r1", "__RExtended__/graphics/icons/Machinery/Bulk/compressor-r1.png",
-        32, "machinery-ore", "a-a-a", 50),
+    create_machinery_item("compressor-r1", "__RExtended__/graphics/icons/Machinery/Bulk/compressor-r1-advanced.png",
+        256, "machinery-ore", "a-a-a", 50),
     create_machinery_item("compressor-r2", "__RExtended__/graphics/icons/Machinery/Bulk/compressor-r2.png",
         32, "machinery-ore", "a-a-b", 50),
 
@@ -26,8 +26,8 @@ data:extend({
     {
         type = "assembling-machine",
         name = "compressor-r1",
-        icon = "__RExtended__/graphics/icons/Machinery/Bulk/compressor-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/Machinery/Bulk/compressor-r1-advanced.png",
+        icon_size = 256,
         flags = {"placeable-neutral","placeable-player", "player-creation"},
         minable = {hardness = 0.2, mining_time = 0.3, result = "compressor-r1"},
         max_health = 300,
@@ -86,10 +86,10 @@ data:extend({
         },
         graphics_set = {
             animation = {
-                south = { filename = "__RExtended__/graphics/entity/Machinery/Compressor/Compressor-r1-v.png", width = 256, height = 256, shift = {0.3125, 0.125}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, },                            
-                west  = { filename = "__RExtended__/graphics/entity/Machinery/Compressor/Compressor-r1-h.png", width = 256, height = 256, shift = {0.375, 0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, },                    
-                north = { filename = "__RExtended__/graphics/entity/Machinery/Compressor/Compressor-r1-v.png", width = 256, height = 256, shift = {0.3125, 0.125}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, },                            
-                east  = { filename = "__RExtended__/graphics/entity/Machinery/Compressor/Compressor-r1-h.png", width = 256, height = 256, shift = {0.375, 0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, },                            
+                south = { filename = "__RExtended__/graphics/entity/Machinery/Compressor/Compressor-r1-advanced-v.png", width = 256, height = 256, shift = {0.3125, 0.125}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, },                            
+                west  = { filename = "__RExtended__/graphics/entity/Machinery/Compressor/Compressor-r1-advanced-h.png", width = 256, height = 256, shift = {0.375, 0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, },                    
+                north = { filename = "__RExtended__/graphics/entity/Machinery/Compressor/Compressor-r1-advanced-v.png", width = 256, height = 256, shift = {0.3125, 0.125}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, },                            
+                east  = { filename = "__RExtended__/graphics/entity/Machinery/Compressor/Compressor-r1-advanced-h.png", width = 256, height = 256, shift = {0.375, 0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, },                            
             }
         }
     }

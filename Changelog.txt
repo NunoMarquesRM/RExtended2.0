@@ -1,35 +1,199 @@
 ---------------------------------------------------------------------------------------------------
-Version: 2.5.3
-Date: 05.11.2026
-  Features:
-    - Added new Intermediate Products: Infuse Tool
-    - Added new Fuel Products: Infused Coal (72MJ)
-  Changes:
-    - Changed stack size of Clean Coal (200 -> 250), Enriched Coal (200 -> 100)
-    - Added items descriptions
-    - Added technologies descriptions
+Version: 2.5.5
+Date: 13.11.2026
+  Major Features:
+    - Added a calculator accessible from the in-game shortcut, with a calculation history.
+    - Full integration with the Far Reach mod:
+      - Added map settings for build, interaction, resource reach, item drop, and item pickup
+        distance bonuses.
+      - All bonuses default to zero, with recommended values shown in the setting descriptions.
+  Bugfixes:
+    - Fixed compatibility for the Laser Turret R2 with the mod Factorio+.
+  Translation:
+    - Added Japanese localization, translated by K.Tarutaru. Thank you for the contribution.
+    - Renamed Water Condenser & Incinerators to Atmospheric Processing in English and Portuguese.
+    - Renamed Light Pole R1 to Advanced Light Pole in English and Portuguese.
   Graphics:
+    - Updated the Big Storage Tank R1:
+      - Redesigned and increased the entity (to 512x512), icon and technology (to 256x256).
+    - Updated the Big Storage Tank R2 entity, icon and technology:
+      - Redesigned the entity with a reinforced collar, pressure gauge, fill-level window,
+        bypass pipes, and a black cast shadow.
+      - Increased the inventory icon resolution from 32x32 to 256x256.
+      - Increased the technology icon resolution from 128x128 to 256x256.
+    - Updated the oil-processing technology icons:
+      - Matched Advanced Processing to the steel-and-teal recipe design with one chevron.
+      - Matched Elite Processing to reinforced silver and gold with two chevrons.
+      - Added all three output symbols and increased both icons from 128x128 to 256x256.
+    - Updated the oil-processing recipe icons:
+      - Added a consistent separator design with distinct heavy oil, light oil, and gas symbols.
+      - Distinguished basic steel, advanced teal, and elite gold tiers with matching hardware.
+      - Added all three output symbols to the elite mixed-output recipe icon.
+      - Increased all nine icons from 32x32 to 256x256.
+    - Updated the Advanced Ore Processing R1 technology icon:
+      - Added the redesigned Cast Chamber and Heat Forge with all three molten-metal droplets.
+      - Increased the tech icon resolution from 128x128 to 256x256.
+    - Updated the Heat Forge Chamber R1:
+      - Redesigned the HD entity with steel, graphite, teal trim, and a lined molten reservoir.
+      - Added a strong orange-to-yellow heat pulse and slow movement in the molten metal.
+      - Added a black cast shadow and a separate idle view while preserving the in-game size.
+      - Updated the inventory icon to match the redesign and increased it from 32x32 to 256x256.
+    - Updated the Cast Chamber R1:
+      - Redesigned the HD entity with steel, teal trim, a lined reservoir, and visible molds.
+      - Added a 32-frame filling, cooling, release, and reset cycle with moving casting heads.
+      - Added a black cast shadow and a separate idle view.
+      - Updated the inventory icon and increased it from 32x32 to 256x256.
+    - Updated the Refinery R1:
+      - Redesigned all four directions with brighter brushed steel, graphite, and teal trim.
+      - Updated the inventory icon from 32x32 to 256x256 and the tech icon from 128x128 to 256x256.
+    - Updated the Clean Copper R1 icon:
+      - Matched the Clean Iron ingot shape and texture with a clean reddish-copper finish.
+    - Updated the Copper Gear Wheel:
+      - Added a reddish brushed-copper finish while retaining its simple tilted gear shape.
+      - Increased the item and recipe icon resolution from 32x32 to 256x256.
+    - Updated the Beacon R1:
+      - Redesigned the HD entity with brighter silver, teal accents, and copper emitters.
+      - Increased the inventory icon from 64x64 to 256x256.
+      - Increased the technology icon from 128x128 to 256x256.
+    - Updated the Chemical Machine R1:
+      - Redesigned the HD entity with teal housing, steel pipes, and a glass reaction chamber.
+      - Added swirling violet liquid, rising bubbles, and a gentle reaction glow.
+      - Added a shorter, broader black cast shadow with soft edges around the vessel and pipes.
+      - Updated the icon to match the redesign and increased it from 32x32 to 256x256.
+      - Updated the technology icon to match the redesign and increased it from 128x128 to 256x256.
+    - Updated the Electric Furnace R1 technology icon (256x256):
+      - Replaced the vanilla artwork with both redesigned furnaces and a stack of steel plates.
+    - Updated the Electric Stone Furnace:
+      - Redesigned the HD entity with blue steel panels, stone lining, and larger heating coils.
+      - Added a rotating fan and coils pulsing from deep orange to yellow with reflected heat.
+      - Updated the inventory icon to match the redesign and increased it (32x32 to 256x256).
+    - Updated the Formation Furnace R1:
+      - Redesigned the steel casing with dark braces, vents, and a recessed lined firebox.
+      - Reworked the 12-frame flame animation to flicker inside the firebox.
+      - Updated the inventory icon to match the redesign and increased it (32x32 -> 256x256).
+    - Updated the Atmospheric Processing R1 technology icon (from 128x128 to 256x256):
+      - Combined the redesigned Electric Water Condenser R1 and Air Purificator R1.
+    - Updated the Electric Water Condenser R1:
+      - Redesigned the entity with silver collectors, blue grilles, and a glass collection vessel.
+      - Animated the rotating collectors and a decorative water fill-and-discharge cycle.
+      - Increased the icon resolution from 32x32 to 256x256.
+    - Updated the Clean Products R1 technology icon (from 128x128 to 256x256):
+      - Replaced the machines with the redesigned Compressor R1 and Washer Chamber R1.
+    - Updated the Washer Chamber R1:
+      - Redesigned the entity with steel panels, muted blue trim, a pressure gauge, and a
+        rotating agitator in the washing basin.
+      - Added a black cast shadow in the same direction as the R2 machine.
+      - Increased the inventory icon resolution 256x256.
+    - Updated the Advanced Light Pole:
+      - Redesigned the entity sprites with a silver frame, a black shadow when unlit, and
+        yellow lamp glows when lit.
+      - Increased the inventory icon resolution (32x32 to 256x256).
+    - Updated the Compressor R1:
+      - Redesigned both sprite orientations with a silver housing and teal accents.
+      - Increased the inventory icon resolution (32x32 -> 256x256).
+    - Updated the Solar Panel R3:
+      - Redesigned the entity with etched violet cells and slim beveled frames.
+      - Increased the inventory icon resolution from 128x128 to 256x256.
+      - Updated the Solar Energy R3 technology icon to match the redesigned violet panels.
+    - Updated the Solar Panel R4:
+      - Redesigned the entity with recessed teal cells and chamfered silver rails.
+      - Increased the inventory icon resolution (128x128 to 256x256).
+      - Updated the Solar Energy R4 technology icon to match the redesigned teal panels.
+    - Updated the Solar Panel R5:
+      - Redesigned the entity with recessed burgundy hexagonal cells and straight
+        gold-inlaid dividers.
+      - Updated the inventory icon to match and increased its resolution from 128x128 to 256x256.
+      - Updated the Solar Energy R5 technology icon with burgundy hexagonal cells and a
+        layered silver badge.
+    - Updated the Air Purificator R1:
+      - Redesigned the entity with silver housing, gold trim, counter-rotating fans, and
+        pulsing blue hubs.
+      - Increased the inventory icon resolution from 64x64 to 256x256.
+---------------------------------------------------------------------------------------------------
+Version: 2.5.4
+Date: 07.11.2026
+  Bugfixes:
+    - Fixed the changelog filename casing and removed trailing whitespace so the changelog
+      displays correctly in-game.
+  Changes:
+    - Updated localized names for the electric poles and substation.
+    - Renamed Warehouse R1 to Elite Warehouse in English and Portuguese.
+  Graphics:
+    - Updated the Advanced Ore Processing R1 technology icon:
+      - Added the redesigned Cast Chamber and Heat Forge with all three molten-metal droplets.
+      - Increased the transparent technology icon resolution from 128x128 to 256x256.
+    - Updated the Heat Forge Chamber R1:
+      - Redesigned the HD entity with steel, graphite, teal trim, and a lined molten reservoir.
+      - Added a strong orange-to-yellow heat pulse and slow movement in the molten metal.
+      - Added a black cast shadow and a separate idle view while preserving the in-game size.
+      - Updated the inventory icon to match the redesign and increased it from 32x32 to 256x256.
+    - Updated item icons from 32x32 to 256x256 for Glue, Special Component, Reinforced Iron
+      Plate, Reinforced Copper Plate, Reinforced Coal Plate, Reinforced Iron Gear, and
+      Reinforced Copper Gear.
+    - Updated item icons from 64x64 to 256x256 for Battery R1 and Elite Warehouse.
+    - Updated item icons and entity graphics for the Extended Medium Electric Pole,
+      Extended Big Electric Pole, Advanced Substation, Exoskeleton R2, Elite Radar, Roboport,
+      Advanced Construction Robot, Advanced Logistic Robot the Active Provider, Buffer, Passive
+      Provider, Requester, Storage Chests.
+    - Redesigned the Elite Warehouse entity with silver armor, gold braces, and emerald circuitry.
+    - Updated the warehouse technology icon to match the Elite Warehouse redesign.
+    - Updated the Initial Products technology icon to show the four items it unlocks.
+    - Updated the Red Robots technology icon to show the roboport, both robots, and a storage chest.
+    - Updated technology icons from 128x128 to 256x256 for Electric Energy Poles 1,
+      Electric Energy Poles 2, and Exoskeleton Equipment R2.
+    - Added distinct 256x256 icons for Worker Robot Battery tiers 1, 4, 8, and 12, replacing the
+      shared 128x128 icon.
+---------------------------------------------------------------------------------------------------
+Version: 2.5.3
+Date: 06.11.2026
+  Features:
+    - Added new Intermediate Product: Infuse Tool.
+    - Added new Fuel Product: Infused Coal (72MJ).
+  Changes:
+    - Changed stack size of Clean Coal (200 -> 250), Enriched Coal (200 -> 100).
+    - Removed recipe category "crafting with fluid" for Enriched Coal.
+    - Added items descriptions.
+    - Added technologies descriptions.
+  Graphics:
+    - Updated the Advanced Ore Processing R1 technology icon:
+      - Added the redesigned Cast Chamber and Heat Forge with all three molten-metal droplets.
+      - Increased the transparent technology icon resolution from 128x128 to 256x256.
+    - Updated the Heat Forge Chamber R1:
+      - Redesigned the HD entity with steel, graphite, teal trim, and a lined molten reservoir.
+      - Added a strong orange-to-yellow heat pulse and slow movement in the molten metal.
+      - Added a black cast shadow and a separate idle view while preserving the in-game size.
+      - Updated the inventory icon to match the redesign and increased it from 32x32 to 256x256.
+    - Changed icon for category Machinery Extends, Power Extends and Components and Recipes.
     - Updated icons and increased resolution (32x32 -> 256x256) for:
-        Blue Quartz, Crystalline Silicon, Solar Cell
+      - Blue Quartz, Crystalline Silicon, Solar Cell.
+    - Updated icons and increased resolution (32x32 -> 128x128) for the solar panels chain.
     - Updated tech icons and increased resolution (128x128 -> 256x256) for:
-        Silicon Processing, Charcoal, Steam Energy 1, Steam Energy 2,
-        Advanced Accumulator, High-Capacity Accumulator, Warehouse Tech 1
+      - Silicon Processing, Charcoal, Steam Energy 1, Steam Energy 2, Initial Products,
+        Advanced Accumulator, High-Capacity Accumulator, Warehouse Tech 1, Mixer Products.
     - Changed tech icon for:
         Improved Solar Panel, Advanced Solar Panel, Elite Solar Panel, Ultimate Solar Panel,
-        Portable Solar Panel R2
+        Portable Solar Panel R2.
 ---------------------------------------------------------------------------------------------------
 Version: 2.5.2
 Date: 02.11.2026
   Changes:
-    - Warehouse R1: Increased icon draw specification (0.7 -> 2)
-    - Elite Storage Tank: Increased icon draw specification (0.7 -> 2)
+    - Warehouse R1: Increased icon draw specification (0.7 -> 2).
+    - Elite Storage Tank: Increased icon draw specification (0.7 -> 2).
   Graphics:
+    - Updated the Advanced Ore Processing R1 technology icon:
+      - Added the redesigned Cast Chamber and Heat Forge with all three molten-metal droplets.
+      - Increased the transparent technology icon resolution from 128x128 to 256x256.
+    - Updated the Heat Forge Chamber R1:
+      - Redesigned the HD entity with steel, graphite, teal trim, and a lined molten reservoir.
+      - Added a strong orange-to-yellow heat pulse and slow movement in the molten metal.
+      - Added a black cast shadow and a separate idle view while preserving the in-game size.
+      - Updated the inventory icon to match the redesign and increased it from 32x32 to 256x256.
     - Updated icons and increased resolution (32x32 -> 256x256) for:
-        Electronic Component, Enriched Coal, Diesel Fuel, Clean Iron, Molten Iron, Clean Copper,
+      - Electronic Component, Enriched Coal, Diesel Fuel, Clean Iron, Molten Iron, Clean Copper,
         Molten Copper, Clean Steel, Molten Steel, Clean Coal, Molten Coal, Enriched Petroleum,
-        Lithium, Water, Pressurized Water, Cable
+        Lithium, Water, Pressurized Water, Cable.
     - Updated tech icons and increased resolution (128x128 -> 256x256) for:
-        Refined Coal, Enriched Coal, Lithium Processing, Advanced Products
+      - Refined Coal, Enriched Coal, Lithium Processing, Advanced Products.
 ---------------------------------------------------------------------------------------------------
 Version: 2.5.1
 Date: 31.10.2026
@@ -52,6 +216,14 @@ Date: 30.10.2026
     - Added module support and 2 module slots to the Formation Furnace.
     - Pure Air can no longer be crafted by hand.
   Graphics:
+    - Updated the Advanced Ore Processing R1 technology icon:
+      - Added the redesigned Cast Chamber and Heat Forge with all three molten-metal droplets.
+      - Increased the transparent technology icon resolution from 128x128 to 256x256.
+    - Updated the Heat Forge Chamber R1:
+      - Redesigned the HD entity with steel, graphite, teal trim, and a lined molten reservoir.
+      - Added a strong orange-to-yellow heat pulse and slow movement in the molten metal.
+      - Added a black cast shadow and a separate idle view while preserving the in-game size.
+      - Updated the inventory icon to match the redesign and increased it from 32x32 to 256x256.
     - Changed the Tree Rock Eraser icon.
 ---------------------------------------------------------------------------------------------------
 Version: 2.4.4
@@ -59,6 +231,14 @@ Date: 28.10.2026
   Bugfixes:
     - Fixed a typo in the solar panel shadow's location.
   Graphics:
+    - Updated the Advanced Ore Processing R1 technology icon:
+      - Added the redesigned Cast Chamber and Heat Forge with all three molten-metal droplets.
+      - Increased the transparent technology icon resolution from 128x128 to 256x256.
+    - Updated the Heat Forge Chamber R1:
+      - Redesigned the HD entity with steel, graphite, teal trim, and a lined molten reservoir.
+      - Added a strong orange-to-yellow heat pulse and slow movement in the molten metal.
+      - Added a black cast shadow and a separate idle view while preserving the in-game size.
+      - Updated the inventory icon to match the redesign and increased it from 32x32 to 256x256.
     - Removed the lower-resolution graphics for the solar panel entities.
 ---------------------------------------------------------------------------------------------------
 Version: 2.4.3
@@ -103,7 +283,7 @@ Date: 22.10.2026
 Version: 2.2.0
 Date: 21.10.2026
   Major Features:
-    - Added Quality of Life research integration: Movement Speed, Inventory Space, Crafting Speed 
+    - Added Quality of Life research integration: Movement Speed, Inventory Space, Crafting Speed
       and Mining Speed
     - Added settings startup to Quality of Life research
   Changes:
@@ -138,8 +318,8 @@ Date: 17.10.2026
   Optimizations:
     - Refactored technologies code for Energy, Robots, Machinery and Railword
   Changes:
-    - Changed technologies prerequisites, ingredients and time for: Energy, Robots, Machinery and  
-    Railword
+    - Changed technologies prerequisites, ingredients and time for: Energy, Robots, Machinery and
+      Railword
     - Changed electric steel furnance mining time from 1 to 0.5
     - Updated credits references
     - Changed category image for machinery extended, components and fluids
@@ -148,13 +328,13 @@ Version: 2.1.2
 Date: 17.10.2026
   Balancing:
     - Energy consumption and Pollution:
-      - Assemblers, ChemicalMachines, Compressors, Furnances, Mining Drills, Washer Chambers, Water
-      Condensors, Refineries, Cast Chambers, Heat Forges, Mixer, Formation Furnances and Enrichment
-      Chamber
+      - Assemblers, ChemicalMachines, Compressors, Furnances, Mining Drills, Washer Chambers, Cast
+        Chambers, Refineries, Water Condensors, Heat Forges, Mixer, Formation Furnances and
+        Enrichment Chamber
   Changes:
     - Added upgrade entities for:
       - Assemblers, ChemicalMachines, Compressors, Furnances, Mining Drills, Washer Chambers, Water
-      Condensors, Refineries, Cast Chamber and Heat Forge
+        Condensors, Refineries, Cast Chamber and Heat Forge
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.1
 Date: 16.10.2026
@@ -174,9 +354,11 @@ Date: 04.10.2026
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.0
 Date: 21.11.2021
-  Full release
+  Major Features:
+    - Full release
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.1
 Date: 2019
-  Modpack created
+  Major Features:
+    - Modpack created
 ---------------------------------------------------------------------------------------------------

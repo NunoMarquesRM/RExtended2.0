@@ -1,6 +1,6 @@
 data:extend({
     create_machinery_item("refinery-r1", "__RExtended__/graphics/icons/Machinery/Bulk/refinery-r1.png",
-        32, "machinery-mix", "c-f", 50),
+        256, "machinery-mix", "c-f", 50),
     create_machinery_item("refinery-r2", "__RExtended__/graphics/icons/Machinery/Bulk/refinery-r2.png",
         32, "machinery-mix", "c-g", 50),
     
@@ -28,7 +28,7 @@ data:extend({
         type = "assembling-machine",
         name = "refinery-r1",
         icon = "__RExtended__/graphics/icons/Machinery/Bulk/refinery-r1.png",
-        icon_size = 32,
+        icon_size = 256,
         flags = {"placeable-neutral","placeable-player", "player-creation"},
         minable = {mining_time = 1, result = "refinery-r1"},
         max_health = 650,
@@ -57,17 +57,17 @@ data:extend({
         ingredient_count = 4,
         graphics_set = {
             animation = {
-                south = { filename = "__RExtended__/graphics/entity/Machinery/Refinery/Refinery-r1-s.png", width = 448, height = 448, shift = {1, -0}, frame_count = 1, line_length = 1, scale = 0.5, animation_speed=1.0, }    ,                            
-                west  = { filename = "__RExtended__/graphics/entity/Machinery/Refinery/Refinery-r1-w.png", width = 448, height = 448, shift = {0.65625, -0.71875}, frame_count = 1, line_length = 1, scale = 0.5, animation_speed=1.0, }    ,                    
-                north = { filename = "__RExtended__/graphics/entity/Machinery/Refinery/Refinery-r1-n.png", width = 448, height = 448, shift = {1, -0}, frame_count = 1, line_length = 1, scale = 0.5, animation_speed=1.0, }    ,                            
-                east  = { filename = "__RExtended__/graphics/entity/Machinery/Refinery/Refinery-r1-e.png", width = 448, height = 448, shift = {0.65625, -0.71875}, frame_count = 1, line_length = 1, scale = 0.5, animation_speed=1.0, }    ,                            
+                south = { filename = "__RExtended__/graphics/entity/Machinery/Refinery/Refinery-r1-s.png", width = 896, height = 896, shift = {1, -0}, frame_count = 1, line_length = 1, scale = 0.25, animation_speed = 1.0 },
+                west  = { filename = "__RExtended__/graphics/entity/Machinery/Refinery/Refinery-r1-w.png", width = 896, height = 896, shift = {0.65625, -0.71875}, frame_count = 1, line_length = 1, scale = 0.25, animation_speed = 1.0 },
+                north = { filename = "__RExtended__/graphics/entity/Machinery/Refinery/Refinery-r1-n.png", width = 896, height = 896, shift = {1, -0}, frame_count = 1, line_length = 1, scale = 0.25, animation_speed = 1.0 },
+                east  = { filename = "__RExtended__/graphics/entity/Machinery/Refinery/Refinery-r1-e.png", width = 896, height = 896, shift = {0.65625, -0.71875}, frame_count = 1, line_length = 1, scale = 0.25, animation_speed = 1.0 },
             },
             working_visualisations = {
                 {
-                    north_position = {1.25, -3.3},
-                    east_position = {-0.125, -2.25},
-                    south_position = {1.25, -3.125},
-                    west_position = {0, -2.125},
+                    north_position = {1.226875, -3.409853},
+                    east_position = {0.151497, -2.361547},
+                    south_position = {1.262240, -3.234534},
+                    west_position = {0.031250, -2.462837},
                     animation = {
                         filename = "__RExtended__/graphics/entity/Machinery/Refinery/Refinery-r1-fire.png",
                         line_length = 10,
@@ -81,10 +81,10 @@ data:extend({
                     light = {intensity = 0.4, size = 6, color = {r = 1.0, g = 1.0, b = 1.0}}
                 },
                 {
-                    north_position = {-1.25, -3.3},
-                    east_position = {-0.125, -4},
-                    south_position = {-1.25, -3.125},
-                    west_position = {0, -3.875},
+                    north_position = {-1.220000, -3.409853},
+                    east_position = {0.145378, -4.168103},
+                    south_position = {-1.306529, -3.234534},
+                    west_position = {0.031250, -4.059307},
                     animation = {
                         filename = "__RExtended__/graphics/entity/Machinery/Refinery/Refinery-r1-fire.png",
                         line_length = 10,
@@ -168,6 +168,13 @@ data:extend({
 })
 
 local RefineryR2 = table.deepcopy(data.raw['assembling-machine']['refinery-r1'])
+-- Keep R2's original sprite resolution when inheriting R1's HD graphics settings.
+for _, direction in ipairs({"north", "east", "south", "west"}) do
+    local animation = RefineryR2.graphics_set.animation[direction]
+    animation.width = 448
+    animation.height = 448
+    animation.scale = 0.5
+end
 RefineryR2.name = "refinery-r2"
 RefineryR2.icon = "__RExtended__/graphics/icons/Machinery/Bulk/refinery-r2.png"
 RefineryR2.icon_size = 32
@@ -221,5 +228,12 @@ RefineryR2.working_visualisations = {
         light = {intensity = 0.4, size = 6, color = {r = 1.0, g = 1.0, b = 1.0}}
     }
 }
+
+-- Keep R2's original flare offsets instead of inheriting the redesigned stack positions.
+for index, visual in ipairs(RefineryR2.graphics_set.working_visualisations) do
+    for _, direction in ipairs({"north_position", "east_position", "south_position", "west_position"}) do
+        visual[direction] = table.deepcopy(RefineryR2.working_visualisations[index][direction])
+    end
+end
 
 data:extend({RefineryR2})

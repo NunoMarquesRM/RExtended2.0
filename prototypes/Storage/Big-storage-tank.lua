@@ -1,9 +1,9 @@
-local function create_storage_tank_item(name, icon_name, order, stack_size)
+local function create_storage_tank_item(name, icon_name, order, stack_size, icon_size)
     return {
         type = "item",
         name = name,
-        icon = "__RExtended__/graphics/icons/Storage/BigStorageTank/" .. icon_name .. ".png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/Storage/" .. icon_name .. ".png",
+        icon_size = icon_size or 32,
         subgroup = "machinery-storage",
         order = order,
         place_result = name,
@@ -25,9 +25,11 @@ local function create_storage_tank_recipe(name, ingredients)
 end
 
 local function setup_big_storage_tank(entity, name, tier, volume, max_health)
+    local picture_name = tier == "r2" and "big-storage-tank-r2-advanced-hd" or "big-storage-tank-" .. tier
+    local icon_name = tier == "r2" and "big-storage-tank-r2-advanced" or "big-storage-tank-" .. tier
     entity.name = name
-    entity.icon = "__RExtended__/graphics/icons/Storage/BigStorageTank/big-storage-tank-" .. tier .. ".png"
-    entity.icon_size = 32
+    entity.icon = "__RExtended__/graphics/icons/Storage/" .. icon_name .. ".png"
+    entity.icon_size = (tier == "r1" or tier == "r2") and 256 or 32
     entity.flags = {"placeable-player", "player-creation"}
     entity.minable = {mining_time = 0.5, result = name}
     entity.max_health = max_health
@@ -48,12 +50,12 @@ local function setup_big_storage_tank(entity, name, tier, volume, max_health)
     entity.pictures = {
         picture = {
             sheets = {{
-                filename = "__RExtended__/graphics/entity/Storage/BigStorageTank/big-storage-tank-" .. tier .. ".png",
+                filename = "__RExtended__/graphics/entity/Storage/BigStorageTank/" .. picture_name .. ".png",
                 priority = "extra-high",
                 frames = 1,
-                width = 256,
-                height = 256,
-                scale = 0.5,
+                width = (tier == "r1" or tier == "r2") and 512 or 256,
+                height = (tier == "r1" or tier == "r2") and 512 or 256,
+                scale = (tier == "r1" or tier == "r2") and 0.25 or 0.5,
                 shift = {0.4375, -0.375}
             }}
         },
@@ -108,8 +110,8 @@ local function setup_big_storage_tank(entity, name, tier, volume, max_health)
 end
 
 data:extend({
-    create_storage_tank_item("big-storage-tank-r1", "big-storage-tank-r1", "e-a", 25),
-    create_storage_tank_item("big-storage-tank-r2", "big-storage-tank-r2", "e-b", 20),
+    create_storage_tank_item("big-storage-tank-r1", "big-storage-tank-r1", "e-a", 25, 256),
+    create_storage_tank_item("big-storage-tank-r2", "big-storage-tank-r2-advanced", "e-b", 20, 256),
     create_storage_tank_item("elite-storage-tank-r3", "Elite-storage-tank-r3", "e-c", 10),
     
     create_storage_tank_recipe("big-storage-tank-r1",
@@ -146,7 +148,7 @@ data:extend({
     {-- New Elite Storage Tank 5M
         type = "storage-tank",
         name = "elite-storage-tank-r3",
-        icon = "__RExtended__/graphics/icons/Storage/BigStorageTank/Elite-storage-tank-r3.png",
+        icon = "__RExtended__/graphics/icons/Storage/Elite-storage-tank-r3.png",
         icon_size = 32,
         icon_draw_specification = {scale = 2},
         flags = {"placeable-player", "player-creation"},

@@ -1,72 +1,4 @@
 data:extend({
-    -- Warehouse R1
-    create_tech("warehouse-tech", "Storage/Warehouse-Tech", 256, "c-e-a",
-        {"steel-processing"},
-        {
-            count = 750,
-            ingredients = {
-                {science_packs.red, 1},
-                {science_packs.green, 1},
-                {science_packs.blue, 1}
-            },
-            time = 20
-        },
-        {create_unlock_recipe("warehouse-r1")}
-    ),
-    -- Big Storage Tank R1 - 100K
-    create_tech("big-storage-tank-r1", "Storage/big-storage-tank-r1", 128, "c-e-f",
-        {"fluid-handling"},
-        {
-            count = 250,
-            ingredients = {
-                {science_packs.red, 1},
-                {science_packs.green, 1},
-                {science_packs.blue, 1}
-            },
-            time = 30
-        },
-        {create_unlock_recipe("big-storage-tank-r1")}
-    ),
-    -- Big Storage Tank R2 - 500K
-    create_tech("big-storage-tank-r2", "Storage/big-storage-tank-r2", 128, "c-e-g",
-        {"big-storage-tank-r1"},
-        {
-            count = 350,
-            ingredients = {
-                {science_packs.red, 1},
-                {science_packs.green, 1},
-                {science_packs.black, 1},
-                {science_packs.blue, 1},
-                {science_packs.purple, 1}
-            },
-            time = 30
-        },
-        {
-            create_unlock_recipe("big-storage-tank-r2"),
-            create_unlock_recipe("pipe-r1"),
-            create_unlock_recipe("pipe-under-r1"),
-            create_unlock_recipe("pipe-r2"),
-            create_unlock_recipe("pipe-under-r2")
-        }
-    ),
-    -- Big Storage Tank R3 - 5M
-    create_tech("elite-storage-tank-r3", "Storage/Elite-storage-tank-r3", 128, "c-e-h",
-        {"big-storage-tank-r2"},
-        {
-            count = 500,
-            ingredients = {
-                {science_packs.red, 1},
-                {science_packs.green, 1},
-                {science_packs.black, 1},
-                {science_packs.blue, 1},
-                {science_packs.purple, 1},
-                {science_packs.yellow, 1},
-                {science_packs.white, 1}
-            },
-            time = 30
-        },
-        {create_unlock_recipe("elite-storage-tank-r3")}
-    ),
     -- Electric Mining Drill R2
     create_tech("electric-mining-r2", "Machinery/r-08", 128, "c-i-a",
         {"automation-2"},
@@ -96,26 +28,21 @@ data:extend({
         },
         {create_unlock_recipe("mining-drill-r3")}
     ),
-    -- Electric Furnace R1 (use the vanilla icon)
-    (function()
-        local tech = create_tech("electric-furnace-r1", "Machinery/r-01", 256, "a-d-b",
-            {"electronics"},
-            {
-                count = 60,
-                ingredients = {{science_packs.red, 1}},
-                time = 15
-            },
-            {
-                create_unlock_recipe("electric-stone-furnace"),
-                create_unlock_recipe("clean-steel-r1-v1"),
-                create_unlock_recipe("formation-furnace-r1"),
-                create_unlock_recipe("steel-plate-r1-v1")
-            }
-        )
-        tech.icon = "__base__/graphics/technology/advanced-material-processing.png"
-        tech.icon_mipmaps = 4
-        return tech
-    end)(),
+    -- Electric Furnace R1
+    create_tech("electric-furnace-r1", "Machinery/Electric-Furnace-R1", 256, "a-d-b",
+        {"electronics"},
+        {
+            count = 60,
+            ingredients = {{science_packs.red, 1}},
+            time = 15
+        },
+        {
+            create_unlock_recipe("electric-stone-furnace"),
+            create_unlock_recipe("clean-steel-r1-v1"),
+            create_unlock_recipe("formation-furnace-r1"),
+            create_unlock_recipe("steel-plate-r1-v1")
+        }
+    ),
     -- Electric Furnace R2 (use the vanilla icon)
     (function()
         local tech = create_tech("electric-furnace-r2", "Machinery/r-01", 256, "c-j-b",
@@ -218,7 +145,7 @@ data:extend({
     ),
     -- Infused Coal
     create_tech("refined-coal-r2", "CR/Infused-Products-R1", 256, "c-b-e",
-        {"refined-coal-r1"},
+        {"adv-formation-furnace-r1"},
         {
             count = 750,
             ingredients = {
@@ -252,8 +179,8 @@ data:extend({
             create_unlock_recipe("enrichment-chamber-r1")
         }
     ),
-    -- Water Condenser
-    create_tech("water-product-r1", "Machinery/r-04", 128, "a-d-d",
+    -- Atmospheric Processing R1
+    create_tech("water-product-r1", "Machinery/Atmospheric-Processing-R1", 256, "a-d-d",
         {"machinery-r1"},
         {
             count = 150,
@@ -270,7 +197,7 @@ data:extend({
         }
     ),
     -- Initial Products
-    create_tech("initial-products-r1", "C&R/r-1", 128, "a-a-a", nil,
+    create_tech("initial-products-r1", "CR/Initial-Products-Reinforced-R1", 256, "a-a-a", nil,
         {
             count = 50,
             ingredients = {{science_packs.red, 1}},
@@ -284,7 +211,7 @@ data:extend({
         }
     ),
     -- Mixer Products
-    create_tech("mixer-products-r1", "C&R/r-2", 128, "a-b-a",
+    create_tech("mixer-products-r1", "CR/Mixer-Products-R1", 256, "a-b-a",
         {"initial-products-r1"},
         {
             count = 50,
@@ -315,7 +242,7 @@ data:extend({
         }
     ),
     -- Clean Products
-    create_tech("clean-products-r1", "Machinery/r-01", 128, "a-c-d",
+    create_tech("clean-products-r1", "Machinery/Clean-Products-R1", 256, "a-c-d",
         {"automation-2", "adv-products-r1"},
         {
             count = 150,
@@ -336,7 +263,7 @@ data:extend({
         }
     ),
     -- Advanced Formation Furnace
-    create_tech("adv-formation-furnace-r1", "Machinery/r-06", 128, "a-f-e",
+    create_tech("adv-formation-furnace-r1", "Machinery/Advanced-Formation-Furnace-R1", 128, "a-f-e",
         {"electric-furnace-r1", "refined-coal-r1"},
         {
             count = 200,
@@ -353,7 +280,7 @@ data:extend({
         }
     ),
     -- Advanced Ore Processing R1
-    create_tech("adv-ore-processing-r1", "Machinery/r-05", 128, "a-c-e",
+    create_tech("adv-ore-processing-r1", "Machinery/Advanced-Ore-Processing-R1", 256, "a-c-e",
         {"clean-products-r1", "adv-formation-furnace-r1"},
         {
             count = 500,
@@ -377,7 +304,7 @@ data:extend({
         }
     ),
     -- Advanced Chemical Machine R1
-    create_tech("adv-chemical-machine-r1", "Machinery/r-07", 128, "a-f-e",
+    create_tech("adv-chemical-machine-r1", "Machinery/Chemical-Machine-R1", 256, "a-f-e",
         {"chemical-science-pack"},
         {
             count = 300,
@@ -391,7 +318,7 @@ data:extend({
         {create_unlock_recipe("chemical-machine-r1")}
     ),
     -- Refinery R1
-    create_tech("refinery-machine-r1", "Machinery/r-03", 128, "b-b-a",
+    create_tech("refinery-machine-r1", "Machinery/Refinery-R1", 256, "b-b-a",
         {"lubricant"},
         {
             count = 400,
@@ -409,7 +336,7 @@ data:extend({
         }
     ),
     -- Oil Advanced Processing
-    create_tech("oil-advanced-processing-r1", "C&R/r-031", 128, "b-b-b",
+    create_tech("oil-advanced-processing-r1", "CR/Oil-Advanced-Processing-R1", 256, "b-b-b",
         {"refinery-machine-r1"},
         {
             count = 500,
@@ -427,7 +354,7 @@ data:extend({
         }
     ),
     -- Oil Special Processing
-    create_tech("oil-special-processing-r1", "C&R/r-032", 128, "b-b-c",
+    create_tech("oil-special-processing-r1", "CR/Oil-Special-Processing-R1", 256, "b-b-c",
         {"oil-advanced-processing-r1"},
         {
             count = 700,
@@ -463,7 +390,7 @@ data:extend({
         }
     ),
     -- Beacon
-    create_tech("beacon-r1", "Machinery/beacon-r1", 128, "a-c-d",
+    create_tech("beacon-r1", "Machinery/Beacon-Elite-R1", 256, "a-c-d",
         {"effect-transmission"},
         {
             count = 200,
@@ -512,7 +439,7 @@ data:extend({
         {create_unlock_recipe("chemical-machine-r2")}
     ),
     -- Advanced Clean Products R2
-    create_tech("adv-clean-products-r2", "Machinery/r-01-1", 128, "a-f-g",
+    create_tech("adv-clean-products-r2", "Machinery/Clean-Products-R2", 128, "a-f-g",
         {"clean-products-r1"},
         {
             count = 500,
@@ -531,7 +458,7 @@ data:extend({
         }
     ),
     -- Advanced Ore Processing R2
-    create_tech("adv-ore-processing-r2", "Machinery/r-05-1", 128, "a-f-h",
+    create_tech("adv-ore-processing-r2", "Machinery/Advanced-Ore-Processing-R2", 128, "a-f-h",
         {"adv-ore-processing-r1"},
         {
             count = 500,
@@ -614,5 +541,77 @@ data:extend({
             time = 40
         },
         {create_unlock_recipe("refinery-r2")}
+    )
+})
+
+-- Storage
+data:extend({
+    -- Warehouse R1
+    create_tech("warehouse-tech", "Storage/Elite-Warehouse-Tech", 256, "c-e-a",
+        {"steel-processing"},
+        {
+            count = 750,
+            ingredients = {
+                {science_packs.red, 1},
+                {science_packs.green, 1},
+                {science_packs.blue, 1}
+            },
+            time = 20
+        },
+        {create_unlock_recipe("warehouse-r1")}
+    ),
+    -- Big Storage Tank R1 - 100K
+    create_tech("big-storage-tank-r1", "Storage/big-storage-tank-r1", 256, "c-e-f",
+        {"fluid-handling"},
+        {
+            count = 250,
+            ingredients = {
+                {science_packs.red, 1},
+                {science_packs.green, 1},
+                {science_packs.blue, 1}
+            },
+            time = 30
+        },
+        {create_unlock_recipe("big-storage-tank-r1")}
+    ),
+    -- Big Storage Tank R2 - 500K
+    create_tech("big-storage-tank-r2", "Storage/big-storage-tank-r2-advanced", 256, "c-e-g",
+        {"big-storage-tank-r1"},
+        {
+            count = 350,
+            ingredients = {
+                {science_packs.red, 1},
+                {science_packs.green, 1},
+                {science_packs.black, 1},
+                {science_packs.blue, 1},
+                {science_packs.purple, 1}
+            },
+            time = 30
+        },
+        {
+            create_unlock_recipe("big-storage-tank-r2"),
+            create_unlock_recipe("pipe-r1"),
+            create_unlock_recipe("pipe-under-r1"),
+            create_unlock_recipe("pipe-r2"),
+            create_unlock_recipe("pipe-under-r2")
+        }
+    ),
+    -- Big Storage Tank R3 - 5M
+    create_tech("elite-storage-tank-r3", "Storage/Elite-storage-tank-r3", 128, "c-e-h",
+        {"big-storage-tank-r2"},
+        {
+            count = 500,
+            ingredients = {
+                {science_packs.red, 1},
+                {science_packs.green, 1},
+                {science_packs.black, 1},
+                {science_packs.blue, 1},
+                {science_packs.purple, 1},
+                {science_packs.yellow, 1},
+                {science_packs.white, 1}
+            },
+            time = 30
+        },
+        {create_unlock_recipe("elite-storage-tank-r3")}
     )
 })

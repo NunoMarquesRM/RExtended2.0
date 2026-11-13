@@ -1,7 +1,7 @@
 data:extend({
     create_machinery_item("electric-stone-furnace",
-        "__RExtended__/graphics/icons/Machinery/Furnaces/stone-furnace-r2.png",
-        32, "machinery-formation", "d-c-a", 50),
+        "__RExtended__/graphics/icons/Machinery/Furnaces/Electric-Stone-Furnace-R1.png",
+        256, "machinery-formation", "d-c-a", 50),
     create_machinery_item("electric-steel-furnace",
         "__RExtended__/graphics/icons/Machinery/Furnaces/steel-furnace-r2.png",
         32, "machinery-formation", "d-d-a", 50),
@@ -27,8 +27,8 @@ data:extend({
 -- Entities
 local stone_r2 = table.deepcopy(data.raw['furnace']['stone-furnace'])
 stone_r2.name = "electric-stone-furnace"
-stone_r2.icon = "__RExtended__/graphics/icons/Machinery/Furnaces/stone-furnace-r2.png"
-stone_r2.icon_size = 32
+stone_r2.icon = "__RExtended__/graphics/icons/Machinery/Furnaces/Electric-Stone-Furnace-R1.png"
+stone_r2.icon_size = 256
 stone_r2.minable.result = "electric-stone-furnace"
 stone_r2.fast_replaceable_group = "furnace"
 stone_r2.max_health = 250
@@ -45,25 +45,28 @@ stone_r2.allowed_effects = add_quality_effect_if_available(
 )
 stone_r2.graphics_set = {
     animation = { layers = {{
-        filename = "__RExtended__/graphics/entity/Machinery/Furnaces/electric-stone-furnace/r2.png",
+        filename = "__RExtended__/graphics/entity/Machinery/Furnaces/Electric-Stone-Furnace-R1.png",
         priority = "extra-high",
-        width = 192,
-        height = 128,
+        width = 384,
+        height = 256,
         frame_count = 1,
         shift = {0.46875, 0 },
-        scale = 0.5
+        scale = 0.25
     }}},
     working_visualisations = {{
-        north_position = { 0.078125, 0.5234375},
-        west_position = { 0.078125, 0.5234375},
-        south_position = { 0.078125, 0.5234375},
-        east_position = { 0.078125, 0.5234375},
+        north_position = {0, 0},
+        west_position = {0, 0},
+        south_position = {0, 0},
+        east_position = {0, 0},
         animation = {
-            filename = "__RExtended__/graphics/entity/Machinery/Furnaces/electric-stone-furnace/r2-fire.png",
-            width = 23,
-            height = 38,
-            frame_count = 12,
-            shift = {-0.125, 0.05 }
+            filename = "__RExtended__/graphics/entity/Machinery/Furnaces/Electric-Stone-Furnace-R1-Working.png",
+            width = 384,
+            height = 256,
+            frame_count = 24,
+            line_length = 8,
+            animation_speed = 0.25,
+            scale = 0.25,
+            shift = {0.46875, 0}
         }
     }}
 }

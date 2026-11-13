@@ -122,6 +122,30 @@ See [Reinforced Materials and Gears](ingredient-chains.md#reinforced-materials-a
 
 Recipe sources: `prototypes/Energy/Accumulators.lua`, `Boilers.lua`, `Poles.lua`, `Solar-Panels.lua`, and `Steam-Engines.lua`.
 
+### Fluid Pipe Chain
+
+```text
+Underground Copper Pipe R1
+   ├── Copper Pipe R1
+   └── Reinforced Copper Plate
+
+Copper Pipe R1
+   ├── Reinforced Copper Plate
+   └── Glue
+
+Underground Iron Pipe R2
+   ├── Iron Pipe R2
+   └── Reinforced Iron Plate
+
+Iron Pipe R2
+   ├── Reinforced Iron Plate
+   └── Glue
+```
+
+The underground pipe recipes also use the corresponding regular pipe as an ingredient. See [Reinforced Materials and Gears](ingredient-chains.md#reinforced-materials-and-gears) and [Glue and Cable Chain](ingredient-chains.md#glue-and-cable-chain) for those ingredient chains.
+
+Recipe source: `prototypes/Products/Pipes.lua`.
+
 ## Storage
 
 ### Warehouse R1
@@ -382,9 +406,13 @@ Purificator Tool (Filled)
 Purificator Tool (Empty)
    └── Reinforced Iron Plate
 
-Pure Air Recipe
-   └── Purificator Tool (Filled)
-       └── returns Purificator Tool (Empty)
+Purificator Tool Use (recipe named "Pure Air")
+   ├── Consumes Purificator Tool (Filled)
+   │      ├── Purificator Tool (Empty)
+   │      └── Water
+   └── Returns Purificator Tool (Empty)
+
+The recipe does not produce a separate Pure Air item; it consumes a filled tool and returns an empty one.
 ```
 
 See [Reinforced Materials and Gears](ingredient-chains.md#reinforced-materials-and-gears), [Glue and Cable Chain](ingredient-chains.md#glue-and-cable-chain), and [Solar Cell Chain](ingredient-chains.md#solar-cell-chain) for expanded mod-added components.

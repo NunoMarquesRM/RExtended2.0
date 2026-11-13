@@ -43,8 +43,10 @@ Initial Products
                                                   ├── Advanced Ore Processing R1
 Electric Furnace R1 ── Advanced Formation Furnace┘      └── Advanced Ore Processing R2
 
-Electric Furnace R1 ── Machinery R1 ── Advanced Half Assembler R2
-                                  └── Water Product R1 ── Advanced Water R2
+Electric Furnace R1 ── Machinery R1 ──┐
+                                      ├── Advanced Half Assembler R2
+Electric Furnace R2 ── Machinery R2 ──┘
+                       Machinery R1 ── Water Product R1 ── Advanced Water R2
 
 Electric Furnace R2 ── Machinery R2 ── Machinery R3
 
@@ -54,6 +56,7 @@ Refinery R1 ── Oil Advanced Processing R1 ── Oil Special Processing R1
 
 Charcoal R1 ── Refined Coal R1 ── Plastics R1
                          └── Advanced Formation Furnace
+                                  └── Refined Coal R2
 
 Steam Energy R2 + Oil Processing ── Diesel Energy R1
 
@@ -89,6 +92,7 @@ Tech details and recipe unlocks:
 - **Oil Special Processing R1** (Oil Advanced Processing R1): special heavy/light oil, petroleum, and combined oil processing recipes.
 - **Charcoal R1** (Logistics): wood-to-coal recipe.
 - **Refined Coal R1** (Charcoal R1 + Clean Products): clean coal and alternate Glue V2 recipes.
+- **Refined Coal R2** (Advanced Formation Furnace): Infused Coal and Infuse Tool R1 recipes.
 - **Plastics R1** (Plastics + Refined Coal R1): alternate plastic bar recipe.
 - **Diesel Energy R1** (Steam Energy R2 + Oil Processing): Enriched Coal, Diesel Fuel, and Enrichment Chamber R1 recipes.
 - **Silicon Processing** (Solar Energy): Blue Quartz and Crystalline Silicon recipes.
@@ -97,7 +101,7 @@ Tech details and recipe unlocks:
 - **Advanced Centrifuge R2** (Nuclear Power + Kovarex Enrichment Process + Advanced Half Assembler R2): Centrifuge R2.
 - **Warehouse Technology** (Steel Processing): Warehouse R1.
 - **Big Storage Tank R1** (Fluid Handling): Big Storage Tank R1.
-- **Big Storage Tank R2** (Big Storage Tank R1): Big Storage Tank R2.
+- **Big Storage Tank R2** (Big Storage Tank R1): Big Storage Tank R2 and the Copper/Iron Pipe R1/R2 and underground pipe recipes.
 - **Elite Storage Tank R3** (Big Storage Tank R2): Elite Storage Tank R3.
 - **Electric Mining R2** (Automation 2): Mining Drill R2.
 - **Electric Mining R3** (Electric Mining R2): Mining Drill R3.
@@ -134,7 +138,9 @@ Worker Robot Battery 1 [Robotics]
 - Red Robots requires Automation, Logistic, Chemical, Production, and Utility science packs. It unlocks Red Logistic/Construction Robots, Red Roboport, and the five Red logistic chests.
 - Worker Robot Battery 1 requires Automation, Logistic, and Chemical packs. Battery 4 adds Production; Battery 8 adds Utility; Battery 12 adds Space. These are infinite technologies with research costs that scale by level.
 
-## Railworld
+## Railworld (requires the RERailworld mod)
+
+These technologies are loaded only when `RERailworld` is installed.
 
 ```text
 Electric Railway R1

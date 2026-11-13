@@ -1,3 +1,4 @@
+-- Startup
 data:extend({
     {
         type = "bool-setting",
@@ -43,5 +44,54 @@ data:extend({
         default_value = true,
         localised_name = "Enable mining speed research",
         localised_description = "Adds the mining speed research chain."
+    }
+})
+
+-- Map (runtime-global)
+data:extend({
+    {
+        type = "int-setting",
+        name = "red-build-distance-bonus",
+        setting_type = "runtime-global",
+        default_value = 0,
+        maximum_value = 100000,
+        minimum_value = 0,
+        order = "a-a"
+    },
+    {
+        type = "int-setting",
+        name = "red-reach-distance-bonus",
+        setting_type = "runtime-global",
+        default_value = 0,
+        maximum_value = 100000,
+        minimum_value = 0,
+        order = "a-b"
+    },
+    {
+        type = "int-setting",
+        name = "red-resource-reach-distance-bonus",
+        setting_type = "runtime-global",
+        default_value = 0,
+        maximum_value = 100000,
+        minimum_value = 0,
+        order = "a-c"
+    },
+    {
+        type = "int-setting",
+        name = "red-item-drop-distance-bonus",
+        setting_type = "runtime-global",
+        default_value = 0,
+        maximum_value = 1000,
+        minimum_value = 0,
+        order = "a-d"
+    },
+    {
+        type = "int-setting",
+        name = "red-item-pickup-distance-bonus",
+        setting_type = "runtime-global",
+        default_value = 0,
+        maximum_value = 100,
+        minimum_value = 0,
+        order = "a-e"
     }
 })

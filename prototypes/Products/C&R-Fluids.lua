@@ -65,22 +65,22 @@ data:extend({
         subgroup = "plate-products",
         order = "b-b-c"
     },
-    create_item("pressurized-water-r1", "HR/Pressurized-Water-R1", 256,
+    create_item("pressurized-water-r1", "Pressurized-Water-R1", 256,
         "other-products", "z-b", 23, 100, "0.1kJ",
         { r=189, g=189, b=189 },
         { r=130, g=130, b=130 }, 0.460, 0.400
     ),
-    create_item("molten-iron-r1", "HR/Molten-Iron-R1", 256,
+    create_item("molten-iron-r1", "Molten-Iron-R1", 256,
         "plate-products", "b-b-a", 110, 150, "1kJ",
         { r=20, g=23, b=62 },
         { r=65, g=68, b=109 }, 0.200, 0.200
     ),
-    create_item("molten-copper-r1", "HR/Molten-Copper-R1", 256,
+    create_item("molten-copper-r1", "Molten-Copper-R1", 256,
         "plate-products", "b-b-b", 110, 150, "1kJ",
         { r=85, g=28, b=12 },
         { r=65, g=13, b=10 }, 0.200, 0.200
     ),
-    create_item("molten-steel-r1", "HR/Molten-Steel-R1", 256,
+    create_item("molten-steel-r1", "Molten-Steel-R1", 256,
         "plate-products", "b-b-c", 110, 150, "1kJ",
         { r=85, g=28, b=12 },
         { r=65, g=13, b=10 }, 0.200, 0.200
@@ -92,7 +92,7 @@ data:extend({
     {
         type = "recipe",
         name = "water-r1",
-        icon = "__RExtended__/graphics/icons/CR_Fluids/HR/Water-R1.png",
+        icon = "__RExtended__/graphics/icons/CR_Fluids/Water-R1.png",
         icon_size = 256,
         energy_required = 1,
         enabled = false,
@@ -153,22 +153,22 @@ data:extend({
         },
         results = {{type = "fluid", name = "lithium-r1", amount = 50, temperature = 300}}
     },
-    create_item("diesel-fuel", "HR/Diesel-Fuel-R1", 256,
+    create_item("diesel-fuel", "Diesel-Fuel-R1", 256,
         "fluid-products", "k-a", 300, 300, "2MJ",
         { r=0.8, g=0.7, b=0 },
         { r=0.5, g=0.4, b=0 }, 0.4, 0.59
     ),
-    create_item("molten-coal-r1", "HR/Molten-Coal-R1", 256,
+    create_item("molten-coal-r1", "Molten-Coal-R1", 256,
         "fluid-products", "k-b", 110, 150, "1kJ",
         { r=85, g=28, b=12 },
         { r=65, g=13, b=10 }, 0.200, 0.200
     ),
-    create_item("enriched-petro-r1", "HR/Enriched-Petroleum-R1", 256,
+    create_item("enriched-petro-r1", "Enriched-Petroleum-R1", 256,
         "fluid-products", "k-c", 110, 150, "1kJ",
         { r=85, g=28, b=12 },
         { r=65, g=13, b=10 }, 0.200, 0.200
     ),
-    create_item("lithium-r1", "HR/Lithium-R1", 256,
+    create_item("lithium-r1", "Lithium-R1", 256,
         "fluid-products", "k-d", 300, 300, "0.2kJ",
         { r=0.8, g=0.7, b=0 },
         { r=0.5, g=0.4, b=0 }, 0.200, 0.200
@@ -181,8 +181,8 @@ data:extend({
     {-- Basic Heavy
         type = "recipe",
         name = "oil-basic-heavy-r1",
-        icon = "__RExtended__/graphics/icons/CR_Fluids/oil-basic-heavy-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/CR_Fluids/Oil-Basic-Heavy-R1.png",
+        icon_size = 256,
         categories = {"red-oil-process"},
         enabled = false,
         energy_required = 5,
@@ -194,8 +194,8 @@ data:extend({
     {-- Basic Light
         type = "recipe",
         name = "oil-basic-light-r1",
-        icon = "__RExtended__/graphics/icons/CR_Fluids/oil-basic-light-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/CR_Fluids/Oil-Basic-Light-R1.png",
+        icon_size = 256,
         categories = {"red-oil-process"},
         enabled = false,
         energy_required = 5,
@@ -207,8 +207,8 @@ data:extend({
     {-- Advanced Heavy
         type = "recipe",
         name = "oil-advanced-heavy-r1",
-        icon = "__RExtended__/graphics/icons/CR_Fluids/oil-advanced-heavy-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/CR_Fluids/Oil-Advanced-Heavy-R1.png",
+        icon_size = 256,
         categories = {"red-oil-process"},
         enabled = false,
         energy_required = 5,
@@ -223,8 +223,8 @@ data:extend({
     {-- Advanced Light
         type = "recipe",
         name = "oil-advanced-light-r1",
-        icon = "__RExtended__/graphics/icons/CR_Fluids/oil-advanced-light-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/CR_Fluids/Oil-Advanced-Light-R1.png",
+        icon_size = 256,
         categories = {"red-oil-process"},
         enabled = false,
         energy_required = 5,
@@ -239,8 +239,8 @@ data:extend({
     {-- Advanced Petroleum
         type = "recipe",
         name = "oil-advanced-petroleum-r1",
-        icon = "__RExtended__/graphics/icons/CR_Fluids/oil-advanced-petroleum-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/CR_Fluids/Oil-Advanced-Petroleum-R1.png",
+        icon_size = 256,
         categories = {"red-oil-process"},
         enabled = false,
         energy_required = 5,
@@ -255,8 +255,8 @@ data:extend({
     {-- Elite Heavy
         type = "recipe",
         name = "oil-special-heavy-r1",
-        icon = "__RExtended__/graphics/icons/CR_Fluids/oil-special-heavy-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/CR_Fluids/Oil-Special-Heavy-R1.png",
+        icon_size = 256,
         categories = {"red-oil-process"},
         enabled = false,
         energy_required = 5,
@@ -272,8 +272,8 @@ data:extend({
     {-- Elite Light
         type = "recipe",
         name = "oil-special-light-r1",
-        icon = "__RExtended__/graphics/icons/CR_Fluids/oil-special-light-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/CR_Fluids/Oil-Special-Light-R1.png",
+        icon_size = 256,
         categories = {"red-oil-process"},
         enabled = false,
         energy_required = 5,
@@ -289,8 +289,8 @@ data:extend({
     {-- Elite Petroleum
         type = "recipe",
         name = "oil-special-petroleum-r1",
-        icon = "__RExtended__/graphics/icons/CR_Fluids/oil-special-petroleum-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/CR_Fluids/Oil-Special-Petroleum-R1.png",
+        icon_size = 256,
         categories = {"red-oil-process"},
         enabled = false,
         energy_required = 5,
@@ -306,8 +306,8 @@ data:extend({
     {-- Elite Processing
         type = "recipe",
         name = "oil-special-process-r1",
-        icon = "__RExtended__/graphics/icons/CR_Fluids/oil-special-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/CR_Fluids/Oil-Special-R1.png",
+        icon_size = 256,
         categories = {"red-oil-process"},
         enabled = false,
         energy_required = 5,

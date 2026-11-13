@@ -6,8 +6,6 @@ So right now what i had found from v >= 2.0:
         https://mods.factorio.com/mod/tree-eraser
     - Rock Eraser
         https://mods.factorio.com/mod/rock-eraser
-    - AAI Containers & Warehouses -> Big warehouse entity
-        https://mods.factorio.com/mod/aai-containers
     - Robot Battery Research
         https://mods.factorio.com/mod/Robot_Battery_Research2
     - NPUtils Redux

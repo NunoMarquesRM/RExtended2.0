@@ -5,7 +5,7 @@ require("prototypes.Machinery.Machinery-Control")
 -- Quality of Life
 require("prototypes.Products.TreeRockEraser")
 require("prototypes.Products.Pipes-Cover")
-
+require("prototypes.Calculator")
 require("prototypes.Tech.Technology-QoL")
 
 
@@ -42,6 +42,7 @@ require("prototypes.Machinery.Compressor")
 require("prototypes.Machinery.ChemicalMachine")
 require("prototypes.Machinery.Refinery")
 require("prototypes.Machinery.Air-Purification")
+require("prototypes.Machinery.Washer-Chambers")
 
 
 -- Military

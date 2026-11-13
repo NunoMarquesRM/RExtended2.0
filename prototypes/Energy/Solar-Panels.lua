@@ -16,7 +16,7 @@ local function create_solar_panel_item(tier, order, stack_size)
 
     item.name = "solar-panel-r" .. tier
     item.icon = "__RExtended__/graphics/icons/Energy/Solar-Panels/solar-panel-r" .. tier .. ".png"
-    item.icon_size = 32
+    item.icon_size = tier >= 3 and 256 or 128
     item.subgroup = "power-solar"
     item.order = "g-" .. order
     item.place_result = item.name
@@ -30,7 +30,7 @@ local function create_solar_panel_entity(tier, max_health, production)
 
     entity.name = "solar-panel-r" .. tier
     entity.icon = "__RExtended__/graphics/icons/Energy/Solar-Panels/solar-panel-r" .. tier .. ".png"
-    entity.icon_size = 32
+    entity.icon_size = 128
     entity.minable.result = entity.name
     entity.max_health = max_health
     entity.picture.layers = {
