@@ -1,4 +1,23 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.5.7
+Date: 13.11.2026
+  Bugfixes:
+    - Removed repeated entries so the changelog displays correctly in-game.
+  Translation:
+    - Fixed an incorrect Japanese translation for "div0 error" in the calculator (by K.Tarutaru).
+  Graphics:
+    - Redesigned Water Condenser R1 visuals and animation; corrected proportions and pipe fit, and
+      updated Atmospheric Processing artwork.
+    - Refreshed copper and iron pipe, connector, and inventory icon artwork; refined seams while
+      preserving the original scale and connection layouts.
+    - Redesigned Elite Storage Tank R3 artwork and aligned its connectors with the pipe grid;
+      updated its shadow, inventory, and technology icons.
+---------------------------------------------------------------------------------------------------
+Version: 2.5.6
+Date: 13.11.2026
+  Bugfixes:
+    - For some reason, the download keeps failing.
+---------------------------------------------------------------------------------------------------
 Version: 2.5.5
 Date: 13.11.2026
   Major Features:
@@ -138,7 +157,8 @@ Date: 07.11.2026
     - Redesigned the Elite Warehouse entity with silver armor, gold braces, and emerald circuitry.
     - Updated the warehouse technology icon to match the Elite Warehouse redesign.
     - Updated the Initial Products technology icon to show the four items it unlocks.
-    - Updated the Red Robots technology icon to show the roboport, both robots, and a storage chest.
+    - Updated the Red Robots technology icon to show the roboport, both robots, and a storage
+      chest.
     - Updated technology icons from 128x128 to 256x256 for Electric Energy Poles 1,
       Electric Energy Poles 2, and Exoskeleton Equipment R2.
     - Added distinct 256x256 icons for Worker Robot Battery tiers 1, 4, 8, and 12, replacing the

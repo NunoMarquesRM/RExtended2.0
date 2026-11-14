@@ -597,7 +597,7 @@ data:extend({
         }
     ),
     -- Big Storage Tank R3 - 5M
-    create_tech("elite-storage-tank-r3", "Storage/Elite-storage-tank-r3", 128, "c-e-h",
+    create_tech("elite-storage-tank-r3", "Storage/Elite-storage-tank-r3", 256, "c-e-h",
         {"big-storage-tank-r2"},
         {
             count = 500,

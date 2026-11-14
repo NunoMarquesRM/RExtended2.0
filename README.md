@@ -1,6 +1,6 @@
 # **Next Steps & Suggestions**
 
- - Check the discussion with this title for more information or check the [Trello Board](https://trello.com/b/thPKQ9S1/redextended-20-factorio-mod).
+ - Check the [Trello Board](https://trello.com/b/thPKQ9S1/redextended-20-factorio-mod) or enter the [discord channel](https://discord.gg/tMcqggQVkr) to make some suggestions.
 
 
 # Features
@@ -11,7 +11,6 @@
 - Configurable build, interaction, and resource reach bonuses through Mod settings.
 - An in-game calculator with calculation history, accessible from its shortcut.
 - Quality mod support for quality modules in supported machines.
-- Centrifuge R2, a high-speed centrifuge for advanced processing.
 - Expanded item and fluid storage, plus custom logistic and construction robots.
 - A selection tool for removing trees and supported rock entities.
 - Trains: [Red Railworld Extended](https://mods.factorio.com/mod/RERailworld)
@@ -112,6 +111,10 @@ The tree-rock-eraser selection tool removes trees and supported rock entities in
 Rock support includes entities from the base game and Alien Biomes when installed.
 It does not remove arbitrary entities.
 
+#### Calculator
+
+An in-game calculator with calculation history, accessible from its shortcut.
+
 ---------------------------------------------------------------------------------------------------
 
 ## Defense
@@ -145,7 +148,6 @@ So right now what i had found from v >= 2.0:
     - [Simple Silicon -> Idea](https://mods.factorio.com/mod/SimpleSilicon)
     - [Extended Laser Turrets -> The idea for a mix of Ranger and Damager](https://mods.factorio.com/mod/Extended-Laser-Turrets)
     - [Yuoki Industries -> Boiler entity](https://mods.factorio.com/mod/Yuoki)
-    - [Krastorio 2 -> Elite Storage Tank](https://mods.factorio.com/mod/Krastorio2)
 
   - *Red Railworld Extended*:
     - [ElectricTrain](https://mods.factorio.com/mod/ElectricTrainFix)

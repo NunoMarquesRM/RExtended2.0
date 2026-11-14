@@ -1,3 +1,32 @@
+local function elite_tank_pipe_pictures()
+    local pictures = table.deepcopy(castpipepictures())
+    pictures.north.filename =
+        "__RExtended__/graphics/entity/Pipes/Elite/Elite-Tank-Connector-North.png"
+    pictures.north.shift = {0.28125, 2.015625}
+    pictures.south.filename =
+        "__RExtended__/graphics/entity/Pipes/Elite/Elite-Tank-Connector-South.png"
+    return pictures
+end
+
+local function elite_tank_pipe_covers()
+    local function cover(direction, shift)
+        return {
+            filename = "__RExtended__/graphics/entity/Pipes/Elite/Elite-Tank-Cap-" .. direction .. ".png",
+            priority = "extra-high",
+            width = 128,
+            height = 128,
+            scale = 0.25,
+            shift = shift
+        }
+    end
+    return {
+        north = util.empty_sprite(),
+        east = util.empty_sprite(),
+        south = cover("South", {0, -0.609375}),
+        west = util.empty_sprite()
+    }
+end
+
 local function create_storage_tank_item(name, icon_name, order, stack_size, icon_size)
     return {
         type = "item",
@@ -112,7 +141,7 @@ end
 data:extend({
     create_storage_tank_item("big-storage-tank-r1", "big-storage-tank-r1", "e-a", 25, 256),
     create_storage_tank_item("big-storage-tank-r2", "big-storage-tank-r2-advanced", "e-b", 20, 256),
-    create_storage_tank_item("elite-storage-tank-r3", "Elite-storage-tank-r3", "e-c", 10),
+    create_storage_tank_item("elite-storage-tank-r3", "Elite-storage-tank-r3", "e-c", 10, 256),
     
     create_storage_tank_recipe("big-storage-tank-r1",
         {
@@ -149,7 +178,7 @@ data:extend({
         type = "storage-tank",
         name = "elite-storage-tank-r3",
         icon = "__RExtended__/graphics/icons/Storage/Elite-storage-tank-r3.png",
-        icon_size = 32,
+        icon_size = 256,
         icon_draw_specification = {scale = 2},
         flags = {"placeable-player", "player-creation"},
         minable = {mining_time = 1, result = "elite-storage-tank-r3"},
@@ -164,7 +193,11 @@ data:extend({
         selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
         fluid_box = {
             volume = 5000000,
-            pipe_covers = pipecoverspictures(),
+            pipe_picture = elite_tank_pipe_pictures(),
+            draw_only_when_connected = true,
+            secondary_draw_orders = {north = -1, east = -1, south = 1, west = -1},
+            pipe_covers = elite_tank_pipe_covers(),
+            always_draw_covers = true,
             pipe_connections = {
                 { direction = defines.direction.north, position = {-1, -2}},
                 { direction = defines.direction.north, position = {0, -2} },
@@ -183,55 +216,27 @@ data:extend({
         window_bounding_box = {{-0.125, 0.6875}, {0.1875, 1.1875}},
         pictures = {
             picture = {
-                sheet = {
-                    filename = "__RExtended__/graphics/entity/Storage/BigStorageTank/Elite-storage-tank-r3.png",
-                    priority = "extra-high",
-                    frames = 1,
-                    scale = 0.5,
-                    width = 426,
-                    height = 426
+                sheets = {
+                    {
+                        filename = "__RExtended__/graphics/entity/Storage/BigStorageTank/Elite-storage-tank-r3-shadow.png",
+                        priority = "extra-high",
+                        frames = 1,
+                        scale = 0.25,
+                        width = 1152,
+                        height = 852,
+                        shift = {1.171875, 0},
+                        draw_as_shadow = true
+                    },
+                    {
+                        filename = "__RExtended__/graphics/entity/Storage/BigStorageTank/Elite-storage-tank-r3.png",
+                        priority = "extra-high",
+                        frames = 1,
+                        scale = 0.25,
+                        width = 852,
+                        height = 852
+                    }
                 }
             },
-            fluid_background = {
-                filename = "__base__/graphics/entity/storage-tank/fluid-background.png",
-                priority = "extra-high",
-                width = 32,
-                height = 15
-            },
-            window_background = {
-                filename = "__base__/graphics/entity/storage-tank/window-background.png",
-                priority = "extra-high",
-                width = 17,
-                height = 24
-            },
-            flow_sprite = {
-                filename = "__base__/graphics/entity/pipe/fluid-flow-low-temperature.png",
-                priority = "extra-high",
-                width = 160,
-                height = 20
-            },
-            gas_flow = {
-                filename = "__base__/graphics/entity/pipe/steam.png",
-                priority = "extra-high",
-                line_length = 10,
-                width = 24,
-                height = 15,
-                frame_count = 60,
-                axially_symmetrical = false,
-                direction_count = 1,
-                animation_speed = 0.25,
-                hr_version = {
-                    filename = "__base__/graphics/entity/pipe/hr-steam.png",
-                    priority = "extra-high",
-                    line_length = 10,
-                    width = 48,
-                        height = 30,
-                    frame_count = 60,
-                    axially_symmetrical = false,
-                    animation_speed = 0.25,
-                    direction_count = 1
-                }
-            }
         },
         flow_length_in_ticks = 360,
         vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
