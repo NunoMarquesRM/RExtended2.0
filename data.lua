@@ -28,6 +28,7 @@ require("prototypes.Energy.Poles")
 require("prototypes.Energy.Steam-Engines")
 
 -- Storage
+require("prototypes.Storage.Pumps")
 require("prototypes.Storage.Big-storage-tank")
 require("prototypes.Storage.Warehouses")
 

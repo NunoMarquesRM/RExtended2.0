@@ -3,9 +3,9 @@ function pipe_r1_covers()
         north = {
             filename = "__RExtended__/graphics/entity/Pipes/New/Pipe-R1-Cover-North.png",
             priority = "extra-high",
-            width = 128,
-            height = 128,
-            scale = 0.5
+            width = 256,
+            height = 256,
+            scale = 0.25
         },
         east = {
             filename = "__RExtended__/graphics/entity/Pipes/clear.png",
@@ -16,9 +16,9 @@ function pipe_r1_covers()
         south = {
             filename = "__RExtended__/graphics/entity/Pipes/New/Pipe-R1-Cover-South.png",
             priority = "extra-high",
-            width = 128,
-            height = 128,
-            scale = 0.5
+            width = 256,
+            height = 256,
+            scale = 0.25
         },
         west = {
             filename = "__RExtended__/graphics/entity/Pipes/clear.png",
@@ -34,9 +34,9 @@ function pipe_r2_covers()
         north = {
             filename = "__RExtended__/graphics/entity/Pipes/New/Pipe-R2-Cover-North.png",
             priority = "extra-high",
-            width = 128,
-            height = 128,
-            scale = 0.5
+            width = 256,
+            height = 256,
+            scale = 0.25
         },
         east = {
             filename = "__RExtended__/graphics/entity/Pipes/clear.png",
@@ -47,9 +47,9 @@ function pipe_r2_covers()
         south = {
             filename = "__RExtended__/graphics/entity/Pipes/New/Pipe-R2-Cover-South.png",
             priority = "extra-high",
-            width = 128,
-            height = 128,
-            scale = 0.5
+            width = 256,
+            height = 256,
+            scale = 0.25
         },
         west = {
             filename = "__RExtended__/graphics/entity/Pipes/clear.png",
@@ -58,6 +58,19 @@ function pipe_r2_covers()
             height = 32
         }
     }
+end
+
+function pipe_pump_covers()
+    local covers = pipe_r2_covers()
+    covers.south = {
+        filename = "__RExtended__/graphics/entity/Pipes/Water-Condenser-Cap-South-R1.png",
+        priority = "extra-high",
+        width = 256,
+        height = 256,
+        shift = {0, -0.5},
+        scale = 0.25
+    }
+    return covers
 end
 
 --- @param i integer
@@ -132,34 +145,34 @@ function compressor_pipepictures()
         north = {
             filename = "__RExtended__/graphics/entity/Pipes/compressor-pipe-n.png",
             priority = "extra-high",
-            width = 256,
-            height = 256,
+            width = 512,
+            height = 512,
             shift = {0.28125, 1.875},
-            scale = 0.5
+            scale = 0.25
         },
         south = {
             filename = "__RExtended__/graphics/entity/Pipes/compressor-pipe-s.png",
             priority = "extra-high",
-            width = 256,
-            height = 256,
+            width = 512,
+            height = 512,
             shift = {0.28125, -2},
-            scale = 0.5
+            scale = 0.25
         },
         east = {
             filename = "__RExtended__/graphics/entity/Pipes/compressor-pipe-e.png",
             priority = "extra-high",
-            width = 256,
-            height = 256,
+            width = 512,
+            height = 512,
             shift = {-1.71875, 0},
-            scale = 0.5
+            scale = 0.25
         },
         west = {
             filename = "__RExtended__/graphics/entity/Pipes/compressor-pipe-w.png",
             priority = "extra-high",
-            width = 256,
-            height = 256,
+            width = 512,
+            height = 512,
             shift = {2.28125, 0},
-            scale = 0.5
+            scale = 0.25
         }
     }
 end
@@ -168,34 +181,34 @@ function washerpipepictures()
         north = {
             filename = "__RExtended__/graphics/entity/Pipes/washer-pipe-n.png",
             priority = "extra-high",
-            width = 256,
-            height = 256,
+            width = 512,
+            height = 512,
             shift = {0.28125, 2},
-            scale = 0.5
+            scale = 0.25
         },
         east = {
             filename = "__RExtended__/graphics/entity/Pipes/washer-pipe-e.png",
             priority = "extra-high",
-            width = 256,
-            height = 256,
+            width = 512,
+            height = 512,
             shift = {-1.71875, 0},
-            scale = 0.5
+            scale = 0.25
         },
         south = {
             filename = "__RExtended__/graphics/entity/Pipes/washer-pipe-s.png",
             priority = "extra-high",
-            width = 256,
-            height = 256,
+            width = 512,
+            height = 512,
             shift = {0.28125, -2},
-            scale = 0.5
+            scale = 0.25
         },
         west = {
             filename = "__RExtended__/graphics/entity/Pipes/washer-pipe-w.png",
             priority = "extra-high",
-            width = 256,
-            height = 256,
+            width = 512,
+            height = 512,
             shift = {2.28125, 0},
-            scale = 0.5
+            scale = 0.25
         }
     }
 end
@@ -204,34 +217,34 @@ function castpipepictures()
         north = {
             filename = "__RExtended__/graphics/entity/Pipes/cast-chamber-pipe-n.png",
             priority = "extra-high",
-            width = 256,
-            height = 256,
+            width = 512,
+            height = 512,
             shift = {0.28125, 2},
-            scale = 0.5
+            scale = 0.25
         },
         east = {
             filename = "__RExtended__/graphics/entity/Pipes/cast-chamber-pipe-e.png",
             priority = "extra-high",
-            width = 256,
-            height = 256,
+            width = 512,
+            height = 512,
             shift = {-1.71875, 0},
-            scale = 0.5
+            scale = 0.25
         },
         south = {
             filename = "__RExtended__/graphics/entity/Pipes/cast-chamber-pipe-s.png",
             priority = "extra-high",
-            width = 256,
-            height = 256,
+            width = 512,
+            height = 512,
             shift = {0.28125, -2},
-            scale = 0.5
+            scale = 0.25
         },
         west = {
             filename = "__RExtended__/graphics/entity/Pipes/cast-chamber-pipe-w.png",
             priority = "extra-high",
-            width = 256,
-            height = 256,
+            width = 512,
+            height = 512,
             shift = {2.28125, 0},
-            scale = 0.5
+            scale = 0.25
         }
     }
 end
@@ -240,34 +253,34 @@ function forgepipepictures()
         north = {
             filename = "__RExtended__/graphics/entity/Pipes/heat-forge-n.png",
             priority = "extra-high",
-            width = 256,
-            height = 256,
+            width = 512,
+            height = 512,
             shift = {0.28125, 1.875},
-            scale = 0.5
+            scale = 0.25
         },
         south = {
             filename = "__RExtended__/graphics/entity/Pipes/heat-forge-s.png",
             priority = "extra-high",
-            width = 256,
-            height = 256,
+            width = 512,
+            height = 512,
             shift = {0.28125, -2},
-            scale = 0.5
+            scale = 0.25
         },
         east = {
             filename = "__RExtended__/graphics/entity/Pipes/heat-forge-e.png",
             priority = "extra-high",
-            width = 256,
-            height = 256,
+            width = 512,
+            height = 512,
             shift = {-1.71875, 0},
-            scale = 0.5
+            scale = 0.25
         },
         west = {
             filename = "__RExtended__/graphics/entity/Pipes/heat-forge-w.png",
             priority = "extra-high",
-            width = 256,
-            height = 256,
+            width = 512,
+            height = 512,
             shift = {2.28125, 0},
-            scale = 0.5
+            scale = 0.25
         }
     }
 end
@@ -276,34 +289,34 @@ function chemicalpipepictures()
         north = {
             filename = "__RExtended__/graphics/entity/Pipes/chemical-pipe-n.png",
             priority = "extra-high",
-            width = 256,
-            height = 256,
+            width = 512,
+            height = 512,
             shift = {0.28125, 2},
-            scale = 0.5
+            scale = 0.25
         },
         east = {
             filename = "__RExtended__/graphics/entity/Pipes/chemical-pipe-e.png",
             priority = "extra-high",
-            width = 256,
-            height = 256,
+            width = 512,
+            height = 512,
             shift = {-1.71875, 0},
-            scale = 0.5
+            scale = 0.25
         },
         south = {
             filename = "__RExtended__/graphics/entity/Pipes/chemical-pipe-s.png",
             priority = "extra-high",
-            width = 256,
-            height = 256,
+            width = 512,
+            height = 512,
             shift = {0.28125, -2},
-            scale = 0.5
+            scale = 0.25
         },
         west = {
             filename = "__RExtended__/graphics/entity/Pipes/chemical-pipe-w.png",
             priority = "extra-high",
-            width = 256,
-            height = 256,
+            width = 512,
+            height = 512,
             shift = {2.28125, 0},
-            scale = 0.5
+            scale = 0.25
         }
     }
 end

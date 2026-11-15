@@ -1,3 +1,11 @@
+-- The flat south face follows fluidbox recipe visibility, including connected ports.
+local water_condenser_r1_pipe_pictures = washerpipepictures()
+water_condenser_r1_pipe_pictures.south = {
+    filename = "__RExtended__/graphics/entity/Pipes/Water-Condenser-Cap-South-R1.png",
+    width = 256, height = 256, shift = {0, -0.5}, scale = 0.25
+}
+local water_condenser_r1_pipe_covers = pipe_r2_covers()
+water_condenser_r1_pipe_covers.south = util.empty_sprite()
 data:extend({
     create_machinery_item("heat-forge-chamber-r1",
         "__RExtended__/graphics/icons/Machinery/Bulk/heat-forge-chamber-r1.png",
@@ -152,8 +160,8 @@ data:extend({
         resistances = {{type = "fire",percent = 80}},
         fluid_boxes = {{
             production_type = "output",
-            pipe_picture = washerpipepictures(),
-            pipe_covers = pipe_r2_covers(),
+            pipe_picture = water_condenser_r1_pipe_pictures,
+            pipe_covers = water_condenser_r1_pipe_covers,
             volume = 1000,
             pipe_connections = { 
                 {flow_direction="output", direction = defines.direction.south, position = {0, 1}},
@@ -188,7 +196,23 @@ data:extend({
         },
         graphics_set = {
             animation = { 
-                filename = "__RExtended__/graphics/entity/Machinery/Bulk/Water-Condenser-Electric-R1-Animated.png", width = 256, height = 304, shift = {0.375, -0.71875}, frame_count = 24, line_length = 8, scale = 0.5, animation_speed=0.4,
+                layers = {
+                    {
+                        filename = "__RExtended__/graphics/entity/Machinery/Water-Condensers/Water-Condenser-R1-Idle.png",
+                        width = 512, height = 608, shift = {0, -0.5},
+                        frame_count = 1, line_length = 1, scale = 0.25
+                    }
+                }
+            },
+            working_visualisations = {
+                {
+                    always_draw = false,
+                    animation = {
+                        filename = "__RExtended__/graphics/entity/Machinery/Water-Condensers/Water-Condenser-R1-Working.png",
+                        width = 512, height = 608, shift = {0, -0.5}, scale = 0.25,
+                        frame_count = 60, line_length = 8, animation_speed = 0.5
+                    }
+                }
             }
         }
     },
@@ -452,7 +476,7 @@ data:extend({
         graphics_set = {
             animation = {
                 south = {
-                    filename = "__RExtended__/graphics/entity/Machinery/Bulk/Cast-Chamber-R1-Idle.png",
+                    filename = "__RExtended__/graphics/entity/Machinery/Cast-Chamber/Cast-Chamber-R1-Idle.png",
                     width = 512,
                     height = 512,
                     shift = {0.28125, 0.1875},
@@ -461,7 +485,7 @@ data:extend({
                     line_length = 1
                 },
                 west = {
-                    filename = "__RExtended__/graphics/entity/Machinery/Bulk/Cast-Chamber-R1-Idle.png",
+                    filename = "__RExtended__/graphics/entity/Machinery/Cast-Chamber/Cast-Chamber-R1-Idle.png",
                     width = 512,
                     height = 512,
                     shift = {0.28125, 0.1875},
@@ -470,7 +494,7 @@ data:extend({
                     line_length = 1
                 },
                 north = {
-                    filename = "__RExtended__/graphics/entity/Machinery/Bulk/Cast-Chamber-R1-Idle.png",
+                    filename = "__RExtended__/graphics/entity/Machinery/Cast-Chamber/Cast-Chamber-R1-Idle.png",
                     width = 512,
                     height = 512,
                     shift = {0.28125, 0.1875},
@@ -479,7 +503,7 @@ data:extend({
                     line_length = 1
                 },
                 east = {
-                    filename = "__RExtended__/graphics/entity/Machinery/Bulk/Cast-Chamber-R1-Idle.png",
+                    filename = "__RExtended__/graphics/entity/Machinery/Cast-Chamber/Cast-Chamber-R1-Idle.png",
                     width = 512,
                     height = 512,
                     shift = {0.28125, 0.1875},
@@ -498,7 +522,7 @@ data:extend({
                     south_position = {0, 0},
                     west_position = {0, 0},
                     animation = {
-                        filename = "__RExtended__/graphics/entity/Machinery/Bulk/Cast-Chamber-R1-Animated.png",
+                        filename = "__RExtended__/graphics/entity/Machinery/Cast-Chamber/Cast-Chamber-R1-Animated.png",
                         width = 512,
                         height = 512,
                         shift = {0.28125, 0.1875},
@@ -561,22 +585,22 @@ data:extend({
         graphics_set = {
             animation = {
                 south = {
-                    filename = "__RExtended__/graphics/entity/Machinery/Bulk/Heat-Forge-Chamber-R1-Idle.png",
+                    filename = "__RExtended__/graphics/entity/Machinery/Heat-Forge/Heat-Forge-Chamber-R1-Idle.png",
                     width = 512, height = 512, shift = {0.25, 0.125}, scale = 0.25,
                     frame_count = 1, line_length = 1,
                 },
                 west = {
-                    filename = "__RExtended__/graphics/entity/Machinery/Bulk/Heat-Forge-Chamber-R1-Idle.png",
+                    filename = "__RExtended__/graphics/entity/Machinery/Heat-Forge/Heat-Forge-Chamber-R1-Idle.png",
                     width = 512, height = 512, shift = {0.25, 0.125}, scale = 0.25,
                     frame_count = 1, line_length = 1,
                 },
                 north = {
-                    filename = "__RExtended__/graphics/entity/Machinery/Bulk/Heat-Forge-Chamber-R1-Idle.png",
+                    filename = "__RExtended__/graphics/entity/Machinery/Heat-Forge/Heat-Forge-Chamber-R1-Idle.png",
                     width = 512, height = 512, shift = {0.25, 0.125}, scale = 0.25,
                     frame_count = 1, line_length = 1,
                 },
                 east = {
-                    filename = "__RExtended__/graphics/entity/Machinery/Bulk/Heat-Forge-Chamber-R1-Idle.png",
+                    filename = "__RExtended__/graphics/entity/Machinery/Heat-Forge/Heat-Forge-Chamber-R1-Idle.png",
                     width = 512, height = 512, shift = {0.25, 0.125}, scale = 0.25,
                     frame_count = 1, line_length = 1,
                 },
@@ -587,7 +611,7 @@ data:extend({
                     north_position = {0, 0}, east_position = {0, 0},
                     south_position = {0, 0}, west_position = {0, 0},
                     animation = {
-                        filename = "__RExtended__/graphics/entity/Machinery/Bulk/Heat-Forge-Chamber-R1-Animated.png",
+                        filename = "__RExtended__/graphics/entity/Machinery/Heat-Forge/Heat-Forge-Chamber-R1-Animated.png",
                         width = 512, height = 512, shift = {0.25, 0.125}, scale = 0.25,
                         frame_count = 32, line_length = 8, animation_speed = 0.25,
                     },
@@ -809,10 +833,10 @@ CastChamberR2.module_specification = {
     module_info_icon_shift = {0, 0.2},
     module_info_multi_row_initial_height_modifier = -0.3
 }
-CastChamberR2.graphics_set.animation.south.filename = "__RExtended__/graphics/entity/Machinery/Bulk/cast-chamber-r2.png"
-CastChamberR2.graphics_set.animation.west.filename = "__RExtended__/graphics/entity/Machinery/Bulk/cast-chamber-r2.png"
-CastChamberR2.graphics_set.animation.north.filename = "__RExtended__/graphics/entity/Machinery/Bulk/cast-chamber-r2.png"
-CastChamberR2.graphics_set.animation.east.filename = "__RExtended__/graphics/entity/Machinery/Bulk/cast-chamber-r2.png"
+CastChamberR2.graphics_set.animation.south.filename = "__RExtended__/graphics/entity/Machinery/Cast-Chamber/cast-chamber-r2.png"
+CastChamberR2.graphics_set.animation.west.filename = "__RExtended__/graphics/entity/Machinery/Cast-Chamber/cast-chamber-r2.png"
+CastChamberR2.graphics_set.animation.north.filename = "__RExtended__/graphics/entity/Machinery/Cast-Chamber/cast-chamber-r2.png"
+CastChamberR2.graphics_set.animation.east.filename = "__RExtended__/graphics/entity/Machinery/Cast-Chamber/cast-chamber-r2.png"
 
 local HeatForgeChamberR2 = table.deepcopy(data.raw['assembling-machine']['heat-forge-chamber-r1'])
 -- Keep R2 on its original sprite layout rather than inheriting the HD R1 animation.
@@ -839,12 +863,14 @@ HeatForgeChamberR2.module_specification = {
     module_info_icon_shift = {0, 0.2},
     module_info_multi_row_initial_height_modifier = -0.3
 }
-HeatForgeChamberR2.graphics_set.animation.south.filename = "__RExtended__/graphics/entity/Machinery/Bulk/heat-forge-chamber-r2.png"
-HeatForgeChamberR2.graphics_set.animation.west.filename = "__RExtended__/graphics/entity/Machinery/Bulk/heat-forge-chamber-r2.png"
-HeatForgeChamberR2.graphics_set.animation.north.filename = "__RExtended__/graphics/entity/Machinery/Bulk/heat-forge-chamber-r2.png"
-HeatForgeChamberR2.graphics_set.animation.east.filename = "__RExtended__/graphics/entity/Machinery/Bulk/heat-forge-chamber-r2.png"
+HeatForgeChamberR2.graphics_set.animation.south.filename = "__RExtended__/graphics/entity/Machinery/Heat-Forge/heat-forge-chamber-r2.png"
+HeatForgeChamberR2.graphics_set.animation.west.filename = "__RExtended__/graphics/entity/Machinery/Heat-Forge/heat-forge-chamber-r2.png"
+HeatForgeChamberR2.graphics_set.animation.north.filename = "__RExtended__/graphics/entity/Machinery/Heat-Forge/heat-forge-chamber-r2.png"
+HeatForgeChamberR2.graphics_set.animation.east.filename = "__RExtended__/graphics/entity/Machinery/Heat-Forge/heat-forge-chamber-r2.png"
 
 local WaterCondenserR2 = table.deepcopy(data.raw['assembling-machine']['water-condenser-electric-r1'])
+WaterCondenserR2.fluid_boxes[1].pipe_picture = washerpipepictures()
+WaterCondenserR2.fluid_boxes[1].pipe_covers = pipe_r2_covers()
 WaterCondenserR2.name = "water-condenser-electric-r2"
 WaterCondenserR2.icon = "__RExtended__/graphics/icons/Machinery/Bulk/water-condenser-electric-r2.png"
 WaterCondenserR2.icon_size = 32
@@ -858,6 +884,12 @@ WaterCondenserR2.module_specification = {
     module_info_icon_shift = {0, 0.2},
     module_info_multi_row_initial_height_modifier = -0.3
 }
-WaterCondenserR2.graphics_set.animation.filename = "__RExtended__/graphics/entity/Machinery/Bulk/water-condenser-electric-r2.png"
+-- R2 keeps its original animated sheet independently of the R1 graphics.
+WaterCondenserR2.graphics_set.working_visualisations = nil
+WaterCondenserR2.graphics_set.animation = {
+    filename = "__RExtended__/graphics/entity/Machinery/Water-Condensers/water-condenser-electric-r2.png",
+    width = 256, height = 304, shift = {0.375, -0.71875}, scale = 0.5,
+    frame_count = 24, line_length = 8, animation_speed = 0.4
+}
 
 data:extend({CastChamberR2, HeatForgeChamberR2, WaterCondenserR2})

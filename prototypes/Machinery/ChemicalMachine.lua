@@ -100,7 +100,7 @@ data:extend({
         },
         graphics_set = {
             animation = {
-                filename = "__RExtended__/graphics/entity/Machinery/Bulk/Chemical-Machine-R1-Animated.png",
+                filename = "__RExtended__/graphics/entity/Machinery/Chemical-Machines/Chemical-Machine-R1-Animated.png",
                 width = 640,
                 height = 640,
                 frame_count = 24,
@@ -122,7 +122,7 @@ ChemicalMachineR2.energy_usage = "2MW"
 ChemicalMachineR2.next_upgrade = nil
 ChemicalMachineR2.energy_source.emissions_per_minute = { pollution = 36 }
 ChemicalMachineR2.graphics_set.animation = {
-    filename = "__RExtended__/graphics/entity/Machinery/Bulk/chemical-machine-r2.png",
+    filename = "__RExtended__/graphics/entity/Machinery/Chemical-Machines/chemical-machine-r2.png",
     width = 320,
     height = 320,
     frame_count = 8,
