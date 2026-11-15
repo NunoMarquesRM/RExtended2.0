@@ -578,7 +578,7 @@ data:extend({
     create_tech("big-storage-tank-r2", "Storage/big-storage-tank-r2-advanced", 256, "c-e-g",
         {"big-storage-tank-r1"},
         {
-            count = 350,
+            count = 375,
             ingredients = {
                 {science_packs.red, 1},
                 {science_packs.green, 1},
@@ -593,7 +593,8 @@ data:extend({
             create_unlock_recipe("pipe-r1"),
             create_unlock_recipe("pipe-under-r1"),
             create_unlock_recipe("pipe-r2"),
-            create_unlock_recipe("pipe-under-r2")
+            create_unlock_recipe("pipe-under-r2"),
+            create_unlock_recipe("pump-r1")
         }
     ),
     -- Big Storage Tank R3 - 5M

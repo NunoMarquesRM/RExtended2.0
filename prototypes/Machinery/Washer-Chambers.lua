@@ -76,10 +76,10 @@ data:extend({
         },
         graphics_set = {
             animation = {
-                south = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/Washer-Chamber-R1-Animated.png", width = 256, height = 256, shift = {0.28125, -0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, }    ,
-                west  = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/Washer-Chamber-R1-Animated.png", width = 256, height = 256, shift = {0.28125, -0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, }    ,
-                north = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/Washer-Chamber-R1-Animated.png", width = 256, height = 256, shift = {0.28125, -0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, }    ,
-                east  = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/Washer-Chamber-R1-Animated.png", width = 256, height = 256, shift = {0.28125, -0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, }    ,
+                south = { filename = "__RExtended__/graphics/entity/Machinery/Washer-Chambers/Washer-Chamber-R1-Animated.png", width = 256, height = 256, shift = {0.28125, -0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, }    ,
+                west  = { filename = "__RExtended__/graphics/entity/Machinery/Washer-Chambers/Washer-Chamber-R1-Animated.png", width = 256, height = 256, shift = {0.28125, -0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, }    ,
+                north = { filename = "__RExtended__/graphics/entity/Machinery/Washer-Chambers/Washer-Chamber-R1-Animated.png", width = 256, height = 256, shift = {0.28125, -0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, }    ,
+                east  = { filename = "__RExtended__/graphics/entity/Machinery/Washer-Chambers/Washer-Chamber-R1-Animated.png", width = 256, height = 256, shift = {0.28125, -0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, }    ,
             }
         }
     }
@@ -100,10 +100,10 @@ WasherChamberR2.module_specification = {
     module_info_icon_shift = {0, 0.2},
     module_info_multi_row_initial_height_modifier = -0.3
 }
-WasherChamberR2.graphics_set.animation.south.filename = "__RExtended__/graphics/entity/Machinery/Bulk/washer-chamber-r2.png"
-WasherChamberR2.graphics_set.animation.west.filename = "__RExtended__/graphics/entity/Machinery/Bulk/washer-chamber-r2.png"
-WasherChamberR2.graphics_set.animation.north.filename = "__RExtended__/graphics/entity/Machinery/Bulk/washer-chamber-r2.png"
-WasherChamberR2.graphics_set.animation.east.filename = "__RExtended__/graphics/entity/Machinery/Bulk/washer-chamber-r2.png"
+WasherChamberR2.graphics_set.animation.south.filename = "__RExtended__/graphics/entity/Machinery/Washer-Chambers/washer-chamber-r2.png"
+WasherChamberR2.graphics_set.animation.west.filename = "__RExtended__/graphics/entity/Machinery/Washer-Chambers/washer-chamber-r2.png"
+WasherChamberR2.graphics_set.animation.north.filename = "__RExtended__/graphics/entity/Machinery/Washer-Chambers/washer-chamber-r2.png"
+WasherChamberR2.graphics_set.animation.east.filename = "__RExtended__/graphics/entity/Machinery/Washer-Chambers/washer-chamber-r2.png"
 
 
 data:extend({WasherChamberR2})

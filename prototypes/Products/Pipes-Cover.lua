@@ -60,6 +60,19 @@ function pipe_r2_covers()
     }
 end
 
+function pipe_pump_covers()
+    local covers = pipe_r2_covers()
+    covers.south = {
+        filename = "__RExtended__/graphics/entity/Pipes/Water-Condenser-Cap-South-R1.png",
+        priority = "extra-high",
+        width = 256,
+        height = 256,
+        shift = {0, -0.5},
+        scale = 0.25
+    }
+    return covers
+end
+
 --- @param i integer
 local function make_pipe_r_visualization(i)
     return

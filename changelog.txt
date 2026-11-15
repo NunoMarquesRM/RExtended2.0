@@ -1,11 +1,21 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.5.7
-Date: 13.11.2026
+Date: 15.11.2026
+  Features:
+    - Added the Advanced Pump:
+      - Pumps 4,800 fluid/s with 180 kW active consumption and an 800-unit internal fluid capacity.
+      - Custom artwork for all four directions, wagon connectors, and its inventory icon.
+      - Localized names in English, Portuguese, Brazilian Portuguese, and Japanese.
   Bugfixes:
     - Removed repeated entries so the changelog displays correctly in-game.
+    - Fixed Refinery R1's north-facing inlets and south-facing outlets:
+      - Corrected pipe alignment and inlet thickness to match connected pipes and caps.
+      - Removed protruding pipe lips and repaired collar transitions, sprite gaps, and shadows.
   Translation:
     - Fixed an incorrect Japanese translation for "div0 error" in the calculator (by K.Tarutaru).
   Graphics:
+    - Updated Refinery R1's flare animation with a brighter core and blended emerald edges;
+      doubled frame resolution and offset the two stacks' animation cycles.
     - Redesigned Water Condenser R1 visuals and animation; corrected proportions and pipe fit, and
       updated Atmospheric Processing artwork.
     - Refreshed copper and iron pipe, connector, and inventory icon artwork; refined seams while

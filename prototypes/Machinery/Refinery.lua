@@ -71,11 +71,11 @@ data:extend({
                     animation = {
                         filename = "__RExtended__/graphics/entity/Machinery/Refinery/Refinery-r1-fire.png",
                         line_length = 10,
-                        width = 40,
-                        height = 81,
+                        width = 80,
+                        height = 162,
                         frame_count = 60,
                         animation_speed = 0.75,
-                        scale = 0.75,
+                        scale = 0.375,
                         shift = util.by_pixel(0, -14.25),
                     },
                     light = {intensity = 0.4, size = 6, color = {r = 1.0, g = 1.0, b = 1.0}}
@@ -86,13 +86,13 @@ data:extend({
                     south_position = {-1.306529, -3.234534},
                     west_position = {0.031250, -4.059307},
                     animation = {
-                        filename = "__RExtended__/graphics/entity/Machinery/Refinery/Refinery-r1-fire.png",
+                        filename = "__RExtended__/graphics/entity/Machinery/Refinery/Refinery-R1-Fire-Offset.png",
                         line_length = 10,
-                        width = 40,
-                        height = 81,
+                        width = 80,
+                        height = 162,
                         frame_count = 60,
                         animation_speed = 0.75,
-                        scale = 0.75,
+                        scale = 0.375,
                         shift = util.by_pixel(0, -14.25),
                     },
                     light = {intensity = 0.4, size = 6, color = {r = 1.0, g = 1.0, b = 1.0}}
@@ -108,9 +108,7 @@ data:extend({
         fluid_boxes = {
             {
                 production_type = "input",
-                pipe_covers = pipe_r2_covers(),
-                base_area = 10,
-                base_level = -1,
+                pipe_covers = pipe_pump_covers(),
                 volume = 1000,
                 pipe_connections = {{
                     flow_direction="input",
@@ -120,9 +118,7 @@ data:extend({
             },
             {
                 production_type = "input",
-                pipe_covers = pipe_r2_covers(),
-                base_area = 10,
-                base_level = -1,
+                pipe_covers = pipe_pump_covers(),
                 volume = 1000,
                 pipe_connections = {{
                     flow_direction="input",
@@ -132,8 +128,7 @@ data:extend({
             },
             {
                 production_type = "output",
-                pipe_covers = pipe_r2_covers(),
-                base_level = 1,
+                pipe_covers = pipe_pump_covers(),
                 volume = 1000,
                 pipe_connections = {{
                     flow_direction="output",
@@ -143,8 +138,7 @@ data:extend({
             },
             {
                 production_type = "output",
-                pipe_covers = pipe_r2_covers(),
-                base_level = 1,
+                pipe_covers = pipe_pump_covers(),
                 volume = 1000,
                 pipe_connections = {{
                     flow_direction="output",
@@ -154,8 +148,7 @@ data:extend({
             },
             {
                 production_type = "output",
-                pipe_covers = pipe_r2_covers(),
-                base_level = 1,
+                pipe_covers = pipe_pump_covers(),
                 volume = 1000,
                 pipe_connections = {{
                     flow_direction="output",
@@ -231,9 +224,11 @@ RefineryR2.working_visualisations = {
 
 -- Keep R2's original flare offsets instead of inheriting the redesigned stack positions.
 for index, visual in ipairs(RefineryR2.graphics_set.working_visualisations) do
+    visual.animation = table.deepcopy(RefineryR2.working_visualisations[index].animation)
     for _, direction in ipairs({"north_position", "east_position", "south_position", "west_position"}) do
         visual[direction] = table.deepcopy(RefineryR2.working_visualisations[index][direction])
     end
 end
 
 data:extend({RefineryR2})
+
