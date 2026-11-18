@@ -1,6 +1,6 @@
 data:extend({
     -- Electric Mining Drill R2
-    create_tech("electric-mining-r2", "Machinery/r-08", 128, "c-i-a",
+    create_tech("electric-mining-r2", "Machinery/Advanced-Electric-Mining-Drill-R2", 256, "c-i-a",
         {"automation-2"},
         {
             count = 400,

@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.5.7
-Date: 15.11.2026
+Date: 18.11.2026
   Features:
     - Added the Advanced Pump:
       - Pumps 4,800 fluid/s with 180 kW active consumption and an 800-unit internal fluid capacity.
@@ -14,8 +14,11 @@ Date: 15.11.2026
   Translation:
     - Fixed an incorrect Japanese translation for "div0 error" in the calculator (by K.Tarutaru).
   Graphics:
-    - Updated Refinery R1's flare animation with a brighter core and blended emerald edges;
-      doubled frame resolution and offset the two stacks' animation cycles.
+    - Updated Mining Drill R2 in all four directions:
+      - Replaced its inventory icon and increased its resolution from 32x32 to 256x256.
+      - Updated the technology icon from 128x128 to matching 256x256 artwork.
+      - Added rotating drill heads, moving conveyors, and pulsing cyan lights.
+    - Updated Refinery R1's flare animation with a brighter core and warm orange-gold edges.
     - Redesigned Water Condenser R1 visuals and animation; corrected proportions and pipe fit, and
       updated Atmospheric Processing artwork.
     - Refreshed copper and iron pipe, connector, and inventory icon artwork; refined seams while
