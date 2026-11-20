@@ -406,7 +406,66 @@ data:extend({
             categories = {"red-enrichment-chamber"},
             energy_required = 1
         }
-    )
+    ),
+    {-- Rocket Fuel R1
+        type = "recipe",
+        name = "rocket-fuel-r1",
+        icon = "__base__/graphics/icons/rocket-fuel.png",
+        energy_required = 20,
+        enabled = false,
+        subgroup = "chemical-products-r1",
+        order = "a-f",
+        categories = {"red-enrichment-chamber"},
+        ingredients = {
+            {type = "item", name = "clean-coal-r1", amount = 5},
+            {type = "fluid", name = "heavy-oil", amount = 25}
+        },
+        results = {{type = "item", name = "rocket-fuel", amount = 1}},
+        crafting_machine_tint = {
+            primary = {r = 1.0, g = 0.7, b = 0.0, a = 1.000},
+            secondary = {r = 1.0, g = 0.7, b = 0.0, a = 1.000}
+        },
+        allow_productivity = true
+    },
+    {-- Rocket Fuel R2
+        type = "recipe",
+        name = "rocket-fuel-r2",
+        icon = "__base__/graphics/icons/rocket-fuel.png",
+        energy_required = 15,
+        enabled = false,
+        subgroup = "chemical-products-r1",
+        order = "a-g",
+        categories = {"red-enrichment-chamber"},
+        ingredients = {
+            {type = "item", name = "clean-coal-r2", amount = 1},
+            {type = "fluid", name = "diesel-fuel", amount = 20}
+        },
+        results = {{type = "item", name = "rocket-fuel", amount = 2}},
+        crafting_machine_tint = {
+            primary = {r = 1.0, g = 0.7, b = 0.0, a = 1.000},
+            secondary = {r = 1.0, g = 0.7, b = 0.0, a = 1.000}
+        },
+        allow_productivity = true
+    },
+    {-- Rocket Fuel R3
+        type = "recipe",
+        name = "rocket-fuel-r3",
+        icon = "__base__/graphics/icons/rocket-fuel.png",
+        energy_required = 10,
+        enabled = false,
+        subgroup = "chemical-products-r1",
+        order = "a-h",
+        categories = {"red-enrichment-chamber"},
+        ingredients = {
+            {type = "item", name = "clean-coal-r3", amount = 2}
+        },
+        results = {{type = "item", name = "rocket-fuel", amount = 3}},
+        crafting_machine_tint = {
+            primary = {r = 1.0, g = 0.7, b = 0.0, a = 1.000},
+            secondary = {r = 1.0, g = 0.7, b = 0.0, a = 1.000}
+        },
+        allow_productivity = true
+    }
 })
 
 

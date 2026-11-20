@@ -1,67 +1,4 @@
 data:extend({
-    -- Electric Mining Drill R2
-    create_tech("electric-mining-r2", "Machinery/Advanced-Electric-Mining-Drill-R2", 256, "c-i-a",
-        {"automation-2"},
-        {
-            count = 400,
-            ingredients = {
-                {science_packs.red, 1},
-                {science_packs.green, 1}
-            },
-            time = 30
-        },
-        {create_unlock_recipe("mining-drill-r2")}
-    ),
-    -- Electric Mining Drill R3
-    create_tech("electric-mining-r3", "Machinery/r-09", 128, "c-i-b",
-        {"electric-mining-r2"},
-        {
-            count = 600,
-            ingredients = {
-                {science_packs.red, 1},
-                {science_packs.green, 1},
-                {science_packs.blue, 1},
-                {science_packs.purple, 1},
-                {science_packs.black, 1}
-            },
-            time = 25
-        },
-        {create_unlock_recipe("mining-drill-r3")}
-    ),
-    -- Electric Furnace R1
-    create_tech("electric-furnace-r1", "Machinery/Electric-Furnace-R1", 256, "a-d-b",
-        {"electronics"},
-        {
-            count = 60,
-            ingredients = {{science_packs.red, 1}},
-            time = 15
-        },
-        {
-            create_unlock_recipe("electric-stone-furnace"),
-            create_unlock_recipe("clean-steel-r1-v1"),
-            create_unlock_recipe("formation-furnace-r1"),
-            create_unlock_recipe("steel-plate-r1-v1")
-        }
-    ),
-    -- Electric Furnace R2 (use the vanilla icon)
-    (function()
-        local tech = create_tech("electric-furnace-r2", "Machinery/r-01", 256, "c-j-b",
-            {"advanced-material-processing"},
-            {
-                count = 100,
-                ingredients = {
-                    {science_packs.red, 1},
-                    {science_packs.green, 1},
-                    {science_packs.blue, 1}
-                },
-                time = 20
-            },
-            {create_unlock_recipe("electric-steel-furnace")}
-        )
-        tech.icon = "__base__/graphics/technology/advanced-material-processing.png"
-        tech.icon_mipmaps = 4
-        return tech
-    end)(),
     -- Silicon Processing
     create_tech("silicon-processing", "CR/Silicon-Processing-R1", 256, "c-n-a",
         {"solar-energy"},
@@ -78,8 +15,8 @@ data:extend({
             create_unlock_recipe("crystalline-silicon-r1")
         }
     ),
-    -- Machinery R1
-    create_tech("machinery-r1", "Assemblers/machinery-r1", 128, "a-d-c",
+    -- Compact Craft Machine R1
+    create_tech("machinery-r1", "Assemblers/Compact-Craft-Machine-R1", 256, "a-d-c",
         {"electric-furnace-r1"},
         {
             count = 100,
@@ -88,9 +25,9 @@ data:extend({
         },
         {create_unlock_recipe("half-assembler-r1")}
     ),
-    -- Machinery R2
-    create_tech("machinery-r2", "Assemblers/machinery-r2", 128, "c-j-c",
-        {"automation-2", "electric-furnace-r2"},
+    -- Craft Machine R1
+    create_tech("machinery-r2", "Assemblers/Craft-Machine-R1", 256, "c-j-c",
+        {"machinery-r1", "automation-2", "electric-furnace-r2"},
         {
             count = 200,
             ingredients = {
@@ -163,20 +100,23 @@ data:extend({
     ),
     -- Enriched Coal
     create_tech("diesel-energy-r1", "CR/Diesel-Fuel-R1", 256, "c-b-d",
-        {"steam-energy-r2", "oil-processing"},
+        {"refined-coal-r1","steam-energy-r2", "oil-processing"},
         {
-            count = 750,
+            count = 900,
             ingredients = {
                 {science_packs.red, 1},
                 {science_packs.green, 1},
                 {science_packs.blue, 1}
             },
-            time = 30
+            time = 40
         },
         {
             create_unlock_recipe("clean-coal-r3"),
             create_unlock_recipe("diesel-fuel"),
-            create_unlock_recipe("enrichment-chamber-r1")
+            create_unlock_recipe("enrichment-chamber-r1"),
+            create_unlock_recipe("rocket-fuel-r1"),
+            create_unlock_recipe("rocket-fuel-r2"),
+            create_unlock_recipe("rocket-fuel-r3")
         }
     ),
     -- Atmospheric Processing R1
@@ -260,23 +200,6 @@ data:extend({
             create_unlock_recipe("clean-copper-r1"),
             create_unlock_recipe("iron-plate-r1-v1"),
             create_unlock_recipe("copper-plate-r1-v1")
-        }
-    ),
-    -- Advanced Formation Furnace
-    create_tech("adv-formation-furnace-r1", "Machinery/Advanced-Formation-Furnace-R1", 128, "a-f-e",
-        {"electric-furnace-r1", "refined-coal-r1"},
-        {
-            count = 200,
-            ingredients = {
-                {science_packs.red, 1},
-                {science_packs.green, 1},
-                {science_packs.blue, 1}
-            },
-            time = 25
-        },
-        {
-            create_unlock_recipe("formation-furnace-electric-r1"),
-            create_unlock_recipe("clean-steel-r1-v2")
         }
     ),
     -- Advanced Ore Processing R1
@@ -614,5 +537,93 @@ data:extend({
             time = 30
         },
         {create_unlock_recipe("elite-storage-tank-r3")}
+    )
+})
+
+-- Mining
+data:extend({
+    -- Electric Mining Drill R2
+    create_tech("electric-mining-r2", "Machinery/Advanced-Electric-Mining-Drill-R2", 256, "c-i-a",
+        {"automation-2"},
+        {
+            count = 400,
+            ingredients = {
+                {science_packs.red, 1},
+                {science_packs.green, 1}
+            },
+            time = 30
+        },
+        {create_unlock_recipe("mining-drill-r2")}
+    ),
+    -- Electric Mining Drill R3
+    create_tech("electric-mining-r3", "Machinery/r-09", 128, "c-i-b",
+        {"electric-mining-r2"},
+        {
+            count = 600,
+            ingredients = {
+                {science_packs.red, 1},
+                {science_packs.green, 1},
+                {science_packs.blue, 1},
+                {science_packs.purple, 1},
+                {science_packs.black, 1}
+            },
+            time = 25
+        },
+        {create_unlock_recipe("mining-drill-r3")}
+    )
+})
+
+-- Furnaces
+data:extend({
+    -- Electric Furnace R1
+    create_tech("electric-furnace-r1", "Machinery/Electric-Furnace-R1", 256, "a-d-b",
+        {"electronics"},
+        {
+            count = 60,
+            ingredients = {{science_packs.red, 1}},
+            time = 15
+        },
+        {
+            create_unlock_recipe("electric-stone-furnace"),
+            create_unlock_recipe("clean-steel-r1-v1"),
+            create_unlock_recipe("formation-furnace-r1"),
+            create_unlock_recipe("steel-plate-r1-v1")
+        }
+    ),
+    -- Electric Furnace R2 (use the vanilla icon)
+    (function()
+        local tech = create_tech("electric-furnace-r2", "Machinery/r-01", 256, "c-j-b",
+            {"advanced-material-processing"},
+            {
+                count = 100,
+                ingredients = {
+                    {science_packs.red, 1},
+                    {science_packs.green, 1},
+                    {science_packs.blue, 1}
+                },
+                time = 20
+            },
+            {create_unlock_recipe("electric-steel-furnace")}
+        )
+        tech.icon = "__base__/graphics/technology/advanced-material-processing.png"
+        tech.icon_mipmaps = 4
+        return tech
+    end)(),
+    -- Advanced Formation Furnace
+    create_tech("adv-formation-furnace-r1", "Machinery/Advanced-Formation-Furnace-R1", 128, "a-f-e",
+        {"electric-furnace-r1", "refined-coal-r1"},
+        {
+            count = 200,
+            ingredients = {
+                {science_packs.red, 1},
+                {science_packs.green, 1},
+                {science_packs.blue, 1}
+            },
+            time = 25
+        },
+        {
+            create_unlock_recipe("formation-furnace-electric-r1"),
+            create_unlock_recipe("clean-steel-r1-v2")
+        }
     )
 })

@@ -1,13 +1,39 @@
+-- Iron connectors dedicated to Craft Machine R1; shared machine sprites stay independent.
+local function craft_machine_r1_pipe_pictures()
+    return {
+        north = {
+            filename = "__RExtended__/graphics/entity/Pipes/Craft-Machine-R1-Connector-North.png",
+            priority = "extra-high", width = 512, height = 512,
+            scale = 0.25, shift = {0.285, 2},
+        },
+        east = {
+            filename = "__RExtended__/graphics/entity/Pipes/Craft-Machine-R1-Connector-East.png",
+            priority = "extra-high", width = 512, height = 512,
+            scale = 0.25, shift = {-1.71875, 0},
+        },
+        south = {
+            filename = "__RExtended__/graphics/entity/Pipes/Craft-Machine-R1-Connector-South.png",
+            priority = "extra-high", width = 512, height = 512,
+            scale = 0.25, shift = {0.28125, -2},
+        },
+        west = {
+            filename = "__RExtended__/graphics/entity/Pipes/Craft-Machine-R1-Connector-West.png",
+            priority = "extra-high", width = 512, height = 512,
+            scale = 0.25, shift = {2.28125, 0},
+        },
+    }
+end
+
 data:extend({
     create_machinery_item("half-assembler-r1",
-        "__RExtended__/graphics/icons/Machinery/Assemblers/half-assembler-r1.png",
-        32, "machinery-assemblers", "a-a-a", 50),
+        "__RExtended__/graphics/icons/Machinery/Assemblers/Compact-Craft-Machine-R1.png",
+        256, "machinery-assemblers", "a-a-a", 50),
     create_machinery_item("half-assembler-r2",
         "__RExtended__/graphics/icons/Machinery/Assemblers/half-assembler-r2.png",
         32, "machinery-assemblers", "a-a-b", 50),
     create_machinery_item("assembler-r1",
-        "__RExtended__/graphics/icons/Machinery/Assemblers/assembler-r1.png",
-        32, "machinery-assemblers", "a-b-a", 50),
+        "__RExtended__/graphics/icons/Machinery/Assemblers/Craft-Machine-R1.png",
+        256, "machinery-assemblers", "a-b-a", 50),
     create_machinery_item("assembler-r2",
         "__RExtended__/graphics/icons/Machinery/Assemblers/assembler-r2.png",
         32, "machinery-assemblers", "a-b-b", 50),
@@ -55,8 +81,8 @@ data:extend({
     {--Half Assembler Machine
         type = "assembling-machine",
         name = "half-assembler-r1",
-        icon = "__RExtended__/graphics/icons/Machinery/Assemblers/half-assembler-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/Machinery/Assemblers/Compact-Craft-Machine-R1.png",
+        icon_size = 256,
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
         minable = {mining_time = 0.2, result = "half-assembler-r1"},
         max_health = 200,
@@ -87,22 +113,25 @@ data:extend({
                 { filename = "__base__/sound/assembling-machine-t1-2.ogg", volume = 0.8 },
             },
             idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
-            apparent_volume = 1.5,
+            apparent_volume = 1.5
         },
         graphics_set = {
             animation = {
-                south = { filename = "__RExtended__/graphics/entity/Machinery/Assemblers/half-assembler-r1.png", width = 192, height = 128, shift = {0.46875, -0.125}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=0.5, }    ,                            
-                west  = { filename = "__RExtended__/graphics/entity/Machinery/Assemblers/half-assembler-r1.png", width = 192, height = 128, shift = {0.46875, -0.125}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=0.5, }    ,                        
-                north = { filename = "__RExtended__/graphics/entity/Machinery/Assemblers/half-assembler-r1.png", width = 192, height = 128, shift = {0.46875, -0.125}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=0.5, }    ,                                
-                east  = { filename = "__RExtended__/graphics/entity/Machinery/Assemblers/half-assembler-r1.png", width = 192, height = 128, shift = {0.46875, -0.125}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=0.5, }    ,                                
+                filename = "__RExtended__/graphics/entity/Machinery/Assemblers/Half-Assembler-R1-Working.png",
+                width = 256,
+                height = 256,
+                frame_count = 60,
+                line_length = 8,
+                animation_speed = 0.5,
+                scale = 0.3
             }
         }
     },
     {--Assembler Machine R1
         type = "assembling-machine",
         name = "assembler-r1",
-        icon = "__RExtended__/graphics/icons/Machinery/Assemblers/assembler-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/Machinery/Assemblers/Craft-Machine-R1.png",
+        icon_size = 256,
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
         minable = {mining_time = 0.4, result = "assembler-r1"},
         max_health = 400,
@@ -138,40 +167,7 @@ data:extend({
         fluid_boxes = {
             {
                 production_type = "input",
-                pipe_picture = {
-                    north = {
-                        filename = "__RExtended__/graphics/entity/Machinery/Assemblers/assembler-r1-n.png",
-                        priority = "extra-high",
-                        width = 256,
-                        height = 256,
-                        shift = {0.40625, 2.25},
-                        scale = 0.5,
-                    },
-                    south = {
-                        filename = "__RExtended__/graphics/entity/Machinery/Assemblers/assembler-r1-s.png",
-                        priority = "extra-high",
-                        width = 256,
-                        height = 256,
-                        shift = {0.40625, -1.75},
-                        scale = 0.5,
-                    },
-                    east = {
-                        filename = "__RExtended__/graphics/entity/Machinery/Assemblers/assembler-r1-e.png",
-                        priority = "extra-high",
-                        width = 256,
-                        height = 256,
-                        shift = {-1.59375, 0.25},
-                        scale = 0.5,
-                    },
-                    west = {
-                        filename = "__RExtended__/graphics/entity/Machinery/Assemblers/assembler-r1-w.png",
-                        priority = "extra-high",
-                        width = 256,
-                        height = 256,
-                        shift = {2.40625, 0.25},
-                        scale = 0.5,
-                    }
-                },
+                pipe_picture = craft_machine_r1_pipe_pictures(),
                 pipe_covers = pipe_r2_covers(),
                 volume = 1000,
                 pipe_connections = {{flow_direction = "input", direction = defines.direction.north, position = {0, -1} }},
@@ -179,40 +175,7 @@ data:extend({
             },
             {
                 production_type = "output",
-                pipe_picture = {
-                    north = {
-                        filename = "__RExtended__/graphics/entity/Machinery/Assemblers/assembler-r1-n.png",
-                        priority = "extra-high",
-                        width = 256,
-                        height = 256,
-                        shift = {0.40625, 2.25},
-                        scale = 0.5,
-                    },
-                    south = {
-                        filename = "__RExtended__/graphics/entity/Machinery/Assemblers/assembler-r1-s.png",
-                        priority = "extra-high",
-                        width = 256,
-                        height = 256,
-                        shift = {0.40625, -1.75},
-                        scale = 0.5,
-                    },
-                    east = {
-                        filename = "__RExtended__/graphics/entity/Machinery/Assemblers/assembler-r1-e.png",
-                        priority = "extra-high",
-                        width = 256,
-                        height = 256,
-                        shift = {-1.59375, 0.25},
-                        scale = 0.5,
-                    },
-                    west = {
-                        filename = "__RExtended__/graphics/entity/Machinery/Assemblers/assembler-r1-w.png",
-                        priority = "extra-high",
-                        width = 256,
-                        height = 256,
-                        shift = {2.40625, 0.25},
-                        scale = 0.5,
-                    }
-                },
+                pipe_picture = craft_machine_r1_pipe_pictures(),
                 pipe_covers = pipe_r2_covers(),
                 volume = 1000,
                 pipe_connections = {{flow_direction = "output", direction = defines.direction.south, position = {0, 1} }},
@@ -223,16 +186,14 @@ data:extend({
         fluid_boxes_off_when_no_fluid_recipe = true,
         graphics_set = {
             animation = {
-                layers = {{
-                    filename = "__RExtended__/graphics/entity/Machinery/Assemblers/assembler-r1.png",
-                    priority = "high",
-                    width = 256,
-                    height = 256,
-                    frame_count = 16,
-                    line_length = 8,
-                    shift = {0.40625, 0.25},
-                    scale = 0.5,
-                }}
+                filename = "__RExtended__/graphics/entity/Machinery/Assemblers/Craft-Machine-R1-Working.png",
+                priority = "high",
+                width = 384,
+                height = 384,
+                frame_count = 60,
+                line_length = 8,
+                animation_speed = 0.333333,
+                scale = 0.3
             }
         }
     },
@@ -389,9 +350,19 @@ HalfAssemblerMachineR2.module_specification = {
     module_info_icon_shift = {0, 0.2},
     module_info_multi_row_initial_height_modifier = -0.3
 }
-HalfAssemblerMachineR2.graphics_set.animation.south.filename = "__RExtended__/graphics/entity/Machinery/Assemblers/half-assembler-r2.png"
-HalfAssemblerMachineR2.graphics_set.animation.west.filename = "__RExtended__/graphics/entity/Machinery/Assemblers/half-assembler-r2.png"
-HalfAssemblerMachineR2.graphics_set.animation.north.filename = "__RExtended__/graphics/entity/Machinery/Assemblers/half-assembler-r2.png"
-HalfAssemblerMachineR2.graphics_set.animation.east.filename = "__RExtended__/graphics/entity/Machinery/Assemblers/half-assembler-r2.png"
+-- Keep R2 on its original sprite geometry instead of inheriting the R1 redesign.
+HalfAssemblerMachineR2.graphics_set = { animation = {} }
+for _, direction in ipairs({"south", "west", "north", "east"}) do
+    HalfAssemblerMachineR2.graphics_set.animation[direction] = {
+        filename = "__RExtended__/graphics/entity/Machinery/Assemblers/half-assembler-r2.png",
+        width = 192,
+        height = 128,
+        shift = {0.46875, -0.125},
+        scale = 0.5,
+        frame_count = 16,
+        line_length = 8,
+        animation_speed = 0.5,
+    }
+end
 
 data:extend({HalfAssemblerMachineR2})

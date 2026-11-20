@@ -96,50 +96,50 @@ data:extend({
                     layers = {{
                         priority = "extra-high",
                         filename = "__RExtended__/graphics/entity/Machinery/Mining-Drill/Mining-Drill-R2-North.png",
-                        width = 360,
-                        height = 360,
+                        width = 270,
+                        height = 270,
                         frame_count = 36,
                         line_length = 6,
                         animation_speed = 0.25,
-                        scale = 0.5
+                        scale = 0.65
                     }}
                 },
                 east = {
                     layers = {{
                         priority = "extra-high",
                         filename = "__RExtended__/graphics/entity/Machinery/Mining-Drill/Mining-Drill-R2-East.png",
-                        width = 360,
-                        height = 360,
+                        width = 270,
+                        height = 270,
                         frame_count = 36,
                         line_length = 6,
                         animation_speed = 0.25,
                         shift = {0, 0.15625},
-                        scale = 0.5
+                        scale = 0.65
                     }}
                 },
                 south = {
                     layers = {{
                         priority = "extra-high",
                         filename = "__RExtended__/graphics/entity/Machinery/Mining-Drill/Mining-Drill-R2-South.png",
-                        width = 360,
-                        height = 360,
+                        width = 270,
+                        height = 270,
                         frame_count = 36,
                         line_length = 6,
                         animation_speed = 0.25,
-                        scale = 0.5
+                        scale = 0.65
                     }}
                 },
                 west = {
                     layers = {{
                         priority = "extra-high",
                         filename = "__RExtended__/graphics/entity/Machinery/Mining-Drill/Mining-Drill-R2-West.png",
-                        width = 360,
-                        height = 360,
+                        width = 270,
+                        height = 270,
                         frame_count = 36,
                         line_length = 6,
                         animation_speed = 0.25,
                         shift = {0, 0.15625},
-                        scale = 0.5
+                        scale = 0.65
                     }}
                 }
             }

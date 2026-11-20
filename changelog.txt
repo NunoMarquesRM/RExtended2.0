@@ -1,7 +1,12 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.5.7
-Date: 18.11.2026
+Date: 20.11.2026
   Features:
+    - Added three alternative rocket fuel recipes in the Enrichment Chamber:
+      - Heavy Clean: 5 Clean Coal R1 and 25 heavy oil produce 1 rocket fuel in 20 seconds.
+      - Diesel: 1 Clean Coal R2 and 20 diesel produce 2 rocket fuel in 15 seconds.
+      - Enriched: 2 Clean Coal R3 produce 3 rocket fuel in 10 seconds.
+      - Unlocked through Diesel Energy research, with productivity support.
     - Added the Advanced Pump:
       - Pumps 4,800 fluid/s with 180 kW active consumption and an 800-unit internal fluid capacity.
       - Custom artwork for all four directions, wagon connectors, and its inventory icon.
@@ -14,6 +19,16 @@ Date: 18.11.2026
   Translation:
     - Fixed an incorrect Japanese translation for "div0 error" in the calculator (by K.Tarutaru).
   Graphics:
+    - Redesigned the Mixer with a visible agitator, dosing hopper, and inspection window:
+      - Updated its technology artwork to match the redesigned machine.
+      - Added rotating paddles, swirling glue, subtle bubbles, and dosing ripples.
+      - Fitted dedicated north and south iron connectors to the new body.
+    - Redesigned Craft Machine R1 with twin tool arms and a central rotary worktable:
+      - Updated its inventory and technology icons to matching 256x256 artwork.
+      - Added arm and table motion, scrolling belts, bronze workpieces, and brief sparks.
+    - Redesigned Compact Craft Machine R1 with a silver gantry and blue industrial housing:
+      - Updated its inventory and technology icons to 256x256 artwork.
+      - Added a 60-frame press cycle, rotating chuck, rising table, and pulsing cyan lights.
     - Updated Mining Drill R2 in all four directions:
       - Replaced its inventory icon and increased its resolution from 32x32 to 256x256.
       - Updated the technology icon from 128x128 to matching 256x256 artwork.
