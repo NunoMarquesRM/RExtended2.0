@@ -65,6 +65,7 @@ Some machines have additional tiers, but tiers and specifications differ by mach
 
 - **Warehouses** for item storage.
 - **Big storage tanks** for fluid storage, with multiple tiers.
+- **Advanced Pump**: moves up to 4,800 fluid/s, with an 800-unit internal capacity and 175 kW active power use.
 - Custom logistic and construction robots, logistic chests, and a roboport.
 - A custom radar.
 
@@ -83,6 +84,7 @@ The added recipes include:
 - **Components**: glue, cable, reinforced components and plates, reinforced gears, and copper gear wheels.
 - **Coal products**: Clean Coal, Infused Coal, and Enriched Coal. Infused Coal uses the Infuse Tool R1 recipe chain.
 - **Infuse Tool R1**: an intermediate product used to make Infused Coal.
+- **Rocket Fuel alternatives**: three Enrichment Chamber recipes use Clean Coal R1 with heavy oil, Infused Coal with diesel, or Enriched Coal. They produce 1, 2, or 3 Rocket Fuel, respectively.
 - **Specialty fluids**: pressurized water, molten iron, copper, steel, and coal, diesel fuel, enriched petroleum, lithium, and other processing fluids.
 - **Crystalline silicon products** for the solar panel production chain.
 

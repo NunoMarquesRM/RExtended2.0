@@ -58,7 +58,7 @@ Charcoal R1 ── Refined Coal R1 ── Plastics R1
                          └── Advanced Formation Furnace
                                   └── Refined Coal R2
 
-Steam Energy R2 + Oil Processing ── Diesel Energy R1
+Refined Coal R1 + Steam Energy R2 + Oil Processing ── Diesel Energy R1
 
 Silicon Processing + Oil Processing ── Lithium R1
 
@@ -94,14 +94,14 @@ Tech details and recipe unlocks:
 - **Refined Coal R1** (Charcoal R1 + Clean Products): clean coal and alternate Glue V2 recipes.
 - **Refined Coal R2** (Advanced Formation Furnace): Infused Coal and Infuse Tool R1 recipes.
 - **Plastics R1** (Plastics + Refined Coal R1): alternate plastic bar recipe.
-- **Diesel Energy R1** (Steam Energy R2 + Oil Processing): Enriched Coal, Diesel Fuel, and Enrichment Chamber R1 recipes.
+- **Diesel Energy R1** (Refined Coal R1 + Steam Energy R2 + Oil Processing): Enriched Coal, Diesel Fuel, Enrichment Chamber R1, and three alternative Rocket Fuel recipes.
 - **Silicon Processing** (Solar Energy): Blue Quartz and Crystalline Silicon recipes.
 - **Lithium R1** (Silicon Processing + Oil Processing): Molten Coal, Enriched Petroleum, and Lithium recipes.
 - **Beacon R1** (Effect Transmission): Beacon R1.
 - **Advanced Centrifuge R2** (Nuclear Power + Kovarex Enrichment Process + Advanced Half Assembler R2): Centrifuge R2.
 - **Warehouse Technology** (Steel Processing): Warehouse R1.
 - **Big Storage Tank R1** (Fluid Handling): Big Storage Tank R1.
-- **Big Storage Tank R2** (Big Storage Tank R1): Big Storage Tank R2 and the Copper/Iron Pipe R1/R2 and underground pipe recipes.
+- **Big Storage Tank R2** (Big Storage Tank R1): Big Storage Tank R2, Advanced Pump, and the Copper/Iron Pipe R1/R2 and underground pipe recipes.
 - **Elite Storage Tank R3** (Big Storage Tank R2): Elite Storage Tank R3.
 - **Electric Mining R2** (Automation 2): Mining Drill R2.
 - **Electric Mining R3** (Electric Mining R2): Mining Drill R3.

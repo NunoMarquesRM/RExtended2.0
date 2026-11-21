@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.5.8
+Date: 20.11.2026
+  Graphics:
+    - Redesigned Enrichment Chamber R1 with a compact central vessel and gold-and-silver housing:
+      - Added a compact 256x256 static sprite with integrated fluid fittings.
+      - Adjusted the perspective and base proportions to suit its in-game footprint.
+      - Fitted a dedicated short south adapter to the built-in pipe opening.
+      - Added a 24-frame cycle with a rotating fan, flowing amber waves, and rising bubbles.
+      - Updated its inventory and technology icons to matching 256x256 artwork.
+---------------------------------------------------------------------------------------------------
 Version: 2.5.7
 Date: 20.11.2026
   Features:

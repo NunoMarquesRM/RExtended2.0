@@ -178,7 +178,20 @@ Molten Coal
    └── Clean Coal
           ├── Coal
           └── Pressurized Water
+
+Rocket Fuel R1
+   ├── Clean Coal R1
+   └── Heavy Oil
+
+Rocket Fuel R2
+   ├── Infused Coal (Clean Coal R2)
+   └── Diesel Fuel
+
+Rocket Fuel R3
+   └── Enriched Coal (Clean Coal R3)
 ```
+
+These alternative recipes run in the Enrichment Chamber and yield 1, 2, and 3 Rocket Fuel, respectively. They take 20, 15, and 10 seconds and support productivity.
 
 ## Lithium and Battery R1 Chain
 

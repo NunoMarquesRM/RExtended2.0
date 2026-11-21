@@ -183,6 +183,20 @@ See [Reinforced Materials and Gears](ingredient-chains.md#reinforced-materials-a
 
 Recipe sources: `prototypes/Storage/Warehouses.lua` and `prototypes/Storage/Big-storage-tank.lua`.
 
+### Advanced Pump
+
+```text
+Advanced Pump
+   ├── Base Pump
+   ├── Reinforced Iron Plate
+   ├── Reinforced Copper Gear
+   └── Electric Component
+```
+
+The Advanced Pump moves up to 4,800 fluid/s, has an 800-unit internal fluid capacity, and uses 175 kW while active. Big Storage Tank R2 research unlocks its recipe.
+
+Recipe source: `prototypes/Storage/Pumps.lua`.
+
 ## Machinery
 
 ### Assemblers

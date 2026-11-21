@@ -1,3 +1,14 @@
+-- Enrichment Chamber's short front adapter seats inside its built-in south mouth.
+local function enrichment_chamber_r1_pipe_pictures()
+    local pictures = compressor_pipepictures()
+    pictures.south = {
+        filename = "__RExtended__/graphics/entity/Pipes/Enrichment-Chamber-R1-Connector-South.png",
+        priority = "extra-high", width = 256, height = 256,
+        scale = 0.5, shift = {0.28125, -1.875}
+    }
+    return pictures
+end
+
 -- Mixer-specific front and rear sleeves; retain the existing east/west connectors.
 local function mixer_r1_pipe_pictures()
     local pictures = compressor_pipepictures()
@@ -38,8 +49,8 @@ data:extend({
         "__RExtended__/graphics/icons/Machinery/Bulk/Mixer-R1.png",
         256, "machinery-mix", "c-a", 50),
     create_machinery_item("enrichment-chamber-r1",
-        "__RExtended__/graphics/icons/Machinery/Bulk/enrichment-chamber-r1.png",
-        32, "machinery-mix", "c-b", 50),
+        "__RExtended__/graphics/icons/Machinery/Bulk/Enrichment-Chamber-R1.png",
+        256, "machinery-mix", "c-b", 50),
     create_machinery_item("formation-furnace-r1",
         "__RExtended__/graphics/icons/Machinery/Furnaces/formation-furnace-r1.png",
         256, "machinery-formation", "d-a-a", 50),
@@ -656,8 +667,8 @@ data:extend({
     {-- Enrichement Chamber
         type = "assembling-machine",
         name = "enrichment-chamber-r1",
-        icon = "__RExtended__/graphics/icons/Machinery/Bulk/enrichment-chamber-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/Machinery/Bulk/Enrichment-Chamber-R1.png",
+        icon_size = 256,
         flags = {"placeable-neutral","placeable-player", "player-creation"},
         minable = {hardness = 0.2, mining_time = 0.5, result = "enrichment-chamber-r1"},
         max_health = 300,
@@ -666,7 +677,7 @@ data:extend({
         fluid_boxes = {
             {
                 production_type = "input",
-                pipe_picture = compressor_pipepictures(),
+                pipe_picture = enrichment_chamber_r1_pipe_pictures(),
                 pipe_covers = pipe_r2_covers(),
                 base_area = 10,
                 base_level = -1,
@@ -676,7 +687,7 @@ data:extend({
             },
             {
                 production_type = "output",
-                pipe_picture = compressor_pipepictures(),
+                pipe_picture = enrichment_chamber_r1_pipe_pictures(),
                 pipe_covers = pipe_r2_covers(),
                 base_area = 10,
                 base_level = 1,
@@ -708,10 +719,14 @@ data:extend({
         },
         graphics_set = {
             animation = {
-                south = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/enrichment-chamber-r1.png", width = 256, height = 256, shift = {0.3, 0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, },
-                west  = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/enrichment-chamber-r1.png", width = 256, height = 256, shift = {0.3, 0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, },
-                north = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/enrichment-chamber-r1.png", width = 256, height = 256, shift = {0.3, 0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, },
-                east  = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/enrichment-chamber-r1.png", width = 256, height = 256, shift = {0.3, 0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, }
+                filename = "__RExtended__/graphics/entity/Machinery/Enrichment-Chambers/Enrichment-Chamber-R1-Working.png",
+                width = 256,
+                height = 256,
+                shift = {0, 0},
+                scale = 0.45,
+                frame_count = 24,
+                line_length = 6,
+                animation_speed = 0.333333
             }
         }
     },

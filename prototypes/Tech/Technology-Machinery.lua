@@ -99,7 +99,7 @@ data:extend({
         }
     ),
     -- Enriched Coal
-    create_tech("diesel-energy-r1", "CR/Diesel-Fuel-R1", 256, "c-b-d",
+    create_tech("diesel-energy-r1", "CR/Enrichment-Processing-R1", 256, "c-b-d",
         {"refined-coal-r1","steam-energy-r2", "oil-processing"},
         {
             count = 900,
