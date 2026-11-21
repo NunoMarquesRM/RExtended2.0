@@ -154,22 +154,22 @@ data:extend({
         results = {{type = "fluid", name = "lithium-r1", amount = 50, temperature = 300}}
     },
     create_item("diesel-fuel", "Diesel-Fuel-R1", 256,
-        "fluid-products", "k-a", 300, 300, "2MJ",
+        "fluid-products", "w-a", 300, 300, "2MJ",
         { r=0.8, g=0.7, b=0 },
         { r=0.5, g=0.4, b=0 }, 0.4, 0.59
     ),
     create_item("molten-coal-r1", "Molten-Coal-R1", 256,
-        "fluid-products", "k-b", 110, 150, "1kJ",
+        "fluid-products", "w-b", 110, 150, "1kJ",
         { r=85, g=28, b=12 },
         { r=65, g=13, b=10 }, 0.200, 0.200
     ),
     create_item("enriched-petro-r1", "Enriched-Petroleum-R1", 256,
-        "fluid-products", "k-c", 110, 150, "1kJ",
+        "fluid-products", "w-c", 110, 150, "1kJ",
         { r=85, g=28, b=12 },
         { r=65, g=13, b=10 }, 0.200, 0.200
     ),
     create_item("lithium-r1", "Lithium-R1", 256,
-        "fluid-products", "k-d", 300, 300, "0.2kJ",
+        "fluid-products", "w-d", 300, 300, "0.2kJ",
         { r=0.8, g=0.7, b=0 },
         { r=0.5, g=0.4, b=0 }, 0.200, 0.200
     )
