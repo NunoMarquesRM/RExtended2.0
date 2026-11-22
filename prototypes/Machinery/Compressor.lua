@@ -15,10 +15,11 @@ data:extend({
     ),
     create_machinery_recipe("compressor-r2", 5, false,
         {
-            {type = "item", name = "compressor-r1", amount = 2},
-            {type = "item", name = "steel-plate", amount = 10},
-            {type = "item", name = "reinforced-iron-plate-r1", amount = 5},
-            {type = "item", name = "reinforced-copper-plate-r1", amount = 5}
+            {type = "item", name = "compressor-r1", amount = 1},
+            {type = "item", name = "machine-case-r2", amount = 1},
+            {type = "item", name = "fuse-r2", amount = 2},
+            {type = "item", name = "steel-plate", amount = 5},
+            {type = "item", name = "pipe", amount = 5}
         },
         {{type = "item", name = "compressor-r2", amount = 1}}
     ),

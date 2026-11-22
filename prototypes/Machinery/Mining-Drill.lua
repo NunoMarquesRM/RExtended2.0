@@ -31,8 +31,8 @@ data:extend({
     create_machinery_recipe("mining-drill-r2", 2, false,
         {
             {type = "item", name = "electric-mining-drill", amount = 1},
-            {type = "item", name = "reinforced-gear-copper-r1", amount = 4},
-            {type = "item", name = "reinforced-iron-plate-r1", amount = 5}
+            {type = "item", name = "machine-case-r2", amount = 1},
+            {type = "item", name = "fuse-r2", amount = 2}
         },
         {{type = "item", name = "mining-drill-r2", amount = 1}}
     ),
@@ -40,8 +40,7 @@ data:extend({
         {
             {type = "item", name = "mining-drill-r2", amount = 1},
             {type = "item", name = "cable-r1", amount = 5},
-            {type = "item", name = "reinforced-component-r1", amount = 10},
-            {type = "item", name = "electronic-circuit", amount = 3},
+            {type = "item", name = "fuse-r3", amount = 2},
             {type = "item", name = "reinforced-iron-plate-r1", amount = 5},
             {type = "item", name = "reinforced-copper-plate-r1", amount = 5}
         },

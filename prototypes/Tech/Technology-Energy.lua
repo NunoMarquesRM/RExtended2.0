@@ -1,7 +1,7 @@
 data:extend({
     -- Steam Energy 1 (Boiler && Steam Engine R2)
     create_tech("steam-energy-r1", "Energy/Steam-Energy-R2", 256, "c-b-a",
-        {"engine"},
+        {"engine", "steam-power"},
         {
             count = 200,
             ingredients = {
@@ -17,7 +17,7 @@ data:extend({
     ),
     -- Steam Energy 2 (Steam Engine && Boiler R3)
     create_tech("steam-energy-r2", "Energy/Steam-Energy-R3", 256, "c-b-b",
-        {"steam-energy-r1"},
+        {"steam-energy-r1", "advanced-intermediate-products-r2", "production-science-pack"},
         {
             count = 800,
             ingredients = {

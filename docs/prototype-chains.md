@@ -64,8 +64,9 @@ Boiler R3
    │      ├── Base Boiler
    │      ├── Pipe
    │      └── Copper Plate
+   ├── Advanced Machine Casing
    ├── Pipe
-   └── Steel Plate
+   └── Advanced Fuse
 
 Boiler R2
    ├── Base Boiler
@@ -81,9 +82,9 @@ Steam Engine R3
    │      ├── Base Steam Engine
    │      ├── Copper Gear Wheel
    │      └── Copper Plate
-   ├── Iron Gear Wheel
-   ├── Iron Plate
-   └── Steel Plate
+   ├── Advanced Machine Casing
+   ├── Advanced Electronic Component
+   └── Advanced Fuse
 
 Steam Engine R2
    ├── Base Steam Engine
@@ -153,10 +154,9 @@ Recipe source: `prototypes/Products/Pipes.lua`.
 ```text
 Warehouse R1
    ├── Steel Chest
-   ├── Iron Plate
-   ├── Copper Plate
    ├── Reinforced Iron Plate
-   └── Reinforced Coal Plate
+   ├── Machine Casing
+   └── Electronic Component
 ```
 
 ### Big Storage Tank Chain
@@ -170,13 +170,11 @@ Elite Storage Tank R3
    │      │      ├── Steel Plate
    │      │      └── Glue
    │      ├── Pipe
-   │      ├── Reinforced Copper Plate
-   │      ├── Reinforced Coal Plate
-   │      └── Glue
+   │      ├── Advanced Machine Casing
+   │      └── Advanced Fuse
    ├── Pipe
-   ├── Reinforced Copper Plate
-   ├── Reinforced Coal Plate
-   └── Glue
+   ├── Elite Machine Casing
+   └── Elite Fuse
 ```
 
 See [Reinforced Materials and Gears](ingredient-chains.md#reinforced-materials-and-gears) and [Glue and Cable Chain](ingredient-chains.md#glue-and-cable-chain) for the expanded reinforced plate and glue ingredients.
@@ -208,28 +206,31 @@ Assembler R2
    │      │      ├── Reinforced Iron Gear
    │      │      ├── Reinforced Copper Gear
    │      │      └── Electronic Circuit
-   │      ├── Reinforced Iron Gear
-   │      ├── Reinforced Copper Gear
-   │      ├── Electronic Circuit
-   │      └── Reinforced Iron Plate
+   │      ├── Machine Casing
+   │      ├── Electronic Component
+   │      └── Fuse
+   ├── Elite Machine Casing
+   ├── Elite Electronic Component
+   ├── Elite Fuse
    ├── Steel Plate
-   ├── Reinforced Iron Plate
-   ├── Reinforced Copper Plate
-   ├── Electric Engine Unit
-   └── Processing Unit
+   └── Electric Engine Unit
 
 Half Assembler R2
    ├── Half Assembler R1
-   ├── Steel Plate
-   ├── Reinforced Iron Gear
-   └── Reinforced Copper Gear
+   ├── Advanced Machine Casing
+   ├── Advanced Electronic Component
+   ├── Advanced Fuse
+   └── Steel Plate
 ```
 
 ### Ore, Metal, and Fluid Processing Machinery
 
 ```text
 Washer Chamber R2
+   ├── Advanced Machine Casing
+   ├── Advanced Fuse
    ├── Steel Plate
+   ├── Pipe
    └── Washer Chamber R1
           ├── Steel Plate
           ├── Reinforced Iron Gear
@@ -238,6 +239,9 @@ Washer Chamber R2
           └── Assembling Machine 2
 
 Water Condenser R2
+   ├── Advanced Machine Casing
+   ├── Advanced Fuse
+   ├── Pipe
    ├── Steel Plate
    └── Water Condenser R1
           ├── Steel Plate
@@ -252,9 +256,10 @@ Compressor R2
    │      ├── Reinforced Iron Gear
    │      ├── Reinforced Copper Gear
    │      └── Reinforced Copper Plate
+   ├── Advanced Machine Casing
+   ├── Advanced Fuse
    ├── Steel Plate
-   ├── Reinforced Iron Plate
-   └── Reinforced Copper Plate
+   └── Pipe
 
 Mixer R1
    ├── Steel Plate
@@ -263,11 +268,10 @@ Mixer R1
    └── Reinforced Component
 
 Enrichment Chamber R1
-   ├── Reinforced Coal Plate
-   ├── Reinforced Iron Plate
-   ├── Reinforced Copper Plate
-   ├── Electric Component
-   └── Cable
+   ├── Machine Casing
+   ├── Electronic Component
+   ├── Fuse
+   └── Pipe
 
 Formation Furnace R1
    ├── Reinforced Component
@@ -282,49 +286,62 @@ Electric Formation Furnace R1
    └── Cable
 
 Cast Chamber R2
+   ├── Advanced Machine Casing
+   ├── Advanced Fuse
+   ├── Pipe
    ├── Steel Plate
    └── Cast Chamber R1
-          ├── Reinforced Copper Plate
-          ├── Reinforced Coal Plate
-          ├── Pipe
-          └── Electric Component
+          ├── Machine Casing
+          ├── Electronic Component
+          ├── Fuse
+          └── Pipe
 
 Heat Forge Chamber R2
+   ├── Advanced Machine Casing
+   ├── Advanced Electronic Component
+   ├── Advanced Fuse
+   ├── Pipe
    ├── Steel Plate
    └── Heat Forge Chamber R1
-          ├── Reinforced Iron Plate
-          ├── Reinforced Coal Plate
-          ├── Reinforced Iron Gear
-          ├── Pipe
-          └── Electric Component
+          ├── Machine Casing
+          ├── Electronic Component
+          ├── Fuse
+          └── Pipe
 
 Chemical Machine R2
    ├── Chemical Machine R1
    │      ├── Steel Plate
-   │      ├── Reinforced Iron Gear
-   │      ├── Reinforced Copper Plate
-   │      ├── Electric Component
+   │      ├── Machine Casing
+   │      ├── Electronic Component
+   │      ├── Fuse
    │      └── Pipe
+   ├── Advanced Machine Casing
+   ├── Advanced Electronic Component
+   ├── Advanced Fuse
    ├── Steel Plate
-   ├── Electric Component
-   ├── Reinforced Copper Plate
    └── Pipe
 
 Refinery R2
    ├── Refinery R1
-   │      ├── Reinforced Iron Plate
-   │      ├── Reinforced Copper Plate
-   │      ├── Reinforced Coal Plate
-   │      ├── Electric Component
+   │      ├── Machine Casing
+   │      ├── Electronic Component
+   │      ├── Fuse
    │      └── Pipe
-   ├── Steel Plate
-   ├── Electric Component
-   └── Reinforced Copper Plate
+   ├── Advanced Machine Casing
+   ├── Advanced Electronic Component
+   ├── Advanced Fuse
+   └── Steel Plate
+
+Beacon R1
+   ├── Advanced Machine Casing
+   ├── Advanced Electronic Component
+   ├── Advanced Fuse
+   └── Cable
 
 Centrifuge R2
    ├── Base Centrifuge
-   ├── Reinforced Iron Gear
-   └── Electric Component
+   ├── Elite Machine Casing
+   └── Elite Fuse
 ```
 
 ### Furnaces and Mining
@@ -343,14 +360,13 @@ Electric Steel Furnace
 
 Mining Drill R2
    ├── Electric Mining Drill
-   ├── Reinforced Copper Gear
-   └── Reinforced Iron Plate
+   ├── Advanced Machine Casing
+   └── Advanced Fuse
 
 Mining Drill R3
    ├── Mining Drill R2
    ├── Cable
-   ├── Reinforced Component
-   ├── Electronic Circuit
+   ├── Elite Fuse
    ├── Reinforced Iron Plate
    └── Reinforced Copper Plate
 ```

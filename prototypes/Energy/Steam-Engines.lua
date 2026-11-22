@@ -1,8 +1,11 @@
-local function create_steam_engine_recipe(name, ingredients)
+local function create_steam_engine_recipe(name, ingredients, energy_required)
     local recipe = table.deepcopy(data.raw.recipe["steam-engine"])
     recipe.name = name
     recipe.enabled = false
     recipe.ingredients = ingredients
+    if energy_required then
+        recipe.energy_required = energy_required
+    end
     recipe.results = {
         {type = "item", name = name, amount = 1}
     }
@@ -30,11 +33,12 @@ data:extend({
     ),
     create_steam_engine_recipe("steam-engine-r3",
         {
-            {type = "item", name = "steam-engine-r2", amount = 2},
-            {type = "item", name = "iron-gear-wheel", amount = 5},
-            {type = "item", name = "iron-plate", amount = 5},
-            {type = "item", name = "steel-plate", amount = 2}
-        }
+            {type = "item", name = "steam-engine-r2", amount = 1},
+            {type = "item", name = "machine-case-r2", amount = 1},
+            {type = "item", name = "electric-component-r2", amount = 2},
+            {type = "item", name = "fuse-r2", amount = 2}
+        },
+        8
     ),
     create_steam_engine_item("steam-engine-r2", "R2", "c-a"),
     create_steam_engine_item("steam-engine-r3", "R3", "c-b")

@@ -48,32 +48,31 @@ data:extend({
     ),
     create_machinery_recipe("half-assembler-r2", 5, false,
         {
-            {type = "item", name = "half-assembler-r1", amount = 2},
-            {type = "item", name = "steel-plate", amount = 10},
-            {type = "item", name = "reinforced-gear-iron-r1", amount = 5},
-            {type = "item", name = "reinforced-gear-copper-r1", amount = 5}
-
+            {type = "item", name = "half-assembler-r1", amount = 1},
+            {type = "item", name = "machine-case-r2", amount = 1},
+            {type = "item", name = "electric-component-r2", amount = 2},
+            {type = "item", name = "fuse-r2", amount = 2},
+            {type = "item", name = "steel-plate", amount = 10}
         },
         {{type = "item", name = "half-assembler-r2", amount = 1}}
     ),
     create_machinery_recipe("assembler-r1", 5, false,
         {
             {type = "item", name = "half-assembler-r1", amount = 3},
-            {type = "item", name = "reinforced-gear-iron-r1", amount = 5},
-            {type = "item", name = "reinforced-gear-copper-r1", amount = 5},
-            {type = "item", name = "electronic-circuit", amount = 5},
-            {type = "item", name = "reinforced-iron-plate-r1", amount = 10}
+            {type = "item", name = "machine-case-r1", amount = 1},
+            {type = "item", name = "electric-component-r1", amount = 2},
+            {type = "item", name = "fuse-r1", amount = 2}
         },
         {{type = "item", name = "assembler-r1", amount = 1}}
     ),
     create_machinery_recipe("assembler-r2", 5, false,
         {
-            {type = "item", name = "assembler-r1", amount = 3},
-            {type = "item", name = "steel-plate", amount = 15},
-            {type = "item", name = "reinforced-iron-plate-r1", amount = 10},
-            {type = "item", name = "reinforced-copper-plate-r1", amount = 10},
+            {type = "item", name = "assembler-r1", amount = 1},
+            {type = "item", name = "machine-case-r3", amount = 1},
+            {type = "item", name = "electric-component-r3", amount = 3},
+            {type = "item", name = "fuse-r3", amount = 4},
             {type = "item", name = "electric-engine-unit", amount = 5},
-            {type = "item", name = "processing-unit", amount = 5}
+            {type = "item", name = "steel-plate", amount = 10}
         },
         {{type = "item", name = "assembler-r2", amount = 1}}
     ),

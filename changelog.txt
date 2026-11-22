@@ -1,13 +1,76 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.5.8
-Date: 20.11.2026
+Date: 22.11.2026
+  Info:
+    - This version changes machine recipes and technology prerequisites.
+      Existing production chains may need adjustments after updating.
+      Back up your save before updating and review the changes below.
+  Major Features:
+    - Added Azurium, Apatitium, and Amazonium crystals and plates with three research tiers.
+    - Added Advanced and Elite Electronic Components, three Fuse tiers, and three Machine Casings.
+      Machine Casings have a dedicated item subgroup.
+    - Added Advanced Infusion research, the Advanced Infusion Tool, and Infused Enriched Coal.
+      The new fuel provides 288 MJ per item and stacks to 50.
+    - Applied Advanced and Elite naming to the new item families across all four locales.
+  Changes:
+    - Technology:
+      - Elite Electric Mining Drill now requires Amazonium research and Military Science Pack.
+      - Advanced Electric Mining Drill now requires the vanilla drill and Apatitium research.
+      - Elite Storage Tank now requires Amazonium research and Space Science Pack.
+      - Advanced Storage Tank now requires Apatitium research and its missing science unlocks.
+      - Large Storage Tank now requires Mixer Products and Chemical Science Pack.
+      - Warehouse research now requires Advanced Intermediate Products and Chemical Science Pack.
+      - Powerful Transmission now requires Advanced Intermediate Products 2;
+      research cost increases from 200 to 500 units.
+      - Advanced Craft Machine now requires Advanced Intermediate Products 3 and Utility Science
+      Pack alongside Automation 3 and Craft Machine R1 research.
+      - Reworked machine research paths to unlock required materials and processing machines first.
+      - Connected Azurium-based machines to Advanced Intermediate Products and Apatitium-based
+      upgrades to Advanced Intermediate Products 2.
+      - Added missing science-pack prerequisites and removed redundant research links.
+      - Oil Special Processing now requires Steam Power for its steam-based recipes.
+      - Advanced Centrifuge now requires the Amazonium material tier and missing science unlocks
+      instead of Advanced Compact Craft Machine research.
+      - Silicon Processing now requires Refined Coal; Lithium now requires Advanced Ore Processing
+      R1 and Refinery R1 for its production chain.
+      - Chemical Machine R1 research time increases from 25 to 30 seconds per unit.
+    - Recipes:
+      - Elite Electric Mining Drill now uses Elite Fuses while retaining its predecessor drill,
+      reinforced plates, and cables.
+      - Advanced Electric Mining Drill now uses an Advanced Machine Casing and Advanced Fuses.
+      - Elite Storage Tank now uses Elite casings and fuses,
+      retaining three Advanced Storage Tanks as inputs.
+      - Advanced Storage Tank now uses Apatitium casings and fuses,
+      retaining five Large Storage Tanks as inputs.
+      - Warehouse construction now uses Azurium casings and components alongside reinforced plates.
+      - Beacon R1 now uses Apatitium-based casings, electronic components, and fuses.
+      - Advanced Centrifuge now uses Elite casings and fuses while retaining two base centrifuges.
+      - Advanced Craft Machine now uses Amazonium-based Elite parts and its previous-tier machine,
+      retaining electric engines and a 5-second crafting time.
+      - Reworked Craft Machine R1, Chemical Machine R1, Refinery R1, Enrichment Chamber,
+      Heat Forge R1, and Cast Chamber R1 to use Azurium-based casings and fuses.
+      - Reworked the Advanced Compact Craft Machine, Advanced Chemical Machine, Advanced Water
+      Condenser, Compressor R2, Washer Chamber R2, Heat Forge R2, Cast Chamber R2, and Refinery R2
+      to use Apatitium-based intermediates and their previous-tier machines.
+      - Boiler R3 and Steam Engine R3 now use Apatitium-based intermediates;
+      crafting takes 6 and 8 seconds, respectively.
+      - Balanced revised machine costs against their previous expanded material requirements.
+      Craft Machine R1 retains three Compact Craft Machines as inputs.
+      - Charcoal now requires furnace smelting: 4 Wood yield 1 Coal in 3 seconds.
+      - Reduced Clean Coal's fuel value from 36 MJ to 16 MJ.
+      - Advanced infusion consumes its tool to double Enriched Coal's total fuel energy:
+      2 Enriched Coal yield 2 Infused Enriched Coal, providing 576 MJ before processing costs.
   Graphics:
-    - Redesigned Enrichment Chamber R1 with a compact central vessel and gold-and-silver housing:
-      - Added a compact 256x256 static sprite with integrated fluid fittings.
-      - Adjusted the perspective and base proportions to suit its in-game footprint.
-      - Fitted a dedicated short south adapter to the built-in pipe opening.
-      - Added a 24-frame cycle with a rotating fan, flowing amber waves, and rising bubbles.
-      - Updated its inventory and technology icons to matching 256x256 artwork.
+    - Refined Infused Enriched Coal with infusion veins and a mottled enriched surface.
+    - Refined Blue Quartz's icon with clearer icy-blue crystals and dark mineral inclusions.
+    - Refined Crystalline Silicon's icon with metallic shards and a subtle blue sheen.
+    - Updated Silicon Processing technology artwork with Blue Quartz and crystalline silicon.
+    - Updated Infusion Tool icon to a shared industrial design.
+    - Refined Infused Coal's icon with softer golden veins, clearer carbon texture.
+    - Updated Infused Products technology artwork to match its coal and basic infusion tool.
+    - Refined Enriched Coal's icon with teal-amber petroleum mottling and no lettering.
+    - Refined Clean Coal's inventory and technology artwork with charcoal grain and no lettering.
+    - Redesigned Enrichment Chamber R1 with a compact central vessel and gold-and-silver housing.
 ---------------------------------------------------------------------------------------------------
 Version: 2.5.7
 Date: 20.11.2026

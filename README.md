@@ -82,8 +82,8 @@ The added recipes include:
 
 - **Clean materials**: iron, copper, coal, and steel.
 - **Components**: glue, cable, reinforced components and plates, reinforced gears, and copper gear wheels.
-- **Coal products**: Clean Coal, Infused Coal, and Enriched Coal. Infused Coal uses the Infuse Tool R1 recipe chain.
-- **Infuse Tool R1**: an intermediate product used to make Infused Coal.
+- **Coal products**: Clean Coal (16 MJ), Infused Coal (72 MJ), Enriched Coal (144 MJ), and Infused Enriched Coal (288 MJ). Clean Coal is made from 2 Coal and 20 Pressurized Water in a Washer Chamber, providing twice the coal inputs' combined fuel energy before processing costs.
+- **Infusion tools**: the Infusion Tool is used to make Infused Coal. Through Advanced Infusion research, 2 Enriched Coal and 1 Advanced Infusion Tool produce 2 Infused Enriched Coal in 4 seconds in a Formation Furnace: 576 MJ of output fuel from 288 MJ in coal inputs, before processing costs. The tool is consumed.
 - **Rocket Fuel alternatives**: three Enrichment Chamber recipes use Clean Coal R1 with heavy oil, Infused Coal with diesel, or Enriched Coal. They produce 1, 2, or 3 Rocket Fuel, respectively.
 - **Specialty fluids**: pressurized water, molten iron, copper, steel, and coal, diesel fuel, enriched petroleum, lithium, and other processing fluids.
 - **Crystalline silicon products** for the solar panel production chain.

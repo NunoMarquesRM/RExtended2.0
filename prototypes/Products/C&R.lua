@@ -65,7 +65,7 @@ data:extend({
             energy_required = 2,
             categories = {"smelting"},
             subgroup = "plates",
-            order = "c-a-a"
+            order = "c-a"
         }
     ),
     create_recipe("iron-plate-r1-v2",
@@ -81,7 +81,7 @@ data:extend({
             energy_required = 1,
             categories = {"red-casting-chamber"},
             subgroup = "plates",
-            order = "c-a-b"
+            order = "c-b"
         }
     ),
     create_recipe("copper-plate-r1-v1",
@@ -94,7 +94,7 @@ data:extend({
             energy_required = 2,
             categories = {"smelting"},
             subgroup = "plates",
-            order = "c-a-c"
+            order = "c-c"
         }
     ),
     create_recipe("copper-plate-r1-v2",
@@ -110,7 +110,7 @@ data:extend({
             energy_required = 1,
             categories = {"red-casting-chamber"},
             subgroup = "plates",
-            order = "c-a-d"
+            order = "c-d"
         }
     ),
     create_recipe("clean-steel-r1-v1",
@@ -153,7 +153,7 @@ data:extend({
             energy_required = 1,
             categories = {"red-furnace"},
             subgroup = "plates",
-            order = "c-a-e"
+            order = "c-e"
         }
     ),
     create_recipe("steel-plate-r1-v2",
@@ -169,7 +169,7 @@ data:extend({
             energy_required = 1,
             categories = {"red-casting-chamber"},
             subgroup = "plates",
-            order = "c-a-f"
+            order = "c-f"
         }
     )
 })
@@ -347,7 +347,7 @@ data:extend({
         icon = "__RExtended__/graphics/icons/CR/Clean-Coal-R1.png",
         icon_size = 256,
         fuel_categories = {"chemical"},
-        fuel_value = "36MJ",
+        fuel_value = "16MJ",
         subgroup = "chemical-products-r1",
         order = "a-c",
         stack_size = 250
@@ -373,6 +373,17 @@ data:extend({
         subgroup = "chemical-products-r1",
         order = "a-e",
         stack_size = 100
+    },
+    {-- (R4) Infused Enriched Coal
+        type = "item",
+        name = "clean-coal-r4",
+        icon = "__RExtended__/graphics/icons/CR/Clean-Coal-R4.png",
+        icon_size = 256,
+        fuel_categories = {"chemical"},
+        fuel_value = "288MJ",
+        subgroup = "chemical-products-r1",
+        order = "a-f",
+        stack_size = 50
     },
     create_recipe("clean-coal-r1",
         {
@@ -405,6 +416,17 @@ data:extend({
         {
             categories = {"red-enrichment-chamber"},
             energy_required = 1
+        }
+    ),
+    create_recipe("clean-coal-r4",
+        {
+            {type = "item", name = "clean-coal-r3", amount = 2},
+            {type = "item", name = "infuse-tool-r2", amount = 1}
+        },
+        {{type = "item", name = "clean-coal-r4", amount = 2}},
+        {
+            categories = {"red-furnace"},
+            energy_required = 4
         }
     ),
     {-- Rocket Fuel R1
@@ -468,13 +490,14 @@ data:extend({
     }
 })
 
-
 -- Others (Wood to Coal, Plastic Bar)
 data:extend({
     create_recipe("coal-r1",
         {{type = "item", name = "wood", amount = 4}},
         {{type = "item", name = "coal", amount = 1}},
         {
+            categories = {"smelting"},
+            energy_required = 3,
             subgroup = "chemical-products-r1",
             order = "a-a"
         }
@@ -493,7 +516,6 @@ data:extend({
         }
     )
 })
-
 
 ------- Chain: Solar Panels
 data:extend({
@@ -554,3 +576,194 @@ battery_r1_recipe.ingredients = {
 battery_r1_recipe.results = {{type="item", name="battery-r1", amount=1}}
 
 data:extend({battery_r1_item, battery_r1_recipe})
+
+
+------- Chain: Advanced Intermediate Products
+data:extend({
+    create_item("azurium-crystal-r1", "Azurium-Crystal-R1", 256, "advanced-crystals", "f-a", 50),
+    create_item("apatitium-crystal-r1", "Apatitium-Crystal-R1", 256, "advanced-crystals", "f-b", 50),
+    create_item("amazonium-crystal-r1", "Amazonium-Crystal-R1", 256, "advanced-crystals", "f-c", 50),
+    create_item("azurium-plate-r1", "Azurium-Plate-R1", 256, "plates", "c-g", 100),
+    create_item("apatitium-plate-r1", "Apatitium-Plate-R1", 256, "plates", "c-h", 100),
+    create_item("amazonium-plate-r1", "Amazonium-Plate-R1", 256, "plates", "c-i", 100),
+    create_item("electric-component-r2", "Electric-Component-R2", 256, "electronic-products", "e-e", 200),
+    create_item("electric-component-r3", "Electric-Component-R3", 256, "electronic-products", "e-f", 200),
+    create_item("fuse-r1", "Fuse-R1", 256, "electronic-products", "e-g", 200),
+    create_item("fuse-r2", "Fuse-R2", 256, "electronic-products", "e-h", 200),
+    create_item("fuse-r3", "Fuse-R3", 256, "electronic-products", "e-i", 200),
+    create_item("infuse-tool-r2", "Infuse-Tool-R2", 256, "reinforced-products", "d-i", 100),
+    create_item("machine-case-r1", "Machine-Case-R1", 256, "machine-cases", "g-a", 50),
+    create_item("machine-case-r2", "Machine-Case-R2", 256, "machine-cases", "g-b", 50),
+    create_item("machine-case-r3", "Machine-Case-R3", 256, "machine-cases", "g-c", 50),
+    create_recipe("azurium-crystal-r1",
+        {
+            {type = "item", name = "blue-quartz-r1", amount = 2},
+            {type = "item", name = "clean-copper-r1", amount = 1},
+            {type = "fluid", name = "pressurized-water-r1", amount = 50}
+        },
+        {{type = "item", name = "azurium-crystal-r1", amount = 2}},
+        {
+            categories = {"chemistry"},
+            energy_required = 8
+        }
+    ),
+    create_recipe("azurium-plate-r1",
+        {{type = "item", name = "azurium-crystal-r1", amount = 1}},
+        {{type = "item", name = "azurium-plate-r1", amount = 1}},
+        {
+            categories = {"red-furnace"},
+            energy_required = 6
+        }
+    ),
+    create_recipe("apatitium-crystal-r1",
+        {
+            {type = "item", name = "azurium-crystal-r1", amount = 2},
+            {type = "item", name = "clean-steel-r1", amount = 1},
+            {type = "fluid", name = "sulfuric-acid", amount = 50}
+        },
+        {{type = "item", name = "apatitium-crystal-r1", amount = 2}},
+        {
+            categories = {"chemistry"},
+            energy_required = 12
+        }
+    ),
+    create_recipe("apatitium-plate-r1",
+        {{type = "item", name = "apatitium-crystal-r1", amount = 1}},
+        {{type = "item", name = "apatitium-plate-r1", amount = 1}},
+        {
+            categories = {"red-furnace"},
+            energy_required = 6
+        }
+    ),
+    create_recipe("amazonium-crystal-r1",
+        {
+            {type = "item", name = "apatitium-crystal-r1", amount = 2},
+            {type = "fluid", name = "lithium-r1", amount = 25}
+        },
+        {{type = "item", name = "amazonium-crystal-r1", amount = 2}},
+        {
+            categories = {"chemistry"},
+            energy_required = 16
+        }
+    ),
+    create_recipe("amazonium-plate-r1",
+        {{type = "item", name = "amazonium-crystal-r1", amount = 1}},
+        {{type = "item", name = "amazonium-plate-r1", amount = 1}},
+        {
+            categories = {"red-furnace"},
+            energy_required = 6
+        }
+    ),
+    create_recipe("electric-component-r2",
+        {
+            {type = "item", name = "electric-component-r1", amount = 1},
+            {type = "item", name = "apatitium-plate-r1", amount = 2},
+            {type = "item", name = "advanced-circuit", amount = 2}
+        },
+        {{type = "item", name = "electric-component-r2", amount = 1}},
+        {
+            categories = {"crafting"},
+            energy_required = 4
+        }
+    ),
+    create_recipe("electric-component-r3",
+        {
+            {type = "item", name = "electric-component-r2", amount = 1},
+            {type = "item", name = "amazonium-plate-r1", amount = 2},
+            {type = "item", name = "processing-unit", amount = 2}
+        },
+        {{type = "item", name = "electric-component-r3", amount = 1}},
+        {
+            categories = {"crafting"},
+            energy_required = 6
+        }
+    ),
+    create_recipe("fuse-r1",
+        {
+            {type = "item", name = "azurium-plate-r1", amount = 1},
+            {type = "item", name = "cable-r1", amount = 2},
+            {type = "item", name = "electronic-circuit", amount = 1}
+        },
+        {{type = "item", name = "fuse-r1", amount = 2}},
+        {
+            categories = {"crafting"},
+            energy_required = 2
+        }
+    ),
+    create_recipe("fuse-r2",
+        {
+            {type = "item", name = "fuse-r1", amount = 2},
+            {type = "item", name = "apatitium-plate-r1", amount = 1},
+            {type = "item", name = "advanced-circuit", amount = 1}
+        },
+        {{type = "item", name = "fuse-r2", amount = 2}},
+        {
+            categories = {"crafting"},
+            energy_required = 4
+        }
+    ),
+    create_recipe("fuse-r3",
+        {
+            {type = "item", name = "fuse-r2", amount = 2},
+            {type = "item", name = "amazonium-plate-r1", amount = 1},
+            {type = "item", name = "processing-unit", amount = 1}
+        },
+        {{type = "item", name = "fuse-r3", amount = 2}},
+        {
+            categories = {"crafting"},
+            energy_required = 6
+        }
+    ),
+    create_recipe("machine-case-r1",
+        {
+            {type = "item", name = "azurium-plate-r1", amount = 4},
+            {type = "item", name = "reinforced-iron-plate-r1", amount = 2},
+            {type = "item", name = "reinforced-gear-iron-r1", amount = 2},
+            {type = "item", name = "electric-component-r1", amount = 1}
+        },
+        {{type = "item", name = "machine-case-r1", amount = 1}},
+        {
+            categories = {"crafting"},
+            energy_required = 4
+        }
+    ),
+    create_recipe("machine-case-r2",
+        {
+            {type = "item", name = "machine-case-r1", amount = 1},
+            {type = "item", name = "apatitium-plate-r1", amount = 4},
+            {type = "item", name = "clean-steel-r1", amount = 2},
+            {type = "item", name = "electric-component-r2", amount = 1}
+        },
+        {{type = "item", name = "machine-case-r2", amount = 1}},
+        {
+            categories = {"crafting"},
+            energy_required = 6
+        }
+    ),
+    create_recipe("machine-case-r3",
+        {
+            {type = "item", name = "machine-case-r2", amount = 1},
+            {type = "item", name = "amazonium-plate-r1", amount = 4},
+            {type = "item", name = "processing-unit", amount = 2},
+            {type = "item", name = "electric-component-r3", amount = 1}
+        },
+        {{type = "item", name = "machine-case-r3", amount = 1}},
+        {
+            categories = {"crafting"},
+            energy_required = 8
+        }
+    ),
+    create_recipe("infuse-tool-r2",
+        {
+            {type = "item", name = "infuse-tool-r1", amount = 1},
+            {type = "item", name = "amazonium-crystal-r1", amount = 1},
+            {type = "item", name = "electric-component-r3", amount = 1},
+            {type = "item", name = "fuse-r2", amount = 2}
+        },
+        {{type = "item", name = "infuse-tool-r2", amount = 1}},
+        {
+            categories = {"crafting"},
+            energy_required = 10
+        }
+    )
+})

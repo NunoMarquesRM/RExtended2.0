@@ -1,7 +1,68 @@
 data:extend({
+    -- Advanced Intermediate Products
+    create_tech("advanced-intermediate-products-r1", "CR/Advanced-Intermediate-Products-R1", 256, "c-n-c",
+        {"silicon-processing", "oil-processing", "electric-furnace-r1"},
+        {
+            count = 250,
+            ingredients = {
+                {science_packs.red, 1},
+                {science_packs.green, 1}
+            },
+            time = 30
+        },
+        {
+            create_unlock_recipe("azurium-crystal-r1"),
+            create_unlock_recipe("azurium-plate-r1"),
+            create_unlock_recipe("fuse-r1"),
+            create_unlock_recipe("machine-case-r1")
+        }
+    ),
+    -- Advanced Intermediate Products 2
+    create_tech("advanced-intermediate-products-r2", "CR/Advanced-Intermediate-Products-R2", 256, "c-n-d",
+        {"advanced-intermediate-products-r1", "chemical-science-pack"},
+        {
+            count = 350,
+            ingredients = {
+                {science_packs.red, 1},
+                {science_packs.green, 1},
+                {science_packs.blue, 1}
+            },
+            time = 30
+        },
+        {
+            create_unlock_recipe("apatitium-crystal-r1"),
+            create_unlock_recipe("apatitium-plate-r1"),
+            create_unlock_recipe("electric-component-r2"),
+            create_unlock_recipe("fuse-r2"),
+            create_unlock_recipe("machine-case-r2")
+        }
+    ),
+    -- Advanced Intermediate Products 3
+    create_tech("advanced-intermediate-products-r3", "CR/Advanced-Intermediate-Products-R3", 256, "c-n-e",
+        {
+            "advanced-intermediate-products-r2", "lithium-r1", "processing-unit"
+        },
+        {
+            count = 500,
+            ingredients = {
+                {science_packs.red, 1},
+                {science_packs.green, 1},
+                {science_packs.blue, 1},
+                {science_packs.purple, 1}
+            },
+            time = 30
+        },
+        {
+            create_unlock_recipe("amazonium-crystal-r1"),
+            create_unlock_recipe("amazonium-plate-r1"),
+            create_unlock_recipe("electric-component-r3"),
+            create_unlock_recipe("fuse-r3"),
+            create_unlock_recipe("machine-case-r3")
+        }
+    ),
     -- Silicon Processing
     create_tech("silicon-processing", "CR/Silicon-Processing-R1", 256, "c-n-a",
-        {"solar-energy"},
+        {"solar-energy", "refined-coal-r1"},
         {
             count = 175,
             ingredients = {
@@ -27,7 +88,7 @@ data:extend({
     ),
     -- Craft Machine R1
     create_tech("machinery-r2", "Assemblers/Craft-Machine-R1", 256, "c-j-c",
-        {"machinery-r1", "automation-2", "electric-furnace-r2"},
+        {"machinery-r1", "electric-furnace-r2", "advanced-intermediate-products-r1"},
         {
             count = 200,
             ingredients = {
@@ -40,7 +101,10 @@ data:extend({
     ),
     -- Machinery R3
     create_tech("machinery-r3", "Assemblers/machinery-r3", 128, "c-j-d",
-        {"automation-3", "machinery-r2"},
+        {
+            "automation-3", "machinery-r2",
+            "advanced-intermediate-products-r3", "utility-science-pack"
+        },
         {
             count = 500,
             ingredients = {
@@ -82,7 +146,7 @@ data:extend({
     ),
     -- Infused Coal
     create_tech("refined-coal-r2", "CR/Infused-Products-R1", 256, "c-b-e",
-        {"adv-formation-furnace-r1"},
+        {"adv-formation-furnace-r1", "military-science-pack"},
         {
             count = 750,
             ingredients = {
@@ -100,7 +164,10 @@ data:extend({
     ),
     -- Enriched Coal
     create_tech("diesel-energy-r1", "CR/Enrichment-Processing-R1", 256, "c-b-d",
-        {"refined-coal-r1","steam-energy-r2", "oil-processing"},
+        {
+            "steam-energy-r2", "advanced-oil-processing",
+            "refined-coal-r2"
+        },
         {
             count = 900,
             ingredients = {
@@ -119,9 +186,27 @@ data:extend({
             create_unlock_recipe("rocket-fuel-r3")
         }
     ),
+    -- Advanced Infusion
+    create_tech("advanced-infusion-r1", "CR/Advanced-Infusion-R1", 256, "c-b-f",
+        {"advanced-intermediate-products-r3", "diesel-energy-r1"},
+        {
+            count = 750,
+            ingredients = {
+                {science_packs.red, 1},
+                {science_packs.green, 1},
+                {science_packs.blue, 1},
+                {science_packs.purple, 1}
+            },
+            time = 30
+        },
+        {
+            create_unlock_recipe("infuse-tool-r2"),
+            create_unlock_recipe("clean-coal-r4")
+        }
+    ),
     -- Atmospheric Processing R1
     create_tech("water-product-r1", "Machinery/Atmospheric-Processing-R1", 256, "a-d-d",
-        {"machinery-r1"},
+        {"machinery-r1", "automation-2"},
         {
             count = 150,
             ingredients = {{science_packs.red, 1}},
@@ -152,7 +237,7 @@ data:extend({
     ),
     -- Mixer Products
     create_tech("mixer-products-r1", "CR/Mixer-Products-R1", 256, "a-b-a",
-        {"initial-products-r1"},
+        {"initial-products-r1", "steel-processing"},
         {
             count = 50,
             ingredients = {{science_packs.red, 1}},
@@ -167,7 +252,7 @@ data:extend({
     ),
     -- Advanced Products
     create_tech("adv-products-r1", "CR/Adv-Products-R1", 256, "a-c-a",
-        {"mixer-products-r1"},
+        {"mixer-products-r1", "logistic-science-pack"},
         {
             count = 100,
             ingredients = {
@@ -204,7 +289,7 @@ data:extend({
     ),
     -- Advanced Ore Processing R1
     create_tech("adv-ore-processing-r1", "Machinery/Advanced-Ore-Processing-R1", 256, "a-c-e",
-        {"clean-products-r1", "adv-formation-furnace-r1"},
+        {"adv-formation-furnace-r1", "advanced-intermediate-products-r1", "production-science-pack"},
         {
             count = 500,
             ingredients = {
@@ -228,7 +313,7 @@ data:extend({
     ),
     -- Advanced Chemical Machine R1
     create_tech("adv-chemical-machine-r1", "Machinery/Chemical-Machine-R1", 256, "a-f-e",
-        {"chemical-science-pack"},
+        {"chemical-science-pack", "advanced-intermediate-products-r1"},
         {
             count = 300,
             ingredients = {
@@ -236,13 +321,13 @@ data:extend({
                 {science_packs.green, 1},
                 {science_packs.blue, 1}
             },
-            time = 25
+            time = 30
         },
         {create_unlock_recipe("chemical-machine-r1")}
     ),
     -- Refinery R1
     create_tech("refinery-machine-r1", "Machinery/Refinery-R1", 256, "b-b-a",
-        {"lubricant"},
+        {"lubricant", "advanced-intermediate-products-r1"},
         {
             count = 400,
             ingredients = {
@@ -278,7 +363,7 @@ data:extend({
     ),
     -- Oil Special Processing
     create_tech("oil-special-processing-r1", "CR/Oil-Special-Processing-R1", 256, "b-b-c",
-        {"oil-advanced-processing-r1"},
+        {"oil-advanced-processing-r1", "steam-power"},
         {
             count = 700,
             ingredients = {
@@ -297,7 +382,7 @@ data:extend({
     ),
     -- Lithium
     create_tech("lithium-r1", "CR/Lithium-R1", 256, "c-n-b",
-        {"silicon-processing", "oil-processing"},
+        {"adv-ore-processing-r1", "refinery-machine-r1"},
         {
             count = 200,
             ingredients = {
@@ -314,9 +399,9 @@ data:extend({
     ),
     -- Beacon
     create_tech("beacon-r1", "Machinery/Beacon-Elite-R1", 256, "a-c-d",
-        {"effect-transmission"},
+        {"effect-transmission", "advanced-intermediate-products-r2"},
         {
-            count = 200,
+            count = 500,
             ingredients = {
                 {science_packs.red, 1},
                 {science_packs.green, 1},
@@ -347,7 +432,10 @@ data:extend({
     end)(),
     -- Advanced Chemical Machine R2
     create_tech("adv-chemical-machine-r2", "Machinery/r-07-1", 128, "a-f-f",
-        {"adv-chemical-machine-r1"},
+        {
+            "adv-chemical-machine-r1", "advanced-intermediate-products-r2",
+            "production-science-pack", "utility-science-pack"
+        },
         {
             count = 500,
             ingredients = {
@@ -363,7 +451,7 @@ data:extend({
     ),
     -- Advanced Clean Products R2
     create_tech("adv-clean-products-r2", "Machinery/Clean-Products-R2", 128, "a-f-g",
-        {"clean-products-r1"},
+        {"advanced-intermediate-products-r2", "production-science-pack", "utility-science-pack"},
         {
             count = 500,
             ingredients = {
@@ -382,7 +470,7 @@ data:extend({
     ),
     -- Advanced Ore Processing R2
     create_tech("adv-ore-processing-r2", "Machinery/Advanced-Ore-Processing-R2", 128, "a-f-h",
-        {"adv-ore-processing-r1"},
+        {"adv-ore-processing-r1", "advanced-intermediate-products-r2", "utility-science-pack"},
         {
             count = 500,
             ingredients = {
@@ -401,7 +489,10 @@ data:extend({
     ),
     -- Advanced Water Condenser
     create_tech("adv-water-r2", "Machinery/r-04-1", 128, "a-f-h",
-        {"water-product-r1"},
+        {
+            "water-product-r1", "advanced-intermediate-products-r2",
+            "production-science-pack", "utility-science-pack"
+        },
         {
             count = 500,
             ingredients = {
@@ -417,7 +508,10 @@ data:extend({
     ),
     -- Advanced Half Assembler
     create_tech("adv-machinery-r2", "Assemblers/machinery-r1-1", 128, "a-f-i",
-        {"machinery-r1", "machinery-r2"},
+        {
+            "machinery-r2", "advanced-intermediate-products-r2",
+            "production-science-pack", "utility-science-pack"
+        },
         {
             count = 500,
             ingredients = {
@@ -433,7 +527,10 @@ data:extend({
     ),
     -- Advanced Centrifuge
     create_tech("centrifuge-tech-r2", "Machinery/n-48", 128, "a-k-a",
-        {"nuclear-power", "kovarex-enrichment-process", "adv-machinery-r2"},
+        {
+            "nuclear-power", "kovarex-enrichment-process", "advanced-intermediate-products-r3",
+            "military-science-pack", "space-science-pack"
+        },
         {
             count = 1500,
             ingredients = {
@@ -451,7 +548,7 @@ data:extend({
     ),
     -- Refinery R2
     create_tech("refinery-machine-r2", "Machinery/r-03-1", 128, "a-f-j",
-        {"refinery-machine-r1"},
+        {"refinery-machine-r1", "advanced-intermediate-products-r2", "production-science-pack", "utility-science-pack"},
         {
             count = 500,
             ingredients = {
@@ -471,7 +568,7 @@ data:extend({
 data:extend({
     -- Warehouse R1
     create_tech("warehouse-tech", "Storage/Elite-Warehouse-Tech", 256, "c-e-a",
-        {"steel-processing"},
+        {"advanced-intermediate-products-r1", "chemical-science-pack"},
         {
             count = 750,
             ingredients = {
@@ -485,7 +582,7 @@ data:extend({
     ),
     -- Big Storage Tank R1 - 100K
     create_tech("big-storage-tank-r1", "Storage/big-storage-tank-r1", 256, "c-e-f",
-        {"fluid-handling"},
+        {"mixer-products-r1", "chemical-science-pack"},
         {
             count = 250,
             ingredients = {
@@ -499,7 +596,10 @@ data:extend({
     ),
     -- Big Storage Tank R2 - 500K
     create_tech("big-storage-tank-r2", "Storage/big-storage-tank-r2-advanced", 256, "c-e-g",
-        {"big-storage-tank-r1"},
+        {
+            "big-storage-tank-r1", "advanced-intermediate-products-r2",
+            "military-science-pack", "production-science-pack"
+        },
         {
             count = 375,
             ingredients = {
@@ -522,7 +622,7 @@ data:extend({
     ),
     -- Big Storage Tank R3 - 5M
     create_tech("elite-storage-tank-r3", "Storage/Elite-storage-tank-r3", 256, "c-e-h",
-        {"big-storage-tank-r2"},
+        {"big-storage-tank-r2", "advanced-intermediate-products-r3", "space-science-pack"},
         {
             count = 500,
             ingredients = {
@@ -544,7 +644,7 @@ data:extend({
 data:extend({
     -- Electric Mining Drill R2
     create_tech("electric-mining-r2", "Machinery/Advanced-Electric-Mining-Drill-R2", 256, "c-i-a",
-        {"automation-2"},
+        {"electric-mining-drill", "advanced-intermediate-products-r2"},
         {
             count = 400,
             ingredients = {
@@ -557,7 +657,7 @@ data:extend({
     ),
     -- Electric Mining Drill R3
     create_tech("electric-mining-r3", "Machinery/r-09", 128, "c-i-b",
-        {"electric-mining-r2"},
+        {"electric-mining-r2", "advanced-intermediate-products-r3", "military-science-pack"},
         {
             count = 600,
             ingredients = {
@@ -577,7 +677,7 @@ data:extend({
 data:extend({
     -- Electric Furnace R1
     create_tech("electric-furnace-r1", "Machinery/Electric-Furnace-R1", 256, "a-d-b",
-        {"electronics"},
+        {"electronics", "adv-products-r1"},
         {
             count = 60,
             ingredients = {{science_packs.red, 1}},
@@ -593,7 +693,7 @@ data:extend({
     -- Electric Furnace R2 (use the vanilla icon)
     (function()
         local tech = create_tech("electric-furnace-r2", "Machinery/r-01", 256, "c-j-b",
-            {"advanced-material-processing"},
+            {"advanced-material-processing", "electric-furnace-r1", "chemical-science-pack"},
             {
                 count = 100,
                 ingredients = {
@@ -611,7 +711,7 @@ data:extend({
     end)(),
     -- Advanced Formation Furnace
     create_tech("adv-formation-furnace-r1", "Machinery/Advanced-Formation-Furnace-R1", 128, "a-f-e",
-        {"electric-furnace-r1", "refined-coal-r1"},
+        {"electric-furnace-r1", "refined-coal-r1", "chemical-science-pack"},
         {
             count = 200,
             ingredients = {

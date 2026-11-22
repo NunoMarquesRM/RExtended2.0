@@ -18,8 +18,11 @@ data:extend({
     ),
     create_machinery_recipe("washer-chamber-r2", 5, false,
         {
+            {type = "item", name = "washer-chamber-r1", amount = 1},
+            {type = "item", name = "machine-case-r2", amount = 1},
+            {type = "item", name = "fuse-r2", amount = 2},
             {type = "item", name = "steel-plate", amount = 10},
-            {type = "item", name = "washer-chamber-r1", amount = 2}
+            {type = "item", name = "pipe", amount = 10}
         },
         {{type = "item", name = "washer-chamber-r2", amount = 1}}
     ),

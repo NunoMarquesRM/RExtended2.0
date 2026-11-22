@@ -47,11 +47,12 @@ data:extend({
         },
         {{type = "item", name = "boiler-r2", amount = 1}}
     ),
-    create_boiler_recipe("boiler", "boiler-r3", 1, false,
+    create_boiler_recipe("boiler", "boiler-r3", 6, false,
         {
-            {type = "item", name = "boiler-r2", amount = 2},
-            {type = "item", name = "pipe", amount = 3},
-            {type = "item", name = "steel-plate", amount = 3}
+            {type = "item", name = "boiler-r2", amount = 1},
+            {type = "item", name = "machine-case-r2", amount = 1},
+            {type = "item", name = "pipe", amount = 10},
+            {type = "item", name = "fuse-r2", amount = 2}
         },
         {{type = "item", name = "boiler-r3", amount = 1}}
     ),
