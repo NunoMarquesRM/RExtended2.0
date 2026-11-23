@@ -60,9 +60,9 @@ data:extend({
         ingredients =
         {
             {type = "item", name = "pump", amount = 2},
-            {type = "item", name = "reinforced-iron-plate-r1", amount = 5},
-            {type = "item", name = "reinforced-gear-copper-r1", amount = 2},
-            {type = "item", name = "electric-component-r1", amount = 2}
+            {type = "item", name = "electric-component-r2", amount = 2},
+            {type = "item", name = "apatitium-plate-r1", amount = 4},
+            {type = "item", name = "clean-steel-r1", amount = 2}
         },
         results = {{type = "item", name = "pump-r1", amount = 1}}
     },

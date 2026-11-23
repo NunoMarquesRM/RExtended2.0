@@ -9,21 +9,21 @@ This guide contains ingredient trees for products defined outside the core `Prod
 ```text
 Solar Panel R5
    ├── Solar Panel R4
-   └── Processing Unit
+   └── Elite Machine Casing
 
 Solar Panel R4
    ├── Solar Panel R3
-   ├── Advanced Circuit
+   ├── Elite Electronic Component
    └── Solar Cell
 
 Solar Panel R3
    ├── Solar Panel R2
-   ├── Electronic Circuit
+   ├── Advanced Fuse
    └── Solar Cell
 
 Solar Panel R2
    ├── Base Solar Panel
-   ├── Electric Component
+   ├── Advanced Electronic Component
    └── Solar Cell
 ```
 
@@ -33,7 +33,7 @@ Solar Panel R2
 Solar Panel Equipment R2
    ├── Solar Panel Equipment
    ├── Solar Cell
-   └── Advanced Circuit
+   └── Advanced Electronic Component
 ```
 
 ### Accumulator Chain
@@ -42,11 +42,11 @@ Solar Panel Equipment R2
 Accumulator R3
    ├── Accumulator R2
    │      ├── Base Accumulator
-   │      ├── Electronic Circuit
+   │      ├── Advanced Electronic Component
    │      └── Battery R1
    │             ├── Lithium
    │             └── Copper Plate
-   ├── Iron Plate
+   ├── Elite Fuse
    └── Battery R1
 
 Battery R1
@@ -64,8 +64,9 @@ Boiler R3
    │      ├── Base Boiler
    │      ├── Pipe
    │      └── Copper Plate
+   ├── Advanced Machine Casing
    ├── Pipe
-   └── Steel Plate
+   └── Advanced Fuse
 
 Boiler R2
    ├── Base Boiler
@@ -81,9 +82,9 @@ Steam Engine R3
    │      ├── Base Steam Engine
    │      ├── Copper Gear Wheel
    │      └── Copper Plate
-   ├── Iron Gear Wheel
-   ├── Iron Plate
-   └── Steel Plate
+   ├── Advanced Machine Casing
+   ├── Advanced Electronic Component
+   └── Advanced Fuse
 
 Steam Engine R2
    ├── Base Steam Engine
@@ -109,7 +110,7 @@ Long Pole R1
 
 Substation Pole R1
    ├── Substation
-   ├── Electric Component
+   ├── Advanced Electronic Component
    └── Copper Gear Wheel
 
 Light Pole R1
@@ -153,10 +154,9 @@ Recipe source: `prototypes/Products/Pipes.lua`.
 ```text
 Warehouse R1
    ├── Steel Chest
-   ├── Iron Plate
-   ├── Copper Plate
    ├── Reinforced Iron Plate
-   └── Reinforced Coal Plate
+   ├── Machine Casing
+   └── Electronic Component
 ```
 
 ### Big Storage Tank Chain
@@ -170,18 +170,32 @@ Elite Storage Tank R3
    │      │      ├── Steel Plate
    │      │      └── Glue
    │      ├── Pipe
-   │      ├── Reinforced Copper Plate
-   │      ├── Reinforced Coal Plate
-   │      └── Glue
+   │      ├── Advanced Machine Casing
+   │      └── Advanced Fuse
    ├── Pipe
-   ├── Reinforced Copper Plate
-   ├── Reinforced Coal Plate
-   └── Glue
+   ├── Elite Machine Casing
+   └── Elite Fuse
 ```
 
 See [Reinforced Materials and Gears](ingredient-chains.md#reinforced-materials-and-gears) and [Glue and Cable Chain](ingredient-chains.md#glue-and-cable-chain) for the expanded reinforced plate and glue ingredients.
 
 Recipe sources: `prototypes/Storage/Warehouses.lua` and `prototypes/Storage/Big-storage-tank.lua`.
+
+### Advanced Pump
+
+```text
+Advanced Pump
+   ├── Base Pump
+   ├── Advanced Electronic Component
+   ├── Apatitium Plate
+   └── Clean Steel
+```
+
+The Advanced Pump moves up to 4,800 fluid/s, has an 800-unit internal fluid capacity, and uses 175 kW while active. Big Storage Tank R2 research unlocks its recipe.
+
+Recipe: 2 vanilla Pumps, 2 Advanced Electronic Components, 4 Apatitium Plates, and 2 Clean Steel; 5 seconds. The vanilla pumps supply the drive mechanisms, while the components and plates provide upgraded controls and housing.
+
+Recipe source: `prototypes/Storage/Pumps.lua`.
 
 ## Machinery
 
@@ -194,28 +208,31 @@ Assembler R2
    │      │      ├── Reinforced Iron Gear
    │      │      ├── Reinforced Copper Gear
    │      │      └── Electronic Circuit
-   │      ├── Reinforced Iron Gear
-   │      ├── Reinforced Copper Gear
-   │      ├── Electronic Circuit
-   │      └── Reinforced Iron Plate
+   │      ├── Machine Casing
+   │      ├── Electronic Component
+   │      └── Fuse
+   ├── Elite Machine Casing
+   ├── Elite Electronic Component
+   ├── Elite Fuse
    ├── Steel Plate
-   ├── Reinforced Iron Plate
-   ├── Reinforced Copper Plate
-   ├── Electric Engine Unit
-   └── Processing Unit
+   └── Electric Engine Unit
 
 Half Assembler R2
    ├── Half Assembler R1
-   ├── Steel Plate
-   ├── Reinforced Iron Gear
-   └── Reinforced Copper Gear
+   ├── Advanced Machine Casing
+   ├── Advanced Electronic Component
+   ├── Advanced Fuse
+   └── Steel Plate
 ```
 
 ### Ore, Metal, and Fluid Processing Machinery
 
 ```text
 Washer Chamber R2
+   ├── Advanced Machine Casing
+   ├── Advanced Fuse
    ├── Steel Plate
+   ├── Pipe
    └── Washer Chamber R1
           ├── Steel Plate
           ├── Reinforced Iron Gear
@@ -224,6 +241,9 @@ Washer Chamber R2
           └── Assembling Machine 2
 
 Water Condenser R2
+   ├── Advanced Machine Casing
+   ├── Advanced Fuse
+   ├── Pipe
    ├── Steel Plate
    └── Water Condenser R1
           ├── Steel Plate
@@ -238,22 +258,22 @@ Compressor R2
    │      ├── Reinforced Iron Gear
    │      ├── Reinforced Copper Gear
    │      └── Reinforced Copper Plate
+   ├── Advanced Machine Casing
+   ├── Advanced Fuse
    ├── Steel Plate
-   ├── Reinforced Iron Plate
-   └── Reinforced Copper Plate
+   └── Pipe
 
 Mixer R1
    ├── Steel Plate
    ├── Reinforced Coal Plate
-   ├── Iron Stick
+   ├── Iron Plate
    └── Reinforced Component
 
 Enrichment Chamber R1
-   ├── Reinforced Coal Plate
-   ├── Reinforced Iron Plate
-   ├── Reinforced Copper Plate
-   ├── Electric Component
-   └── Cable
+   ├── Machine Casing
+   ├── Electronic Component
+   ├── Fuse
+   └── Pipe
 
 Formation Furnace R1
    ├── Reinforced Component
@@ -268,49 +288,62 @@ Electric Formation Furnace R1
    └── Cable
 
 Cast Chamber R2
+   ├── Advanced Machine Casing
+   ├── Advanced Fuse
+   ├── Pipe
    ├── Steel Plate
    └── Cast Chamber R1
-          ├── Reinforced Copper Plate
-          ├── Reinforced Coal Plate
-          ├── Pipe
-          └── Electric Component
+          ├── Machine Casing
+          ├── Electronic Component
+          ├── Fuse
+          └── Pipe
 
 Heat Forge Chamber R2
+   ├── Advanced Machine Casing
+   ├── Advanced Electronic Component
+   ├── Advanced Fuse
+   ├── Pipe
    ├── Steel Plate
    └── Heat Forge Chamber R1
-          ├── Reinforced Iron Plate
-          ├── Reinforced Coal Plate
-          ├── Reinforced Iron Gear
-          ├── Pipe
-          └── Electric Component
+          ├── Machine Casing
+          ├── Electronic Component
+          ├── Fuse
+          └── Pipe
 
 Chemical Machine R2
    ├── Chemical Machine R1
    │      ├── Steel Plate
-   │      ├── Reinforced Iron Gear
-   │      ├── Reinforced Copper Plate
-   │      ├── Electric Component
+   │      ├── Machine Casing
+   │      ├── Electronic Component
+   │      ├── Fuse
    │      └── Pipe
+   ├── Advanced Machine Casing
+   ├── Advanced Electronic Component
+   ├── Advanced Fuse
    ├── Steel Plate
-   ├── Electric Component
-   ├── Reinforced Copper Plate
    └── Pipe
 
 Refinery R2
    ├── Refinery R1
-   │      ├── Reinforced Iron Plate
-   │      ├── Reinforced Copper Plate
-   │      ├── Reinforced Coal Plate
-   │      ├── Electric Component
+   │      ├── Machine Casing
+   │      ├── Electronic Component
+   │      ├── Fuse
    │      └── Pipe
-   ├── Steel Plate
-   ├── Electric Component
-   └── Reinforced Copper Plate
+   ├── Advanced Machine Casing
+   ├── Advanced Electronic Component
+   ├── Advanced Fuse
+   └── Steel Plate
+
+Beacon R1
+   ├── Advanced Machine Casing
+   ├── Advanced Electronic Component
+   ├── Advanced Fuse
+   └── Cable
 
 Centrifuge R2
    ├── Base Centrifuge
-   ├── Reinforced Iron Gear
-   └── Electric Component
+   ├── Elite Machine Casing
+   └── Elite Fuse
 ```
 
 ### Furnaces and Mining
@@ -329,14 +362,13 @@ Electric Steel Furnace
 
 Mining Drill R2
    ├── Electric Mining Drill
-   ├── Reinforced Copper Gear
-   └── Reinforced Iron Plate
+   ├── Advanced Machine Casing
+   └── Advanced Fuse
 
 Mining Drill R3
    ├── Mining Drill R2
    ├── Cable
-   ├── Reinforced Component
-   ├── Electronic Circuit
+   ├── Elite Fuse
    ├── Reinforced Iron Plate
    └── Reinforced Copper Plate
 ```
@@ -346,43 +378,43 @@ Mining Drill R3
 ```text
 Logistic Robot (Red)
    ├── Flying Robot Frame
-   └── Advanced Circuit
+   └── Advanced Electronic Component
 
 Construction Robot (Red)
    ├── Flying Robot Frame
    ├── Reinforced Iron Plate
-   └── Electronic Circuit
+   └── Advanced Electronic Component
 
 Roboport (Red)
-   ├── Advanced Circuit
+   ├── Advanced Machine Casing
+   ├── Advanced Electronic Component
    ├── Reinforced Copper Gear
-   ├── Reinforced Iron Plate
    └── Steel Plate
 
 Storage Chest (Red)
    ├── Reinforced Iron Plate
    ├── Advanced Circuit
-   └── Electric Component
+   └── Advanced Electronic Component
 
 Passive Provider Chest (Red)
    ├── Reinforced Copper Plate
    ├── Advanced Circuit
-   └── Electric Component
+   └── Advanced Electronic Component
 
 Requester Chest (Red)
    ├── Reinforced Copper Plate
    ├── Advanced Circuit
-   └── Electric Component
+   └── Advanced Electronic Component
 
 Buffer Chest (Red)
    ├── Reinforced Copper Plate
    ├── Advanced Circuit
-   └── Electric Component
+   └── Advanced Electronic Component
 
 Active Provider Chest (Red)
    ├── Reinforced Copper Plate
    ├── Advanced Circuit
-   └── Electric Component
+   └── Advanced Electronic Component
 ```
 
 ### Radar and Air Purification
@@ -390,7 +422,7 @@ Active Provider Chest (Red)
 ```text
 Red Radar
    ├── Radar
-   ├── Advanced Circuit
+   ├── Advanced Electronic Component
    ├── Reinforced Copper Gear
    └── Reinforced Iron Gear
 
@@ -421,24 +453,24 @@ Recipe sources: `prototypes/Machinery/` (Assemblers, Air-Purification, ChemicalM
 
 ## Military
 
-### Exoskeleton Equipment R2
+### Elite Exoskeleton
 
 ```text
-Exoskeleton Equipment R2
+Elite Exoskeleton
    ├── Exoskeleton Equipment
-   ├── Electric Component
+   ├── Elite Electronic Component
    ├── Battery R1
-   └── Reinforced Coal Plate
+   └── Elite Fuse
 ```
 
-### Laser Turret R2
+### Elite Laser Turret
 
 ```text
-Laser Turret R2
+Elite Laser Turret
    ├── Laser Turret
    ├── Processing Unit
    ├── Speed Module 2
-   └── Electric Component
+   └── Elite Electronic Component
 ```
 
 See [Reinforced Materials and Gears](ingredient-chains.md#reinforced-materials-and-gears) and [Lithium and Battery R1 Chain](ingredient-chains.md#lithium-and-battery-r1-chain) for the expanded electric component, reinforced plate, and battery ingredients.

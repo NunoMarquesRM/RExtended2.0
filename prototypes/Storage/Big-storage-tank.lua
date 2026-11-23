@@ -155,18 +155,16 @@ data:extend({
         {
             {type = "item", name = "big-storage-tank-r1", amount = 5},
             {type = "item", name = "pipe", amount = 15},
-            {type = "item", name = "reinforced-copper-plate-r1", amount = 20},
-            {type = "item", name = "reinforced-coal-plate-r1", amount = 20},
-            {type = "item", name = "glue-r1", amount = 15}
+            {type = "item", name = "machine-case-r2", amount = 1},
+            {type = "item", name = "fuse-r2", amount = 2}
         }
     ),
     create_storage_tank_recipe("elite-storage-tank-r3",
         {
             {type = "item", name = "big-storage-tank-r2", amount = 3},
             {type = "item", name = "pipe", amount = 50},
-            {type = "item", name = "reinforced-copper-plate-r1", amount = 30},
-            {type = "item", name = "reinforced-coal-plate-r1", amount = 30},
-            {type = "item", name = "glue-r1", amount = 20}
+            {type = "item", name = "machine-case-r3", amount = 1},
+            {type = "item", name = "fuse-r3", amount = 2}
         }
     ),
     setup_big_storage_tank(table.deepcopy(data.raw["storage-tank"]["storage-tank"]),

@@ -65,8 +65,9 @@ Some machines have additional tiers, but tiers and specifications differ by mach
 
 - **Warehouses** for item storage.
 - **Big storage tanks** for fluid storage, with multiple tiers.
+- **Advanced Pump**: moves up to 4,800 fluid/s, with an 800-unit internal capacity and 175 kW active power use.
 - Custom logistic and construction robots, logistic chests, and a roboport.
-- A custom radar.
+- **Elite Radar**: unlocked by Long-Range Radar research, using Apatitium electronics.
 
 #### Pipes
 
@@ -81,8 +82,9 @@ The added recipes include:
 
 - **Clean materials**: iron, copper, coal, and steel.
 - **Components**: glue, cable, reinforced components and plates, reinforced gears, and copper gear wheels.
-- **Coal products**: Clean Coal, Infused Coal, and Enriched Coal. Infused Coal uses the Infuse Tool R1 recipe chain.
-- **Infuse Tool R1**: an intermediate product used to make Infused Coal.
+- **Coal products**: Clean Coal (16 MJ), Infused Coal (72 MJ), Enriched Coal (144 MJ), and Infused Enriched Coal (288 MJ). Clean Coal is made from 2 Coal and 20 Pressurized Water in a Washer Chamber, providing twice the coal inputs' combined fuel energy before processing costs.
+- **Infusion tools**: the Infusion Tool is used to make Infused Coal. Through Advanced Infusion research, 2 Enriched Coal and 1 Advanced Infusion Tool produce 2 Infused Enriched Coal in 4 seconds in a Formation Furnace: 576 MJ of output fuel from 288 MJ in coal inputs, before processing costs. The tool is consumed.
+- **Rocket Fuel alternatives**: three Enrichment Chamber recipes use Clean Coal R1 with heavy oil, Infused Coal with diesel, or Enriched Coal. They produce 1, 2, or 3 Rocket Fuel, respectively.
 - **Specialty fluids**: pressurized water, molten iron, copper, steel, and coal, diesel fuel, enriched petroleum, lithium, and other processing fluids.
 - **Crystalline silicon products** for the solar panel production chain.
 
@@ -92,7 +94,7 @@ These materials are used in the mod's machinery, power, storage, and robot recip
 
 ## Quality of Life
 
- - **Exoskeleton R2**:
+ - **Elite Exoskeleton**:
  A late-game 2×4 equipment module that provides a 100% movement speed bonus.
  It frees armor-grid space compared with installing several vanilla exoskeletons, at the cost of drawing up to 1 MW while active.
 
@@ -119,7 +121,7 @@ An in-game calculator with calculation history, accessible from its shortcut.
 
 ## Defense
 
-- **Laser turret R2**: A more powerful laser turret with high energy consumption.
+- **Elite Laser Turret**: A more powerful laser turret with high energy consumption.
 
 ---------------------------------------------------------------------------------------------------
 

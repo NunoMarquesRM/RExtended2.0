@@ -48,9 +48,9 @@ data:extend({
     create_equipment_recipe("exoskeleton-equipment-r2", 20, false,
         {
             {type = "item", name = "exoskeleton-equipment", amount = 4},
-            {type = "item", name = "electric-component-r1", amount = 10},
+            {type = "item", name = "electric-component-r3", amount = 5},
             {type = "item", name = "battery-r1", amount = 10},
-            {type = "item", name = "reinforced-coal-plate-r1", amount = 10}
+            {type = "item", name = "fuse-r3", amount = 2}
         },
         {{type = "item", name = "exoskeleton-equipment-r2", amount = 1}}
     ),

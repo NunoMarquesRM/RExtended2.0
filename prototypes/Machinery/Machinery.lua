@@ -1,3 +1,23 @@
+-- Enrichment Chamber's short front adapter seats inside its built-in south mouth.
+local function enrichment_chamber_r1_pipe_pictures()
+    local pictures = compressor_pipepictures()
+    pictures.south = {
+        filename = "__RExtended__/graphics/entity/Pipes/Enrichment-Chamber-R1-Connector-South.png",
+        priority = "extra-high", width = 256, height = 256,
+        scale = 0.5, shift = {0.28125, -1.875}
+    }
+    return pictures
+end
+
+-- Mixer-specific front and rear sleeves; retain the existing east/west connectors.
+local function mixer_r1_pipe_pictures()
+    local pictures = compressor_pipepictures()
+    pictures.north.filename = "__RExtended__/graphics/entity/Pipes/Mixer-R1-Connector-North.png"
+    pictures.south.filename = "__RExtended__/graphics/entity/Pipes/Mixer-R1-Connector-South.png"
+    pictures.south.shift = {0.28125, -1.875}
+    return pictures
+end
+
 -- The flat south face follows fluidbox recipe visibility, including connected ports.
 local water_condenser_r1_pipe_pictures = washerpipepictures()
 water_condenser_r1_pipe_pictures.south = {
@@ -26,11 +46,11 @@ data:extend({
         "__RExtended__/graphics/icons/Machinery/Bulk/water-condenser-electric-r2.png",
         32, "machinery-condenser", "h-b", 50),
     create_machinery_item("mixer-r1",
-        "__RExtended__/graphics/icons/Machinery/Bulk/mixer-r1.png",
-        32, "machinery-mix", "c-a", 50),
+        "__RExtended__/graphics/icons/Machinery/Bulk/Mixer-R1.png",
+        256, "machinery-mix", "c-a", 50),
     create_machinery_item("enrichment-chamber-r1",
-        "__RExtended__/graphics/icons/Machinery/Bulk/enrichment-chamber-r1.png",
-        32, "machinery-mix", "c-b", 50),
+        "__RExtended__/graphics/icons/Machinery/Bulk/Enrichment-Chamber-R1.png",
+        256, "machinery-mix", "c-b", 50),
     create_machinery_item("formation-furnace-r1",
         "__RExtended__/graphics/icons/Machinery/Furnaces/formation-furnace-r1.png",
         256, "machinery-formation", "d-a-a", 50),
@@ -54,8 +74,11 @@ data:extend({
     ),
     create_machinery_recipe("water-condenser-electric-r2", 5, false,
         {
-            {type = "item", name = "steel-plate", amount = 10},
-            {type = "item", name = "water-condenser-electric-r1", amount = 2}
+            {type = "item", name = "water-condenser-electric-r1", amount = 1},
+            {type = "item", name = "machine-case-r2", amount = 1},
+            {type = "item", name = "fuse-r2", amount = 2},
+            {type = "item", name = "steel-plate", amount = 5},
+            {type = "item", name = "pipe", amount = 10}
         },
         {{type = "item", name = "water-condenser-electric-r2", amount = 1}}
     ),
@@ -63,7 +86,7 @@ data:extend({
         {
             {type = "item", name = "steel-plate", amount = 10},
             {type = "item", name = "reinforced-coal-plate-r1", amount = 10},
-            {type = "item", name = "iron-stick", amount = 10},
+            {type = "item", name = "iron-plate", amount = 8},
             {type = "item", name = "reinforced-component-r1", amount = 10}
         },
         {{type = "item", name = "mixer-r1", amount = 1}}
@@ -88,62 +111,66 @@ data:extend({
     ),
     create_machinery_recipe("cast-chamber-r1", 7, false,
         {
-            {type = "item", name = "reinforced-copper-plate-r1", amount = 4},
-            {type = "item", name = "reinforced-coal-plate-r1", amount = 4},
-            {type = "item", name = "pipe", amount = 10},
-            {type = "item", name = "electric-component-r1", amount = 5}
+            {type = "item", name = "machine-case-r1", amount = 1},
+            {type = "item", name = "electric-component-r1", amount = 4},
+            {type = "item", name = "fuse-r1", amount = 2},
+            {type = "item", name = "pipe", amount = 10}
         },
         {{type = "item", name = "cast-chamber-r1", amount = 1}}
     ),
     create_machinery_recipe("cast-chamber-r2", 5, false,
         {
+            {type = "item", name = "cast-chamber-r1", amount = 1},
+            {type = "item", name = "machine-case-r2", amount = 1},
+            {type = "item", name = "fuse-r2", amount = 2},
             {type = "item", name = "steel-plate", amount = 10},
-            {type = "item", name = "cast-chamber-r1", amount = 2}
+            {type = "item", name = "pipe", amount = 10}
         },
         {{type = "item", name = "cast-chamber-r2", amount = 1}}
     ),
     create_machinery_recipe("heat-forge-chamber-r1", 7, false,
         {
-            {type = "item", name = "reinforced-iron-plate-r1", amount = 5},
-            {type = "item", name = "reinforced-coal-plate-r1", amount = 5},
-            {type = "item", name = "reinforced-gear-iron-r1", amount = 3},
-            {type = "item", name = "pipe", amount = 10},
-            {type = "item", name = "electric-component-r1", amount = 5}
+            {type = "item", name = "machine-case-r1", amount = 1},
+            {type = "item", name = "electric-component-r1", amount = 5},
+            {type = "item", name = "fuse-r1", amount = 2},
+            {type = "item", name = "pipe", amount = 10}
         },
         {{type = "item", name = "heat-forge-chamber-r1", amount = 1}}
     ),
     create_machinery_recipe("heat-forge-chamber-r2", 5, false,
         {
+            {type = "item", name = "heat-forge-chamber-r1", amount = 1},
+            {type = "item", name = "machine-case-r2", amount = 1},
+            {type = "item", name = "electric-component-r2", amount = 1},
+            {type = "item", name = "fuse-r2", amount = 2},
             {type = "item", name = "steel-plate", amount = 10},
-            {type = "item", name = "heat-forge-chamber-r1", amount = 2}
+            {type = "item", name = "pipe", amount = 10}
         },
         {{type = "item", name = "heat-forge-chamber-r2", amount = 1}}
     ),
     create_machinery_recipe("enrichment-chamber-r1", 4, false,
         {
-            {type = "item", name = "reinforced-coal-plate-r1", amount = 10},
-            {type = "item", name = "reinforced-iron-plate-r1", amount = 10},
-            {type = "item", name = "reinforced-copper-plate-r1", amount = 10},
-            {type = "item", name = "electric-component-r1", amount = 10},
-            {type = "item", name = "cable-r1", amount = 10}
+            {type = "item", name = "machine-case-r1", amount = 2},
+            {type = "item", name = "electric-component-r1", amount = 8},
+            {type = "item", name = "fuse-r1", amount = 4},
+            {type = "item", name = "pipe", amount = 10}
         },
         {{type = "item", name = "enrichment-chamber-r1", amount = 1}}
     ),
     create_machinery_recipe("beacon-r1", 4, false,
         {
-            {type = "item", name = "reinforced-gear-iron-r1", amount = 5},
-            {type = "item", name = "reinforced-gear-copper-r1", amount = 5},
-            {type = "item", name = "reinforced-coal-plate-r1", amount = 5},
-            {type = "item", name = "cable-r1", amount = 5},
-            {type = "item", name = "electric-component-r1", amount = 5}
+            {type = "item", name = "machine-case-r2", amount = 1},
+            {type = "item", name = "electric-component-r2", amount = 2},
+            {type = "item", name = "fuse-r2", amount = 4},
+            {type = "item", name = "cable-r1", amount = 5}
         },
         {{type = "item", name = "beacon-r1", amount = 1}}
     ),
     create_machinery_recipe("centrifuge-r2", 4, false,
         {
             {type = "item", name = "centrifuge", amount = 2},
-            {type = "item", name = "reinforced-gear-iron-r1", amount = 10},
-            {type = "item", name = "electric-component-r1", amount = 10}
+            {type = "item", name = "machine-case-r3", amount = 1},
+            {type = "item", name = "fuse-r3", amount = 2}
         },
         {{type = "item", name = "centrifuge-r2", amount = 1}}
     ),
@@ -166,7 +193,7 @@ data:extend({
             pipe_connections = { 
                 {flow_direction="output", direction = defines.direction.south, position = {0, 1}},
                 {flow_direction="output", direction = defines.direction.north, position = {0, -1}},
-                {flow_direction="output", direction = defines.direction.east, position =  {1, 0}}, 
+                {flow_direction="output", direction = defines.direction.east, position =  {1, 0}},
                 {flow_direction="output", direction = defines.direction.west, position =  {-1, 0}}
             },
             secondary_draw_orders = { north = -1 }
@@ -195,12 +222,12 @@ data:extend({
             apparent_volume = 0.8
         },
         graphics_set = {
-            animation = { 
+            animation = {
                 layers = {
                     {
                         filename = "__RExtended__/graphics/entity/Machinery/Water-Condensers/Water-Condenser-R1-Idle.png",
-                        width = 512, height = 608, shift = {0, -0.5},
-                        frame_count = 1, line_length = 1, scale = 0.25
+                        width = 384, height = 456, shift = {0, -0.5},
+                        frame_count = 1, line_length = 1, scale = 0.35
                     }
                 }
             },
@@ -209,7 +236,7 @@ data:extend({
                     always_draw = false,
                     animation = {
                         filename = "__RExtended__/graphics/entity/Machinery/Water-Condensers/Water-Condenser-R1-Working.png",
-                        width = 512, height = 608, shift = {0, -0.5}, scale = 0.25,
+                        width = 384, height = 456, shift = {0, -0.5}, scale = 0.35,
                         frame_count = 60, line_length = 8, animation_speed = 0.5
                     }
                 }
@@ -219,8 +246,8 @@ data:extend({
     {-- Mixer
         type = "assembling-machine",
         name = "mixer-r1",
-        icon = "__RExtended__/graphics/icons/Machinery/Bulk/mixer-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/Machinery/Bulk/Mixer-R1.png",
+        icon_size = 256,
         flags = {"placeable-neutral","placeable-player", "player-creation"},
         minable = {hardness = 0.2, mining_time = 0.5, result = "mixer-r1"},
         max_health = 300,
@@ -229,7 +256,7 @@ data:extend({
         fluid_boxes = {
             {
                 production_type = "input",
-                pipe_picture = compressor_pipepictures(),
+                pipe_picture = mixer_r1_pipe_pictures(),
                 pipe_covers = pipe_r2_covers(),
                 base_area = 10,
                 base_level = -1,
@@ -239,7 +266,7 @@ data:extend({
             },
             {
                 production_type = "output",
-                pipe_picture = compressor_pipepictures(),
+                pipe_picture = mixer_r1_pipe_pictures(),
                 pipe_covers = pipe_r2_covers(),
                 base_area = 10,
                 base_level = 1,
@@ -250,7 +277,7 @@ data:extend({
         },
         fluid_boxes_off_when_no_fluid_recipe = true,
         collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
-        selection_box = {{-1.5, -1.5}, {1.5, 1.5}},    
+        selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
         crafting_categories = {"red-mixing"},
         energy_usage = "200kW",
         ingredient_count = 4,
@@ -268,14 +295,18 @@ data:extend({
         working_sound = {
             sound = {{filename = "__base__/sound/chemical-plant.ogg",volume = 0.8},},
             idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
-            apparent_volume = 1.5,
+            apparent_volume = 1.5
         },
         graphics_set = {
             animation = {
-                south = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/mixer-r1-v.png", width = 256, height = 256, shift = {0.3125, 0.125}, scale = 0.5, frame_count = 14, line_length = 7, animation_speed=1.0, },                            
-                west  = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/mixer-r1-h.png", width = 256, height = 256, shift = {0.3125, 0}, scale = 0.5, frame_count = 14, line_length = 7, animation_speed=1.0, },                    
-                north = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/mixer-r1-v.png", width = 256, height = 256, shift = {0.3125, 0.125}, scale = 0.5, frame_count = 14, line_length = 7, animation_speed=1.0, },                            
-                east  = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/mixer-r1-h.png", width = 256, height = 256, shift = {0.3125, 0}, scale = 0.5, frame_count = 14, line_length = 7, animation_speed=1.0, },                            
+                filename = "__RExtended__/graphics/entity/Machinery/Mixers/Mixer-R1.png",
+                priority = "high",
+                width = 384,
+                height = 384,
+                frame_count = 60,
+                line_length = 8,
+                animation_speed = 0.5,
+                scale = 0.3
             }
         }
     },
@@ -457,7 +488,7 @@ data:extend({
             type = "electric",
             input_priority = "secondary",
             usage_priority = "secondary-input",
-            emissions_per_minute = { pollution = 7.2 },
+            emissions_per_minute = { pollution = 7.2 }
         },
         fast_replaceable_group = "assembling-machine",
         module_slots = 2,
@@ -469,45 +500,45 @@ data:extend({
             {"consumption", "speed", "productivity", "pollution"}
         ),
         working_sound = {
-            sound = {{ filename = "__base__/sound/chemical-plant.ogg", volume = 0.8 },},
+            sound = {{ filename = "__base__/sound/chemical-plant.ogg", volume = 0.8 }},
             idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
-            apparent_volume = 1.5,
+            apparent_volume = 1.5
         },
         graphics_set = {
             animation = {
                 south = {
                     filename = "__RExtended__/graphics/entity/Machinery/Cast-Chamber/Cast-Chamber-R1-Idle.png",
-                    width = 512,
-                    height = 512,
+                    width = 256,
+                    height = 256,
                     shift = {0.28125, 0.1875},
-                    scale = 0.25,
+                    scale = 0.5,
                     frame_count = 1,
                     line_length = 1
                 },
                 west = {
                     filename = "__RExtended__/graphics/entity/Machinery/Cast-Chamber/Cast-Chamber-R1-Idle.png",
-                    width = 512,
-                    height = 512,
+                    width = 256,
+                    height = 256,
                     shift = {0.28125, 0.1875},
-                    scale = 0.25,
+                    scale = 0.5,
                     frame_count = 1,
                     line_length = 1
                 },
                 north = {
                     filename = "__RExtended__/graphics/entity/Machinery/Cast-Chamber/Cast-Chamber-R1-Idle.png",
-                    width = 512,
-                    height = 512,
+                    width = 256,
+                    height = 256,
                     shift = {0.28125, 0.1875},
-                    scale = 0.25,
+                    scale = 0.5,
                     frame_count = 1,
                     line_length = 1
                 },
                 east = {
                     filename = "__RExtended__/graphics/entity/Machinery/Cast-Chamber/Cast-Chamber-R1-Idle.png",
-                    width = 512,
-                    height = 512,
+                    width = 256,
+                    height = 256,
                     shift = {0.28125, 0.1875},
-                    scale = 0.25,
+                    scale = 0.5,
                     frame_count = 1,
                     line_length = 1
                 },
@@ -523,10 +554,10 @@ data:extend({
                     west_position = {0, 0},
                     animation = {
                         filename = "__RExtended__/graphics/entity/Machinery/Cast-Chamber/Cast-Chamber-R1-Animated.png",
-                        width = 512,
-                        height = 512,
+                        width = 256,
+                        height = 256,
                         shift = {0.28125, 0.1875},
-                        scale = 0.25,
+                        scale = 0.5,
                         frame_count = 32,
                         line_length = 8,
                         animation_speed = 0.25
@@ -578,32 +609,48 @@ data:extend({
         },
         allowed_effects = {"consumption", "speed", "productivity", "pollution"},
         working_sound = {
-            sound = {{ filename = "__base__/sound/chemical-plant.ogg", volume = 0.8},},
+            sound = {{ filename = "__base__/sound/chemical-plant.ogg", volume = 0.8}},
             idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
-            apparent_volume = 1.5,
+            apparent_volume = 1.5
         },
         graphics_set = {
             animation = {
                 south = {
                     filename = "__RExtended__/graphics/entity/Machinery/Heat-Forge/Heat-Forge-Chamber-R1-Idle.png",
-                    width = 512, height = 512, shift = {0.25, 0.125}, scale = 0.25,
-                    frame_count = 1, line_length = 1,
+                    width = 256,
+                    height = 256,
+                    shift = {0.25, 0.125},
+                    scale = 0.5,
+                    frame_count = 1,
+                    line_length = 1
                 },
                 west = {
                     filename = "__RExtended__/graphics/entity/Machinery/Heat-Forge/Heat-Forge-Chamber-R1-Idle.png",
-                    width = 512, height = 512, shift = {0.25, 0.125}, scale = 0.25,
-                    frame_count = 1, line_length = 1,
+                    width = 256,
+                    height = 256,
+                    shift = {0.25, 0.125},
+                    scale = 0.5,
+                    frame_count = 1,
+                    line_length = 1
                 },
                 north = {
                     filename = "__RExtended__/graphics/entity/Machinery/Heat-Forge/Heat-Forge-Chamber-R1-Idle.png",
-                    width = 512, height = 512, shift = {0.25, 0.125}, scale = 0.25,
-                    frame_count = 1, line_length = 1,
+                    width = 256,
+                    height = 256,
+                    shift = {0.25, 0.125},
+                    scale = 0.5,
+                    frame_count = 1,
+                    line_length = 1
                 },
                 east = {
                     filename = "__RExtended__/graphics/entity/Machinery/Heat-Forge/Heat-Forge-Chamber-R1-Idle.png",
-                    width = 512, height = 512, shift = {0.25, 0.125}, scale = 0.25,
-                    frame_count = 1, line_length = 1,
-                },
+                    width = 256,
+                    height = 256,
+                    shift = {0.25, 0.125},
+                    scale = 0.5,
+                    frame_count = 1,
+                    line_length = 1
+                }
             },
             working_visualisations = {
                 {
@@ -612,18 +659,23 @@ data:extend({
                     south_position = {0, 0}, west_position = {0, 0},
                     animation = {
                         filename = "__RExtended__/graphics/entity/Machinery/Heat-Forge/Heat-Forge-Chamber-R1-Animated.png",
-                        width = 512, height = 512, shift = {0.25, 0.125}, scale = 0.25,
-                        frame_count = 32, line_length = 8, animation_speed = 0.25,
-                    },
-                },
-            },
+                        width = 256,
+                        height = 256,
+                        shift = {0.25, 0.125},
+                        scale = 0.5,
+                        frame_count = 32,
+                        line_length = 8,
+                        animation_speed = 0.25
+                    }
+                }
+            }
         }
     },
     {-- Enrichement Chamber
         type = "assembling-machine",
         name = "enrichment-chamber-r1",
-        icon = "__RExtended__/graphics/icons/Machinery/Bulk/enrichment-chamber-r1.png",
-        icon_size = 32,
+        icon = "__RExtended__/graphics/icons/Machinery/Bulk/Enrichment-Chamber-R1.png",
+        icon_size = 256,
         flags = {"placeable-neutral","placeable-player", "player-creation"},
         minable = {hardness = 0.2, mining_time = 0.5, result = "enrichment-chamber-r1"},
         max_health = 300,
@@ -632,7 +684,7 @@ data:extend({
         fluid_boxes = {
             {
                 production_type = "input",
-                pipe_picture = compressor_pipepictures(),
+                pipe_picture = enrichment_chamber_r1_pipe_pictures(),
                 pipe_covers = pipe_r2_covers(),
                 base_area = 10,
                 base_level = -1,
@@ -642,7 +694,7 @@ data:extend({
             },
             {
                 production_type = "output",
-                pipe_picture = compressor_pipepictures(),
+                pipe_picture = enrichment_chamber_r1_pipe_pictures(),
                 pipe_covers = pipe_r2_covers(),
                 base_area = 10,
                 base_level = 1,
@@ -674,10 +726,14 @@ data:extend({
         },
         graphics_set = {
             animation = {
-                south = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/enrichment-chamber-r1.png", width = 256, height = 256, shift = {0.3, 0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, },
-                west  = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/enrichment-chamber-r1.png", width = 256, height = 256, shift = {0.3, 0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, },
-                north = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/enrichment-chamber-r1.png", width = 256, height = 256, shift = {0.3, 0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, },
-                east  = { filename = "__RExtended__/graphics/entity/Machinery/Bulk/enrichment-chamber-r1.png", width = 256, height = 256, shift = {0.3, 0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, }
+                filename = "__RExtended__/graphics/entity/Machinery/Enrichment-Chambers/Enrichment-Chamber-R1-Working.png",
+                width = 256,
+                height = 256,
+                shift = {0, 0},
+                scale = 0.45,
+                frame_count = 24,
+                line_length = 6,
+                animation_speed = 0.333333
             }
         }
     },
@@ -713,19 +769,19 @@ data:extend({
             layers = {
                 {
                     filename = "__RExtended__/graphics/entity/Machinery/Beacons/Beacon-R1-Idle.png",
-                    width = 576,
-                    height = 576,
+                    width = 432,
+                    height = 432,
                     shift = {0.4375, -1},
-                    scale = 0.25
+                    scale = 0.35
                 },
                 {
                     filename = "__RExtended__/graphics/entity/Machinery/Beacons/Beacon-R1-Shadow.png",
-                    width = 576,
-                    height = 576,
+                    width = 432,
+                    height = 432,
                     frame_count = 1,
                     line_length = 6,
                     shift = {0.4375, -1},
-                    scale = 0.25,
+                    scale = 0.35,
                     draw_as_shadow = true
                 }
             }
@@ -734,22 +790,22 @@ data:extend({
             layers = {
                 {
                     filename = "__RExtended__/graphics/entity/Machinery/Beacons/Beacon-R1-Animated.png",
-                    width = 576,
-                    height = 576,
+                    width = 432,
+                    height = 432,
                     line_length = 6,
                     frame_count = 30,
                     shift = {0.4375, -1},
-                    scale = 0.25,
+                    scale = 0.35,
                     animation_speed = 0.25
                 },
                 {
                     filename = "__RExtended__/graphics/entity/Machinery/Beacons/Beacon-R1-Shadow.png",
-                    width = 576,
-                    height = 576,
+                    width = 432,
+                    height = 432,
                     line_length = 6,
                     frame_count = 30,
                     shift = {0.4375, -1},
-                    scale = 0.25,
+                    scale = 0.35,
                     animation_speed = 0.25,
                     draw_as_shadow = true
                 }

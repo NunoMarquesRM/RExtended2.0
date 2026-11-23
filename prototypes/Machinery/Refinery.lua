@@ -6,10 +6,9 @@ data:extend({
     
     create_machinery_recipe("refinery-r1", 5, false,
         {
-            {type = "item", name = "reinforced-iron-plate-r1", amount = 20},
-            {type = "item", name = "reinforced-copper-plate-r1", amount = 20},
-            {type = "item", name = "reinforced-coal-plate-r1", amount = 15},
+            {type = "item", name = "machine-case-r1", amount = 3},
             {type = "item", name = "electric-component-r1", amount = 15},
+            {type = "item", name = "fuse-r1", amount = 6},
             {type = "item", name = "pipe", amount = 20}
         },
         {{type = "item", name = "refinery-r1", amount = 1}}
@@ -18,8 +17,9 @@ data:extend({
         {
             {type = "item", name = "refinery-r1", amount = 2},
             {type = "item", name = "steel-plate", amount = 10},
-            {type = "item", name = "electric-component-r1", amount = 5},
-            {type = "item", name = "reinforced-copper-plate-r1", amount = 5}
+            {type = "item", name = "machine-case-r2", amount = 1},
+            {type = "item", name = "electric-component-r2", amount = 2},
+            {type = "item", name = "fuse-r2", amount = 2}
         },
         {{type = "item", name = "refinery-r2", amount = 1}}
     ),
@@ -57,10 +57,10 @@ data:extend({
         ingredient_count = 4,
         graphics_set = {
             animation = {
-                south = { filename = "__RExtended__/graphics/entity/Machinery/Refinery/Refinery-r1-s.png", width = 896, height = 896, shift = {1, -0}, frame_count = 1, line_length = 1, scale = 0.25, animation_speed = 1.0 },
-                west  = { filename = "__RExtended__/graphics/entity/Machinery/Refinery/Refinery-r1-w.png", width = 896, height = 896, shift = {0.65625, -0.71875}, frame_count = 1, line_length = 1, scale = 0.25, animation_speed = 1.0 },
-                north = { filename = "__RExtended__/graphics/entity/Machinery/Refinery/Refinery-r1-n.png", width = 896, height = 896, shift = {1, -0}, frame_count = 1, line_length = 1, scale = 0.25, animation_speed = 1.0 },
-                east  = { filename = "__RExtended__/graphics/entity/Machinery/Refinery/Refinery-r1-e.png", width = 896, height = 896, shift = {0.65625, -0.71875}, frame_count = 1, line_length = 1, scale = 0.25, animation_speed = 1.0 },
+                south = { filename = "__RExtended__/graphics/entity/Machinery/Refinery/Refinery-r1-s.png", width = 448, height = 448, shift = {1, -0}, frame_count = 1, line_length = 1, scale = 0.5, animation_speed = 1.0 },
+                west  = { filename = "__RExtended__/graphics/entity/Machinery/Refinery/Refinery-r1-w.png", width = 448, height = 448, shift = {0.65625, -0.71875}, frame_count = 1, line_length = 1, scale = 0.5, animation_speed = 1.0 },
+                north = { filename = "__RExtended__/graphics/entity/Machinery/Refinery/Refinery-r1-n.png", width = 448, height = 448, shift = {1, -0}, frame_count = 1, line_length = 1, scale = 0.5, animation_speed = 1.0 },
+                east  = { filename = "__RExtended__/graphics/entity/Machinery/Refinery/Refinery-r1-e.png", width = 448, height = 448, shift = {0.65625, -0.71875}, frame_count = 1, line_length = 1, scale = 0.5, animation_speed = 1.0 }
             },
             working_visualisations = {
                 {
@@ -76,7 +76,7 @@ data:extend({
                         frame_count = 60,
                         animation_speed = 0.75,
                         scale = 0.375,
-                        shift = util.by_pixel(0, -14.25),
+                        shift = util.by_pixel(0, -14.25)
                     },
                     light = {intensity = 0.4, size = 6, color = {r = 1.0, g = 1.0, b = 1.0}}
                 },
@@ -93,7 +93,7 @@ data:extend({
                         frame_count = 60,
                         animation_speed = 0.75,
                         scale = 0.375,
-                        shift = util.by_pixel(0, -14.25),
+                        shift = util.by_pixel(0, -14.25)
                     },
                     light = {intensity = 0.4, size = 6, color = {r = 1.0, g = 1.0, b = 1.0}}
                 }

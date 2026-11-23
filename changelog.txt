@@ -1,7 +1,136 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.5.8
+Date: 23.11.2026
+  Info:
+    - This version changes machine recipes and technology prerequisites.
+      Existing production chains may need adjustments after updating.
+      Back up your save before updating and review the changes below.
+  Major Features:
+    - Added Long-Range Radar research to unlock the Elite Radar, with matching radar artwork.
+    - Added Azurium, Apatitium, and Amazonium crystals and plates with three research tiers.
+    - Added Advanced and Elite Electronic Components, three Fuse tiers, and three Machine Casings.
+    - Added Advanced Infusion research:
+      - The Advanced Infusion Tool and Infused Enriched Coal (288 MJ).
+  Changes:
+    - Technology:
+      - Worker Robot Battery stages now require Production, Utility, and Space science unlocks.
+      - Sonic Robots and Chests now requires Apatitium research and Production Science Pack;
+      removed its redundant Logistic Robotics prerequisite.
+      - Elite Exoskeleton research now requires Amazonium, Advanced Accumulator, and Space Science.
+      - Elite Laser Turret research now requires Amazonium and Space Science;
+      removed the redundant Military 3 link.
+      - High-Capacity Accumulator now requires Amazonium research and Utility Science Pack.
+      - Accumulator R2 research now requires Advanced Intermediate Products 2.
+      - Solar Panel Equipment R2 now requires Production Science Pack.
+      - Solar Energy R5 now requires Utility Science Pack.
+      - Solar Energy R4 now requires Advanced Intermediate Products 3 for Amazonium electronics.
+      - Solar Energy R3 now requires Military Science Pack.
+      - Solar Energy R2 now requires Advanced Intermediate Products 2,
+      covering its materials and replacing redundant Solar Energy and Silicon Processing links.
+      - Electric Energy Distribution R2 now requires Advanced Intermediate Products 2.
+      - Electric Energy Distribution R1 now requires Initial Products for reinforced components.
+      - Elite Electric Mining Drill now requires Amazonium research and Military Science Pack.
+      - Advanced Electric Mining Drill now requires the vanilla drill and Apatitium research.
+      - Elite Storage Tank now requires Amazonium research and Space Science Pack.
+      - Advanced Storage Tank now requires Apatitium research and its missing science unlocks.
+      - Large Storage Tank now requires Mixer Products and Chemical Science Pack.
+      - Warehouse research now requires Advanced Intermediate Products and Chemical Science Pack.
+      - Powerful Transmission now requires Advanced Intermediate Products 2;
+      research cost increases from 200 to 500 units.
+      - Advanced Craft Machine now requires Advanced Intermediate Products 3 and Utility Science
+      Pack alongside Automation 3 and Craft Machine R1 research.
+      - Reworked machine research paths to unlock required materials and processing machines first.
+      - Connected Azurium-based machines to Advanced Intermediate Products and Apatitium-based
+      upgrades to Advanced Intermediate Products 2.
+      - Added missing science-pack prerequisites and removed redundant research links.
+      - Oil Special Processing now requires Steam Power for its steam-based recipes.
+      - Advanced Centrifuge now requires the Amazonium material tier and missing science unlocks
+      instead of Advanced Compact Craft Machine research.
+      - Silicon Processing now requires Refined Coal; Lithium now requires Advanced Ore Processing
+      R1 and Refinery R1 for its production chain.
+      - Chemical Machine R1 research time increases from 25 to 30 seconds per unit.
+    - Recipes:
+      - Mixer construction now uses 8 iron plates, removing its dependency on iron sticks.
+      - Advanced Pump now uses Apatitium plates, Clean Steel, and Advanced Electronic Components,
+      retaining two vanilla pumps for its drive mechanisms.
+      - Elite Radar now requires research and uses Advanced Electronic Components.
+      - Upgraded robots, roboport, and all five logistic chests now use Apatitium electronics;
+      the roboport also uses an Advanced Machine Casing.
+      - Elite Exoskeleton now uses Elite Electronic Components and Fuses,
+      retaining its four vanilla exoskeletons and lithium batteries.
+      - Elite Laser Turret now uses Elite Electronic Components,
+      preserving its total processing-unit investment through direct and embedded ingredients.
+      - High-Capacity Accumulator now uses Elite Fuses instead of ordinary iron plates.
+      - Accumulator R2 now uses Apatitium electronics, retaining its lithium batteries.
+      - Solar Panel Equipment R2 now uses Apatitium-based Advanced Electronic Components.
+      - Solar Panel R5 now uses an Elite Machine Casing in place of direct processing units.
+      - Solar Panel R4 now uses Elite Electronic Components instead of advanced circuits.
+      - Solar Panel R3 now uses Advanced Fuses instead of ordinary electronic circuits.
+      - Solar Panel R2 now uses Advanced Electronic Components; its Solar Cell recipe is unchanged.
+      - Upgraded substations now use Advanced Electronic Components,
+      retaining three vanilla substations as inputs.
+      - Elite Electric Mining Drill now uses Elite Fuses while retaining its predecessor drill,
+      reinforced plates, and cables.
+      - Advanced Electric Mining Drill now uses an Advanced Machine Casing and Advanced Fuses.
+      - Elite Storage Tank now uses Elite casings and fuses,
+      retaining three Advanced Storage Tanks as inputs.
+      - Advanced Storage Tank now uses Apatitium casings and fuses,
+      retaining five Large Storage Tanks as inputs.
+      - Warehouse construction now uses Azurium casings and components alongside reinforced plates.
+      - Beacon R1 now uses Apatitium-based casings, electronic components, and fuses.
+      - Advanced Centrifuge now uses Elite casings and fuses while retaining two base centrifuges.
+      - Advanced Craft Machine now uses Amazonium-based Elite parts and its previous-tier machine,
+      retaining electric engines and a 5-second crafting time.
+      - Reworked Craft Machine R1, Chemical Machine R1, Refinery R1, Enrichment Chamber,
+      Heat Forge R1, and Cast Chamber R1 to use Azurium-based casings and fuses.
+      - Reworked the Advanced Compact Craft Machine, Advanced Chemical Machine, Advanced Water
+      Condenser, Compressor R2, Washer Chamber R2, Heat Forge R2, Cast Chamber R2, and Refinery R2
+      to use Apatitium-based intermediates and their previous-tier machines.
+      - Boiler R3 and Steam Engine R3 now use Apatitium-based intermediates;
+      crafting takes 6 and 8 seconds, respectively.
+      - Balanced revised machine costs against their previous expanded material requirements.
+      Craft Machine R1 retains three Compact Craft Machines as inputs.
+      - Charcoal now requires furnace smelting: 4 Wood yield 1 Coal in 3 seconds.
+      - Reduced Clean Coal's fuel value from 36 MJ to 16 MJ.
+      - Advanced infusion consumes its tool to double Enriched Coal's total fuel energy:
+      2 Enriched Coal yield 2 Infused Enriched Coal, providing 576 MJ before processing costs.
+    - RERailworld:
+      - Railway R3 now requires Uranium Mining for its uranium wagon ingredients.
+      - Railway R2 now requires Utility Science Pack.
+      - Electric Trains R3 now requires Space Science Pack.
+      - Super Sonic Train & Fuel 3 now requires Nuclear Power and Utility Science Pack.
+      - Electric Trains R2 now requires Production Science Pack.
+      - Super Sonic Train & Fuel 1 now requires Military Science Pack.
+      - Electric Trains R1 now requires Craft Machine research for its workshop.
+  Translation:
+    - Applied Advanced and Elite naming to the new item families across all four locales.
+    - Renamed Exoskeleton R2 and its research to Elite Exoskeleton across all four locales.
+    - Renamed Laser Turret R2 to Elite Laser Turret across all four locales.
+    - Corrected Railway R1's fluid-wagon capacity description to 150,000 in all four locales.
+    - Corrected Railway R2's wagon descriptions to 260 slots and 250,000 fluid capacity
+      across all four locales.
+    - Added the missing calculator translations in European and Brazilian Portuguese.
+    - Removed duplicate Portuguese Charcoal descriptions and corrected English spelling.
+  Graphics:
+    - Refined Infused Enriched Coal with infusion veins and a mottled enriched surface.
+    - Refined Blue Quartz's icon with clearer icy-blue crystals and dark mineral inclusions.
+    - Refined Crystalline Silicon's icon with metallic shards and a subtle blue sheen.
+    - Updated Silicon Processing technology artwork with Blue Quartz and crystalline silicon.
+    - Updated Infusion Tool icon to a shared industrial design.
+    - Refined Infused Coal's icon with softer golden veins, clearer carbon texture.
+    - Updated Infused Products technology artwork to match its coal and basic infusion tool.
+    - Refined Enriched Coal's icon with teal-amber petroleum mottling and no lettering.
+    - Refined Clean Coal's inventory and technology artwork with charcoal grain and no lettering.
+    - Redesigned Enrichment Chamber R1 with a compact central vessel and gold-and-silver housing.
+---------------------------------------------------------------------------------------------------
 Version: 2.5.7
-Date: 15.11.2026
+Date: 20.11.2026
   Features:
+    - Added three alternative rocket fuel recipes in the Enrichment Chamber:
+      - Heavy Clean: 5 Clean Coal R1 and 25 heavy oil produce 1 rocket fuel in 20 seconds.
+      - Diesel: 1 Clean Coal R2 and 20 diesel produce 2 rocket fuel in 15 seconds.
+      - Enriched: 2 Clean Coal R3 produce 3 rocket fuel in 10 seconds.
+      - Unlocked through Diesel Energy research, with productivity support.
     - Added the Advanced Pump:
       - Pumps 4,800 fluid/s with 180 kW active consumption and an 800-unit internal fluid capacity.
       - Custom artwork for all four directions, wagon connectors, and its inventory icon.
@@ -14,8 +143,21 @@ Date: 15.11.2026
   Translation:
     - Fixed an incorrect Japanese translation for "div0 error" in the calculator (by K.Tarutaru).
   Graphics:
-    - Updated Refinery R1's flare animation with a brighter core and blended emerald edges;
-      doubled frame resolution and offset the two stacks' animation cycles.
+    - Redesigned the Mixer with a visible agitator, dosing hopper, and inspection window:
+      - Updated its technology artwork to match the redesigned machine.
+      - Added rotating paddles, swirling glue, subtle bubbles, and dosing ripples.
+      - Fitted dedicated north and south iron connectors to the new body.
+    - Redesigned Craft Machine R1 with twin tool arms and a central rotary worktable:
+      - Updated its inventory and technology icons to matching 256x256 artwork.
+      - Added arm and table motion, scrolling belts, bronze workpieces, and brief sparks.
+    - Redesigned Compact Craft Machine R1 with a silver gantry and blue industrial housing:
+      - Updated its inventory and technology icons to 256x256 artwork.
+      - Added a 60-frame press cycle, rotating chuck, rising table, and pulsing cyan lights.
+    - Updated Mining Drill R2 in all four directions:
+      - Replaced its inventory icon and increased its resolution from 32x32 to 256x256.
+      - Updated the technology icon from 128x128 to matching 256x256 artwork.
+      - Added rotating drill heads, moving conveyors, and pulsing cyan lights.
+    - Updated Refinery R1's flare animation with a brighter core and warm orange-gold edges.
     - Redesigned Water Condenser R1 visuals and animation; corrected proportions and pipe fit, and
       updated Atmospheric Processing artwork.
     - Refreshed copper and iron pipe, connector, and inventory icon artwork; refined seams while

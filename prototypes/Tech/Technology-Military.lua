@@ -1,6 +1,6 @@
 data:extend({
     create_tech("laser-turret-r2", "Military/Laser-Turret", 256, "a-j-b-1",
-        {"laser-turret", "military-3", "power-armor-mk2"},
+        {"laser-turret", "power-armor-mk2", "advanced-intermediate-products-r3", "space-science-pack"},
         {
             count = 2000,
             ingredients = {
@@ -20,7 +20,10 @@ data:extend({
         4
     ),
     create_tech("exoskeleton-tech-r2", "Military/Exoskeleton-Tech-r2", 256, "a-j-b",
-        {"exoskeleton-equipment", "power-armor-mk2"},
+        {
+            "exoskeleton-equipment", "power-armor-mk2", "advanced-intermediate-products-r3",
+            "energy-accumulator-r1", "space-science-pack"
+        },
         {
             count = 1500,
             ingredients = {

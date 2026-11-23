@@ -3,10 +3,9 @@ recipe_r1.name = "warehouse-r1"
 recipe_r1.enabled = false
 recipe_r1.ingredients = {
     {type = "item", name = "steel-chest", amount = 10},
-    {type = "item", name = "iron-plate", amount = 25},
-    {type = "item", name = "copper-plate", amount = 25},
     {type = "item", name = "reinforced-iron-plate-r1", amount = 25},
-    {type = "item", name = "reinforced-coal-plate-r1", amount = 25}
+    {type = "item", name = "machine-case-r1", amount = 2},
+    {type = "item", name = "electric-component-r1", amount = 5}
 }
 recipe_r1.results = {{type="item", name="warehouse-r1", amount=1}}
 

@@ -3,10 +3,10 @@ data:extend({
         "__RExtended__/graphics/icons/Machinery/Radar-Elite.png",
         256, "machinery-lab", "g-d-a", 20),
     
-    create_machinery_recipe("red-radar", 5, true,
+    create_machinery_recipe("red-radar", 5, false,
         {
             {type = "item", name = "radar", amount = 2},
-            {type = "item", name = "advanced-circuit", amount = 2},
+            {type = "item", name = "electric-component-r2", amount = 2},
             {type = "item", name = "reinforced-gear-copper-r1", amount = 4},
             {type = "item", name = "reinforced-gear-iron-r1", amount = 5}
         },

@@ -187,9 +187,9 @@ data:extend({
         allow_productivity = false,
         ingredients = {
             {type = "item", name = "laser-turret", amount = 4},
-            {type = "item", name = "processing-unit", amount = 50},
+            {type = "item", name = "processing-unit", amount = 20},
             {type = "item", name = "speed-module-2", amount = 2},
-            {type = "item", name = "electric-component-r1", amount = 15}
+            {type = "item", name = "electric-component-r3", amount = 15}
         },
         results = {{type = "item", name = turret_name, amount = 1}}
     },
