@@ -35,7 +35,7 @@ data:extend({
     ),
     -- Big Pole R2
     create_tech("electric-energy-poles-r1", "Energy/Electric-Energy-Distribution-R1", 256, "c-f-a",
-        {"electric-energy-distribution-1"},
+        {"electric-energy-distribution-1", "initial-products-r1"},
         {
             count = 300,
             ingredients = {
@@ -52,7 +52,7 @@ data:extend({
     ),
     -- Substation R2
     create_tech("electric-energy-poles-r2", "Energy/Electric-Energy-Distribution-R2", 256, "c-f-b",
-        {"electric-energy-distribution-2", "electric-energy-poles-r1"},
+        {"electric-energy-distribution-2", "electric-energy-poles-r1", "advanced-intermediate-products-r2"},
         {
             count = 300,
             ingredients = {
@@ -66,7 +66,7 @@ data:extend({
     ),
     -- Solar Panel Equipment R2
     create_tech("solar-panel-equipment-tech-r2", "Energy/Solar-Panel-Equipment-R2", 256, "d-a-a",
-        {"solar-panel-equipment", "solar-energy-r2"},
+        {"solar-panel-equipment", "solar-energy-r2", "production-science-pack"},
         {
             count = 500,
             ingredients = {
@@ -81,7 +81,7 @@ data:extend({
     ),
     -- Solar Panel R2
     create_tech("solar-energy-r2", "Energy/Solar-Energy-R2", 256, "c-n-c",
-        {"solar-energy", "silicon-processing"},
+        {"advanced-intermediate-products-r2"},
         {
             count = 1000,
             ingredients = {
@@ -98,7 +98,7 @@ data:extend({
     ),
     -- Solar Panel R3
     create_tech("solar-energy-r3", "Energy/Solar-Energy-R3", 256, "c-n-e",
-        {"solar-energy-r2"},
+        {"solar-energy-r2", "military-science-pack"},
         {
             count = 1500,
             ingredients = {
@@ -113,7 +113,7 @@ data:extend({
     ),
     -- Solar Panel R4
     create_tech("solar-energy-r4", "Energy/Solar-Energy-R4", 256, "c-n-e",
-        {"solar-energy-r3", "electric-energy-distribution-2"},
+        {"solar-energy-r3", "electric-energy-distribution-2", "advanced-intermediate-products-r3"},
         {
             count = 1500,
             ingredients = {
@@ -128,7 +128,7 @@ data:extend({
     ),
     -- Solar Panel R5
     create_tech("solar-energy-r5", "Energy/Solar-Energy-R5", 256, "c-n-f",
-        {"solar-energy-r4"},
+        {"solar-energy-r4", "utility-science-pack"},
         {
             count = 3000,
             ingredients = {
@@ -144,7 +144,7 @@ data:extend({
     ),
     -- Energy Accumulator R1
     create_tech("energy-accumulator-r1", "Energy/Electric-Energy-Acumulators-R1", 256, "c-h-a",
-        {"electric-energy-accumulators", "lithium-r1"},
+        {"electric-energy-accumulators", "lithium-r1", "advanced-intermediate-products-r2"},
         {
             count = 500,
             ingredients = {
@@ -161,7 +161,7 @@ data:extend({
     ),
     -- Energy Accumulator R2
     create_tech("energy-accumulator-r2", "Energy/Electric-Energy-Acumulators-R3", 256, "c-h-b",
-        {"energy-accumulator-r1"},
+        {"energy-accumulator-r1", "advanced-intermediate-products-r3", "utility-science-pack"},
         {
             count = 1000,
             ingredients = {

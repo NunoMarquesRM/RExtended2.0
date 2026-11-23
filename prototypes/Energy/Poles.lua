@@ -57,7 +57,7 @@ data:extend({
     create_power_pole_recipe("substation", "substation-pole-r1", 1, false,
         {
             {type = "item", name = "substation", amount = 3},
-            {type = "item", name = "electric-component-r1", amount = 2},
+            {type = "item", name = "electric-component-r2", amount = 2},
             {type = "item", name = "copper-gear-wheel-r1", amount = 3}
         },
         {{type = "item", name = "substation-pole-r1", amount = 1}}

@@ -1,7 +1,7 @@
 data:extend({
     -- Electric Train R1
     create_tech("electric-railway-r1", "Railworld/eletric-train-r1", 128, "c-k-a",
-        {"railway", "electric-engine", "electric-energy-accumulators"},
+        {"railway", "electric-engine", "electric-energy-accumulators", "machinery-r2"},
         {
             count = 250,
             ingredients = {
@@ -18,7 +18,7 @@ data:extend({
     ),
     -- Electric Train R2
     create_tech("electric-railway-r2", "Railworld/eletric-train-r2", 128, "c-k-b",
-        {"sonic-tech-r2"},
+        {"sonic-tech-r2", "production-science-pack"},
         {
             count = 500,
             ingredients = {
@@ -33,7 +33,7 @@ data:extend({
     ),
     -- Electric Train R3
     create_tech("electric-railway-r3", "Railworld/eletric-train-r3", 128, "c-k-f",
-        {"sonic-tech-r3"},
+        {"sonic-tech-r3", "space-science-pack"},
         {
             count = 500,
             ingredients = {
@@ -51,7 +51,7 @@ data:extend({
     ),
     -- Sonic Train R1
     create_tech("sonic-tech-r1", "Railworld/sonic-r1", 128, "c-k-c",
-        {"electric-railway-r1"},
+        {"electric-railway-r1", "military-science-pack"},
         {
             count = 450,
             ingredients = {
@@ -89,7 +89,7 @@ data:extend({
     ),
     -- Sonic Train R3
     create_tech("sonic-tech-r3", "Railworld/sonic-r3", 128, "c-k-e",
-        {"electric-railway-r2"},
+        {"electric-railway-r2", "nuclear-power", "utility-science-pack"},
         {
             count = 500,
             ingredients = {
@@ -126,7 +126,7 @@ data:extend({
     ),
     -- Wagons R2
     create_tech("railway-r2", "Railworld/railway-r2", 128, "c-l-b",
-        {"railway-r1"},
+        {"railway-r1", "utility-science-pack"},
         {
             count = 500,
             ingredients = {
@@ -144,7 +144,7 @@ data:extend({
     ),
     -- Wagons R3
     create_tech("railway-r3", "Railworld/railway-r3", 128, "c-l-c",
-        {"railway-r2"},
+        {"railway-r2", "uranium-mining"},
         {
             count = 450,
             ingredients = {

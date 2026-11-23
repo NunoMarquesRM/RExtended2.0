@@ -86,7 +86,7 @@ data:extend({
         {
             {type = "item", name = "steel-plate", amount = 10},
             {type = "item", name = "reinforced-coal-plate-r1", amount = 10},
-            {type = "item", name = "iron-stick", amount = 10},
+            {type = "item", name = "iron-plate", amount = 8},
             {type = "item", name = "reinforced-component-r1", amount = 10}
         },
         {{type = "item", name = "mixer-r1", amount = 1}}

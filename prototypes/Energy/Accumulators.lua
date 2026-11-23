@@ -3,7 +3,7 @@ local recipe_r2 = table.deepcopy(data.raw.recipe['accumulator'])
 recipe_r2.name = "accumulator-r2"
 recipe_r2.ingredients = {
     {type = "item", name = "accumulator",amount=2},
-    {type = "item", name = "electronic-circuit", amount = 10},
+    {type = "item", name = "electric-component-r2", amount = 2},
     {type = "item", name = "battery-r1", amount = 2}
 }
 recipe_r2.results = {{type="item", name="accumulator-r2", amount=1}}
@@ -81,7 +81,7 @@ local recipe_r3 = table.deepcopy(data.raw.recipe['accumulator'])
 recipe_r3.name = "accumulator-r3"
 recipe_r3.ingredients = {
     {type = "item", name = "accumulator-r2",amount=1},
-    {type = "item", name = "iron-plate",amount=4},
+    {type = "item", name = "fuse-r3",amount=2},
     {type = "item", name = "battery-r1",amount=5}
 }
 recipe_r3.results = {{type="item", name="accumulator-r3", amount=1}}

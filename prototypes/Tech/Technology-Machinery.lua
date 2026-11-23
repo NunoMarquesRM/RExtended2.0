@@ -412,6 +412,24 @@ data:extend({
         },
         {create_unlock_recipe("beacon-r1")}
     ),
+    -- Long-Range Radar (reuse the existing matching radar artwork)
+    (function()
+        local tech = create_tech("radar-tech-r1", "Machinery/Radar-Elite", 256, "a-c-e",
+            {"radar", "advanced-intermediate-products-r2"},
+            {
+                count = 400,
+                ingredients = {
+                    {science_packs.red, 1},
+                    {science_packs.green, 1},
+                    {science_packs.blue, 1}
+                },
+                time = 30
+            },
+            {create_unlock_recipe("red-radar")}
+        )
+        tech.icon = "__RExtended__/graphics/icons/Machinery/Radar-Elite.png"
+        return tech
+    end)(),
     -- Plastics R1 (use the vanilla icon)
     (function()
         local tech = create_tech("plastics-r1", "Machinery/plastics", 256, "d-f",

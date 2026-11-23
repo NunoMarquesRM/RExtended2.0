@@ -67,7 +67,7 @@ Some machines have additional tiers, but tiers and specifications differ by mach
 - **Big storage tanks** for fluid storage, with multiple tiers.
 - **Advanced Pump**: moves up to 4,800 fluid/s, with an 800-unit internal capacity and 175 kW active power use.
 - Custom logistic and construction robots, logistic chests, and a roboport.
-- A custom radar.
+- **Elite Radar**: unlocked by Long-Range Radar research, using Apatitium electronics.
 
 #### Pipes
 
@@ -94,7 +94,7 @@ These materials are used in the mod's machinery, power, storage, and robot recip
 
 ## Quality of Life
 
- - **Exoskeleton R2**:
+ - **Elite Exoskeleton**:
  A late-game 2×4 equipment module that provides a 100% movement speed bonus.
  It frees armor-grid space compared with installing several vanilla exoskeletons, at the cost of drawing up to 1 MW while active.
 
@@ -121,7 +121,7 @@ An in-game calculator with calculation history, accessible from its shortcut.
 
 ## Defense
 
-- **Laser turret R2**: A more powerful laser turret with high energy consumption.
+- **Elite Laser Turret**: A more powerful laser turret with high energy consumption.
 
 ---------------------------------------------------------------------------------------------------
 

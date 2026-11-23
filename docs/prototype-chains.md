@@ -9,21 +9,21 @@ This guide contains ingredient trees for products defined outside the core `Prod
 ```text
 Solar Panel R5
    ├── Solar Panel R4
-   └── Processing Unit
+   └── Elite Machine Casing
 
 Solar Panel R4
    ├── Solar Panel R3
-   ├── Advanced Circuit
+   ├── Elite Electronic Component
    └── Solar Cell
 
 Solar Panel R3
    ├── Solar Panel R2
-   ├── Electronic Circuit
+   ├── Advanced Fuse
    └── Solar Cell
 
 Solar Panel R2
    ├── Base Solar Panel
-   ├── Electric Component
+   ├── Advanced Electronic Component
    └── Solar Cell
 ```
 
@@ -33,7 +33,7 @@ Solar Panel R2
 Solar Panel Equipment R2
    ├── Solar Panel Equipment
    ├── Solar Cell
-   └── Advanced Circuit
+   └── Advanced Electronic Component
 ```
 
 ### Accumulator Chain
@@ -42,11 +42,11 @@ Solar Panel Equipment R2
 Accumulator R3
    ├── Accumulator R2
    │      ├── Base Accumulator
-   │      ├── Electronic Circuit
+   │      ├── Advanced Electronic Component
    │      └── Battery R1
    │             ├── Lithium
    │             └── Copper Plate
-   ├── Iron Plate
+   ├── Elite Fuse
    └── Battery R1
 
 Battery R1
@@ -110,7 +110,7 @@ Long Pole R1
 
 Substation Pole R1
    ├── Substation
-   ├── Electric Component
+   ├── Advanced Electronic Component
    └── Copper Gear Wheel
 
 Light Pole R1
@@ -186,12 +186,14 @@ Recipe sources: `prototypes/Storage/Warehouses.lua` and `prototypes/Storage/Big-
 ```text
 Advanced Pump
    ├── Base Pump
-   ├── Reinforced Iron Plate
-   ├── Reinforced Copper Gear
-   └── Electric Component
+   ├── Advanced Electronic Component
+   ├── Apatitium Plate
+   └── Clean Steel
 ```
 
 The Advanced Pump moves up to 4,800 fluid/s, has an 800-unit internal fluid capacity, and uses 175 kW while active. Big Storage Tank R2 research unlocks its recipe.
+
+Recipe: 2 vanilla Pumps, 2 Advanced Electronic Components, 4 Apatitium Plates, and 2 Clean Steel; 5 seconds. The vanilla pumps supply the drive mechanisms, while the components and plates provide upgraded controls and housing.
 
 Recipe source: `prototypes/Storage/Pumps.lua`.
 
@@ -264,7 +266,7 @@ Compressor R2
 Mixer R1
    ├── Steel Plate
    ├── Reinforced Coal Plate
-   ├── Iron Stick
+   ├── Iron Plate
    └── Reinforced Component
 
 Enrichment Chamber R1
@@ -376,43 +378,43 @@ Mining Drill R3
 ```text
 Logistic Robot (Red)
    ├── Flying Robot Frame
-   └── Advanced Circuit
+   └── Advanced Electronic Component
 
 Construction Robot (Red)
    ├── Flying Robot Frame
    ├── Reinforced Iron Plate
-   └── Electronic Circuit
+   └── Advanced Electronic Component
 
 Roboport (Red)
-   ├── Advanced Circuit
+   ├── Advanced Machine Casing
+   ├── Advanced Electronic Component
    ├── Reinforced Copper Gear
-   ├── Reinforced Iron Plate
    └── Steel Plate
 
 Storage Chest (Red)
    ├── Reinforced Iron Plate
    ├── Advanced Circuit
-   └── Electric Component
+   └── Advanced Electronic Component
 
 Passive Provider Chest (Red)
    ├── Reinforced Copper Plate
    ├── Advanced Circuit
-   └── Electric Component
+   └── Advanced Electronic Component
 
 Requester Chest (Red)
    ├── Reinforced Copper Plate
    ├── Advanced Circuit
-   └── Electric Component
+   └── Advanced Electronic Component
 
 Buffer Chest (Red)
    ├── Reinforced Copper Plate
    ├── Advanced Circuit
-   └── Electric Component
+   └── Advanced Electronic Component
 
 Active Provider Chest (Red)
    ├── Reinforced Copper Plate
    ├── Advanced Circuit
-   └── Electric Component
+   └── Advanced Electronic Component
 ```
 
 ### Radar and Air Purification
@@ -420,7 +422,7 @@ Active Provider Chest (Red)
 ```text
 Red Radar
    ├── Radar
-   ├── Advanced Circuit
+   ├── Advanced Electronic Component
    ├── Reinforced Copper Gear
    └── Reinforced Iron Gear
 
@@ -451,24 +453,24 @@ Recipe sources: `prototypes/Machinery/` (Assemblers, Air-Purification, ChemicalM
 
 ## Military
 
-### Exoskeleton Equipment R2
+### Elite Exoskeleton
 
 ```text
-Exoskeleton Equipment R2
+Elite Exoskeleton
    ├── Exoskeleton Equipment
-   ├── Electric Component
+   ├── Elite Electronic Component
    ├── Battery R1
-   └── Reinforced Coal Plate
+   └── Elite Fuse
 ```
 
-### Laser Turret R2
+### Elite Laser Turret
 
 ```text
-Laser Turret R2
+Elite Laser Turret
    ├── Laser Turret
    ├── Processing Unit
    ├── Speed Module 2
-   └── Electric Component
+   └── Elite Electronic Component
 ```
 
 See [Reinforced Materials and Gears](ingredient-chains.md#reinforced-materials-and-gears) and [Lithium and Battery R1 Chain](ingredient-chains.md#lithium-and-battery-r1-chain) for the expanded electric component, reinforced plate, and battery ingredients.

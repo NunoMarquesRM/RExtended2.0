@@ -167,6 +167,14 @@ Enriched Coal (Clean Coal R3)
    │      └── Light Oil
    └── Clean Coal R1
 
+Infused Enriched Coal (Clean Coal R4)
+   ├── Enriched Coal (Clean Coal R3)
+   └── Advanced Infusion Tool
+          ├── Infusion Tool
+          ├── Amazonium Crystal
+          ├── Elite Electronic Component
+          └── Advanced Fuse
+
 Enriched Petroleum
    ├── Molten Coal
    │      └── Clean Coal
@@ -244,6 +252,80 @@ Special Oil Processing
    └── Steam
        └── Water heated in a boiler
 ```
+
+## Advanced Intermediate Products
+
+```text
+Azurium Crystal
+   ├── Blue Quartz
+   ├── Clean Copper
+   └── Pressurized Water
+
+Apatitium Crystal
+   ├── Azurium Crystal
+   ├── Clean Steel
+   └── Sulfuric Acid
+
+Amazonium Crystal
+   ├── Apatitium Crystal
+   └── Lithium
+
+Azurium Plate
+   └── Azurium Crystal
+
+Apatitium Plate
+   └── Apatitium Crystal
+
+Amazonium Plate
+   └── Amazonium Crystal
+
+Advanced Electronic Component
+   ├── Electronic Component
+   ├── Apatitium Plate
+   └── Advanced Circuit
+
+Elite Electronic Component
+   ├── Advanced Electronic Component
+   ├── Amazonium Plate
+   └── Processing Unit
+
+Fuse
+   ├── Azurium Plate
+   ├── Cable
+   └── Electronic Circuit
+
+Advanced Fuse
+   ├── Fuse
+   ├── Apatitium Plate
+   └── Advanced Circuit
+
+Elite Fuse
+   ├── Advanced Fuse
+   ├── Amazonium Plate
+   └── Processing Unit
+
+Machine Casing
+   ├── Azurium Plate
+   ├── Reinforced Iron Plate
+   ├── Reinforced Iron Gear
+   └── Electronic Component
+
+Advanced Machine Casing
+   ├── Machine Casing
+   ├── Apatitium Plate
+   ├── Clean Steel
+   └── Advanced Electronic Component
+
+Elite Machine Casing
+   ├── Advanced Machine Casing
+   ├── Amazonium Plate
+   ├── Processing Unit
+   └── Elite Electronic Component
+```
+
+Crystal recipes run in a Chemical Plant; their matching plates use Formation Furnace recipes. Components, fuses, casings, and the Advanced Infusion Tool use ordinary crafting. Earlier sections expand Blue Quartz, Clean Copper, Clean Steel, Pressurized Water, Lithium, basic Electronic Components, Cable, and the basic Infusion Tool.
+
+The three Advanced Intermediate Products technologies unlock the matching material tiers. Advanced Infusion unlocks the Advanced Infusion Tool and Infused Enriched Coal; its fuel recipe consumes the tool.
 
 ## Notes
 

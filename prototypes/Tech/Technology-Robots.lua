@@ -1,6 +1,9 @@
 data:extend({
     create_tech("red-robots", "Robots/Red-Robots-Network", 256, "n",
-        {"construction-robotics", "logistic-robotics","logistic-system"},
+        {
+            "construction-robotics", "logistic-system",
+            "advanced-intermediate-products-r2", "production-science-pack"
+        },
         {
             count = 500,
             ingredients = {
@@ -41,7 +44,7 @@ data:extend({
     ),
     -- Worker Robot Battery 2
     create_tech("worker-robot-battery-4", "Robots/worker-robot-battery-4", 256, "c-k-h-f",
-        {"worker-robot-battery-1"},
+        {"worker-robot-battery-1", "production-science-pack"},
         {
             count_formula = "100*L",
             ingredients = {
@@ -58,7 +61,7 @@ data:extend({
     ),
     -- Worker Robot Battery 3
     create_tech("worker-robot-battery-8", "Robots/worker-robot-battery-8", 256, "c-k-h-g",
-        {"worker-robot-battery-4"},
+        {"worker-robot-battery-4", "utility-science-pack"},
         {
             count_formula = "100*L",
             ingredients = {
@@ -76,7 +79,7 @@ data:extend({
     ),
     -- Worker Robot Battery 4
     create_tech("worker-robot-battery-12", "Robots/worker-robot-battery-12", 256, "c-k-h-h",
-        {"worker-robot-battery-8"},
+        {"worker-robot-battery-8", "space-science-pack"},
         {
             count_formula = "100*L",
             ingredients = {
