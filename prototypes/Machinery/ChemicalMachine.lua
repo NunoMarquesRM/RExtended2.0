@@ -108,7 +108,7 @@ data:extend({
                 line_length = 8,
                 animation_speed = 0.25,
                 shift = {0.875, -0.8125},
-                scale = 0.25,
+                scale = 0.25
             }
         }
     }

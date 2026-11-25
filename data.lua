@@ -34,6 +34,8 @@ require("prototypes.Storage.Warehouses")
 
 -- Machinery
 require("prototypes.Machinery.Machinery")
+require("prototypes.Machinery.Cast-Chamber")
+require("prototypes.Machinery.Heat-Forge")
 require("prototypes.Machinery.Radar")
 require("prototypes.Machinery.Mining-Drill")
 require("prototypes.Machinery.Furnaces")
