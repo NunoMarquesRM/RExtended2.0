@@ -68,7 +68,7 @@ data:extend({
 local function setup_power_pole_entity(entity, name, max_health, maximum_wire_distance, supply_area_distance, minable)
     entity.name = name
     entity.icon = "__RExtended__/graphics/icons/Energy/Poles/" .. name .. ".png"
-    entity.icon_size = 32
+    entity.icon_size = 256
 
     entity.max_health = max_health
     entity.maximum_wire_distance = maximum_wire_distance
@@ -81,6 +81,7 @@ end
 -- Small Pole
 local entity_smallPole = setup_power_pole_entity(table.deepcopy(data.raw["electric-pole"]["small-electric-pole"]),
     "small-pole-r1", 100, 9, 4, {mining_time = 0.1, result = "small-pole-r1"})
+entity_smallPole.icon_size = 64
 
     entity_smallPole.pictures = {
     layers = {
