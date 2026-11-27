@@ -29,7 +29,7 @@
 #### Power Generation
 
 - **Steam boilers R2 and R3**: The prototypes specify 15 MW and 60 MW of heating capacity, respectively.
-- **Steam engines R2 and R3**: Higher-tier steam engines with custom fluid handling and effectivity settings. Their prototypes do not specify fixed 3.6 MW or 7.2 MW output ratings.
+- **Steam engines R2 and R3**: Upgraded steam engines for the mod's steam-power production chain.
 - **Solar panels R2–R5**: 600 kW, 6 MW, 36 MW, and 150 MW production, respectively.
 - **Solar panel equipment R2**: 100 kW for armor equipment grids.
 - **Accumulators R2 and R3**: 30 MJ and 50 MJ capacity, respectively.
@@ -82,6 +82,9 @@ The added recipes include:
 
 - **Clean materials**: iron, copper, coal, and steel.
 - **Components**: glue, cable, reinforced components and plates, reinforced gears, and copper gear wheels.
+- **Advanced Intermediate Products**: Azurium, Apatitium, and Amazonium crystals and plates, unlocked through three research tiers.
+- **Electronic components**: Electronic Components, Advanced Electronic Components, and Elite Electronic Components.
+- **Fuses and machine casings**: Fuse, Advanced Fuse, and Elite Fuse, plus Machine Casing, Advanced Machine Casing, and Elite Machine Casing.
 - **Coal products**: Clean Coal (16 MJ), Infused Coal (72 MJ), Enriched Coal (144 MJ), and Infused Enriched Coal (288 MJ). Clean Coal is made from 2 Coal and 20 Pressurized Water in a Washer Chamber, providing twice the coal inputs' combined fuel energy before processing costs.
 - **Infusion tools**: the Infusion Tool is used to make Infused Coal. Through Advanced Infusion research, 2 Enriched Coal and 1 Advanced Infusion Tool produce 2 Infused Enriched Coal in 4 seconds in a Formation Furnace: 576 MJ of output fuel from 288 MJ in coal inputs, before processing costs. The tool is consumed.
 - **Rocket Fuel alternatives**: three Enrichment Chamber recipes use Clean Coal R1 with heavy oil, Infused Coal with diesel, or Enriched Coal. They produce 1, 2, or 3 Rocket Fuel, respectively.
@@ -89,6 +92,7 @@ The added recipes include:
 - **Crystalline silicon products** for the solar panel production chain.
 
 These materials are used in the mod's machinery, power, storage, and robot recipes.
+Azurium-based parts support the first material tier, Apatitium-based parts support advanced upgrades, and Amazonium-based parts support selected elite equipment and machines.
 
 ---------------------------------------------------------------------------------------------------
 

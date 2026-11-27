@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.5.8
-Date: 23.11.2026
+Date: 27.11.2026
   Info:
     - This version changes machine recipes and technology prerequisites.
       Existing production chains may need adjustments after updating.
@@ -39,10 +39,6 @@ Date: 23.11.2026
       research cost increases from 200 to 500 units.
       - Advanced Craft Machine now requires Advanced Intermediate Products 3 and Utility Science
       Pack alongside Automation 3 and Craft Machine R1 research.
-      - Reworked machine research paths to unlock required materials and processing machines first.
-      - Connected Azurium-based machines to Advanced Intermediate Products and Apatitium-based
-      upgrades to Advanced Intermediate Products 2.
-      - Added missing science-pack prerequisites and removed redundant research links.
       - Oil Special Processing now requires Steam Power for its steam-based recipes.
       - Advanced Centrifuge now requires the Amazonium material tier and missing science unlocks
       instead of Advanced Compact Craft Machine research.
@@ -112,6 +108,39 @@ Date: 23.11.2026
     - Added the missing calculator translations in European and Brazilian Portuguese.
     - Removed duplicate Portuguese Charcoal descriptions and corrected English spelling.
   Graphics:
+    - Redesigned Washer Chamber R2 with turquoise water and a 48-frame washing animation.
+      Added uneven currents, broken foam trails, and slower agitator movement.
+      Kept basin hardware out of the moving water texture.
+      Seated connector sleeves behind the new frame.
+    - Redesigned Heat Forge R2 with Apatitium details and a 48-frame melting animation.
+    - Redesigned the Advanced Cast Chamber with Apatitium details and a 48-frame casting cycle.
+      Aligned pouring streams and cooling metal with the moving mold cavities.
+      Added restrained molten-metal bubbles inside the crucible.
+    - Matched Air Purifier accents to copper across its icon, animation, and technology artwork.
+    - Improved the Small Electric Pole icon framing and corrected pole entity icon sizes.
+    - Updated the Small Electric Pole with steel shafts and narrow copper accents.
+    - Added Amazonium-green armor accents and purple lights to Elite Exoskeleton artwork.
+    - Updated Warehouse artwork with gold armor, Azurium-blue circuitry, and blue inlays
+      across its entity, icon, and technology image.
+    - Matched Advanced Storage Tank shell and trim to Apatitium gold across its artwork.
+    - Matched Advanced Pump housing to Apatitium gold across its icon and directional animations.
+    - Recolored Washer Chamber R1 icon, animation, and technology artwork with muted teal panels.
+    - Matched Roboport housing and central collar to Apatitium gold across its artwork.
+    - Matched Refinery R1 tank bands and base trim to Azurium blue across its artwork.
+    - Matched Mining Drill R2 housings and conveyor trim to Apatitium gold across its artwork.
+    - Matched Beacon housing and base trim to Apatitium gold across its icon, sprites, and tech.
+    - Redesigned Enrichment Chamber R1 with a compact central vessel and silver housing
+      with Azurium-blue panels and vessel bands across its artwork.
+    - Matched Heat Forge R1 icon, sprites, and technology artwork to Azurium-blue trim.
+    - Matched Cast Chamber R1 icon, sprites, and technology artwork to Azurium-blue panels.
+    - Recolored Mixer R1 icon, animation, and technology artwork with medium graphite panels.
+    - Recolored Water Condenser R1 icon, entity, and technology artwork with muted teal housing.
+    - Recolored Electric Stone Furnace icon, housing, and technology artwork in copper-brown.
+    - Recolored Compressor R1 artwork with graphite panels and restrained copper valve accents.
+    - Matched Chemical Machine R1 icon, animation, and technology artwork to Azurium-blue housing.
+    - Matched Craft Machine icon, animation, and technology artwork to its Azurium-blue material.
+    - Recolored Compact Craft Machine artwork with graphite panels across its icon, animation,
+      and technology image to distinguish its basic material tier.
     - Refined Infused Enriched Coal with infusion veins and a mottled enriched surface.
     - Refined Blue Quartz's icon with clearer icy-blue crystals and dark mineral inclusions.
     - Refined Crystalline Silicon's icon with metallic shards and a subtle blue sheen.
@@ -121,7 +150,6 @@ Date: 23.11.2026
     - Updated Infused Products technology artwork to match its coal and basic infusion tool.
     - Refined Enriched Coal's icon with teal-amber petroleum mottling and no lettering.
     - Refined Clean Coal's inventory and technology artwork with charcoal grain and no lettering.
-    - Redesigned Enrichment Chamber R1 with a compact central vessel and gold-and-silver housing.
 ---------------------------------------------------------------------------------------------------
 Version: 2.5.7
 Date: 20.11.2026
